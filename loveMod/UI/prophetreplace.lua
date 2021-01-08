@@ -49,7 +49,7 @@ GameEvents.PlayerDoTurn.Add(EAP_Maori_Turn)
             local playerMet = Players[playerMetID]
             local majorsMet = Teams[playerMet:GetTeam()]:GetHasMetCivCount(true)
             local rewardCulture = 8
-            local rewardScience = 12
+            local rewardScience = 6
             local rewardGold = 40
             local rewardFaith = 14
             if player:GetCivilizationType() == GameInfoTypes["CIVILIZATION_MC_NEW_ZEALAND"] then
