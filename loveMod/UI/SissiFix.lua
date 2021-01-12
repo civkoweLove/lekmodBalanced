@@ -16,4 +16,4 @@ function finish_SissiDoTurn(playerID)
         end
     end
 end
-GameEvents.PlayerDoTurn.Add(brazilian_Pracinha_PlayerDoTurn)
+GameEvents.PlayerDoTurn.Add(finish_SissiDoTurn)
