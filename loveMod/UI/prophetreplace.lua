@@ -44,71 +44,71 @@ GameEvents.PlayerDoTurn.Add(EAP_Maori_Turn)
         return Game.Rand((upper + 1) - lower, "") + lower
     end
      
-    function JFD_Tonga(playerMetID, playerID)
-            local player = Players[playerID]
-            local playerMet = Players[playerMetID]
-            local majorsMet = Teams[playerMet:GetTeam()]:GetHasMetCivCount(true)
-            local rewardCulture = 8
-            local rewardScience = 6
-            local rewardGold = 40
-            local rewardFaith = 14
-            if player:GetCivilizationType() == GameInfoTypes["CIVILIZATION_MC_NEW_ZEALAND"] then
-                    local random = GetRandom(1, 4)
-                    if random == 1 then
-                            player:ChangeFaith(rewardFaith)
-                    elseif random == 2 then
-                          
-                            player:ChangeJONSCulture(rewardCulture)
-                           
-                    elseif random == 3 then
-                            Teams[player:GetTeam()]:GetTeamTechs():ChangeResearchProgress(player:GetCurrentResearch(), rewardScience, playerID)
-                           
-                    else
-                            player:ChangeGold(rewardGold)
-                          
-                    end
-            end
-    end
-    GameEvents.TeamMeet.Add(JFD_Tonga)
+function JFD_Tonga(playerMetID, playerID)
+		local player = Players[playerID]
+		local playerMet = Players[playerMetID]
+		local majorsMet = Teams[playerMet:GetTeam()]:GetHasMetCivCount(true)
+		local rewardCulture = 8
+		local rewardScience = 6
+		local rewardGold = 40
+		local rewardFaith = 14
+		if player:GetCivilizationType() == GameInfoTypes["CIVILIZATION_MC_NEW_ZEALAND"] then
+				local random = GetRandom(1, 4)
+				if random == 1 then
+						player:ChangeFaith(rewardFaith)
+				elseif random == 2 then
 
-	-- Tongo UB food
-	-- Code by JFD
-	-- Hoped to edit it somewhat and make it slightly more original, but I couldn't quite change it without bringing down the balance ~EAP
+						player:ChangeJONSCulture(rewardCulture)
 
-	local direction_types = {
-            DirectionTypes["DIRECTION_NORTHEAST"],
-            DirectionTypes["DIRECTION_NORTHWEST"],
-            DirectionTypes["DIRECTION_EAST"],
-            DirectionTypes["DIRECTION_SOUTHEAST"],
-            DirectionTypes["DIRECTION_SOUTHWEST"],
-            DirectionTypes["DIRECTION_WEST"]
-            }
-     
-    function JFD_GetNumAdjacentSeaTiles(city)
-            local numAdjacentSeaTiles = 0
-            if Map.GetPlot(city:GetX(), city:GetY()) then
-                    for loop, direction in ipairs(direction_types) do
-                            local adjPlot = Map.PlotDirection(city:GetX(), city:GetY(), direction)
-                            if adjPlot:GetTerrainType() == GameInfoTypes["TERRAIN_COAST"] then     
-                                    numAdjacentSeaTiles = numAdjacentSeaTiles + 1
-                            end
-                    end
-            end
-           
-            return numAdjacentSeaTiles     
-    end
-     
-    function JFD_MalaeFood(playerID, unitID, unitX, unitY)
-            local player = Players[playerID]
-            if player:IsAlive() then
-                    for city in player:Cities() do
-                            if city:IsHasBuilding(GameInfoTypes["BUILDING_MC_TONGAN_MALAE"]) and JFD_GetNumAdjacentSeaTiles(city) >= 3 then
-                                    city:SetNumRealBuilding(GameInfoTypes["BUILDING_MC_MALAE_FOOD"], 1)
-                            end
-                    end
-            end
-    end
-    GameEvents.PlayerDoTurn.Add(JFD_MalaeFood)
+				elseif random == 3 then
+						Teams[player:GetTeam()]:GetTeamTechs():ChangeResearchProgress(player:GetCurrentResearch(), rewardScience, playerID)
+
+				else
+						player:ChangeGold(rewardGold)
+
+				end
+		end
+end
+GameEvents.TeamMeet.Add(JFD_Tonga)
+
+-- Tongo UB food
+-- Code by JFD
+-- Hoped to edit it somewhat and make it slightly more original, but I couldn't quite change it without bringing down the balance ~EAP
+
+local direction_types = {
+		DirectionTypes["DIRECTION_NORTHEAST"],
+		DirectionTypes["DIRECTION_NORTHWEST"],
+		DirectionTypes["DIRECTION_EAST"],
+		DirectionTypes["DIRECTION_SOUTHEAST"],
+		DirectionTypes["DIRECTION_SOUTHWEST"],
+		DirectionTypes["DIRECTION_WEST"]
+		}
+
+function JFD_GetNumAdjacentSeaTiles(city)
+		local numAdjacentSeaTiles = 0
+		if Map.GetPlot(city:GetX(), city:GetY()) then
+				for loop, direction in ipairs(direction_types) do
+						local adjPlot = Map.PlotDirection(city:GetX(), city:GetY(), direction)
+						if adjPlot:GetTerrainType() == GameInfoTypes["TERRAIN_COAST"] then
+								numAdjacentSeaTiles = numAdjacentSeaTiles + 1
+						end
+				end
+		end
+
+		return numAdjacentSeaTiles
+end
+
+function JFD_MalaeFood(playerID, unitID, unitX, unitY)
+		local player = Players[playerID]
+		if player:IsAlive() then
+				for city in player:Cities() do
+						if city:IsHasBuilding(GameInfoTypes["BUILDING_MC_TONGAN_MALAE"]) and JFD_GetNumAdjacentSeaTiles(city) >= 3 then
+								city:SetNumRealBuilding(GameInfoTypes["BUILDING_MC_MALAE_FOOD"], 1)
+						end
+				end
+		end
+end
+GameEvents.PlayerDoTurn.Add(JFD_MalaeFood)
 
 -- New Zealand UU infantry Influence
 -- Code by MC and JFD
