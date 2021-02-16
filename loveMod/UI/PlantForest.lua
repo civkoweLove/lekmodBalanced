@@ -1,8 +1,8 @@
-function ForestPlanted(iHexX, iHexY, iContinent1, iContinent2)
-    local pPlot = Map.GetPlot(ToGridFromHex(iHexX, iHexY))
-    if (pPlot:GetImprovementType() == GameInfo.Improvements.IMPROVEMENT_FOREST.ID) then
-        pPlot:SetImprovementType(-1);
-        pPlot:SetFeatureType(FeatureTypes.FEATURE_FOREST, -1);
+function ForestPlanted(playerID, plotX, plotY, improvementID)
+    if improvementID == GameInfoTypes["IMPROVEMENT_FOREST"] then
+        local plot = Map.GetPlot(plotX, plotY)
+        plot:SetImprovementType(-1);
+        plot:SetFeatureType(FeatureTypes.FEATURE_FOREST, -1);
     end
 end
-Events.SerialEventImprovementCreated.Add(ForestPlanted)
+GameEvents.BuildFinished.Add(ForestPlanted)
