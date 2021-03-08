@@ -19,7 +19,7 @@ function Maori_Turn(playerID)
 	local player = Players[playerID]
 	local Gameturn = Game.GetGameTurn()
 
-	if (not player:GetCivilizationType() == GameInfoTypes["CIVILIZATION_MC_MAORI"]) then return end
+	if not (player:GetCivilizationType() == GameInfoTypes["CIVILIZATION_MC_MAORI"]) then return end
 	if Gameturn < 9 then return end
 
 	for unit in player:Units() do
