@@ -1,27 +1,17 @@
-print("'Improvement - Airbases' mod script loaded...")
-
 local iImprovementAirbase = GameInfoTypes.IMPROVEMENT_AIRBASE
 local iLateTech = GameInfoTypes.TECH_RADAR
-local iMaxAircraftPerAirbaseEarly = 4 -- TODO make this elegant
-local iMaxAircraftPerAirbaseLate  = iMaxAircraftPerAirbaseEarly
+local iMaxAircraftPerAirbaseEarly = 3
+local iMaxAircraftPerAirbaseLate  = 5
 
 --
 -- CanLoadAt() is only called for plots that are neither a city nor have a cargo carrying unit in them
 -- It should be used to ascertain if the plot can hold aircraft anyway (usually in an improvement)
 --
-function OnCanLoadAt(iPlayer, iUnit, iPlotX, iPlotY)
-  local pPlot = Map.GetPlot(iPlotX, iPlotY)
-  local pUnit = Players[iPlayer]:GetUnitByID(iUnit)
-  local unit = GameInfo.Units[pUnit:GetUnitType()]
-
-  if (pPlot:GetImprovementType() == iImprovementAirbase) then
-    print(string.format("Airbase found at (%i, %i)", iPlotX, iPlotY))
-	return not pPlot:IsImprovementPillaged()
-  end
-  
-  return false
+function isUnpillagedAirbase(iPlayer, iUnit, iPlotX, iPlotY)
+    local pPlot = Map.GetPlot(iPlotX, iPlotY)
+    return (pPlot:GetImprovementType() == iImprovementAirbase) and (not pPlot:IsImprovementPillaged())
 end
-GameEvents.CanLoadAt.Add(OnCanLoadAt)
+GameEvents.CanLoadAt.Add(isUnpillagedAirbase)
 
 --
 -- CanRebaseTo() is only called for non-city plots without a unit that can take cargo
@@ -34,10 +24,8 @@ function OnCanRebaseTo(iPlayer, iUnit, iPlotX, iPlotY)
   local pPlayer = Players[iPlayer]
   local pUnit = pPlayer:GetUnitByID(iUnit)
 
-  if (pPlot:GetImprovementType() == iImprovementAirbase and not pPlot:IsImprovementPillaged() and CanLandAt(pPlot, pUnit)) then
-    print(string.format("Found a viable airbase at (%i, %i) - checking aircraft limit", iPlotX, iPlotY))
+  if (isUnpillagedAirbase(iPlayer, iUnit, iPlotX, iPlotY) and CanLandAt(pPlot, pUnit)) then
 	local iMaxAircraftPerAirbase = (Teams[pPlayer:GetTeam()]:IsHasTech(iLateTech)) and iMaxAircraftPerAirbaseLate or iMaxAircraftPerAirbaseEarly
-
     return (CountAircraft(pPlot, pUnit) < iMaxAircraftPerAirbase)
   end
 
@@ -45,33 +33,22 @@ function OnCanRebaseTo(iPlayer, iUnit, iPlotX, iPlotY)
 end
 GameEvents.CanRebaseTo.Add(OnCanRebaseTo)
 
---
--- RebaseTo() is called after one of our aircraft is rebased
---
-function OnRebaseTo(iPlayer, iUnit, iPlotX, iPlotY)
-  local pCity = Map.GetPlot(iPlotX, iPlotY):GetPlotCity()
-  local pUnit = Players[iPlayer]:GetUnitByID(iUnit)
-  print(string.format("%s rebased to %s (%i, %i)", pUnit:GetName(), (pCity and pCity:GetName() or ""), iPlotX, iPlotY))
-end
--- GameEvents.RebaseTo.Add(OnRebaseTo)
-
-
 function CanLandAt(pPlot, pUnit)
-	local iPlayer = pUnit:GetOwner()														-- iPlayer = Active Player, since it's for his plane we're testing
+    local iPlayer = pUnit:GetOwner()														-- iPlayer = Active Player, since it's for his plane we're testing
 
-	for i = 0, pPlot:GetNumUnits()-1, 1 do													-- Check the units on the tile (if any)
-		local pPlotUnit = pPlot:GetUnit(i)													-- Set up Plot Unit Pointer
-		if (pPlotUnit:GetOwner() ~= iPlayer) then											-- Unit owner is not the Active player - return false early
-			return false																	-- Any unit that is not ours is bad
-		end
-	end
+    for i = 0, pPlot:GetNumUnits()-1, 1 do													-- Check the units on the tile (if any)
+        local pPlotUnit = pPlot:GetUnit(i)													-- Set up Plot Unit Pointer
+        if (pPlotUnit:GetOwner() ~= iPlayer) then											-- Unit owner is not the Active player - return false early
+            return false																	-- Any unit that is not ours is bad
+        end
+    end
   
-  local iOwner = pPlot:GetOwner()															-- No Foriegn/Enemy units, so check ownership of the tile
-	if (iPlayer ~= iOwner) and (iOwner >= 0) then												-- If plot owner is not active player, but plot is owned, then...
-		if Teams[Players[iOwner]:GetTeam()]:IsAllowsOpenBordersToTeam( Players[iPlayer]:GetTeam() ) then 
-			return true																			-- Return TRUE early	
-		end
-	end
+    local iOwner = pPlot:GetOwner()															-- No Foriegn/Enemy units, so check ownership of the tile
+    if (iPlayer ~= iOwner) and (iOwner >= 0) then												-- If plot owner is not active player, but plot is owned, then...
+        if Teams[Players[iOwner]:GetTeam()]:IsAllowsOpenBordersToTeam( Players[iPlayer]:GetTeam() ) then
+            return true																			-- Return TRUE early
+        end
+    end
 
   if (iOwner == iPlayer or iOwner == -1 or Players[iPlayer]:GetTeam() == Players[iOwner]:GetTeam() 
 		or Players[iOwner]:IsPlayerHasOpenBorders(iPlayer) or Players[iOwner]:IsPlayerHasOpenBordersAutomatically(iPlayer)) then	-- If active player owns tile, tile is unowned, or owned by team member, then...
