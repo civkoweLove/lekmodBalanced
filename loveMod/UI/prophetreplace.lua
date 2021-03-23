@@ -884,15 +884,10 @@ end
 GameEvents.BuildFinished.Add(liteGreatGeneralPointsfromImproving)
 --_________________________________________________________________________________________________________________________________________________________________________________________________________
 
-
-
-
-
-
 -- ProphetReplacer
 -- Author: LastSword
 -- DateCreated: 8/24/2013 2:56:18 PM
---------------------------------------------------------------
+
 local sUnitType = "UNIT_PROPHET"
 local iProphetID = GameInfo.Units.UNIT_PROPHET.ID
 local iProphetOverride = GameInfo.Units.UNIT_DALAILAMA.ID
@@ -903,10 +898,10 @@ function TibetOverride(iPlayer, iUnit)
     if (pPlayer:IsEverAlive()) then
         if (pPlayer:GetCivilizationType() == iCivType) then
       	    if pPlayer:GetUnitByID(iUnit) ~= nil then
-		pUnit = pPlayer:GetUnitByID(iUnit);
-               if (pUnit:GetUnitType() == iProphetID) then
+			local pUnit = pPlayer:GetUnitByID(iUnit);
+               if (pUnit:GetUnitType() == iProphetID)then
                    local newUnit = pPlayer:InitUnit(iProphetOverride, pUnit:GetX(), pUnit:GetY())
-                    newUnit:Convert(pUnit);
+				   newUnit:Convert(pUnit)
                 end
             end
         end
@@ -942,34 +937,6 @@ function KriviOverride(iPlayer, iUnit)
 end
 
 Events.SerialEventUnitCreated.Add(KriviOverride)
-
-
--- mpiambina
--- Author: lek10
--- DateCreated: 11/21/2018 5:29:36 PM
---------------------------------------------------------------
-local sUnitType = "UNIT_INQUISITOR"
-local iProphetID = GameInfo.Units.UNIT_INQUISITOR.ID
-local iProphetOverride = GameInfo.Units.UNIT_MPIAMBINA.ID
-local iCivType = GameInfo.Civilizations["CIVILIZATION_MALAGASY"].ID
-
-function MadaOverride(iPlayer, iUnit)
-    local pPlayer = Players[iPlayer];
-    if (pPlayer:IsEverAlive()) then
-        if (pPlayer:GetCivilizationType() == iCivType) then
-       	    if pPlayer:GetUnitByID(iUnit) ~= nil then
-		pUnit = pPlayer:GetUnitByID(iUnit);
-                if (pUnit:GetUnitType() == iProphetID) then
-                    local newUnit = pPlayer:InitUnit(iProphetOverride, pUnit:GetX(), pUnit:GetY())
-                    newUnit:Convert(pUnit);
-                end
-            end
-        end
-    end
-end
-
-Events.SerialEventUnitCreated.Add(MadaOverride)
-
 
 ---------------------
 -- On Policy Adopted stuff (uncludes UA's , easier for me to copy pasta stuff <3)
