@@ -1,4 +1,3 @@
-include( "Utility");
 
 local promotionActive	= GameInfoTypes["PROMOTION_CARABINIERI_ACTIVE"]
 local promotion		    = GameInfoTypes["PROMOTION_CARABINIERI"]
@@ -6,8 +5,8 @@ local promotion		    = GameInfoTypes["PROMOTION_CARABINIERI"]
 function carabinieri_PlayerDoTurn(playerID)
     local player = Players[playerID]
 
-    if player:IsBarbarian() then return end
     if (not player:IsAlive()) then return end
+    if player:IsBarbarian() then return end
 
     for unit in player:Units() do
         if (unit and (unit:IsHasPromotion(promotion) or unit:IsHasPromotion(promotionActive))) then
@@ -21,12 +20,4 @@ function carabinieri_PlayerDoTurn(playerID)
         end
     end
 end
-
-local civ = GameInfoTypes["CIVILIZATION_ITALY"]
-local unit = GameInfoTypes["UNIT_CARABINIERI"]
-
-Events.SequenceGameInitComplete.Add(function(player)
-    if isUUInGame(unit, civ) then
-        GameEvents.PlayerDoTurn.Add(carabinieri_PlayerDoTurn)
-    end
-end)
+GameEvents.PlayerDoTurn.Add(carabinieri_PlayerDoTurn)
