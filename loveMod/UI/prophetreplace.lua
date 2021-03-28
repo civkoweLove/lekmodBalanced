@@ -6,36 +6,31 @@
 -------------------- UA, UU, UB ----------------------
 ----------------------------------------------------------
 
+include( "Utility");
+
 -- Maori Promotion (UA) 
 -- Code by EnormousApplePie
+-- modyfied by Izydor
 
-local unitPromotionStaticID	= GameInfoTypes["PROMOTION_MAORI_DULL"]
 local unitPromotionActiveID	= GameInfoTypes["PROMOTION_MAORI"]
 local unitPromotionActiveCivilID	= GameInfoTypes["PROMOTION_MAORI_CIVILIAN"]
 
-function EAP_Maori_Turn(playerID)
+function Maori_Turn(playerID)
 	local player = Players[playerID]
-	local playerTeam = Teams[player:GetTeam()]
 	local Gameturn = Game.GetGameTurn()
-	if (not player:IsAlive()) then return end
-	if player:IsBarbarian() then return end
-	if (not player:GetCivilizationType() == GameInfoTypes["CIVILIZATION_MC_MAORI"]) then return end
+
+	if not (player:GetCivilizationType() == GameInfoTypes["CIVILIZATION_MC_MAORI"]) then return end
+	if Gameturn < 9 then return end
+
 	for unit in player:Units() do
-		local isPromotionValid = false
-		if Gameturn >= 9 then 
-			isPromotionValid = true
-			--print("It is turn 9 or later")
-		end
-		if isPromotionValid then
-			if unit:IsHasPromotion(unitPromotionActiveID) then
-				unit:SetHasPromotion(unitPromotionActiveID, false)
-			elseif unit:IsHasPromotion(unitPromotionActiveCivilID) then
-				unit:SetHasPromotion(unitPromotionActiveCivilID, false)
-			end
-		end
+		unit:SetHasPromotion(unitPromotionActiveID, false)
+		unit:SetHasPromotion(unitPromotionActiveCivilID, false)
 	end
 end
-GameEvents.PlayerDoTurn.Add(EAP_Maori_Turn)
+
+if JFD_IsCivilisationActive(GameInfoTypes["CIVILIZATION_MC_MAORI"]) then
+	GameEvents.PlayerDoTurn.Add(Maori_Turn)
+end
 
 -- New Zealand UA 
 -- Original code by JDF
@@ -196,19 +191,6 @@ GameEvents.PlayerDoTurn.Add(JFD_NewZealand_Defender_PlayerDoTurn)
 -- Ah, Optimization! Thanks JFD!
 local civilissationID = GameInfoTypes["CIVILIZATION_AKSUM"]
 
-function JFD_IsCivilisationActive(civilissationID)
-	for iSlot = 0, GameDefines.MAX_MAJOR_CIVS-1, 1 do
-		local slotStatus = PreGame.GetSlotStatus(iSlot)
-		if (slotStatus == SlotStatus["SS_TAKEN"] or slotStatus == SlotStatus["SS_COMPUTER"]) then
-			if PreGame.GetCivilization(iSlot) == civilissationID then
-				return true
-			end
-		end
-	end
-
-	return false
-end
-
 if JFD_IsCivilisationActive(civilissationID) then
 	print("Aksum is in this game")
 end
@@ -247,19 +229,6 @@ end
 -- Kilwa UA 
 -- Ah, Optimization! Thanks JFD!
 local civilisationID = GameInfoTypes["CIVILIZATION_MC_KILWA"]
-
-function JFD_IsCivilisationActive(civilisationID)
-	for iSlot = 0, GameDefines.MAX_MAJOR_CIVS-1, 1 do
-		local slotStatus = PreGame.GetSlotStatus(iSlot)
-		if (slotStatus == SlotStatus["SS_TAKEN"] or slotStatus == SlotStatus["SS_COMPUTER"]) then
-			if PreGame.GetCivilization(iSlot) == civilisationID then
-				return true
-			end
-		end
-	end
-
-	return false
-end
 
 if JFD_IsCivilisationActive(civilisationID) then
 	print("Kilwa is in this game")
@@ -494,6 +463,37 @@ GameEvents.TeamSetHasTech.Add(function(iTeam, iTech, bAdopted)
 		end
 	end
 end)
+
+function TibetLateEraFix(iPlayer, iX, iY)
+    local player = Players[iPlayer]
+    if (player:GetCivilizationType() == GameInfoTypes["CIVILIZATION_TIBET"]) and (player:GetNumCities() == 1) then
+        local pTeam = Teams[player:GetTeam()]
+        local pCity = player:GetCapitalCity();
+        if (pTeam:IsHasTech(GameInfoTypes["TECH_DRAMA"])) then
+            pCity:SetNumRealBuilding(GameInfoTypes["BUILDING_TIBET"], 1);
+        end
+        if (pTeam:IsHasTech(GameInfoTypes["TECH_ACOUSTICS"])) then
+            pCity:SetNumRealBuilding(GameInfoTypes["BUILDING_TIBET2"], 1);
+        end
+        if (pTeam:IsHasTech(GameInfoTypes["TECH_RADIO"])) then
+            pCity:SetNumRealBuilding(GameInfoTypes["BUILDING_TIBET3"], 1);
+        end
+        if (pTeam:IsHasTech(GameInfoTypes["TECH_GLOBALIZATION"])) then
+            pCity:SetNumRealBuilding(GameInfoTypes["BUILDING_TIBET4"], 1);
+        end
+        GameEvents.PlayerCityFounded.Remove(TibetLateEraFix);
+    end
+end
+
+function TibetLateEraFixInit(player)
+    for playerID, player in pairs(Players) do
+        local player = Players[playerID];
+        if player:GetCivilizationType() == GameInfoTypes["CIVILIZATION_TIBET"] then
+            GameEvents.PlayerCityFounded.Add(TibetLateEraFix);
+        end
+    end
+end
+Events.SequenceGameInitComplete.Add(TibetLateEraFixInit)
 
 -- Venez trait tech research
 print("loaded venez ua")
@@ -915,15 +915,10 @@ end
 GameEvents.BuildFinished.Add(liteGreatGeneralPointsfromImproving)
 --_________________________________________________________________________________________________________________________________________________________________________________________________________
 
-
-
-
-
-
 -- ProphetReplacer
 -- Author: LastSword
 -- DateCreated: 8/24/2013 2:56:18 PM
---------------------------------------------------------------
+
 local sUnitType = "UNIT_PROPHET"
 local iProphetID = GameInfo.Units.UNIT_PROPHET.ID
 local iProphetOverride = GameInfo.Units.UNIT_DALAILAMA.ID
@@ -934,10 +929,10 @@ function TibetOverride(iPlayer, iUnit)
     if (pPlayer:IsEverAlive()) then
         if (pPlayer:GetCivilizationType() == iCivType) then
       	    if pPlayer:GetUnitByID(iUnit) ~= nil then
-		pUnit = pPlayer:GetUnitByID(iUnit);
-               if (pUnit:GetUnitType() == iProphetID) then
+			local pUnit = pPlayer:GetUnitByID(iUnit);
+               if (pUnit:GetUnitType() == iProphetID)then
                    local newUnit = pPlayer:InitUnit(iProphetOverride, pUnit:GetX(), pUnit:GetY())
-                    newUnit:Convert(pUnit);
+				   newUnit:Convert(pUnit)
                 end
             end
         end
@@ -973,34 +968,6 @@ function KriviOverride(iPlayer, iUnit)
 end
 
 Events.SerialEventUnitCreated.Add(KriviOverride)
-
-
--- mpiambina
--- Author: lek10
--- DateCreated: 11/21/2018 5:29:36 PM
---------------------------------------------------------------
-local sUnitType = "UNIT_INQUISITOR"
-local iProphetID = GameInfo.Units.UNIT_INQUISITOR.ID
-local iProphetOverride = GameInfo.Units.UNIT_MPIAMBINA.ID
-local iCivType = GameInfo.Civilizations["CIVILIZATION_MALAGASY"].ID
-
-function MadaOverride(iPlayer, iUnit)
-    local pPlayer = Players[iPlayer];
-    if (pPlayer:IsEverAlive()) then
-        if (pPlayer:GetCivilizationType() == iCivType) then
-       	    if pPlayer:GetUnitByID(iUnit) ~= nil then
-		pUnit = pPlayer:GetUnitByID(iUnit);
-                if (pUnit:GetUnitType() == iProphetID) then
-                    local newUnit = pPlayer:InitUnit(iProphetOverride, pUnit:GetX(), pUnit:GetY())
-                    newUnit:Convert(pUnit);
-                end
-            end
-        end
-    end
-end
-
-Events.SerialEventUnitCreated.Add(MadaOverride)
-
 
 ---------------------
 -- On Policy Adopted stuff (uncludes UA's , easier for me to copy pasta stuff <3)
