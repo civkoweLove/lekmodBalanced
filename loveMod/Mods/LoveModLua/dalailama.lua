@@ -1,6 +1,8 @@
-local iDalailama = GameInfo.Units.UNIT_DALAILAMA.ID
-local iProphetID = GameInfo.Units.UNIT_PROPHET.ID
-local iCivType = GameInfo.Civilizations["CIVILIZATION_TIBET"].ID
+include( "Utility");
+
+local iDalailama = GameInfoTypes["UNIT_DALAILAMA"]
+local iProphetID = GameInfoTypes["UNIT_PROPHET"]
+local iCivType = GameInfoTypes["CIVILIZATION_TIBET"]
 
 function dalailamaExpended(iPlayer, iUnit, eUnit, iPlotX, iPlotY, bDelay, eByPlayer)
     -- triggers if Dalailama was killed by founding religion etc. not by combat
@@ -9,7 +11,6 @@ function dalailamaExpended(iPlayer, iUnit, eUnit, iPlotX, iPlotY, bDelay, eByPla
         pPlayer:ChangeGoldenAgeTurns(7);
     end
 end
-GameEvents.UnitPrekill.Add(dalailamaExpended)
 
 function dalailamaBorn(iPlayer, iUnit)
     local pPlayer = Players[iPlayer];
@@ -20,4 +21,9 @@ function dalailamaBorn(iPlayer, iUnit)
         end
     end
 end
-Events.SerialEventUnitCreated.Add(dalailamaBorn)
+
+
+if JFD_IsCivilisationActive(iCivType) then
+    Events.SerialEventUnitCreated.Add(dalailamaBorn)
+    GameEvents.UnitPrekill.Add(dalailamaExpended)
+end
