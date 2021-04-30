@@ -685,7 +685,7 @@ function UpdateCombatOddsUnitVsUnit(pMyUnit, pTheirUnit)
 				if (pTheirUnit:IsEmbarked()) then
 					iTheirStrength = pTheirUnit:GetEmbarkedUnitDefense();
 				else
-					iTheirStrength = pTheirUnit:GetMaxRangedCombatStrength(pMyUnit, nil, false, true);
+					iTheirStrength = pTheirUnit:GetMaxRangedCombatStrength(pMyUnit, nil, false, false);
 				end
 				
 				if (iTheirStrength == 0 or pTheirUnit:GetDomainType() == DomainTypes.DOMAIN_SEA or pTheirUnit:IsRangedSupportFire()) then
@@ -1306,7 +1306,7 @@ function UpdateCombatOddsUnitVsUnit(pMyUnit, pTheirUnit)
 				--Controls.TheirDamage:SetHide(false);
 			--end
 
-			if (pTheirUnit:IsCombatUnit()) then
+			if (pTheirUnit:IsCombatUnit() and not pTheirUnit:IsEmbarked()) then
 
 				-- Empire Unhappy
 				iModifier = pTheirUnit:GetUnhappinessCombatPenalty();
@@ -1406,7 +1406,7 @@ function UpdateCombatOddsUnitVsUnit(pMyUnit, pTheirUnit)
 				
 				-- Flanking bonus
 				if (not bRanged) then
-					iNumAdjacentFriends = pMyUnit:GetNumEnemyUnitsAdjacent(pTheirUnit);
+					local iNumAdjacentFriends = pMyUnit:GetNumEnemyUnitsAdjacent(pTheirUnit);
 					if (iNumAdjacentFriends > 0) then
 						iModifier = iNumAdjacentFriends * GameDefines["BONUS_PER_ADJACENT_FRIEND"];
 						controlTable = g_TheirCombatDataIM:GetInstance();
@@ -1789,7 +1789,7 @@ function UpdateCombatOddsCityVsUnit(myCity, theirUnit)
 	Controls.StalemateIndicator:SetHide(true);
 					
 	-- Show some bonuses
-	if (theirUnit:IsCombatUnit()) then
+	if (theirUnit:IsCombatUnit() and not theirUnit:IsEmbarked()) then
 
 		local myPlayerID = myCity:GetOwner();
 		local myPlayer = Players[myPlayerID];
