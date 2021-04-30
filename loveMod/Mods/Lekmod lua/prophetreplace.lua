@@ -49,7 +49,7 @@ function JFD_Tonga(playerMetID, playerID)
 		local rewardFaith = 14
 		if player:GetCivilizationType() == GameInfoTypes["CIVILIZATION_MC_NEW_ZEALAND"] then
 				local random = GetRandom(1, 4)
-				if random == 1 then
+					if random == 1 then
 						player:ChangeFaith(rewardFaith)
 				elseif random == 2 then
 

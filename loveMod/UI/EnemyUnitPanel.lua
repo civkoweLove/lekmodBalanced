@@ -365,7 +365,7 @@ function UpdateCombatOddsUnitVsCity(pMyUnit, pCity)
 			local bMyUnitLoss = false;
 			-- Will their City be captured in combat?
 			if (pCity:GetDamage() + iMyDamageInflicted >= maxCityHitPoints) then
-				bCityLoss = true;
+				bTheirCityLoss = true;
 			end
 			-- Will my Unit die in combat?
 			if (pMyUnit:GetDamage() + iTheirDamageInflicted >= maxUnitHitPoints) then
@@ -1798,7 +1798,10 @@ function UpdateCombatOddsCityVsUnit(myCity, theirUnit)
 		local theirPlayer = Players[theirPlayerID];
 		
 		local theirPlot = theirUnit:GetPlot();
-		
+
+		local iModifier;
+		local controlTable;
+
 		-- Empire Unhappy
 		iModifier = theirUnit:GetUnhappinessCombatPenalty();
 		if (iModifier ~= 0) then
@@ -1923,7 +1926,7 @@ function UpdateCombatOddsCityVsUnit(myCity, theirUnit)
 		end
 
 		-- RangedDefenseModifier
-		local iModifier = theirUnit:RangedDefenseModifier();
+		iModifier = theirUnit:RangedDefenseModifier();
 		if (iModifier ~= 0) then
 			controlTable = g_TheirCombatDataIM:GetInstance();
 			controlTable.Text:LocalizeAndSetText(  "TXT_KEY_EUPANEL_COVER_BONUS" );
@@ -1931,7 +1934,7 @@ function UpdateCombatOddsCityVsUnit(myCity, theirUnit)
 		end
 		
 		-- Defense Modifier
-		local iModifier = theirUnit:GetDefenseModifier();
+		iModifier = theirUnit:GetDefenseModifier();
 		if (iModifier ~= 0) then
 			controlTable = g_TheirCombatDataIM:GetInstance();
 			controlTable.Text:LocalizeAndSetText(  "TXT_KEY_EUPANEL_DEFENSE_BONUS" );
