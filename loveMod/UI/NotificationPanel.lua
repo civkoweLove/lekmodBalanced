@@ -973,13 +973,17 @@ local g_civListInstanceToolTips = { -- the tooltip function names need to match 
 					L("TXT_KEY_DIPLO_MY_SCORE_CITIES", player:GetScoreFromCities() ),
 					L("TXT_KEY_DIPLO_MY_SCORE_POPULATION", player:GetScoreFromPopulation() ),
 					L("TXT_KEY_DIPLO_MY_SCORE_LAND", player:GetScoreFromLand() ),
-					L("TXT_KEY_DIPLO_MY_SCORE_WONDERS", player:GetScoreFromWonders() ),
-					L("TXT_KEY_DIPLO_MY_SCORE_GOLD", player:GetScoreFromGold() ),
-					L("TXT_KEY_DIPLO_MY_SCORE_MANPOWER", player:GetScoreFromManpower() ) )
+					L("TXT_KEY_DIPLO_MY_SCORE_WONDERS", player:GetScoreFromWonders() ) )
 		if not Game.IsOption(GameOptionTypes.GAMEOPTION_NO_SCIENCE) then
 			tips:insert( L("TXT_KEY_DIPLO_MY_SCORE_TECH", player:GetScoreFromTechs() ) )
 			tips:insert( L("TXT_KEY_DIPLO_MY_SCORE_FUTURE_TECH", player:GetScoreFromFutureTech() ) )
 		end
+		
+		if Game.IsOption("GAMEOPTION_TWEAKED_SCORING") then
+			tips:insert( L("TXT_KEY_DIPLO_MY_SCORE_GOLD", player:GetScoreFromGold() ) )
+			tips:insert( L("TXT_KEY_DIPLO_MY_SCORE_MANPOWER", player:GetScoreFromManpower() ) )
+		end
+		
 		if bnw_mode then
 			if not Game.IsOption(GameOptionTypes.GAMEOPTION_NO_RELIGION) then
 				tips:insert( L("TXT_KEY_DIPLO_MY_SCORE_RELIGION", player:GetScoreFromReligion() ) )
