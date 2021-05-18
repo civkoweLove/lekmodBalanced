@@ -12,60 +12,77 @@ include( "Utility");
 -- Code by EnormousApplePie
 -- modyfied by Izydor
 
-local unitPromotionActiveID	= GameInfoTypes["PROMOTION_MAORI"]
-local unitPromotionActiveCivilID	= GameInfoTypes["PROMOTION_MAORI_CIVILIAN"]
+local unitPromotionActiveCivilID = GameInfoTypes["PROMOTION_MAORI_CIVILIAN"]
+local move_denominator = GameDefines["MOVE_DENOMINATOR"]
+local civID = GameInfoTypes["CIVILIZATION_MC_MAORI"]
+
+function Maori_Unit_Create_Early(iPlayer, iUnit)
+	local pPlayer = Players[iPlayer]
+	if not (pPlayer:GetCivilizationType() == civID) then return end
+	local unit = pPlayer:GetUnitByID(iUnit)
+	unit:SetHasPromotion(unitPromotionActiveCivilID, true)
+end
+
+function Maori_Unit_Create_Late(iPlayer, iUnit)
+	local pPlayer = Players[iPlayer]
+	if not (pPlayer:GetCivilizationType() == civID) then return end
+	local unit = pPlayer:GetUnitByID(iUnit)
+	unit:ChangeMoves(2*move_denominator)
+end
 
 function Maori_Turn(playerID)
 	local player = Players[playerID]
-	local Gameturn = Game.GetGameTurn()
-
-	if not (player:GetCivilizationType() == GameInfoTypes["CIVILIZATION_MC_MAORI"]) then return end
-	if Gameturn < 9 then return end
-
-	for unit in player:Units() do
-		unit:SetHasPromotion(unitPromotionActiveID, false)
-		unit:SetHasPromotion(unitPromotionActiveCivilID, false)
+	if (player:GetCivilizationType() == civID) then
+		local Gameturn = Game.GetGameTurn()
+		if Gameturn == 9 then 
+			for unit in player:Units() do
+				unit:SetHasPromotion(unitPromotionActiveCivilID, false)
+			end
+			Events.SerialEventUnitCreated.Remove(Maori_Unit_Create_Early);
+		end
 	end
 end
 
-if JFD_IsCivilisationActive(GameInfoTypes["CIVILIZATION_MC_MAORI"]) then
+if JFD_IsCivilisationActive(civID) then
 	GameEvents.PlayerDoTurn.Add(Maori_Turn)
+	Events.SerialEventUnitCreated.Add(Maori_Unit_Create_Early)
+	Events.SerialEventUnitCreated.Add(Maori_Unit_Create_Late);
 end
 
 -- New Zealand UA 
 -- Original code by JDF
 
  function GetRandom(lower, upper)
-        return Game.Rand((upper + 1) - lower, "") + lower
-    end
+	return Game.Rand((upper + 1) - lower, "") + lower
+end
      
+local civID = GameInfoTypes["CIVILIZATION_MC_NEW_ZEALAND"]
+
 function JFD_Tonga(playerMetID, playerID)
-		local player = Players[playerID]
+	local player = Players[playerID]
+	if player:GetCivilizationType() == civID then
 		local playerMet = Players[playerMetID]
 		local majorsMet = Teams[playerMet:GetTeam()]:GetHasMetCivCount(true)
 		local rewardCulture = 8
 		local rewardScience = 6
 		local rewardGold = 40
 		local rewardFaith = 14
-		if player:GetCivilizationType() == GameInfoTypes["CIVILIZATION_MC_NEW_ZEALAND"] then
-				local random = GetRandom(1, 4)
-					if random == 1 then
-						player:ChangeFaith(rewardFaith)
-				elseif random == 2 then
-
-						player:ChangeJONSCulture(rewardCulture)
-
-				elseif random == 3 then
-						Teams[player:GetTeam()]:GetTeamTechs():ChangeResearchProgress(player:GetCurrentResearch(), rewardScience, playerID)
-
-				else
-						player:ChangeGold(rewardGold)
-
-				end
+		local random = GetRandom(1, 4)
+		if random == 1 then
+			player:ChangeFaith(rewardFaith)
+		elseif random == 2 then
+			player:ChangeJONSCulture(rewardCulture)
+		elseif random == 3 then
+			Teams[player:GetTeam()]:GetTeamTechs():ChangeResearchProgress(player:GetCurrentResearch(), rewardScience, playerID)
+		else
+			player:ChangeGold(rewardGold)
 		end
+	end
 end
-GameEvents.TeamMeet.Add(JFD_Tonga)
 
+if JFD_IsCivilisationActive(civID) then
+	GameEvents.TeamMeet.Add(JFD_Tonga)
+end
 -- Tongo UB food
 -- Code by JFD
 -- Hoped to edit it somewhat and make it slightly more original, but I couldn't quite change it without bringing down the balance ~EAP
@@ -80,30 +97,27 @@ local direction_types = {
 		}
 
 function JFD_GetNumAdjacentSeaTiles(city)
-		local numAdjacentSeaTiles = 0
-		if Map.GetPlot(city:GetX(), city:GetY()) then
-				for loop, direction in ipairs(direction_types) do
-						local adjPlot = Map.PlotDirection(city:GetX(), city:GetY(), direction)
-						if adjPlot:GetTerrainType() == GameInfoTypes["TERRAIN_COAST"] then
-								numAdjacentSeaTiles = numAdjacentSeaTiles + 1
-						end
-				end
+	local numAdjacentSeaTiles = 0
+	if Map.GetPlot(city:GetX(), city:GetY()) then
+		for loop, direction in ipairs(direction_types) do
+			local adjPlot = Map.PlotDirection(city:GetX(), city:GetY(), direction)
+			if adjPlot:GetTerrainType() == GameInfoTypes["TERRAIN_COAST"] then
+					numAdjacentSeaTiles = numAdjacentSeaTiles + 1
+			end
 		end
+	end
 
-		return numAdjacentSeaTiles
+	return numAdjacentSeaTiles
 end
 
-function JFD_MalaeFood(playerID, unitID, unitX, unitY)
-		local player = Players[playerID]
-		if player:IsAlive() then
-				for city in player:Cities() do
-						if city:IsHasBuilding(GameInfoTypes["BUILDING_MC_TONGAN_MALAE"]) and JFD_GetNumAdjacentSeaTiles(city) >= 3 then
-								city:SetNumRealBuilding(GameInfoTypes["BUILDING_MC_MALAE_FOOD"], 1)
-						end
-				end
-		end
+function JFD_MalaeFood(playerID, iCity, eBuilding, bGold, bFaithOrCulture)
+	local player = Players[playerID]
+	local city = player:GetCityByID(iCity)
+	if (eBuilding == GameInfoTypes["BUILDING_MC_TONGAN_MALAE"]) and (JFD_GetNumAdjacentSeaTiles(city) >= 3) then
+		city:SetNumRealBuilding(GameInfoTypes["BUILDING_MC_MALAE_FOOD"], 1)
+	end
 end
-GameEvents.PlayerDoTurn.Add(JFD_MalaeFood)
+GameEvents.CityConstructed.Add(JFD_MalaeFood)
 
 -- New Zealand UU infantry Influence
 -- Code by MC and JFD
@@ -139,7 +153,10 @@ function MC_MaoriBattalion(playerID)
 		end
 	end
 end
-GameEvents.PlayerDoTurn.Add(MC_MaoriBattalion)
+
+if JFD_IsCivilisationActive(civID) then
+	GameEvents.PlayerDoTurn.Add(MC_MaoriBattalion)
+end
 
 -- New Zealand UU Ironclad promo near Cities
 -- Code by JDF
@@ -554,26 +571,6 @@ function DummyPolicy(player)
 	end 
 end
 Events.SequenceGameInitComplete.Add(DummyPolicy)
-
--- Maori dummy policy
-
-print("dummy policy loaded - Maori")
-function DummyPolicy(player)
-	print("working - Maori")
-	for playerID, player in pairs(Players) do
-		local player = Players[playerID];
-		if player:GetCivilizationType() == GameInfoTypes["CIVILIZATION_MC_MAORI"] then
-			if not player:HasPolicy(GameInfoTypes["POLICY_DUMMY_MAORI"]) then
-				
-				player:SetNumFreePolicies(1)
-				player:SetNumFreePolicies(0)
-				player:SetHasPolicy(GameInfoTypes["POLICY_DUMMY_MAORI"], true)	
-			end
-		end
-	end 
-end
-Events.SequenceGameInitComplete.Add(DummyPolicy)
-
 
 -- New zealand dummy policy
 
