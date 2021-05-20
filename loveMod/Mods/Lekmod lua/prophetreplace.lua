@@ -49,42 +49,9 @@ if JFD_IsCivilisationActive(civID) then
 	Events.SerialEventUnitCreated.Add(Maori_Unit_Create_Late);
 end
 
--- New Zealand UA 
--- Original code by JDF
-
- function GetRandom(lower, upper)
-	return Game.Rand((upper + 1) - lower, "") + lower
-end
-     
-local civID = GameInfoTypes["CIVILIZATION_MC_NEW_ZEALAND"]
-
-function JFD_Tonga(playerMetID, playerID)
-	local player = Players[playerID]
-	if player:GetCivilizationType() == civID then
-		local playerMet = Players[playerMetID]
-		local majorsMet = Teams[playerMet:GetTeam()]:GetHasMetCivCount(true)
-		local rewardCulture = 8
-		local rewardScience = 6
-		local rewardGold = 40
-		local rewardFaith = 14
-		local random = GetRandom(1, 4)
-		if random == 1 then
-			player:ChangeFaith(rewardFaith)
-		elseif random == 2 then
-			player:ChangeJONSCulture(rewardCulture)
-		elseif random == 3 then
-			Teams[player:GetTeam()]:GetTeamTechs():ChangeResearchProgress(player:GetCurrentResearch(), rewardScience, playerID)
-		else
-			player:ChangeGold(rewardGold)
-		end
-	end
-end
-
-if JFD_IsCivilisationActive(civID) then
-	GameEvents.TeamMeet.Add(JFD_Tonga)
-end
 -- Tongo UB food
 -- Code by JFD
+-- modyfied by Izydor
 -- Hoped to edit it somewhat and make it slightly more original, but I couldn't quite change it without bringing down the balance ~EAP
 
 local direction_types = {
@@ -118,6 +85,41 @@ function JFD_MalaeFood(playerID, iCity, eBuilding, bGold, bFaithOrCulture)
 	end
 end
 GameEvents.CityConstructed.Add(JFD_MalaeFood)
+
+-- New Zealand UA 
+-- Original code by JDF
+
+ function GetRandom(lower, upper)
+	return Game.Rand((upper + 1) - lower, "") + lower
+end
+     
+local civID = GameInfoTypes["CIVILIZATION_MC_NEW_ZEALAND"]
+
+function NZ_Team_Met(playerMetID, playerID)
+	local player = Players[playerID]
+	if player:GetCivilizationType() == civID then
+		local playerMet = Players[playerMetID]
+		local majorsMet = Teams[playerMet:GetTeam()]:GetHasMetCivCount(true)
+		local rewardCulture = 8
+		local rewardScience = 6
+		local rewardGold = 40
+		local rewardFaith = 14
+		local random = GetRandom(1, 4)
+		if random == 1 then
+			player:ChangeFaith(rewardFaith)
+		elseif random == 2 then
+			player:ChangeJONSCulture(rewardCulture)
+		elseif random == 3 then
+			Teams[player:GetTeam()]:GetTeamTechs():ChangeResearchProgress(player:GetCurrentResearch(), rewardScience, playerID)
+		else
+			player:ChangeGold(rewardGold)
+		end
+	end
+end
+
+if JFD_IsCivilisationActive(civID) then
+	GameEvents.TeamMeet.Add(NZ_Team_Met)
+end
 
 -- New Zealand UU infantry Influence
 -- Code by MC and JFD
@@ -204,15 +206,13 @@ function JFD_NewZealand_Defender_PlayerDoTurn(playerID)
 end
 GameEvents.PlayerDoTurn.Add(JFD_NewZealand_Defender_PlayerDoTurn)
 
--- Kilwa UA 
--- Ah, Optimization! Thanks JFD!
+-- Aksum UA
 local civilissationID = GameInfoTypes["CIVILIZATION_AKSUM"]
 
 if JFD_IsCivilisationActive(civilissationID) then
 	print("Aksum is in this game")
 end
 
--- Kilwa UA function 
 function GetTradeRoutesNumberAksum(player, city)
 	print("working: aksum 1")
 	local tradeRoutes = player:GetTradeRoutes()
