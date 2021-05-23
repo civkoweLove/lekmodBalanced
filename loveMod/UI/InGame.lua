@@ -1267,6 +1267,8 @@ for addin in Modding.GetActivatedModEntryPoints("InGameUIAddin") do
 	
 	table.insert(g_uiAddins, ContextPtr:LoadNewContext(path));
 end
+
+
 ContextPtr:LoadNewContext("Aesthetics0_OpenerAndFinisher")
 ContextPtr:LoadNewContext("Commerce4_Entrepreneurship")
 ContextPtr:LoadNewContext("Exploration1_Colonialism")
@@ -1283,7 +1285,6 @@ ContextPtr:LoadNewContext("france")
 ContextPtr:LoadNewContext("mountain")
 ContextPtr:LoadNewContext("Liberty3_CollectiveRule")
 ContextPtr:LoadNewContext("Liberty2_Citizenship")
-ContextPtr:LoadNewContext("pracinha")
 ContextPtr:LoadNewContext("Austria_Dummy_Policy")
 ContextPtr:LoadNewContext("StartReveal")
 ContextPtr:LoadNewContext("PlantForest")
@@ -1296,3 +1297,7 @@ ContextPtr:LoadNewContext("Maori_UA")
 ContextPtr:LoadNewContext("Italy_UA")
 ContextPtr:LoadNewContext("Tibet_UA")
 ContextPtr:LoadNewContext("New_Zeland_UA")
+ContextPtr:LoadNewContext("Piety_Honor_Finisher")
+ContextPtr:LoadNewContext("Aksum_UA")
+ContextPtr:LoadNewContext("Ukraine_UA")
+

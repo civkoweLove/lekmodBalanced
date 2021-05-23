@@ -470,14 +470,16 @@ function UpdateCombatOddsUnitVsCity(pMyUnit, pCity)
 				controlTable.Value:SetText( GetFormattedText(strText, iModifier, true, true) );
 			end
 						
-			-- Civ Trait Bonus
+			-- Golden Age
 			iModifier = pMyPlayer:GetTraitGoldenAgeCombatModifier();
+            iModifier = iModifier + pMyUnit:GetGoldenAgeCombatModifier();
 			if (iModifier ~= 0 and pMyPlayer:IsGoldenAge()) then
 				controlTable = g_MyCombatDataIM:GetInstance();
 				controlTable.Text:LocalizeAndSetText(  "TXT_KEY_EUPANEL_BONUS_GOLDEN_AGE" );
 				controlTable.Value:SetText( GetFormattedText(strText, iModifier, true, true) );
 			end
 
+			-- Civ Trait Bonus
 			iModifier = pMyPlayer:GetTraitCityStateCombatModifier();
 			if (iModifier ~= 0 and pTheirPlayer:IsMinorCiv()) then
 				controlTable = g_MyCombatDataIM:GetInstance();
@@ -527,6 +529,8 @@ function UpdateCombatOddsUnitVsCity(pMyUnit, pCity)
 			if (pMyUnit:IsNearGreatGeneral()) then
 				iModifier = pMyPlayer:GetGreatGeneralCombatBonus();
 				iModifier = iModifier + pMyPlayer:GetTraitGreatGeneralExtraBonus();
+				iModifier = iModifier + pMyPlayer:GetTraitGreatGeneralCityModifier();
+				iModifier = iModifier + pMyUnit:GetNearGeneralCombatModifier();
 				controlTable = g_MyCombatDataIM:GetInstance();
 				if (pMyUnit:GetDomainType() == DomainTypes.DOMAIN_LAND) then
 					controlTable.Text:LocalizeAndSetText( "TXT_KEY_EUPANEL_GG_NEAR" );
@@ -556,6 +560,14 @@ function UpdateCombatOddsUnitVsCity(pMyUnit, pCity)
 				iModifier = pMyUnit:GetReverseGreatGeneralModifier();
 				controlTable = g_MyCombatDataIM:GetInstance();
 				controlTable.Text:LocalizeAndSetText( "TXT_KEY_EUPANEL_REVERSE_GG_NEAR" );
+				controlTable.Value:SetText( GetFormattedText(strText, iModifier, true, true) );
+			end
+
+			-- Bonus for fighting outside one's lands
+			iModifier = pMyUnit:GetOutsideFriendlyLandsModifier();
+			if (iModifier ~= 0) then
+				controlTable = g_MyCombatDataIM:GetInstance();
+				controlTable.Text:LocalizeAndSetText( "TXT_KEY_EUPANEL_OUTSIDE_HOME_BONUS" );
 				controlTable.Value:SetText( GetFormattedText(strText, iModifier, true, true) );
 			end
 			
@@ -874,6 +886,7 @@ function UpdateCombatOddsUnitVsUnit(pMyUnit, pTheirUnit)
 			if (pMyUnit:IsNearGreatGeneral()) then
 				iModifier = pMyPlayer:GetGreatGeneralCombatBonus();
 				iModifier = iModifier + pMyPlayer:GetTraitGreatGeneralExtraBonus();
+				iModifier = iModifier + pMyUnit:GetNearGeneralCombatModifier();
 				controlTable = g_MyCombatDataIM:GetInstance();
 				if (pMyUnit:GetDomainType() == DomainTypes.DOMAIN_LAND) then
 					controlTable.Text:LocalizeAndSetText( "TXT_KEY_EUPANEL_GG_NEAR" );
@@ -1024,7 +1037,7 @@ function UpdateCombatOddsUnitVsUnit(pMyUnit, pTheirUnit)
 					controlTable.Text:LocalizeAndSetText( "TXT_KEY_EUPANEL_OUTSIDE_HOME_BONUS" );
 					controlTable.Value:SetText( GetFormattedText(strText, iModifier, true, true) );
 				end
-				
+
 				iModifier = pMyPlayer:GetFoundedReligionEnemyCityCombatMod(pToPlot);
 				if (iModifier ~= 0) then
 					controlTable = g_MyCombatDataIM:GetInstance();
@@ -1264,14 +1277,16 @@ function UpdateCombatOddsUnitVsUnit(pMyUnit, pTheirUnit)
 				end
 			end
 
-			-- Civ Trait Bonus
+			-- Golden Age Bonus
 			iModifier = pMyPlayer:GetTraitGoldenAgeCombatModifier();
+			iModifier = iModifier + pMyUnit:GetGoldenAgeCombatModifier();
 			if (iModifier ~= 0 and pMyPlayer:IsGoldenAge()) then
 				controlTable = g_MyCombatDataIM:GetInstance();
 				controlTable.Text:LocalizeAndSetText(  "TXT_KEY_EUPANEL_BONUS_GOLDEN_AGE" );
 				controlTable.Value:SetText( GetFormattedText(strText, iModifier, true, true) );
 			end
-
+			
+			-- Civ Trait Bonus
 			iModifier = pMyPlayer:GetTraitCityStateCombatModifier();
 			if (iModifier ~= 0 and pTheirPlayer:IsMinorCiv()) then
 				controlTable = g_MyCombatDataIM:GetInstance();
@@ -1363,7 +1378,8 @@ function UpdateCombatOddsUnitVsUnit(pMyUnit, pTheirUnit)
 				-- Great General bonus
 				if (pTheirUnit:IsNearGreatGeneral()) then
 					iModifier = pTheirPlayer:GetGreatGeneralCombatBonus();
-					iModifier = iModifier + pTheirPlayer:GetTraitGreatGeneralExtraBonus();
+					iModifier = iModifier + pTheirPlayer:GetTraitGreatGeneralExtraBonus();					
+					iModifier = iModifier + pTheirUnit:GetNearGeneralCombatModifier();
 					controlTable = g_TheirCombatDataIM:GetInstance();
 					if (pTheirUnit:GetDomainType() == DomainTypes.DOMAIN_LAND) then
 						controlTable.Text:LocalizeAndSetText( "TXT_KEY_EUPANEL_GG_NEAR" );
@@ -1672,8 +1688,9 @@ function UpdateCombatOddsUnitVsUnit(pMyUnit, pTheirUnit)
 					--end
 				--end
 				
-				-- Civ Trait Bonus
+				-- Golden Age
 				iModifier = pTheirPlayer:GetTraitGoldenAgeCombatModifier();
+				iModifier = iModifier + pTheirUnit:GetGoldenAgeCombatModifier();
 				if (iModifier ~= 0 and pTheirPlayer:IsGoldenAge()) then
 					controlTable = g_TheirCombatDataIM:GetInstance();
 					controlTable.Text:LocalizeAndSetText(  "TXT_KEY_EUPANEL_BONUS_GOLDEN_AGE" );
@@ -1856,6 +1873,8 @@ function UpdateCombatOddsCityVsUnit(myCity, theirUnit)
 		if (theirUnit:IsNearGreatGeneral()) then
 			iModifier = theirPlayer:GetGreatGeneralCombatBonus();
 			iModifier = iModifier + theirPlayer:GetTraitGreatGeneralExtraBonus();
+			iModifier = iModifier + theirUnit:GetNearGeneralCombatModifier();
+			iModifier = iModifier + theirPlayer:GetTraitGreatGeneralCityModifier();
 			controlTable = g_TheirCombatDataIM:GetInstance();
 			if (theirUnit:GetDomainType() == DomainTypes.DOMAIN_LAND) then
 				controlTable.Text:LocalizeAndSetText( "TXT_KEY_EUPANEL_GG_NEAR" );
@@ -2065,6 +2084,7 @@ function UpdateCombatOddsCityVsUnit(myCity, theirUnit)
 		
 		-- Civ Trait Bonus
 		iModifier = theirPlayer:GetTraitGoldenAgeCombatModifier();
+		iModifier = iModifier + theirUnit:GetGoldenAgeCombatModifier();
 		if (iModifier ~= 0 and theirPlayer:IsGoldenAge()) then
 			controlTable = g_TheirCombatDataIM:GetInstance();
 			controlTable.Text:LocalizeAndSetText(  "TXT_KEY_EUPANEL_BONUS_GOLDEN_AGE" );
