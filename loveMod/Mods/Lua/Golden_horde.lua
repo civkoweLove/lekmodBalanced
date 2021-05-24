@@ -1,6 +1,6 @@
--- Horde free building 
 include( "Utility");
 
+-- Horde free building 
 iCivType = GameInfoTypes["CIVILIZATION_HORDE"]
 
 function GoldenHorde_Tech(iTeam, iTech, bAdopted)

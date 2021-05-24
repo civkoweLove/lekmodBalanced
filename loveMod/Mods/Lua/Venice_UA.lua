@@ -1,7 +1,7 @@
 include( "Utility");
 
 -- Venez trait tech research
-iCivType == GameInfoTypes["CIVILIZATION_VENEZ"]
+iCivType = GameInfoTypes["CIVILIZATION_VENEZ"]
 
 function Venez_Tech(iTeam, iTech, bAdopted)
 	print("working: venez UA")
