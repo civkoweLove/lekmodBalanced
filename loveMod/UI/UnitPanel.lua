@@ -1295,6 +1295,9 @@ local function UpdateUnitStats(unit)
 	elseif bnw_mode and unit:GetTourismBlastStrength() > 0 then
 		Controls.UnitStatStrength:SetText( unit:GetTourismBlastStrength() .. "[ICON_TOURISM]" )
 		Controls.UnitStatStrength:LocalizeAndSetToolTip( "TXT_KEY_UPANEL_TOURISM_STRENGTH_TT" )
+	elseif bnw_mode and unit:GetBoostFoodAmount() > 0 then
+		Controls.UnitStatStrength:SetText( unit:GetBoostFoodAmount() .. "[ICON_FOOD]" )
+		Controls.UnitStatStrength:LocalizeAndSetToolTip( "TXT_KEY_UPANEL_FOOD_STRENGTH_TT" )	
 	else
 		Controls.UnitStatStrength:SetText()
 	end
@@ -1617,7 +1620,7 @@ function ActionToolTipHandler( control )
 
 		if gameCanHandleAction then
 			toolTip:insert( "----------------" )
-			toolTip:insert( "+" .. unit:GetBoostFoodAmount(plot) .. "[ICON_FOOD]" )
+			toolTip:insert( "+" .. unit:GetBoostFoodAmount() .. "[ICON_FOOD]" )
 		end
 
 	-- Great Merchant

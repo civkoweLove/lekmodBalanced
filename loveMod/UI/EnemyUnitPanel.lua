@@ -1121,7 +1121,15 @@ function UpdateCombatOddsUnitVsUnit(pMyUnit, pTheirUnit)
 					controlTable.Value:SetText( GetFormattedText(strText, iModifier, true, true) );
 				end
 			end
-
+			
+			-- TourismCombatModifier
+			iModifier = pMyUnit:GetTourismCombatModifier(pTheirUnit);
+			if (iModifier ~= 0) then
+				controlTable = g_MyCombatDataIM:GetInstance();
+				controlTable.Text:LocalizeAndSetText( "TXT_KEY_EUPANEL_TOURISM_COMBAT_BONUS" );
+				controlTable.Value:SetText( GetFormattedText(strText, iModifier, true, true) );
+			end
+			
 			-- DomainModifier
 			iModifier = pMyUnit:DomainModifier(pTheirUnit:GetDomainType());
 			if (iModifier ~= 0) then
@@ -1529,6 +1537,14 @@ function UpdateCombatOddsUnitVsUnit(pMyUnit, pTheirUnit)
 						controlTable.Text:LocalizeAndSetText(  "TXT_KEY_EUPANEL_BONUS_VS_CLASS", unitClassType );
 						controlTable.Value:SetText( GetFormattedText(strText, iModifier, false, true) );
 					end
+				end
+				
+				-- TourismCombatModifier
+				iModifier = pTheirUnit:GetTourismCombatModifier(pMyUnit);
+				if (iModifier ~= 0) then
+					controlTable = g_TheirCombatDataIM:GetInstance();
+					controlTable.Text:LocalizeAndSetText( "TXT_KEY_EUPANEL_TOURISM_COMBAT_BONUS" );
+					controlTable.Value:SetText( GetFormattedText(strText, iModifier, false, true) );
 				end
 
 				---- unitCombatModifier
