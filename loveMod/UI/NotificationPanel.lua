@@ -979,10 +979,10 @@ local g_civListInstanceToolTips = { -- the tooltip function names need to match 
 			tips:insert( L("TXT_KEY_DIPLO_MY_SCORE_FUTURE_TECH", player:GetScoreFromFutureTech() ) )
 		end
 		
-		if Game.IsOption("GAMEOPTION_TWEAKED_SCORING") then
-			tips:insert( L("TXT_KEY_DIPLO_MY_SCORE_GOLD", player:GetScoreFromGold() ) )
-			tips:insert( L("TXT_KEY_DIPLO_MY_SCORE_MANPOWER", player:GetScoreFromManpower() ) )
-		end
+		--if Game.IsOption("GAMEOPTION_TWEAKED_SCORING") then
+		--	tips:insert( L("TXT_KEY_DIPLO_MY_SCORE_GOLD", player:GetScoreFromGold() ) )
+		--	tips:insert( L("TXT_KEY_DIPLO_MY_SCORE_MANPOWER", player:GetScoreFromManpower() ) )
+		--end
 		
 		if bnw_mode then
 			if not Game.IsOption(GameOptionTypes.GAMEOPTION_NO_RELIGION) then
