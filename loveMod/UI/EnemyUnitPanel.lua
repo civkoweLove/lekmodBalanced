@@ -479,6 +479,16 @@ function UpdateCombatOddsUnitVsCity(pMyUnit, pCity)
 				controlTable.Value:SetText( GetFormattedText(strText, iModifier, true, true) );
 			end
 
+			iModifier = (pMyPlayer:GetPerExcessHappinessCombatBonus())*pMyPlayer:GetExcessHappiness()/100;
+			if(iModifier > 15) then
+				iModifier = 15;
+			end	
+			if (iModifier ~= 0) then
+				controlTable = g_MyCombatDataIM:GetInstance();
+				controlTable.Text:LocalizeAndSetText(  "TXT_KEY_EUPANEL_BONUS_EXCESS_HAPPINESS" );
+				controlTable.Value:SetText( GetFormattedText(strText, iModifier, true, true) );
+			end
+			
 			-- Civ Trait Bonus
 			iModifier = pMyPlayer:GetTraitCityStateCombatModifier();
 			if (iModifier ~= 0 and pTheirPlayer:IsMinorCiv()) then
@@ -1301,6 +1311,16 @@ function UpdateCombatOddsUnitVsUnit(pMyUnit, pTheirUnit)
 				controlTable.Value:SetText( GetFormattedText(strText, iModifier, true, true) );
 			end
 			
+			iModifier = (pMyPlayer:GetPerExcessHappinessCombatBonus()) * pMyPlayer:GetExcessHappiness()/100;
+			if(iModifier > 15) then
+				iModifier = 15;
+			end	
+			if (iModifier ~= 0) then
+				controlTable = g_MyCombatDataIM:GetInstance();
+				controlTable.Text:LocalizeAndSetText(  "TXT_KEY_EUPANEL_BONUS_EXCESS_HAPPINESS" );
+				controlTable.Value:SetText( GetFormattedText(strText, iModifier, true, true) );
+			end
+			
 			-- Civ Trait Bonus
 			iModifier = pMyPlayer:GetTraitCityStateCombatModifier();
 			if (iModifier ~= 0 and pTheirPlayer:IsMinorCiv()) then
@@ -1719,6 +1739,16 @@ function UpdateCombatOddsUnitVsUnit(pMyUnit, pTheirUnit)
 					controlTable.Text:LocalizeAndSetText(  "TXT_KEY_EUPANEL_BONUS_GOLDEN_AGE" );
 					controlTable.Value:SetText( GetFormattedText(strText, iModifier, false, true) );
 				end
+				
+				iModifier = (pTheirPlayer:GetPerExcessHappinessCombatBonus())*pTheirPlayer:GetExcessHappiness()/100;
+				if(iModifier > 15) then
+					iModifier = 15;
+				end	
+				if (iModifier ~= 0) then
+					controlTable = g_TheirCombatDataIM:GetInstance();
+					controlTable.Text:LocalizeAndSetText(  "TXT_KEY_EUPANEL_BONUS_EXCESS_HAPPINESS" );
+					controlTable.Value:SetText( GetFormattedText(strText, iModifier, true, true) );
+				end
 			end
 			
 			--------------------------
@@ -2112,6 +2142,16 @@ function UpdateCombatOddsCityVsUnit(myCity, theirUnit)
 			controlTable = g_TheirCombatDataIM:GetInstance();
 			controlTable.Text:LocalizeAndSetText(  "TXT_KEY_EUPANEL_BONUS_GOLDEN_AGE" );
 			controlTable.Value:SetText( GetFormattedText(strText, iModifier, false, true) );
+		end
+		
+		iModifier = (theirPlayer:GetPerExcessHappinessCombatBonus())*theirPlayer:GetExcessHappiness()/100;
+		if(iModifier > 15) then
+			iModifier = 15;
+		end	
+		if (iModifier ~= 0) then
+			controlTable = g_TheirCombatDataIM:GetInstance();
+			controlTable.Text:LocalizeAndSetText(  "TXT_KEY_EUPANEL_BONUS_EXCESS_HAPPINESS" );
+			controlTable.Value:SetText( GetFormattedText(strText, iModifier, true, true) );
 		end
 	end
 	
