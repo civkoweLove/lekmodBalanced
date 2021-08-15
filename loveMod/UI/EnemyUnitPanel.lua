@@ -482,6 +482,8 @@ function UpdateCombatOddsUnitVsCity(pMyUnit, pCity)
 			iModifier = (pMyPlayer:GetPerExcessHappinessCombatBonus())*pMyPlayer:GetExcessHappiness()/100;
 			if(iModifier > 15) then
 				iModifier = 15;
+			elseif(iModifier < 0) then
+				iModifier = 0;
 			end	
 			if (iModifier ~= 0) then
 				controlTable = g_MyCombatDataIM:GetInstance();
@@ -586,6 +588,14 @@ function UpdateCombatOddsUnitVsCity(pMyUnit, pCity)
 				iModifier = pMyUnit:GetNearbyImprovementModifier();
 				controlTable = g_MyCombatDataIM:GetInstance();
 				controlTable.Text:LocalizeAndSetText( "TXT_KEY_EUPANEL_IMPROVEMENT_NEAR" );
+				controlTable.Value:SetText( GetFormattedText(strText, iModifier, true, true) );
+			end
+			
+			-- Nearby enemy domain modifier
+			iModifier = pMyUnit:ScanNearbyEnemyDomainModifier()
+			if (iModifier ~= 0) then
+				controlTable = g_MyCombatDataIM:GetInstance();
+				controlTable.Text:LocalizeAndSetText( "TXT_KEY_EUPANEL_NEARBY_ENEMY_DOMAIN_MODIFIER" );
 				controlTable.Value:SetText( GetFormattedText(strText, iModifier, true, true) );
 			end
 
@@ -1063,6 +1073,14 @@ function UpdateCombatOddsUnitVsUnit(pMyUnit, pTheirUnit)
 				end
 			end
 
+			-- Nearby enemy domain modifier
+			iModifier = pMyUnit:ScanNearbyEnemyDomainModifier()
+			if (iModifier ~= 0) then
+				controlTable = g_MyCombatDataIM:GetInstance();
+				controlTable.Text:LocalizeAndSetText( "TXT_KEY_EUPANEL_NEARBY_ENEMY_DOMAIN_MODIFIER" );
+				controlTable.Value:SetText( GetFormattedText(strText, iModifier, true, true) );
+			end
+			
 			-- Empire Unhappy
 			iModifier = pMyUnit:GetUnhappinessCombatPenalty();
 			if (iModifier ~= 0) then
@@ -1314,6 +1332,8 @@ function UpdateCombatOddsUnitVsUnit(pMyUnit, pTheirUnit)
 			iModifier = (pMyPlayer:GetPerExcessHappinessCombatBonus()) * pMyPlayer:GetExcessHappiness()/100;
 			if(iModifier > 15) then
 				iModifier = 15;
+			elseif(iModifier < 0) then
+				iModifier = 0;
 			end	
 			if (iModifier ~= 0) then
 				controlTable = g_MyCombatDataIM:GetInstance();
@@ -1357,6 +1377,13 @@ function UpdateCombatOddsUnitVsUnit(pMyUnit, pTheirUnit)
 			--end
 
 			if (pTheirUnit:IsCombatUnit() and not pTheirUnit:IsEmbarked()) then
+				-- Nearby enemy domain modifier
+				iModifier = pTheirUnit:ScanNearbyEnemyDomainModifier()
+				if (iModifier ~= 0) then
+					controlTable = g_TheirCombatDataIM:GetInstance();
+					controlTable.Text:LocalizeAndSetText( "TXT_KEY_EUPANEL_NEARBY_ENEMY_DOMAIN_MODIFIER" );
+					controlTable.Value:SetText( GetFormattedText(strText, iModifier, false, true) );
+				end
 
 				-- Empire Unhappy
 				iModifier = pTheirUnit:GetUnhappinessCombatPenalty();
@@ -1743,11 +1770,13 @@ function UpdateCombatOddsUnitVsUnit(pMyUnit, pTheirUnit)
 				iModifier = (pTheirPlayer:GetPerExcessHappinessCombatBonus())*pTheirPlayer:GetExcessHappiness()/100;
 				if(iModifier > 15) then
 					iModifier = 15;
+				elseif(iModifier < 0) then
+					iModifier = 0;
 				end	
 				if (iModifier ~= 0) then
 					controlTable = g_TheirCombatDataIM:GetInstance();
 					controlTable.Text:LocalizeAndSetText(  "TXT_KEY_EUPANEL_BONUS_EXCESS_HAPPINESS" );
-					controlTable.Value:SetText( GetFormattedText(strText, iModifier, true, true) );
+					controlTable.Value:SetText( GetFormattedText(strText, iModifier, false, true) );
 				end
 			end
 			
@@ -1872,6 +1901,14 @@ function UpdateCombatOddsCityVsUnit(myCity, theirUnit)
 		local iModifier;
 		local controlTable;
 
+		-- Nearby enemy domain modifier
+		iModifier = theirUnit:ScanNearbyEnemyDomainModifier()
+		if (iModifier ~= 0) then
+			controlTable = g_TheirCombatDataIM:GetInstance();
+			controlTable.Text:LocalizeAndSetText( "TXT_KEY_EUPANEL_NEARBY_ENEMY_DOMAIN_MODIFIER" );
+			controlTable.Value:SetText( GetFormattedText(strText, iModifier, false, true) );
+		end
+				
 		-- Empire Unhappy
 		iModifier = theirUnit:GetUnhappinessCombatPenalty();
 		if (iModifier ~= 0) then
@@ -2147,11 +2184,13 @@ function UpdateCombatOddsCityVsUnit(myCity, theirUnit)
 		iModifier = (theirPlayer:GetPerExcessHappinessCombatBonus())*theirPlayer:GetExcessHappiness()/100;
 		if(iModifier > 15) then
 			iModifier = 15;
+		elseif(iModifier < 0) then
+			iModifier = 0;
 		end	
 		if (iModifier ~= 0) then
 			controlTable = g_TheirCombatDataIM:GetInstance();
 			controlTable.Text:LocalizeAndSetText(  "TXT_KEY_EUPANEL_BONUS_EXCESS_HAPPINESS" );
-			controlTable.Value:SetText( GetFormattedText(strText, iModifier, true, true) );
+			controlTable.Value:SetText( GetFormattedText(strText, iModifier, false, true) );
 		end
 	end
 	
