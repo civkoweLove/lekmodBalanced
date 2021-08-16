@@ -35,7 +35,6 @@ function Moors_TechLeave(iTeam, iTech, bAdopted)
 				GameEvents.PlayerCityFounded.Remove(Moors_CityFounded)
 				GameEvents.CityCaptureComplete.Remove(Moors_CityCaptured)
 				GameEvents.TeamSetHasTech.Remove(Moors_TechLeave)
-				Events.GameplayAlertMessage("everything removed")
 			end
 		end
 	end
@@ -55,7 +54,6 @@ function Moors_TechEnter(iTeam, iTech, bAdopted)
 				GameEvents.TeamSetHasTech.Add(Moors_TechLeave)
 				
 				GameEvents.TeamSetHasTech.Remove(Moors_TechEnter)
-				Events.GameplayAlertMessage("added and removed")
 			end
 		end
 	end
