@@ -1765,6 +1765,8 @@ local function UpdateCityViewNow()
 							end
 						elseif specialist.GreatPeopleUnitClass == "UNITCLASS_FARMER" then
 							gpChangePlayerMod = gpChangePlayerMod + cityOwner:GetGreatFarmerRateModifier()
+							gpChangePolicyMod = gpChangePolicyMod + cityOwner:GetPolicyGreatFarmerRateModifier()
+							gpChangeWorldCongressMod = 0
 						elseif specialist.GreatPeopleUnitClass == "UNITCLASS_ENGINEER" then
 							gpChangePlayerMod = gpChangePlayerMod + cityOwner:GetGreatEngineerRateModifier()
 							gpChangePolicyMod = gpChangePolicyMod + cityOwner:GetPolicyGreatEngineerRateModifier()
