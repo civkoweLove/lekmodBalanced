@@ -1763,6 +1763,8 @@ local function UpdateCityViewNow()
 							if worldCongress then
 								gpChangeWorldCongressMod = gpChangeWorldCongressMod + worldCongress:GetScienceyGreatPersonRateModifier()
 							end
+						elseif specialist.GreatPeopleUnitClass == "UNITCLASS_FARMER" then
+							gpChangePlayerMod = gpChangePlayerMod + cityOwner:GetGreatFarmerRateModifier()
 						elseif specialist.GreatPeopleUnitClass == "UNITCLASS_ENGINEER" then
 							gpChangePlayerMod = gpChangePlayerMod + cityOwner:GetGreatEngineerRateModifier()
 							gpChangePolicyMod = gpChangePolicyMod + cityOwner:GetPolicyGreatEngineerRateModifier()
