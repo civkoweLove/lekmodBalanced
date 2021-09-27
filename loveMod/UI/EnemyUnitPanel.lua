@@ -1329,6 +1329,14 @@ function UpdateCombatOddsUnitVsUnit(pMyUnit, pTheirUnit)
 				controlTable.Value:SetText( GetFormattedText(strText, iModifier, true, true) );
 			end
 			
+			-- Enemy Religion Bonus
+			iModifier = pMyUnit:GetEnemyReligionCombatModifier(pTheirUnit)
+			if (iModifier ~= 0) then
+				controlTable = g_MyCombatDataIM:GetInstance();
+				controlTable.Text:LocalizeAndSetText(  "TXT_KEY_EUPANEL_BONUS_ENEMY_RELIGION" );
+				controlTable.Value:SetText( GetFormattedText(strText, iModifier, true, true) );
+			end
+			
 			iModifier = (pMyPlayer:GetPerExcessHappinessCombatBonus()) * pMyPlayer:GetExcessHappiness()/100;
 			if(iModifier > 15) then
 				iModifier = 15;
@@ -1764,6 +1772,14 @@ function UpdateCombatOddsUnitVsUnit(pMyUnit, pTheirUnit)
 				if (iModifier ~= 0 and pTheirPlayer:IsGoldenAge()) then
 					controlTable = g_TheirCombatDataIM:GetInstance();
 					controlTable.Text:LocalizeAndSetText(  "TXT_KEY_EUPANEL_BONUS_GOLDEN_AGE" );
+					controlTable.Value:SetText( GetFormattedText(strText, iModifier, false, true) );
+				end
+			
+				-- Enemy Religion Bonus
+				iModifier = pTheirUnit:GetEnemyReligionCombatModifier(pMyUnit)
+				if (iModifier ~= 0) then
+					controlTable = g_TheirCombatDataIM:GetInstance();
+					controlTable.Text:LocalizeAndSetText(  "TXT_KEY_EUPANEL_BONUS_ENEMY_RELIGION" );
 					controlTable.Value:SetText( GetFormattedText(strText, iModifier, false, true) );
 				end
 				

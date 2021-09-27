@@ -10,19 +10,34 @@ local iCivType = GameInfoTypes["CIVILIZATION_LITHUANIA"]
 
 function KriviOverride(iPlayer, iUnit)
     local pPlayer = Players[iPlayer];
-    if (pPlayer:IsEverAlive()) then
-        if (pPlayer:GetCivilizationType() == iCivType) then
-       	    if pPlayer:GetUnitByID(iUnit) ~= nil then
-				pUnit = pPlayer:GetUnitByID(iUnit);
-                if (pUnit:GetUnitType() == iProphetID) then
-                    local newUnit = pPlayer:InitUnit(iProphetOverride, pUnit:GetX(), pUnit:GetY())
-                    newUnit:Convert(pUnit);
-                end
-            end
-        end
-    end
+	if (pPlayer:GetCivilizationType() == iCivType) then
+		local pUnit = pPlayer:GetUnitByID(iUnit);
+		if (pUnit:GetUnitType() == iProphetID) then
+			local newUnit = pPlayer:InitUnit(iProphetOverride, pUnit:GetX(), pUnit:GetY())
+			newUnit:Convert(pUnit)
+		end
+	end
+end
+
+function Lithuana_Turn(iPlayer)
+	local pPlayer = Players[iPlayer]
+	if (pPlayer:GetCivilizationType() == iCivType) then
+		if(pPlayer:GetFaith() >= pPlayer:GetMinimumFaithNextGreatProphet()) then
+			local pCity = pPlayer:GetCapitalCity()
+			pPlayer:SetFaith(0)
+			pPlayer:IncrementGreatProphetsCreated()
+			pPlayer:AddFreeUnit(iProphetOverride)
+			pPlayer:AddNotification(NotificationTypes.NOTIFICATION_GREAT_PERSON_ACTIVE_PLAYER, 
+									L("TXT_KEY_NOTIFICATION_GREAT_PERSON_ACTIVE_PLAYER"),
+									L("TXT_KEY_NOTIFICATION_SUMMARY_GREAT_PERSON"),  
+									pCity:GetX(), 
+									pCity:GetY(),
+									iProphetID)
+		end
+	end
 end
 
 if JFD_IsCivilisationActive(iCivType) then
+	GameEvents.PlayerDoTurn.Add(Lithuana_Turn)
 	Events.SerialEventUnitCreated.Add(KriviOverride)
 end
