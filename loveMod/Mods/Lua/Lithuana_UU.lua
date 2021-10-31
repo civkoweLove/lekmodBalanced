@@ -22,9 +22,10 @@ end
 function Lithuana_Turn(iPlayer)
 	local pPlayer = Players[iPlayer]
 	if (pPlayer:GetCivilizationType() == iCivType) then
+
 		if(pPlayer:GetFaith() >= pPlayer:GetMinimumFaithNextGreatProphet()) then
 			local pCity = pPlayer:GetCapitalCity()
-			pPlayer:SetFaith(0)
+			pPlayer:SetFaith(pPlayer:GetFaith() - pPlayer:GetMinimumFaithNextGreatProphet())
 			pPlayer:IncrementGreatProphetsCreated()
 			pPlayer:AddFreeUnit(iProphetOverride)
 			pPlayer:AddNotification(NotificationTypes.NOTIFICATION_GREAT_PERSON_ACTIVE_PLAYER, 
