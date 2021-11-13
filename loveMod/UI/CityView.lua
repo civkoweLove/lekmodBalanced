@@ -1478,7 +1478,11 @@ local function UpdateWorkingHexesNow()
 						local canBuy = city:CanBuyPlotAt( x, y, false )
 						if canBuy then
 							tip = L( "TXT_KEY_CITYVIEW_CLAIM_NEW_LAND", plotCost )
-							txt = plotCost
+							if plotCost > 0 then
+								txt = plotCost
+							else
+								txt = "FREE"
+							end
 							alpha = 1
 							button:SetVoid1( cityPlotIndex )
 							button:RegisterCallback( Mouse.eLCLick, BuyPlotAnchorButtonClicked )
