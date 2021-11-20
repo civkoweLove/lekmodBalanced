@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mod id="1f0a153b-26ae-4496-a2c0-a106d9b43c95" version="17">
+  <Properties>
+    <Name>UI - Promotion Tree</Name>
+    <Teaser>Shows promotions as a tree</Teaser>
+    <Description>Displays promotions in a tree format either for the current unit or by selecting one of the eleven combat classes (melee, naval, recon, siege, mounted, etc) from a drop-down menu
+
+Hooks into the DiploCorner drop-down.
+
+Layout derived from http://gaming.stackexchange.com/questions/15846/122</Description>
+    <Authors>William Howard (Updated for EUI by Amir Kamal)</Authors>
+    <SpecialThanks>Translation: Russian - Tomahawk.nsk</SpecialThanks>
+    <HideSetupGame>0</HideSetupGame>
+    <Homepage>http://forums.2kgames.com/showthread.php?118843-MOD-UI-Promotion-Tree</Homepage>
+    <AffectsSavedGames>0</AffectsSavedGames>
+    <SupportsSinglePlayer>1</SupportsSinglePlayer>
+    <SupportsMultiplayer>0</SupportsMultiplayer>
+    <SupportsHotSeat>1</SupportsHotSeat>
+    <SupportsMac>1</SupportsMac>
+    <ReloadAudioSystem>0</ReloadAudioSystem>
+    <ReloadLandmarkSystem>0</ReloadLandmarkSystem>
+    <ReloadStrategicViewSystem>0</ReloadStrategicViewSystem>
+    <ReloadUnitSystem>0</ReloadUnitSystem>
+  </Properties>
+  <Dependencies />
+  <References>
+    <Mod id="21e78f1f-06f9-4147-ac61-75aa7c403d18" minversion="3" maxversion="999" title="Utils - Modular DiploCorner" />
+    <Mod id="609a05b4-0231-4eaa-9ad1-a2d79e1fc16d" minversion="0" maxversion="999" title="Promotions - Subs Silent Running" />
+    <Mod id="a6e2d8b9-4675-4409-aa06-b9a9469d3cef" minversion="0" maxversion="999" title="Promotions - AntiAir Specialisations" />
+  </References>
+  <Blocks />
+  <Files>
+    <File md5="7612FED0FCCBF6B294A574C09F8638B2" import="1">LUA/ButtonManager.lua</File>
+    <File md5="ECBE2176759205C61713615D3832DA25" import="1">LUA/ControlUtils.lua</File>
+    <File md5="D9D7A55BC30620D8545AFB7E6C6243A8" import="1">LUA/DebugPrint.lua</File>
+    <File md5="C6361208C5CED44F39582E4143CACFD2" import="1">LUA/PipeManager.lua</File>
+    <File md5="DB9E2D54157F0D35CD40BDA6E06F4718" import="1">LUA/PromotionUtils.lua</File>
+    <File md5="35C1AC7DA93B4FC7AD0BAC96FBDB3FE4" import="0">SQL/UIPromotionTree.sql</File>
+    <File md5="0e62b1253e5759e6e097c9288727bb83" import="0">UI/PromotionTree.lua</File>
+    <File md5="748C27C510F248125611148BFF9EE8B2" import="0">UI/PromotionTree.xml</File>
+    <File md5="D222272B165B42750E6A51DD39F9ACBC" import="0">XML/UIPromotionTree.xml</File>
+  </Files>
+  <Actions>
+    <OnModActivated>
+      <UpdateDatabase>XML/UIPromotionTree.xml</UpdateDatabase>
+      <UpdateDatabase>SQL/UIPromotionTree.sql</UpdateDatabase>
+    </OnModActivated>
+  </Actions>
+  <EntryPoints>
+    <EntryPoint type="InGameUIAddin" file="UI/PromotionTree.xml">
+      <Name>PromotionTree</Name>
+      <Description>
+      </Description>
+    </EntryPoint>
+  </EntryPoints>
+</Mod>
