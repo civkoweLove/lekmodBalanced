@@ -479,12 +479,7 @@ function UpdateCombatOddsUnitVsCity(pMyUnit, pCity)
 				controlTable.Value:SetText( GetFormattedText(strText, iModifier, true, true) );
 			end
 
-			iModifier = (pMyPlayer:GetPerExcessHappinessCombatBonus())*pMyPlayer:GetExcessHappiness()/100;
-			if(iModifier > 15) then
-				iModifier = 15;
-			elseif(iModifier < 0) then
-				iModifier = 0;
-			end	
+			iModifier = pMyPlayer:GetPerExcessHappinessCombatBonus();
 			if (iModifier ~= 0) then
 				controlTable = g_MyCombatDataIM:GetInstance();
 				controlTable.Text:LocalizeAndSetText(  "TXT_KEY_EUPANEL_BONUS_EXCESS_HAPPINESS" );
@@ -1337,12 +1332,7 @@ function UpdateCombatOddsUnitVsUnit(pMyUnit, pTheirUnit)
 				controlTable.Value:SetText( GetFormattedText(strText, iModifier, true, true) );
 			end
 			
-			iModifier = (pMyPlayer:GetPerExcessHappinessCombatBonus()) * pMyPlayer:GetExcessHappiness()/100;
-			if(iModifier > 15) then
-				iModifier = 15;
-			elseif(iModifier < 0) then
-				iModifier = 0;
-			end	
+			iModifier = pMyPlayer:GetPerExcessHappinessCombatBonus()
 			if (iModifier ~= 0) then
 				controlTable = g_MyCombatDataIM:GetInstance();
 				controlTable.Text:LocalizeAndSetText(  "TXT_KEY_EUPANEL_BONUS_EXCESS_HAPPINESS" );
@@ -1783,12 +1773,7 @@ function UpdateCombatOddsUnitVsUnit(pMyUnit, pTheirUnit)
 					controlTable.Value:SetText( GetFormattedText(strText, iModifier, false, true) );
 				end
 				
-				iModifier = (pTheirPlayer:GetPerExcessHappinessCombatBonus())*pTheirPlayer:GetExcessHappiness()/100;
-				if(iModifier > 15) then
-					iModifier = 15;
-				elseif(iModifier < 0) then
-					iModifier = 0;
-				end	
+				iModifier = pTheirPlayer:GetPerExcessHappinessCombatBonus()
 				if (iModifier ~= 0) then
 					controlTable = g_TheirCombatDataIM:GetInstance();
 					controlTable.Text:LocalizeAndSetText(  "TXT_KEY_EUPANEL_BONUS_EXCESS_HAPPINESS" );
@@ -2197,12 +2182,7 @@ function UpdateCombatOddsCityVsUnit(myCity, theirUnit)
 			controlTable.Value:SetText( GetFormattedText(strText, iModifier, false, true) );
 		end
 		
-		iModifier = (theirPlayer:GetPerExcessHappinessCombatBonus())*theirPlayer:GetExcessHappiness()/100;
-		if(iModifier > 15) then
-			iModifier = 15;
-		elseif(iModifier < 0) then
-			iModifier = 0;
-		end	
+		iModifier = theirPlayer:GetPerExcessHappinessCombatBonus()
 		if (iModifier ~= 0) then
 			controlTable = g_TheirCombatDataIM:GetInstance();
 			controlTable.Text:LocalizeAndSetText(  "TXT_KEY_EUPANEL_BONUS_EXCESS_HAPPINESS" );
