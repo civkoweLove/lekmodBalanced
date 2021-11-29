@@ -414,7 +414,7 @@ local function SetupNotification( instance, sequence, Id, type, toolTip, strSumm
 			if i == sequence then
 				table_insert( tips, summary )
 				if toolTip ~= summary then
-					table_insert( tips, ( toolTip:gsub("%[NEWLINE%].*","") ) )
+					table_insert( tips, ( toolTip:gsub("%[NEWLINE%]%[NEWLINE%].*","") ) )
 				end
 			else
 				table_insert( tips, "[COLOR_LIGHT_GREY]"..summary.."[ENDCOLOR]" )

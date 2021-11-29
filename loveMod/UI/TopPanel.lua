@@ -483,7 +483,7 @@ local function UpdateTopPanelNow()
 					iconSize = 48
 					faithNeeded = Game.GetMinimumFaithNextPantheon()
 
-				elseif Game.GetNumReligionsStillToFound() > 0 or g_activePlayer:IsBonusReligiousBelief() then
+				elseif Game.GetNumReligionsStillToFound() > 0 or g_activePlayer:IsTraitBonusReligiousBelief() then
 
 					faithTarget = GameInfo.Units.UNIT_PROPHET
 					faithNeeded = g_activePlayer:GetMinimumFaithNextGreatProphet()
@@ -1863,7 +1863,7 @@ if civ5_mode and gk_mode then
 				tips:insertLocalized( "TXT_KEY_NEWWORLD_SCENARIO_TP_RELIGION_TOOLTIP" )
 			else
 				if g_activePlayer:HasCreatedPantheon() then
-					if (Game.GetNumReligionsStillToFound() > 0 or g_activePlayer:HasCreatedReligion() or g_activePlayer:IsBonusReligiousBelief())
+					if (Game.GetNumReligionsStillToFound() > 0 or g_activePlayer:HasCreatedReligion() or g_activePlayer:IsTraitBonusReligiousBelief())
 						and (g_activePlayer:GetCurrentEra() < GameInfoTypes.ERA_INDUSTRIAL)
 					then
 						tips:insertLocalizedIfNonZero( "TXT_KEY_TP_FAITH_NEXT_PROPHET", g_activePlayer:GetMinimumFaithNextGreatProphet() )
