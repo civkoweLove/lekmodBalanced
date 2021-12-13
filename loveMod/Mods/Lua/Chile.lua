@@ -9,7 +9,7 @@ function ChileTerritoryClaim(playerID, plotX, plotY, improvementID)
 		if improvementID == GameInfoTypes["IMPROVEMENT_FISHING_BOATS"] or improvementID == GameInfoTypes["IMPROVEMENT_DOCK"] then
 			local pPlot = Map.GetPlot(plotX, plotY)
 			local pUnit = pPlot:GetUnit(0)
-			pUnit:PerformCultureBomb(1)
+			pUnit:PerformCultureBomb(1, true)
 		end
 	end
 end
