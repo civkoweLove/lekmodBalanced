@@ -1,22 +1,13 @@
-function NQMP_GreatWall_PlayerDoTurn(iPlayer)
+local WallID = GameInfoTypes["BUILDING_GREAT_WALL"]
+local WatchtowerID = GameInfoTypes["BUILDING_WATCH_TOWER"]
 
-	local player = Players[iPlayer]
-	if (player:IsEverAlive()) then
-
-		local hasGreatWall = false
+function GreatWall_Constructed(iPlayer, iCity, eBuilding, bGold, bFaithOrCulture)
+	if (eBuilding == WallID) then
+		local player = Players[iPlayer]
 		for pCity in player:Cities() do
-			if (pCity:GetNumRealBuilding(GameInfoTypes["BUILDING_GREAT_WALL"]) > 0) then
-				hasGreatWall = true
-			end
+			pCity:SetNumRealBuilding(WatchtowerID, 1)
 		end
-
-		if (hasGreatWall) then
-			for pCity in player:Cities() do
-				pCity:SetNumRealBuilding(GameInfoTypes["BUILDING_WATCH_TOWER"], 1)
-			end
-			GameEvents.PlayerDoTurn.Remove(NQMP_GreatWall_PlayerDoTurn);
-		end
-
+		GameEvents.CityConstructed.Remove(GreatWall_Constructed)
 	end
 end
-GameEvents.PlayerDoTurn.Add(NQMP_GreatWall_PlayerDoTurn);
+GameEvents.CityConstructed.Add(GreatWall_Constructed)

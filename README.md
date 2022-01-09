@@ -1,2 +1,2 @@
 # LoveMod
-version 3.0
+version 6.0
