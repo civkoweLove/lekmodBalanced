@@ -734,7 +734,7 @@ CivilopediaCategory[CategoryBuildings].PopulateList = function()
 		FROM Buildings 
 		INNER JOIN BuildingClasses ON Buildings.BuildingClass = BuildingClasses.Type 
 		INNER JOIN Technologies ON Buildings.PrereqTech = Technologies.Type 
-		WHERE (FaithCost == 0 or Buildings.Cost >= 0) AND BuildingClasses.MaxGlobalInstances < 0 AND (BuildingClasses.MaxPlayerInstances <> 1 or Buildings.SpecialistCount > 0) AND BuildingClasses.MaxTeamInstances < 0 AND Buildings.ShowInPedia = 0 AND Technologies.Era = ?;]];
+		WHERE (FaithCost == 0 or Buildings.Cost >= 0) AND BuildingClasses.MaxGlobalInstances < 0 AND (BuildingClasses.MaxPlayerInstances <> 1 or Buildings.SpecialistCount > 0) AND BuildingClasses.MaxTeamInstances < 0 AND Technologies.Era = ?;]];
 	
 	local BuildingsByEra = DB.CreateQuery(sql);
 	
@@ -754,18 +754,18 @@ CivilopediaCategory[CategoryBuildings].PopulateList = function()
 		end
 	
 		-- put in all of the buildings that do not have tech requirements in the first Era for lack of a better place
-		if(bFirstEra) then
-			local sql = [[
-				SELECT Buildings.ID, Buildings.Description, Buildings.PortraitIndex, Buildings.IconAtlas 
-				FROM Buildings 
-				INNER JOIN BuildingClasses ON Buildings.BuildingClass = BuildingClasses.Type 
-				WHERE Buildings.PrereqTech IS NULL AND (Buildings.FaithCost == 0 or Buildings.Cost >= 0) AND BuildingClasses.MaxGlobalInstances < 0 AND (BuildingClasses.MaxPlayerInstances <> 1 or Buildings.SpecialistCount > 0) AND BuildingClasses.MaxTeamInstances < 0;]];
-		
-			for building in DB.Query(sql) do
-				AddArticle(eraID, tableid, building);
-				tableid = tableid + 1;
-			end
-		end
+		--if(bFirstEra) then
+		--	local sql = [[
+		--		SELECT Buildings.ID, Buildings.Description, Buildings.PortraitIndex, Buildings.IconAtlas 
+		--		FROM Buildings 
+		--		INNER JOIN BuildingClasses ON Buildings.BuildingClass = BuildingClasses.Type 
+		--		WHERE Buildings.PrereqTech IS NULL AND (Buildings.FaithCost == 0 or Buildings.Cost >= 0) AND BuildingClasses.MaxGlobalInstances < 0 AND (BuildingClasses.MaxPlayerInstances <> 1 or Buildings.SpecialistCount > 0) AND BuildingClasses.MaxTeamInstances < 0;]];
+		--
+		--	for building in DB.Query(sql) do
+		--		AddArticle(eraID, tableid, building);
+		--		tableid = tableid + 1;
+		--	end
+		--end
 		
 		bFirstEra = false;
 	end
