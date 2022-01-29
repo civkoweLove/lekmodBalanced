@@ -650,7 +650,7 @@ local function SetupBuildingList( city, buildings, buildingIM )
 	for i = 1, #buildings do
 
 		local building, buildingName, greatWorkCount = unpack(buildings[i])
-		if building.PrereqTech then
+		if building.PrereqTech or building.SpecialistType then
 			local buildingID = building.ID
 			local controls, isNewInstance = buildingIM.GetInstance()
 			local buildingButton = controls.Button
