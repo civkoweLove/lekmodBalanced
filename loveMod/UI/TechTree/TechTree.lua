@@ -92,7 +92,7 @@ local g_branchOffsetX2 = g_branchOffsetX1 - g_connectorXshift
 local g_branchDeltaX = g_pipeEndOffsetX - g_branchOffsetX1
 local g_coloredPipe = { x=1.0, y=1.0, z=0.0, w=0.5 }
 
-local g_maxTechNameLength = 22 - Locale.Length(L"TXT_KEY_TURNS")
+local g_maxTechNameLength = 40 - Locale.Length(L"TXT_KEY_TURNS")
 
 local CloseTechTree
 
