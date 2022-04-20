@@ -19,6 +19,7 @@ function Maori_Unit_Create_Late(iPlayer, iUnit)
 	local pPlayer = Players[iPlayer]
 	if not (pPlayer:GetCivilizationType() == civID) then return end
 	local unit = pPlayer:GetUnitByID(iUnit)
+	if not (unit:GetGameTurnCreated() == Game:GetGameTurn()) then return end	
 	unit:ChangeMoves(2*move_denominator)
 end
 

@@ -1,21 +1,24 @@
 include( "Utility")
 
+local expandsLeft = 2
+
 local iCiv = GameInfoTypes["CIVILIZATION_CB_AGUINALDOPH"]
 local iBuilding = GameInfoTypes["BUILDING_TRAIT_GOOD_FIGHT"]
 
 function Philipines_OnFoundCity(iPlayer, iCityX, iCityY)
 	local player = Players[iPlayer]
 	if player:GetCivilizationType() == iCiv then
-		if player:GetNumCities() > 1 then
+		if expandsLeft > 0 and player:GetNumCities() > 1 then
 			for loopCity in player:Cities() do
 				if (loopCity:GetX() == iCityX) then
 					if (loopCity:GetY() == iCityY) then
 						loopCity:SetNumRealBuilding(iBuilding, 1)
+						expandsLeft = expandsLeft - 1
 					end
 				end
 			end
 			
-			if player:GetNumCities() == 3 then
+			if expandsLeft == 0 then
 				GameEvents.PlayerCityFounded.Remove(Philipines_OnFoundCity)
 			end
 		end
