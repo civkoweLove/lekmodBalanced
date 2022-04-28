@@ -1,33 +1,33 @@
 include( "Utility")
 
--- Maori Promotion (UA) 
--- Code by EnormousApplePie
--- modyfied by Izydor
-
 local unitPromotionActiveCivilID = GameInfoTypes["PROMOTION_MAORI_CIVILIAN"]
 local move_denominator = GameDefines["MOVE_DENOMINATOR"]
 local civID = GameInfoTypes["CIVILIZATION_MC_MAORI"]
 
 function Maori_Unit_Create_Early(iPlayer, iUnit)
 	local pPlayer = Players[iPlayer]
-	if not (pPlayer:GetCivilizationType() == civID) then return end
-	local unit = pPlayer:GetUnitByID(iUnit)
-	unit:SetHasPromotion(unitPromotionActiveCivilID, true)
+	if (pPlayer:GetCivilizationType() == civID) then
+		if Game.GetGameTurn() < 9 then 
+			local unit = pPlayer:GetUnitByID(iUnit)
+			unit:SetHasPromotion(unitPromotionActiveCivilID, true)
+		end
+	end
 end
 
 function Maori_Unit_Create_Late(iPlayer, iUnit)
 	local pPlayer = Players[iPlayer]
-	if not (pPlayer:GetCivilizationType() == civID) then return end
-	local unit = pPlayer:GetUnitByID(iUnit)
-	if not (unit:GetGameTurnCreated() == Game:GetGameTurn()) then return end	
-	unit:ChangeMoves(2*move_denominator)
+	if (pPlayer:GetCivilizationType() == civID) then
+		local unit = pPlayer:GetUnitByID(iUnit)
+		if (unit:GetGameTurnCreated() == Game.GetGameTurn() and not unit:HasMoved()) then	
+			unit:SetMoves(unit:MaxMoves() + 2*move_denominator)
+		end
+	end
 end
 
 function Maori_Turn(playerID)
 	local player = Players[playerID]
 	if (player:GetCivilizationType() == civID) then
-		local Gameturn = Game.GetGameTurn()
-		if Gameturn >= 9 then 
+		if Game.GetGameTurn() >= 9 then 
 			for unit in player:Units() do
 				unit:SetHasPromotion(unitPromotionActiveCivilID, false)
 			end
