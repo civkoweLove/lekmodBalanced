@@ -77,7 +77,7 @@ local g_connectorSizeX = 32	-- connector texture width
 local g_connectorSizeY = 42	-- connector texture height
 local g_connectorXshift = 12	-- horizontal connector texture shift
 local g_connectorYshift = 15	-- vertical connector texture shift
-local g_blockSizeX = 270	-- tech block width
+local g_blockSizeX = 350	-- tech block width
 local g_blockOffsetX = 64
 local g_blockSpacingY = 68	-- tech block vertical spacing
 local g_blockOffsetY = 32 - 5*g_blockSpacingY
@@ -92,7 +92,7 @@ local g_branchOffsetX2 = g_branchOffsetX1 - g_connectorXshift
 local g_branchDeltaX = g_pipeEndOffsetX - g_branchOffsetX1
 local g_coloredPipe = { x=1.0, y=1.0, z=0.0, w=0.5 }
 
-local g_maxTechNameLength = 22 - Locale.Length(L"TXT_KEY_TURNS")
+local g_maxTechNameLength = 40 - Locale.Length(L"TXT_KEY_TURNS")
 
 local CloseTechTree
 

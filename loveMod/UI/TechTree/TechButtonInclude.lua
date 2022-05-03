@@ -486,6 +486,8 @@ function AddSmallButtonsToTechButton( thisTechButtonInstance, tech, maxSmallButt
 	end
 	sortedImprovements:sort( function(a,b) return Locale.Compare(a.Description or "", b.Description or "") == -1 end )
 
+		
+	local pPlayer = Players[Game.GetActivePlayer()]
 	local thisTechAndImprovementTypes = { TechType = techType }
 	for i,improvement in ipairs( sortedImprovements ) do
 		local toolTip = L( improvement.Description or "???" )
@@ -498,26 +500,38 @@ function AddSmallButtonsToTechButton( thisTechButtonInstance, tech, maxSmallButt
 				toolTip = toolTip .. (" +%g"):format(row.Yield) .. icon
 			end
 		end
-		if not addSmallActionButton( GameInfo.Builds{ ImprovementType = improvement.Type }() or "???", icons, toolTip ) then
-			break
+		local civType = improvement.CivilizationType
+		local condition = (civType == nil) or pPlayer:GetCivilizationType() == GameInfoTypes[civType]
+		if condition then
+			if not addSmallActionButton( GameInfo.Builds{ ImprovementType = improvement.Type }() or "???", icons, toolTip ) then
+				break
+			end
 		end
 	end
 
 	for row in GameInfo.Improvement_TechNoFreshWaterYieldChanges( thisTechType ) do
 		local yield = GameInfo.Yields[row.YieldType]
-		if yield and not addSmallActionButton( GameInfo.Builds{ ImprovementType = row.ImprovementType }(), yield.IconString,
-				"TXT_KEY_NO_FRESH_WATER", (GameInfo.Improvements[row.ImprovementType] or {}).Description or "???" , yield.Description, row.Yield )
-		then
-			break
+		local civType = GameInfo.Improvements[row.ImprovementType].CivilizationType
+		local condition = (civType == nil) or pPlayer:GetCivilizationType() == GameInfoTypes[civType]
+		if condition then
+			if yield and not addSmallActionButton( GameInfo.Builds{ ImprovementType = row.ImprovementType }(), yield.IconString,
+					"TXT_KEY_NO_FRESH_WATER", (GameInfo.Improvements[row.ImprovementType] or {}).Description or "???" , yield.Description, row.Yield )
+			then
+				break
+			end
 		end
 	end
 
 	for row in GameInfo.Improvement_TechFreshWaterYieldChanges( thisTechType ) do
 		local yield = GameInfo.Yields[row.YieldType]
-		if yield and not addSmallActionButton( GameInfo.Builds{ ImprovementType = row.ImprovementType }(), yield.IconString,
-				"TXT_KEY_FRESH_WATER", (GameInfo.Improvements[row.ImprovementType] or {}).Description or "???", yield.Description, row.Yield )
-		then
-			break
+		local civType = GameInfo.Improvements[row.ImprovementType].CivilizationType
+		local condition = (civType == nil) or pPlayer:GetCivilizationType() == GameInfoTypes[civType]
+		if condition then
+			if yield and not addSmallActionButton( GameInfo.Builds{ ImprovementType = row.ImprovementType }(), yield.IconString,
+					"TXT_KEY_FRESH_WATER", (GameInfo.Improvements[row.ImprovementType] or {}).Description or "???", yield.Description, row.Yield )
+			then
+				break
+			end
 		end
 	end
 

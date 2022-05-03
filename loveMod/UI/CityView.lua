@@ -650,253 +650,255 @@ local function SetupBuildingList( city, buildings, buildingIM )
 	for i = 1, #buildings do
 
 		local building, buildingName, greatWorkCount = unpack(buildings[i])
-		local buildingID = building.ID
-		local controls, isNewInstance = buildingIM.GetInstance()
-		local buildingButton = controls.Button
-		local sellButton = controls.SellButton
-		local textButton = controls.TextButton
-		textButton:SetHide( true )
-		if isNewInstance then
-			buildingButton:RegisterCallback( Mouse.eRClick, BuildingPedia )
-			buildingButton:SetToolTipCallback( BuildingToolTip )
-			sellButton:RegisterCallback( Mouse.eLClick, SellBuilding )
-			textButton:RegisterCallback( Mouse.eLClick, YourCulturePopup )
-			textButton:RegisterCallback( Mouse.eMouseEnter, ThemingTooltip )
-		else
-			for _, slot in pairs( controls[1] ) do
-				g_slots:insert( slot )
-				slot:ChangeParent( g_heap )
-			end
-			for _, slot in pairs( controls[2] ) do
-				g_works:insert( slot )
-				slot:ChangeParent( g_heap )
-			end
-		end
-		controls[1] = table()
-		controls[2] = table()
-		buildingButton:SetVoid1( buildingID )
-		-- Can we sell this building?
-		if not g_isViewingMode and city:IsBuildingSellable( buildingID ) then
-			sellButton:SetText( city:GetSellBuildingRefund( buildingID ) .. g_currencyIcon )
-			sellButton:SetHide( false )
-			sellButton:SetVoid1( buildingID )
-		else
-			sellButton:SetHide( true )
-		end
-
-		local slotStack = controls.SlotStack
-		local instance = {}
-
---!!!BE portrait size is bigger
-
-		controls.Portrait:SetHide( not IconHookup( building.PortraitIndex, 64, building.IconAtlas, controls.Portrait ) )
-
-		-------------------
-		-- Great Work Slots
-		if greatWorkCount > 0 then
-			local buildingGreatWorkSlotType = building.GreatWorkSlotType
-			if buildingGreatWorkSlotType then
-				local buildingGreatWorkSlot = GameInfo.GreatWorkSlots[ buildingGreatWorkSlotType ]
-				local buildingClassID = GameInfoTypes[ building.BuildingClass ]
-
-				if city:IsThemingBonusPossible( buildingClassID ) then
-					textButton:SetText( " +" .. city:GetThemingBonus( buildingClassID ) )
-					textButton:SetVoid1( buildingClassID )
-					textButton:SetHide( false )
+		if building.PrereqTech or building.SpecialistType then
+			local buildingID = building.ID
+			local controls, isNewInstance = buildingIM.GetInstance()
+			local buildingButton = controls.Button
+			local sellButton = controls.SellButton
+			local textButton = controls.TextButton
+			textButton:SetHide( true )
+			if isNewInstance then
+				buildingButton:RegisterCallback( Mouse.eRClick, BuildingPedia )
+				buildingButton:SetToolTipCallback( BuildingToolTip )
+				sellButton:RegisterCallback( Mouse.eLClick, SellBuilding )
+				textButton:RegisterCallback( Mouse.eLClick, YourCulturePopup )
+				textButton:RegisterCallback( Mouse.eMouseEnter, ThemingTooltip )
+			else
+				for _, slot in pairs( controls[1] ) do
+					g_slots:insert( slot )
+					slot:ChangeParent( g_heap )
 				end
+				for _, slot in pairs( controls[2] ) do
+					g_works:insert( slot )
+					slot:ChangeParent( g_heap )
+				end
+			end
+			controls[1] = table()
+			controls[2] = table()
+			buildingButton:SetVoid1( buildingID )
+			-- Can we sell this building?
+			if not g_isViewingMode and city:IsBuildingSellable( buildingID ) then
+				sellButton:SetText( city:GetSellBuildingRefund( buildingID ) .. g_currencyIcon )
+				sellButton:SetHide( false )
+				sellButton:SetVoid1( buildingID )
+			else
+				sellButton:SetHide( true )
+			end
 
-				for i = 0, greatWorkCount - 1 do
-					local slot = g_works:remove()
+			local slotStack = controls.SlotStack
+			local instance = {}
+
+	--!!!BE portrait size is bigger
+
+			controls.Portrait:SetHide( not IconHookup( building.PortraitIndex, 64, building.IconAtlas, controls.Portrait ) )
+
+			-------------------
+			-- Great Work Slots
+			if greatWorkCount > 0 then
+				local buildingGreatWorkSlotType = building.GreatWorkSlotType
+				if buildingGreatWorkSlotType then
+					local buildingGreatWorkSlot = GameInfo.GreatWorkSlots[ buildingGreatWorkSlotType ]
+					local buildingClassID = GameInfoTypes[ building.BuildingClass ]
+
+					if city:IsThemingBonusPossible( buildingClassID ) then
+						textButton:SetText( " +" .. city:GetThemingBonus( buildingClassID ) )
+						textButton:SetVoid1( buildingClassID )
+						textButton:SetHide( false )
+					end
+
+					for i = 0, greatWorkCount - 1 do
+						local slot = g_works:remove()
+						if slot then
+							slot:ChangeParent( slotStack )
+						else
+							ContextPtr:BuildInstanceForControl( "Work", instance, slotStack )
+							slot = instance.Button
+							slot:RegisterCallback( Mouse.eLClick, YourCulturePopup )
+							slot:RegisterCallback( Mouse.eMouseEnter, GreatWorkTooltip )
+						end
+						controls[2]:insert( slot )
+						local greatWorkID = city:GetBuildingGreatWork( buildingClassID, i )
+						slot:SetVoids( greatWorkID, buildingGreatWorkSlot.ID )
+						if greatWorkID >= 0 then
+							slot:SetTexture( buildingGreatWorkSlot.FilledIcon )
+							slot:RegisterCallback( Mouse.eRClick, GreatWorkPopup )
+						else
+							slot:SetTexture( buildingGreatWorkSlot.EmptyIcon )
+							slot:ClearCallback( Mouse.eRClick )
+						end
+					end
+				end
+			end
+
+			-------------------
+			-- Specialist Slots
+			local numSpecialistsInBuilding = city:GetNumSpecialistsInBuilding( buildingID )
+			local specialistTable = g_citySpecialists[buildingID] or {}
+			if specialistTable.n ~= numSpecialistsInBuilding then
+				specialistTable = { n = numSpecialistsInBuilding }
+				for i = 1, numSpecialistsInBuilding do
+					specialistTable[i] = true
+				end
+				g_citySpecialists[buildingID] = specialistTable
+			end
+			local specialistType = building.SpecialistType
+			local specialist = GameInfo.Specialists[specialistType]
+			if specialist then
+				for slotID = 1, city:GetNumSpecialistsAllowedByBuilding( buildingID ) do
+					local slot = g_slots:remove()
 					if slot then
 						slot:ChangeParent( slotStack )
 					else
-						ContextPtr:BuildInstanceForControl( "Work", instance, slotStack )
+						ContextPtr:BuildInstanceForControl( "Slot", instance, slotStack )
 						slot = instance.Button
-						slot:RegisterCallback( Mouse.eLClick, YourCulturePopup )
-						slot:RegisterCallback( Mouse.eMouseEnter, GreatWorkTooltip )
+						slot:RegisterCallback( Mouse.eRClick, SpecialistPedia )
+						slot:SetToolTipCallback( SpecialistTooltip )
 					end
-					controls[2]:insert( slot )
-					local greatWorkID = city:GetBuildingGreatWork( buildingClassID, i )
-					slot:SetVoids( greatWorkID, buildingGreatWorkSlot.ID )
-					if greatWorkID >= 0 then
-						slot:SetTexture( buildingGreatWorkSlot.FilledIcon )
-						slot:RegisterCallback( Mouse.eRClick, GreatWorkPopup )
+					controls[1]:insert( slot )
+					if civ5_mode then
+						slot:SetTexture( specialistTable[ slotID ] and g_slotTexture[ specialistType ] or "CitizenEmpty.dds" )
 					else
-						slot:SetTexture( buildingGreatWorkSlot.EmptyIcon )
-						slot:ClearCallback( Mouse.eRClick )
+						IconHookup( specialist.PortraitIndex, 45, specialist.IconAtlas, instance.Portrait )
+						instance.Portrait:SetHide( not specialistTable[ slotID ] )
+					end
+					slot:SetVoids( buildingID, slotID )
+					if g_isViewingMode then
+						slot:ClearCallback( Mouse.eLClick )
+					else
+						slot:RegisterCallback( Mouse.eLClick, ToggleSpecialist )
+					end
+				end -- Specialist Slots
+			end
+
+			-- Building stats/bonuses
+			local buildingClassID = GameInfoTypes[ building.BuildingClass ] or -1
+			local maintenanceCost = tonumber(building[g_maintenanceCurrency]) or 0
+			local defenseChange = tonumber(building.Defense) or 0
+			local hitPointChange = tonumber(building.ExtraCityHitPoints) or 0
+			local buildingCultureRate = (not gk_mode and tonumber(building.Culture) or 0) + (specialist and city:GetCultureFromSpecialist( specialist.ID ) or 0) * numSpecialistsInBuilding
+			local buildingCultureModifier = tonumber(building.CultureRateModifier) or 0
+			local cityCultureRateModifier = cityOwner:GetCultureCityModifier() + city:GetCultureRateModifier() + (city:GetNumWorldWonders() > 0 and cityOwner and cityOwner:GetCultureWonderMultiplier() or 0)
+			local cityCultureRate
+			local population = city:GetPopulation()
+			local tips = table()
+			local thisBuildingAndYieldTypes = { BuildingType = building.Type }
+			if civ5_mode then
+				cityCultureRate = city:GetBaseJONSCulturePerTurn()
+				-- Happiness
+				local happinessChange = (tonumber(building.Happiness) or 0) + (tonumber(building.UnmoddedHappiness) or 0)
+							+ cityOwner:GetExtraBuildingHappinessFromPolicies( buildingID )
+							+ (cityOwner:IsHalfSpecialistUnhappiness() and GameDefines.UNHAPPINESS_PER_POPULATION * numSpecialistsInBuilding * ((city:IsCapital() and cityOwner:GetCapitalUnhappinessMod() or 0)+100) * (cityOwner:GetUnhappinessMod() + 100) * (cityOwner:GetTraitPopUnhappinessMod() + 100) / 2e6 or 0) -- missing getHandicapInfo().getPopulationUnhappinessMod()
+				tips:insertIf( happinessChange ~=0 and happinessChange .. "[ICON_HAPPINESS_1]" )
+
+			else -- civBE_mode
+				cityCultureRate = city:GetBaseCulturePerTurn()
+				-- Health
+				local healthChange = (tonumber(building.Health) or 0) + (tonumber(building.UnmoddedHealth) or 0) + cityOwner:GetExtraBuildingHealthFromPolicies( buildingID )
+				local healthModifier = tonumber(building.HealthModifier) or 0
+				-- Effect of player perks
+				for i, perkID in ipairs(cityOwnerPerks) do
+					healthChange = healthChange + Game.GetPlayerPerkBuildingClassPercentHealthChange( perkID, buildingClassID )
+					healthModifier = healthModifier + Game.GetPlayerPerkBuildingClassPercentHealthChange( perkID, buildingClassID )
+					defenseChange = defenseChange + Game.GetPlayerPerkBuildingClassCityStrengthChange( perkID, buildingClassID )
+					hitPointChange = hitPointChange + Game.GetPlayerPerkBuildingClassCityHPChange( perkID, buildingClassID )
+					maintenanceCost = maintenanceCost + Game.GetPlayerPerkBuildingClassEnergyMaintenanceChange( perkID, buildingClassID )
+				end
+				tips:insertIf( healthChange ~=0 and healthChange .. "[ICON_HEALTH_1]" )
+	--			tips:insertLocalizedIfNonZero( "TXT_KEY_STAT_POSITIVE_YIELD_MOD", "[ICON_HEALTH_1]", healthModifier )
+			end
+			local buildingYieldRate, buildingYieldPerPop, buildingYieldModifier, cityYieldRate, cityYieldRateModifier, isProducing
+			for yieldID = 0, YieldTypes.NUM_YIELD_TYPES-1 do
+				isProducing = isNotResistance
+				thisBuildingAndYieldTypes.YieldType = (GameInfo.Yields[yieldID] or {}).Type or -1
+				-- Yield changes from the building
+				buildingYieldRate = Game.GetBuildingYieldChange( buildingID, yieldID )
+							+ (gk_mode and cityOwner:GetPlayerBuildingClassYieldChange( buildingClassID, yieldID )
+							+ city:GetReligionBuildingClassYieldChange( buildingClassID, yieldID ) or 0)
+							+ (bnw_mode and city:GetLeagueBuildingClassYieldChange( buildingClassID, yieldID ) or 0)
+				-- Yield modifiers from the building
+				buildingYieldModifier = Game.GetBuildingYieldModifier( buildingID, yieldID )
+							+ cityOwner:GetPolicyBuildingClassYieldModifier( buildingClassID, yieldID )
+				-- Effect of player perks
+				if civBE_mode then
+					for i, perkID in ipairs(cityOwnerPerks) do
+						buildingYieldRate = buildingYieldRate + Game.GetPlayerPerkBuildingClassFlatYieldChange( perkID, buildingClassID, yieldID )
+						buildingYieldModifier = buildingYieldModifier + Game.GetPlayerPerkBuildingClassPercentYieldChange( perkID, buildingClassID, yieldID )
 					end
 				end
-			end
-		end
-
-		-------------------
-		-- Specialist Slots
-		local numSpecialistsInBuilding = city:GetNumSpecialistsInBuilding( buildingID )
-		local specialistTable = g_citySpecialists[buildingID] or {}
-		if specialistTable.n ~= numSpecialistsInBuilding then
-			specialistTable = { n = numSpecialistsInBuilding }
-			for i = 1, numSpecialistsInBuilding do
-				specialistTable[i] = true
-			end
-			g_citySpecialists[buildingID] = specialistTable
-		end
-		local specialistType = building.SpecialistType
-		local specialist = GameInfo.Specialists[specialistType]
-		if specialist then
-			for slotID = 1, city:GetNumSpecialistsAllowedByBuilding( buildingID ) do
-				local slot = g_slots:remove()
-				if slot then
-					slot:ChangeParent( slotStack )
-				else
-					ContextPtr:BuildInstanceForControl( "Slot", instance, slotStack )
-					slot = instance.Button
-					slot:RegisterCallback( Mouse.eRClick, SpecialistPedia )
-					slot:SetToolTipCallback( SpecialistTooltip )
+				-- Specialists yield
+				if specialist then
+					buildingYieldRate = buildingYieldRate + numSpecialistsInBuilding * city:GetSpecialistYield( specialist.ID, yieldID )
 				end
-				controls[1]:insert( slot )
-				if civ5_mode then
-					slot:SetTexture( specialistTable[ slotID ] and g_slotTexture[ specialistType ] or "CitizenEmpty.dds" )
-				else
-					IconHookup( specialist.PortraitIndex, 45, specialist.IconAtlas, instance.Portrait )
-					instance.Portrait:SetHide( not specialistTable[ slotID ] )
+				cityYieldRateModifier = city:GetBaseYieldRateModifier( yieldID )
+				cityYieldRate = city:GetYieldPerPopTimes100( yieldID ) * population / 100 + city:GetBaseYieldRate( yieldID )
+				-- Special culture case
+				if yieldID == YieldTypes.YIELD_CULTURE then
+					buildingYieldRate = buildingYieldRate + buildingCultureRate
+					buildingYieldModifier = buildingYieldModifier + buildingCultureModifier
+					cityYieldRateModifier = cityYieldRateModifier + cityCultureRateModifier
+					cityYieldRate = cityYieldRate + cityCultureRate
+					buildingCultureRate = 0
+					buildingCultureModifier = 0
+				elseif yieldID == YieldTypes.YIELD_FOOD then
+					local foodPerPop = GameDefines.FOOD_CONSUMPTION_PER_POPULATION
+					local foodConsumed = city:FoodConsumption()
+					buildingYieldRate = buildingYieldRate + (foodConsumed < foodPerPop * population and foodPerPop * numSpecialistsInBuilding / 2 or 0)
+					buildingYieldModifier = buildingYieldModifier + (tonumber(building.FoodKept) or 0)
+					cityYieldRate = city:FoodDifferenceTimes100() / 100 -- cityYieldRate - foodConsumed 
+					cityYieldRateModifier = cityYieldRateModifier + city:GetMaxFoodKeptPercent()
+					isProducing = true
 				end
-				slot:SetVoids( buildingID, slotID )
-				if g_isViewingMode then
-					slot:ClearCallback( Mouse.eLClick )
-				else
-					slot:RegisterCallback( Mouse.eLClick, ToggleSpecialist )
+				-- Population yield
+				buildingYieldPerPop = 0
+				for row in GameInfo.Building_YieldChangesPerPop( thisBuildingAndYieldTypes ) do
+					buildingYieldPerPop = buildingYieldPerPop + (row.Yield or 0)
 				end
-			end -- Specialist Slots
-		end
+				buildingYieldRate = buildingYieldRate + buildingYieldPerPop * population / 100
 
-		-- Building stats/bonuses
-		local buildingClassID = GameInfoTypes[ building.BuildingClass ] or -1
-		local maintenanceCost = tonumber(building[g_maintenanceCurrency]) or 0
-		local defenseChange = tonumber(building.Defense) or 0
-		local hitPointChange = tonumber(building.ExtraCityHitPoints) or 0
-		local buildingCultureRate = (not gk_mode and tonumber(building.Culture) or 0) + (specialist and city:GetCultureFromSpecialist( specialist.ID ) or 0) * numSpecialistsInBuilding
-		local buildingCultureModifier = tonumber(building.CultureRateModifier) or 0
-		local cityCultureRateModifier = cityOwner:GetCultureCityModifier() + city:GetCultureRateModifier() + (city:GetNumWorldWonders() > 0 and cityOwner and cityOwner:GetCultureWonderMultiplier() or 0)
-		local cityCultureRate
-		local population = city:GetPopulation()
-		local tips = table()
-		local thisBuildingAndYieldTypes = { BuildingType = building.Type }
-		if civ5_mode then
-			cityCultureRate = city:GetBaseJONSCulturePerTurn()
-			-- Happiness
-			local happinessChange = (tonumber(building.Happiness) or 0) + (tonumber(building.UnmoddedHappiness) or 0)
-						+ cityOwner:GetExtraBuildingHappinessFromPolicies( buildingID )
-						+ (cityOwner:IsHalfSpecialistUnhappiness() and GameDefines.UNHAPPINESS_PER_POPULATION * numSpecialistsInBuilding * ((city:IsCapital() and cityOwner:GetCapitalUnhappinessMod() or 0)+100) * (cityOwner:GetUnhappinessMod() + 100) * (cityOwner:GetTraitPopUnhappinessMod() + 100) / 2e6 or 0) -- missing getHandicapInfo().getPopulationUnhappinessMod()
-			tips:insertIf( happinessChange ~=0 and happinessChange .. "[ICON_HAPPINESS_1]" )
-
-		else -- civBE_mode
-			cityCultureRate = city:GetBaseCulturePerTurn()
-			-- Health
-			local healthChange = (tonumber(building.Health) or 0) + (tonumber(building.UnmoddedHealth) or 0) + cityOwner:GetExtraBuildingHealthFromPolicies( buildingID )
-			local healthModifier = tonumber(building.HealthModifier) or 0
-			-- Effect of player perks
-			for i, perkID in ipairs(cityOwnerPerks) do
-				healthChange = healthChange + Game.GetPlayerPerkBuildingClassPercentHealthChange( perkID, buildingClassID )
-				healthModifier = healthModifier + Game.GetPlayerPerkBuildingClassPercentHealthChange( perkID, buildingClassID )
-				defenseChange = defenseChange + Game.GetPlayerPerkBuildingClassCityStrengthChange( perkID, buildingClassID )
-				hitPointChange = hitPointChange + Game.GetPlayerPerkBuildingClassCityHPChange( perkID, buildingClassID )
-				maintenanceCost = maintenanceCost + Game.GetPlayerPerkBuildingClassEnergyMaintenanceChange( perkID, buildingClassID )
+				buildingYieldRate = buildingYieldRate * cityYieldRateModifier + ( cityYieldRate - buildingYieldRate ) * buildingYieldModifier
+				tips:insertIf( isProducing and buildingYieldRate ~= 0 and buildingYieldRate / 100 .. tostring(YieldIcons[ yieldID ]) )
 			end
-			tips:insertIf( healthChange ~=0 and healthChange .. "[ICON_HEALTH_1]" )
---			tips:insertLocalizedIfNonZero( "TXT_KEY_STAT_POSITIVE_YIELD_MOD", "[ICON_HEALTH_1]", healthModifier )
-		end
-		local buildingYieldRate, buildingYieldPerPop, buildingYieldModifier, cityYieldRate, cityYieldRateModifier, isProducing
-		for yieldID = 0, YieldTypes.NUM_YIELD_TYPES-1 do
-			isProducing = isNotResistance
-			thisBuildingAndYieldTypes.YieldType = (GameInfo.Yields[yieldID] or {}).Type or -1
-			-- Yield changes from the building
-			buildingYieldRate = Game.GetBuildingYieldChange( buildingID, yieldID )
-						+ (gk_mode and cityOwner:GetPlayerBuildingClassYieldChange( buildingClassID, yieldID )
-						+ city:GetReligionBuildingClassYieldChange( buildingClassID, yieldID ) or 0)
-						+ (bnw_mode and city:GetLeagueBuildingClassYieldChange( buildingClassID, yieldID ) or 0)
-			-- Yield modifiers from the building
-			buildingYieldModifier = Game.GetBuildingYieldModifier( buildingID, yieldID )
-						+ cityOwner:GetPolicyBuildingClassYieldModifier( buildingClassID, yieldID )
-			-- Effect of player perks
-			if civBE_mode then
-				for i, perkID in ipairs(cityOwnerPerks) do
-					buildingYieldRate = buildingYieldRate + Game.GetPlayerPerkBuildingClassFlatYieldChange( perkID, buildingClassID, yieldID )
-					buildingYieldModifier = buildingYieldModifier + Game.GetPlayerPerkBuildingClassPercentYieldChange( perkID, buildingClassID, yieldID )
-				end
+
+			-- Culture leftovers
+			buildingCultureRate = buildingCultureRate * (100+cityCultureRateModifier) + ( cityCultureRate - buildingCultureRate ) * buildingCultureModifier
+			tips:insertIf( isNotResistance and buildingCultureRate ~=0 and buildingCultureRate / 100 .. "[ICON_CULTURE]" )
+
+	-- TODO TOURISM
+			if civ5bnw_mode then
+				local tourism = ( ( (building.FaithCost or 0) > 0
+						and building.UnlockedByBelief
+						and building.Cost == -1
+						and city and city:GetFaithBuildingTourism()
+						) or 0 )
+	--			local enhancedYieldTechID = GameInfoTypes[ building.EnhancedYieldTech ]
+				tourism = tourism + (tonumber(building.TechEnhancedTourism) or 0)
+				tips:insertIf( tourism ~= 0 and tourism.."[ICON_TOURISM]" )
 			end
-			-- Specialists yield
-			if specialist then
-				buildingYieldRate = buildingYieldRate + numSpecialistsInBuilding * city:GetSpecialistYield( specialist.ID, yieldID )
+
+			if civ5_mode and building.IsReligious then
+				buildingName = L( "TXT_KEY_RELIGIOUS_BUILDING", buildingName, Players[city:GetOwner()]:GetStateReligionKey() )
 			end
-			cityYieldRateModifier = city:GetBaseYieldRateModifier( yieldID )
-			cityYieldRate = city:GetYieldPerPopTimes100( yieldID ) * population / 100 + city:GetBaseYieldRate( yieldID )
-			-- Special culture case
-			if yieldID == YieldTypes.YIELD_CULTURE then
-				buildingYieldRate = buildingYieldRate + buildingCultureRate
-				buildingYieldModifier = buildingYieldModifier + buildingCultureModifier
-				cityYieldRateModifier = cityYieldRateModifier + cityCultureRateModifier
-				cityYieldRate = cityYieldRate + cityCultureRate
-				buildingCultureRate = 0
-				buildingCultureModifier = 0
-			elseif yieldID == YieldTypes.YIELD_FOOD then
-				local foodPerPop = GameDefines.FOOD_CONSUMPTION_PER_POPULATION
-				local foodConsumed = city:FoodConsumption()
-				buildingYieldRate = buildingYieldRate + (foodConsumed < foodPerPop * population and foodPerPop * numSpecialistsInBuilding / 2 or 0)
-				buildingYieldModifier = buildingYieldModifier + (tonumber(building.FoodKept) or 0)
-				cityYieldRate = city:FoodDifferenceTimes100() / 100 -- cityYieldRate - foodConsumed 
-				cityYieldRateModifier = cityYieldRateModifier + city:GetMaxFoodKeptPercent()
-				isProducing = true
+			if city:GetNumFreeBuilding( buildingID ) > 0 then
+				buildingName = buildingName .. " (" .. L"TXT_KEY_FREE" .. ")"
+			else
+				tips:insertIf( maintenanceCost ~=0 and -maintenanceCost .. g_currencyIcon )
 			end
-			-- Population yield
-			buildingYieldPerPop = 0
-			for row in GameInfo.Building_YieldChangesPerPop( thisBuildingAndYieldTypes ) do
-				buildingYieldPerPop = buildingYieldPerPop + (row.Yield or 0)
+			controls.Name:SetText( buildingName )
+
+			tips:insertIf( defenseChange ~=0 and defenseChange / 100 .. "[ICON_STRENGTH]" )
+			tips:insertLocalizedIfNonZero( "TXT_KEY_PEDIA_DEFENSE_HITPOINTS", hitPointChange )
+
+			controls.Label:ChangeParent( controls.Stack )
+			controls.Label:SetText( tips:concat(" ") )
+			slotStack:CalculateSize()
+			if slotStack:GetSizeX() + controls.Label:GetSizeX() < 254 then
+				controls.Label:ChangeParent( slotStack )
 			end
-			buildingYieldRate = buildingYieldRate + buildingYieldPerPop * population / 100
-
-			buildingYieldRate = buildingYieldRate * cityYieldRateModifier + ( cityYieldRate - buildingYieldRate ) * buildingYieldModifier
-			tips:insertIf( isProducing and buildingYieldRate ~= 0 and buildingYieldRate / 100 .. tostring(YieldIcons[ yieldID ]) )
+			controls.Stack:CalculateSize()
+	--		slotStack:ReprocessAnchoring()
+	--		controls.Stack:ReprocessAnchoring()
+			buildingButton:SetSizeY( math_max(64, controls.Stack:GetSizeY() + 16) )
 		end
-
-		-- Culture leftovers
-		buildingCultureRate = buildingCultureRate * (100+cityCultureRateModifier) + ( cityCultureRate - buildingCultureRate ) * buildingCultureModifier
-		tips:insertIf( isNotResistance and buildingCultureRate ~=0 and buildingCultureRate / 100 .. "[ICON_CULTURE]" )
-
--- TODO TOURISM
-		if civ5bnw_mode then
-			local tourism = ( ( (building.FaithCost or 0) > 0
-					and building.UnlockedByBelief
-					and building.Cost == -1
-					and city and city:GetFaithBuildingTourism()
-					) or 0 )
---			local enhancedYieldTechID = GameInfoTypes[ building.EnhancedYieldTech ]
-			tourism = tourism + (tonumber(building.TechEnhancedTourism) or 0)
-			tips:insertIf( tourism ~= 0 and tourism.."[ICON_TOURISM]" )
-		end
-
-		if civ5_mode and building.IsReligious then
-			buildingName = L( "TXT_KEY_RELIGIOUS_BUILDING", buildingName, Players[city:GetOwner()]:GetStateReligionKey() )
-		end
-		if city:GetNumFreeBuilding( buildingID ) > 0 then
-			buildingName = buildingName .. " (" .. L"TXT_KEY_FREE" .. ")"
-		else
-			tips:insertIf( maintenanceCost ~=0 and -maintenanceCost .. g_currencyIcon )
-		end
-		controls.Name:SetText( buildingName )
-
-		tips:insertIf( defenseChange ~=0 and defenseChange / 100 .. "[ICON_STRENGTH]" )
-		tips:insertLocalizedIfNonZero( "TXT_KEY_PEDIA_DEFENSE_HITPOINTS", hitPointChange )
-
-		controls.Label:ChangeParent( controls.Stack )
-		controls.Label:SetText( tips:concat(" ") )
-		slotStack:CalculateSize()
-		if slotStack:GetSizeX() + controls.Label:GetSizeX() < 254 then
-			controls.Label:ChangeParent( slotStack )
-		end
-		controls.Stack:CalculateSize()
---		slotStack:ReprocessAnchoring()
---		controls.Stack:ReprocessAnchoring()
-		buildingButton:SetSizeY( math_max(64, controls.Stack:GetSizeY() + 16) )
 	end
 	return buildingIM.Commit()
 end

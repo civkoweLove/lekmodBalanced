@@ -1,2 +1,2 @@
-# LoveMod
-version 7.11
+# MultiMod
+version 8.0

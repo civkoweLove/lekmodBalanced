@@ -119,7 +119,12 @@ function RefreshDropDownGameOptions()
 				else
 					dropDownButton:SetToolTipString();
 				end
-				PreGame.SetMapOption(option.ID, possibleValue.Value);
+				if option.Name == Locale.ConvertTextKey("TXT_KEY_MAP_OPTION_TECH_SPEED_ID") then
+					local id = GameInfo.GameSpeeds["GAMESPEED_"..string.upper(possibleValue.Name)].ID;
+					PreGame.SetMapOption(option.ID, id + 1);
+				else
+					PreGame.SetMapOption(option.ID, possibleValue.Value);
+				end
 			end);
 		end
 		
