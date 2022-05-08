@@ -482,6 +482,10 @@ local g_cityToolTips = {
 		end
 		return connectionTip
 	end,
+	
+	CityIsRailroadConnected = function( city )
+		return L"TXT_KEY_CITY_RAILROAD_CONNECTED"
+	end,
 	CityIsBlockaded = function()
 		return L"TXT_KEY_CITY_BLOCKADED"
 	end,
@@ -1020,6 +1024,7 @@ local function RefreshCityBannersNow()
 
 				-- Connected to capital?
 				instance.CityIsConnected:SetHide( city:IsCapital() or not cityOwner:IsCapitalConnectedToCity( city ) )
+				instance.CityIsRailroadConnected:SetHide( city:IsCapital() or not city:IsIndustrialRouteToCapital() )
 
 				-- Demand resource / King day ?
 				local resource = GameInfo.Resources[ city:GetResourceDemanded() ]
