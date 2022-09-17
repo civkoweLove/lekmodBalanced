@@ -404,17 +404,17 @@ ContextPtr:SetShowHideHandler( ShowHide );
 -------------------------------------------------------------------------
 function OnEndTurnTimerClicked()
 	UI.interruptTurnTimer();
-	--ePlayer = Game.GetActivePlayer()
+	ePlayer = Game.GetActivePlayer()
 	-- host has id 0
-	--if(ePlayer == 0) then
-	--	if(Game.IsPaused()) then
-	--		-- start timer
-	--		Game.SetPausePlayer(-1);
-	--	else
-	--		-- pause timer
-	--		Game.SetPausePlayer(ePlayer);
-	--	end
-	--end
+	if(ePlayer == 0) then
+		if(Game.IsPaused()) then
+			-- start timer
+			Game.SetPausePlayer(-1);
+		else
+			-- pause timer
+			Game.SetPausePlayer(ePlayer);
+		end
+	end
 end
 Controls.EndTurnTimerButton:RegisterCallback( Mouse.eLClick, OnEndTurnTimerClicked );
 
