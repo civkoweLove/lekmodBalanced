@@ -101,7 +101,10 @@ function( wParam, lParam )
 		return true;
     elseif ( wParam == Keys.G ) then
 		UI.ToggleGridVisibleMode();
-		return true;
+	    return true;
+    elseif ( wParam == Keys.VK_RETURN or wParam == KB_SPACE or wParam == KB_NUMPADENTER ) then
+		LuaEvents.OnEndTurnClicked();
+		return false;
     end
     return false;
 end

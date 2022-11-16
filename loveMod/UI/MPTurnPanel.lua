@@ -36,6 +36,8 @@ else
 	curIconSize = g_iconSizes["Small"];
 end
 
+g_LastSaveTurn = -1;
+
 -----------------------------------------------------
 -- Utility Functions
 -------------------------------------------------
@@ -262,6 +264,36 @@ end
 Events.RemotePlayerTurnEnd.Add( OnRemotePlayerTurnEnd );
 
 local HalfTimeNotification = true
+
+----------------------------------------------
+function TurnTimerAutoSave()
+		local currentTurn = Game.GetGameTurn();
+        local turnFormat = "Turn_" .. string.format("%03d", currentTurn);
+        local saveName = "EndTurnAutoSave_" .. turnFormat;
+        UI.SaveGame( saveName );
+end
+-----------------------------------------------------
+function GetDefaultSaveName()
+	if (PreGame.GameStarted()) then 
+		local iPlayer = Game.GetActivePlayer();
+		local leaderName = PreGame.GetLeaderName(iPlayer);
+		local civ = PreGame.GetCivilization();
+		local civInfo = GameInfo.Civilizations[civ];
+		local leader = GameInfo.Leaders[GameInfo.Civilization_Leaders( "CivilizationType = '" .. civInfo.Type .. "'" )().LeaderheadType];
+		
+		local leaderDescription = Locale.ConvertTextKey(leader.Description);
+		if leaderName ~= nil and leaderName ~= "" then
+			leaderDescription = leaderName;
+		end
+						
+		return leaderDescription .. "_" .. Game.GetTimeString();
+	else
+		-- Saving before the game starts, this will just save the setup data
+		return Locale.ConvertTextKey("TXT_KEY_DEFAULT_GAME_CONFIGURATION_NAME");
+	end
+		
+end
+
 ----------------------------------------------
 function OnEndTurnTimerUpdate(percentComplete)
 	if( turnEnded == true ) then
@@ -282,6 +314,11 @@ function OnEndTurnTimerUpdate(percentComplete)
 	timeLeft = math.ceil(maxTime - (maxTime * percentComplete));
 	if timeLeft < 1 then
 		timeLeft = 0;
+	elseif timeLeft < 2 then
+		if currentTurn > g_LastSaveTurn then
+			TurnTimerAutoSave();
+			g_LastSaveTurn = currentTurn;
+		end
 	end
 	
 	if percentComplete < 0.1 then
