@@ -357,12 +357,7 @@ function ReloadFix()
 		local currentTurn = Game.GetGameTurn();
 
 		if currentTurn > g_LastSaveTurn then
-
-			local turnFormat = "Turn_" .. string.format("%03d", currentTurn);
-			local saveName = "EndTurnAutoSave_" .. turnFormat;
-
-			UI.SaveGame( saveName );
-
+			UI.SaveGame( "EndTurnAutoSave" );
 			g_LastSaveTurn = currentTurn
 		end
 	end

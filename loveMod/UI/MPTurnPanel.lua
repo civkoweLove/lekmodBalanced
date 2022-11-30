@@ -267,10 +267,7 @@ local HalfTimeNotification = true
 
 ----------------------------------------------
 function TurnTimerAutoSave()
-		local currentTurn = Game.GetGameTurn();
-        local turnFormat = "Turn_" .. string.format("%03d", currentTurn);
-        local saveName = "EndTurnAutoSave_" .. turnFormat;
-        UI.SaveGame( saveName );
+	UI.SaveGame( "EndTurnAutoSave" );
 end
 -----------------------------------------------------
 function GetDefaultSaveName()
