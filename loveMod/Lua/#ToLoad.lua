@@ -41,4 +41,6 @@ ContextPtr:LoadNewContext("PromotionTree")
 ContextPtr:LoadNewContext("Philipines_UA")
 ContextPtr:LoadNewContext("Mali_Dummy_Policy")
 ContextPtr:LoadNewContext("England")
+ContextPtr:LoadNewContext("Piety_MandateOfHeaven")
+ContextPtr:LoadNewContext("Tradition_Oligarchy")
 
