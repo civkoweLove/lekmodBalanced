@@ -455,13 +455,6 @@ function UpdateCombatOddsUnitVsCity(pMyUnit, pCity)
 				controlTable.Value:SetText( GetFormattedText(strText, iModifier, true, true) );
 			end
 			
-			iModifier = pMyPlayer:GetFoundedReligionEnemyCityCombatMod(pPlot);
-			if (iModifier ~= 0) then
-				controlTable = g_MyCombatDataIM:GetInstance();
-				controlTable.Text:LocalizeAndSetText( "TXT_KEY_EUPANEL_ENEMY_CITY_BELIEF_BONUS" );
-				controlTable.Value:SetText( GetFormattedText(strText, iModifier, true, true) );
-			end
-			
 			-- Sapper unit modifier
 			if (pMyUnit:IsNearSapper(pCity)) then
 				iModifier = GameDefines["SAPPED_CITY_ATTACK_MODIFIER"];
@@ -1001,11 +994,11 @@ function UpdateCombatOddsUnitVsUnit(pMyUnit, pTheirUnit)
 					controlTable.Text:LocalizeAndSetText( "TXT_KEY_EUPANEL_ATTACK_IN_FRIEND_LANDS" );
 					controlTable.Value:SetText( GetFormattedText(strText, iModifier, true, true) );
 				end
-				
-				iModifier = pMyPlayer:GetFoundedReligionFriendlyCityCombatMod(pToPlot);
+
+				iModifier = pMyPlayer:GetFoundedReligionEnemyCityCombatMod(pToPlot);
 				if (iModifier ~= 0) then
 					controlTable = g_MyCombatDataIM:GetInstance();
-					controlTable.Text:LocalizeAndSetText( "TXT_KEY_EUPANEL_FRIENDLY_CITY_BELIEF_BONUS" );
+					controlTable.Text:LocalizeAndSetText( "TXT_KEY_EUPANEL_ENEMY_CITY_BELIEF_BONUS" );
 					controlTable.Value:SetText( GetFormattedText(strText, iModifier, true, true) );
 				end
 			end
@@ -1057,13 +1050,6 @@ function UpdateCombatOddsUnitVsUnit(pMyUnit, pTheirUnit)
 				if (iModifier ~= 0) then
 					controlTable = g_MyCombatDataIM:GetInstance();
 					controlTable.Text:LocalizeAndSetText( "TXT_KEY_EUPANEL_OUTSIDE_HOME_BONUS" );
-					controlTable.Value:SetText( GetFormattedText(strText, iModifier, true, true) );
-				end
-
-				iModifier = pMyPlayer:GetFoundedReligionEnemyCityCombatMod(pToPlot);
-				if (iModifier ~= 0) then
-					controlTable = g_MyCombatDataIM:GetInstance();
-					controlTable.Text:LocalizeAndSetText( "TXT_KEY_EUPANEL_ENEMY_CITY_BELIEF_BONUS" );
 					controlTable.Value:SetText( GetFormattedText(strText, iModifier, true, true) );
 				end
 			end
@@ -1525,13 +1511,6 @@ function UpdateCombatOddsUnitVsUnit(pMyUnit, pTheirUnit)
 					if (iModifier ~= 0) then
 						controlTable = g_TheirCombatDataIM:GetInstance();
 						controlTable.Text:LocalizeAndSetText(  "TXT_KEY_EUPANEL_OUTSIDE_HOME_BONUS" );
-						controlTable.Value:SetText( GetFormattedText(strText, iModifier, false, true) );
-					end
-					
-					iModifier = pTheirPlayer:GetFoundedReligionEnemyCityCombatMod(pToPlot);
-					if (iModifier ~= 0) then
-						controlTable = g_TheirCombatDataIM:GetInstance();
-						controlTable.Text:LocalizeAndSetText( "TXT_KEY_EUPANEL_ENEMY_CITY_BELIEF_BONUS" );
 						controlTable.Value:SetText( GetFormattedText(strText, iModifier, false, true) );
 					end
 				end
@@ -2024,13 +2003,6 @@ function UpdateCombatOddsCityVsUnit(myCity, theirUnit)
 			if (iModifier ~= 0) then
 				controlTable = g_TheirCombatDataIM:GetInstance();
 				controlTable.Text:LocalizeAndSetText(  "TXT_KEY_EUPANEL_OUTSIDE_HOME_BONUS" );
-				controlTable.Value:SetText( GetFormattedText(strText, iModifier, false, true) );
-			end
-			
-			iModifier = pTheirPlayer:GetFoundedReligionEnemyCityCombatMod(theirPlot);
-			if (iModifier ~= 0) then
-				controlTable = g_TheirCombatDataIM:GetInstance();
-				controlTable.Text:LocalizeAndSetText( "TXT_KEY_EUPANEL_ENEMY_CITY_BELIEF_BONUS" );
 				controlTable.Value:SetText( GetFormattedText(strText, iModifier, false, true) );
 			end
 		end
