@@ -43,4 +43,5 @@ ContextPtr:LoadNewContext("Mali_Dummy_Policy")
 ContextPtr:LoadNewContext("England")
 ContextPtr:LoadNewContext("Piety_MandateOfHeaven")
 ContextPtr:LoadNewContext("Tradition_Oligarchy")
+ContextPtr:LoadNewContext("Denmark")
 
