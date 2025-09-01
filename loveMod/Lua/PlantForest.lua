@@ -3,6 +3,7 @@ function ForestPlanted(playerID, plotX, plotY, improvementID)
         local plot = Map.GetPlot(plotX, plotY)
         plot:SetImprovementType(-1);
         plot:SetFeatureType(FeatureTypes.FEATURE_FOREST, -1);
+		plot:SetPlantedForest();
     end
 end
 GameEvents.BuildFinished.Add(ForestPlanted)
