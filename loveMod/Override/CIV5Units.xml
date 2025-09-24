@@ -85593,7 +85593,7 @@ lithuania changes -->
 			<FreshWater>false</FreshWater> 
 			<Mountain>false</Mountain> 
 			<NearbyMountainRequired>false</NearbyMountainRequired> 
-			<Hill>true</Hill> 
+			<Hill>false</Hill> 
 			<Flat>false</Flat> 
 			<FoundsReligion>false</FoundsReligion> 
 			<IsReligious>false</IsReligious> 
