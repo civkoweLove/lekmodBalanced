@@ -112508,7 +112508,7 @@ lithuania changes -->
 		</Row>
 		<Row> 
 			<CivilizationType>CIVILIZATION_SPAIN</CivilizationType> 
-			<UnitClassType>UNITCLASS_MUSKETMAN</UnitClassType> 
+			<UnitClassType>UNITCLASS_HALBERDMAN</UnitClassType> 
 			<UnitType>UNIT_TERCIO</UnitType> 
 		</Row>
 		<Row> 
@@ -253288,9 +253288,9 @@ lithuania changes -->
 			<GoldenAgeGreatMusicianRateModifier>0</GoldenAgeGreatMusicianRateModifier> 
 			<GoldenAgeGreatWriterRateModifier>0</GoldenAgeGreatWriterRateModifier> 
 			<ExtraEmbarkMoves>0</ExtraEmbarkMoves> 
-			<NaturalWonderFirstFinderGold>100</NaturalWonderFirstFinderGold> 
-			<NaturalWonderSubsequentFinderGold>100</NaturalWonderSubsequentFinderGold> 
-			<NaturalWonderYieldModifier>100</NaturalWonderYieldModifier> 
+			<NaturalWonderFirstFinderGold>125</NaturalWonderFirstFinderGold> 
+			<NaturalWonderSubsequentFinderGold>125</NaturalWonderSubsequentFinderGold> 
+			<NaturalWonderYieldModifier>0</NaturalWonderYieldModifier> 
 			<NaturalWonderHappinessModifier>100</NaturalWonderHappinessModifier> 
 			<NearbyImprovementCombatBonus>0</NearbyImprovementCombatBonus> 
 			<NearbyImprovementBonusRange>0</NearbyImprovementBonusRange> 
@@ -308397,7 +308397,7 @@ lithuania changes -->
 		</Row>
 		<Row> 
 			<UnitType>UNIT_TERCIO</UnitType> 
-			<UnitClassType>UNITCLASS_RIFLEMAN</UnitClassType> 
+			<UnitClassType>UNITCLASS_ANTI_TANK_RIFLE</UnitClassType> 
 		</Row>
 		<Row> 
 			<UnitType>UNIT_COMPOSITE_BOWMAN</UnitType> 
@@ -324605,10 +324605,10 @@ lithuania changes -->
 			<Civilopedia>TXT_KEY_UNIT_TERCIO_TEXT</Civilopedia> 
 			<Strategy>TXT_KEY_UNIT_TERCIO_STRATEGY</Strategy> 
 			<Help>TXT_KEY_UNIT_TERCIO_HELP</Help> 
-			<Combat>26</Combat> 
+			<Combat>22</Combat> 
 			<RangedCombat>0</RangedCombat> 
-			<Cost>160</Cost> 
-			<FaithCost>320</FaithCost> 
+			<Cost>150</Cost> 
+			<FaithCost>300</FaithCost> 
 			<RequiresFaithPurchaseEnabled>true</RequiresFaithPurchaseEnabled> 
 			<PurchaseOnly>false</PurchaseOnly> 
 			<MoveAfterPurchase>false</MoveAfterPurchase> 
@@ -324616,7 +324616,7 @@ lithuania changes -->
 			<Immobile>false</Immobile> 
 			<Range>0</Range> 
 			<BaseSightRange>2</BaseSightRange> 
-			<Class>UNITCLASS_MUSKETMAN</Class> 
+			<Class>UNITCLASS_HALBERDMAN</Class> 
 			<CombatClass>UNITCOMBAT_MELEE</CombatClass> 
 			<Domain>DOMAIN_LAND</Domain> 
 			<DefaultUnitAI>UNITAI_ATTACK</DefaultUnitAI> 
@@ -324638,9 +324638,9 @@ lithuania changes -->
 			<Mechanized>false</Mechanized> 
 			<Suicide>false</Suicide> 
 			<CaptureWhileEmbarked>false</CaptureWhileEmbarked> 
-			<PrereqTech>TECH_GUNPOWDER</PrereqTech> 
-			<ObsoleteTech>TECH_RIFLING</ObsoleteTech> 
-			<GoodyHutUpgradeUnitClass>UNITCLASS_RIFLEMAN</GoodyHutUpgradeUnitClass> 
+			<PrereqTech>TECH_ACOUSTICS</PrereqTech> 
+			<ObsoleteTech>TECH_ARMOR</ObsoleteTech> 
+			<GoodyHutUpgradeUnitClass>UNITCLASS_ANTI_TANK_RIFLE</GoodyHutUpgradeUnitClass> 
 			<HurryCostModifier>0</HurryCostModifier> 
 			<AdvancedStartCost>20</AdvancedStartCost> 
 			<MinAreaSize>-1</MinAreaSize> 

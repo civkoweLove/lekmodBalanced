@@ -136418,7 +136418,7 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_TRAIT_SEVEN_CITIES"> 
 			<Text>
-				Gain [ICON_GOLD] 100 Gold whenever you discover a Natural Wonder. [ICON_CULTURE] Culture, [ICON_HAPPINESS_1] Happiness, and tile yields from Natural Wonders doubled.
+				Gain [ICON_GOLD] 125 Gold whenever you discover a Natural Wonder. +1 [ICON_HAPPINESS_1] Happiness for the empire upon the discovery of a Natural Wonder.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_TRAIT_SEVEN_CITIES_SHORT"> 
@@ -138081,7 +138081,7 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_UNIT_TERCIO_HELP"> 
 			<Text>
-				The Tercio is a Spanish Unique Unit that replaces the Musketman.[NEWLINE][NEWLINE]Considered a Melee Unit (vs. Gunpowder).[NEWLINE][NEWLINE]26 [ICON_STRENGTH] Combat Strength (vs. 24).[NEWLINE][NEWLINE]+50% [ICON_STRENGTH] Combat Strength bonus in Melee Combat vs. Mounted Units and Mounted Ranged Units. Lost upon upgrade.[NEWLINE][NEWLINE]More expensive to train (160 vs. 150 [ICON_PRODUCTION] Production on Standard).
+				The Tercio is a Spanish Unique Unit that replaces the Halberdman.[NEWLINE][NEWLINE]22 [ICON_STRENGTH] Combat Strength (vs. 20).[NEWLINE][NEWLINE]Just like a Halberdman, it receives a +50% [ICON_STRENGTH] Combat Strength bonus in Melee Combat vs. Mounted Units and Mounted Ranged Units.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_UNIT_TERCIO_STRATEGY"> 
