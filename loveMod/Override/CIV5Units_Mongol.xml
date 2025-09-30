@@ -68,7 +68,7 @@
 		<Text>Tamar was born in circa 1160 to George III, King of Georgia, and his consort Burdukhan, a daughter of the king of Alania. Tamar's youth coincided with a major upheaval in Georgia; in 1177, her father, George III, was confronted by a rebellious faction of nobles. The rebels intended to dethrone George in favor of the king's fraternal nephew, Demna, who was considered by many to be a legitimate royal heir of his murdered father, David V. Demna's cause was little but a pretext for the nobles, led by the pretender's father-in-law, the amirspasalar ("high constable") Ivane Orbeli, to weaken the crown. George III was able to crush the revolt and embarked on a crackdown campaign on the defiant aristocratic clans; Ivane Orbeli was put to death and the surviving members of his family were driven out of Georgia. Demna, castrated and blinded on his uncle's order, did not survive the mutilation and soon died in prison. Once the rebellion was suppressed and the pretender eliminated, George went ahead to co-opt Tamar into government with him and crowned her as co-ruler in 1178. By doing so, the king attempted to preempt any dispute after his death and legitimize his line on the throne of Georgia. At the same time, he raised men from the Kipchaks as well as from the gentry and unranked classes to keep the dynastic aristocracy away from the center of power. Soruce: Wikipedia</Text>
 	</Row>
 	<Row Tag="TXT_KEY_TRAIT_GEORGIA">
-		<Text>+1 Production and +1 Faith from all Luxury resources during Golden Age. All Plantation receive +1 Food (Not implemented)</Text>
+		<Text>+1 [ICON_PRODUCTION] Production and +1 [ICON_PEACE] Faith from all Luxury resources during Golden Age. All Plantation receive +1 [ICON_FOOD] Food.</Text>
 	</Row>
 	<Row Tag="TXT_KEY_TRAIT_GEORGIA_SHORT">
 		<Text>Georgian Renaissance</Text>
@@ -18732,6 +18732,26 @@ strongest around the Gulf of Bothnia, where land steadily rises about 1 cm a yea
 				[NEWLINE][TAB][TAB]"The wonder is, not that the field of stars is so vast, but that man has measured it."[NEWLINE]- Anatole France[NEWLINE][TAB]
 			</Text>
 		</Replace>
+		<Row Tag="TXT_KEY_BUILDING_HUEY">
+			<Text>
+				Huey Teocalli
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_HUEY_HELP">
+			<Text>
+				+4 [ICON_PEACE] Faith.[NEWLINE][NEWLINE] +2 [ICON_FOOD] Food and +2 [ICON_CULTURE] Culture from all Lakes and Lake Victoria worked by this City.[NEWLINE][NEWLINE]+1 [ICON_GREAT_PEOPLE] Great Farmer point.[NEWLINE][NEWLINE]---[NEWLINE]City must be built next to a Lake or Lake Victoria. 
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_HUEY_QUOTE">
+			<Text>
+				[NEWLINE]"A stream cannot rise larger than its source"[NEWLINE] - Theodore Roosevelt[NEWLINE]
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_HUEY_PEDIA">
+			<Text>
+				The Panama Canal is a manmade shipping lane located on the Panama Isthmus seperating the Pacific Ocean and Carribean Sea. The idea of a canal in the location was first proposed int he sixteenth century by Charles V, Holy Roman Emperor, who asked for a link to shorten the journey between Spain and their colony of Peru. In 1698 the Kingdom of Scotland launched a project to create an overland trade route in the area, which was abandoned due to inhospitiable conditions a year later. It was not until 1855 that a link was first established, the Panama Canal Railway, as a result of the 1849 discovery of Gold in the American state of California. This railway was used extensively in the American construction of the canal from 1904 to 1914. As opposed to the French plan of constructing a flat water canal, much like that of the Suez Canal, the American design featured a series of ship locks to rise the ships over a range that caused problems for the French design. The American design proved sucessful, and was opened on August 15, 1914. Railway cars had been used to transport approximately 152,910,972 cubic metres of excevations through the construction, while it had cost 27,500 lives across the whole project.  
+			</Text>
+		</Row>
 		<Replace Tag="TXT_KEY_BUILDING_INTERNATIONAL_SPACE_STATION"> 
 			<Text>
 				International Space Station
@@ -22546,7 +22566,7 @@ strongest around the Gulf of Bothnia, where land steadily rises about 1 cm a yea
 		</Replace>
 		<Replace Tag="TXT_KEY_CITYSTATE_TBILSI_TEXT"> 
 			<Text>
-				Tbilsi is the capital and the largest city of Georgia.
+				Tbilisi is the capital and the largest city of Georgia.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_CITYSTATE_THIMPHU"> 
@@ -136398,7 +136418,7 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_TRAIT_SEVEN_CITIES"> 
 			<Text>
-				Gain [ICON_GOLD] 100 Gold whenever you discover a Natural Wonder. [ICON_CULTURE] Culture, [ICON_HAPPINESS_1] Happiness, and tile yields from Natural Wonders doubled.
+				Gain [ICON_GOLD] 125 Gold whenever you discover a Natural Wonder. +1 [ICON_HAPPINESS_1] Happiness for the empire upon the discovery of a Natural Wonder.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_TRAIT_SEVEN_CITIES_SHORT"> 
@@ -138061,7 +138081,7 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_UNIT_TERCIO_HELP"> 
 			<Text>
-				The Tercio is a Spanish Unique Unit that replaces the Musketman.[NEWLINE][NEWLINE]Considered a Melee Unit (vs. Gunpowder).[NEWLINE][NEWLINE]26 [ICON_STRENGTH] Combat Strength (vs. 24).[NEWLINE][NEWLINE]+50% [ICON_STRENGTH] Combat Strength bonus in Melee Combat vs. Mounted Units and Mounted Ranged Units. Lost upon upgrade.[NEWLINE][NEWLINE]More expensive to train (160 vs. 150 [ICON_PRODUCTION] Production on Standard).
+				The Tercio is a Spanish Unique Unit that replaces the Halberdman.[NEWLINE][NEWLINE]22 [ICON_STRENGTH] Combat Strength (vs. 20).[NEWLINE][NEWLINE]Just like a Halberdman, it receives a +50% [ICON_STRENGTH] Combat Strength bonus in Melee Combat vs. Mounted Units and Mounted Ranged Units.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_UNIT_TERCIO_STRATEGY"> 
@@ -139886,7 +139906,7 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_ROCKET_CORPS_HELP">
 			<Text>
-				The Rocket Corps is a Mysorean Unique Unit that replaces the Artillery.[NEWLINE][NEWLINE]21 [ICON_STRENGTH] Combat Strength (vs. 19).[NEWLINE]28 [ICON_RANGE_STRENGTH] Ranged Strength (vs. 27).[NEWLINE][NEWLINE]+25% [ICON_STRENGTH] Attack Strength bonus. Retained upon Upgrade.[NEWLINE][NEWLINE]Requires NO [ICON_RES_IRON] Iron.[NEWLINE][NEWLINE]-----[NEWLINE][NEWLINE]3 Range.[NEWLINE][NEWLINE]+200% [ICON_RANGE_STRENGTH] Attack Strength bonus vs. Cities.[NEWLINE][NEWLINE]Must set up prior to firing (expending 1 Movement Point).[NEWLINE][NEWLINE]Possesses the Indirect Fire promotion, allowing it to disregard terrain obstacles when firing.[NEWLINE][NEWLINE]Limited visibility (1 Sight).[NEWLINE][NEWLINE]Cannot Fortify and does not benefit from Defensive Terrain bonuses.[NEWLINE][NEWLINE]Vulnerable to Mounted Units.
+				The Rocket Corps is a Mysorean Unique Unit that replaces the Artillery.[NEWLINE][NEWLINE]21 [ICON_STRENGTH] Combat Strength (vs. 19).[NEWLINE]28 [ICON_RANGE_STRENGTH] Ranged Strength (vs. 27).[NEWLINE][NEWLINE]+25% [ICON_STRENGTH] Attack Strength bonus. Retained upon Upgrade.[NEWLINE][NEWLINE]Requires 1 [ICON_RES_IRON] Iron.[NEWLINE][NEWLINE]-----[NEWLINE][NEWLINE]3 Range.[NEWLINE][NEWLINE]+200% [ICON_RANGE_STRENGTH] Attack Strength bonus vs. Cities.[NEWLINE][NEWLINE]Must set up prior to firing (expending 1 Movement Point).[NEWLINE][NEWLINE]Possesses the Indirect Fire promotion, allowing it to disregard terrain obstacles when firing.[NEWLINE][NEWLINE]Limited visibility (1 Sight).[NEWLINE][NEWLINE]Cannot Fortify and does not benefit from Defensive Terrain bonuses.[NEWLINE][NEWLINE]Vulnerable to Mounted Units.
 			</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_ROCKET_CORPS_PEDIA">
@@ -140620,7 +140640,7 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_UNIT_HELP_NUCLEAR_MISSILE"> 
 			<Text>
-				The Nuclear Missile is a devastating weapon destroying everything in its blast radius.[NEWLINE][NEWLINE]Available at Advanced Ballistics.[NEWLINE][NEWLINE]12 [ICON_RANGE_STRENGTH] Range.[NEWLINE][NEWLINE]Can be fired from a City, a Missile Cruiser or a Nuclear Submarine.[NEWLINE][NEWLINE]Evasion 50 (has a 50% chance of avoiding enemy interception; calculated first, before triggering interception).[NEWLINE][NEWLINE]2-tile blast radius.[NEWLINE][NEWLINE]All Units in the blast radius are destroyed.[NEWLINE][NEWLINE]All tiles in the blast radius may become covered in Nuclear Fallout, reducing their yields and obstructing movement.[NEWLINE][NEWLINE]Reduces City's Hit Points and Population by half. A second hit may destroy the City completely.[NEWLINE][NEWLINE]Destroyed upon hitting the target.[NEWLINE][NEWLINE]Resistant to enemy Nuclear Weapons.[NEWLINE][NEWLINE]Requires Manhattan Project and 2 [ICON_RES_URANIUM] Uranium.
+				The Nuclear Missile is a devastating weapon destroying everything in its blast radius.[NEWLINE][NEWLINE]Available at Advanced Ballistics.[NEWLINE][NEWLINE]12 [ICON_RANGE_STRENGTH] Range.[NEWLINE][NEWLINE]Can be fired from a City, a Missile Cruiser or a Nuclear Submarine.[NEWLINE][NEWLINE]2-tile blast radius.[NEWLINE][NEWLINE]All Units in the blast radius are destroyed.[NEWLINE][NEWLINE]All tiles in the blast radius may become covered in Nuclear Fallout, reducing their yields and obstructing movement.[NEWLINE][NEWLINE]Reduces City's Hit Points and Population by half. A second hit may destroy the City completely.[NEWLINE][NEWLINE]Destroyed upon hitting the target.[NEWLINE][NEWLINE]Resistant to enemy Nuclear Weapons.[NEWLINE][NEWLINE]Requires Manhattan Project and 2 [ICON_RES_URANIUM] Uranium.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_UNIT_NUCLEAR_MISSILE_STRATEGY"> 

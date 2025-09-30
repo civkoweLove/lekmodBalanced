@@ -37188,6 +37188,15 @@
 			<MaxPlayerInstances>-1</MaxPlayerInstances> 
 			<ExtraPlayerInstances>0</ExtraPlayerInstances> 
 		</Row>
+		<Row> 
+			<Type>BUILDINGCLASS_HUEY</Type> 
+			<Description>TXT_KEY_BUILDING_HUEY</Description> 
+			<DefaultBuilding>BUILDING_HUEY</DefaultBuilding> 
+			<MaxGlobalInstances>1</MaxGlobalInstances> 
+			<MaxTeamInstances>-1</MaxTeamInstances> 
+			<MaxPlayerInstances>-1</MaxPlayerInstances> 
+			<ExtraPlayerInstances>0</ExtraPlayerInstances> 
+		</Row>
 		<Row>
 			<Type>BUILDINGCLASS_LATYFUNDIUM</Type> 
 			<Description>TXT_KEY_LATYFUNDIUM</Description> 
@@ -38749,6 +38758,18 @@
 			<Yield>2</Yield> 
 		</Row>
 		<Row> 
+			<BuildingType>BUILDING_HUEY</BuildingType> 
+			<FeatureType>FEATURE_LAKE_VICTORIA</FeatureType> 
+			<YieldType>YIELD_FOOD</YieldType> 
+			<Yield>2</Yield> 
+		</Row>
+		<Row> 
+			<BuildingType>BUILDING_HUEY</BuildingType> 
+			<FeatureType>FEATURE_LAKE_VICTORIA</FeatureType> 
+			<YieldType>YIELD_CULTURE</YieldType> 
+			<Yield>2</Yield> 
+		</Row>
+		<Row> 
 			<BuildingType>BUILDING_LIGHTHOUSE</BuildingType> 
 			<FeatureType>FEATURE_REEF</FeatureType> 
 			<YieldType>YIELD_FOOD</YieldType> 
@@ -38810,6 +38831,21 @@
 		</Row>
 		<Row> 
 			<BuildingType>BUILDING_PRAIRIES</BuildingType> 
+			<FlavorType>FLAVOR_WONDER</FlavorType> 
+			<Flavor>15</Flavor> 
+		</Row>
+		<Row> 
+			<BuildingType>BUILDING_HUEY</BuildingType> 
+			<FlavorType>FLAVOR_FOOD</FlavorType> 
+			<Flavor>25</Flavor> 
+		</Row>
+		<Row> 
+			<BuildingType>BUILDING_HUEY</BuildingType> 
+			<FlavorType>FLAVOR_CULTURE</FlavorType> 
+			<Flavor>25</Flavor> 
+		</Row>
+		<Row> 
+			<BuildingType>BUILDING_HUEY</BuildingType> 
 			<FlavorType>FLAVOR_WONDER</FlavorType> 
 			<Flavor>15</Flavor> 
 		</Row>
@@ -41334,6 +41370,16 @@ lithuania changes -->
 			<BuildingType>BUILDING_FLOATING_GARDENS</BuildingType> 
 			<YieldType>YIELD_FOOD</YieldType> 
 			<Yield>1</Yield> 
+		</Row>
+		<Row> 
+			<BuildingType>BUILDING_HUEY</BuildingType> 
+			<YieldType>YIELD_FOOD</YieldType> 
+			<Yield>2</Yield> 
+		</Row>
+		<Row> 
+			<BuildingType>BUILDING_HUEY</BuildingType> 
+			<YieldType>YIELD_CULTURE</YieldType> 
+			<Yield>2</Yield> 
 		</Row>
 		<Row> 
 			<BuildingType>BUILDING_TRADINGPOST</BuildingType> 
@@ -46128,6 +46174,11 @@ lithuania changes -->
 			<BuildingType>BUILDING_ALTHING</BuildingType> 
 			<YieldType>YIELD_CULTURE</YieldType> 
 			<Yield>1</Yield> 
+		</Row>
+		<Row> 
+			<BuildingType>BUILDING_HUEY</BuildingType> 
+			<YieldType>YIELD_FAITH</YieldType> 
+			<Yield>4</Yield> 
 		</Row>
 		<Row> 
 			<BuildingType>BUILDING_LIGHT</BuildingType> 
@@ -87022,6 +87073,143 @@ lithuania changes -->
 			<CityStateTradeRouteGoldModifier>0</CityStateTradeRouteGoldModifier> 
 			<FreeFlatFaith>0</FreeFlatFaith> 
 		</Row>
+		<Row>
+			<Type>BUILDING_HUEY</Type> 
+			<Description>TXT_KEY_BUILDING_HUEY</Description> 
+			<Civilopedia>TXT_KEY_BUILDING_HUEY_PEDIA</Civilopedia> 
+			<Help>TXT_KEY_BUILDING_HUEY_HELP</Help> 
+			<Quote>TXT_KEY_BUILDING_HUEY_QUOTE</Quote> 
+			<GoldMaintenance>0</GoldMaintenance> 
+			<MutuallyExclusiveGroup>-1</MutuallyExclusiveGroup> 
+			<TeamShare>false</TeamShare> 
+			<Water>false</Water> 
+			<River>false</River> 
+			<FreshWater>false</FreshWater> 
+			<Mountain>false</Mountain> 
+			<NearbyMountainRequired>false</NearbyMountainRequired> 
+			<Hill>false</Hill> 
+			<Flat>false</Flat> 
+			<FoundsReligion>false</FoundsReligion> 
+			<IsReligious>false</IsReligious> 
+			<BorderObstacle>false</BorderObstacle> 
+			<PlayerBorderObstacle>false</PlayerBorderObstacle> 
+			<Capital>false</Capital> 
+			<GoldenAge>false</GoldenAge> 
+			<MapCentering>false</MapCentering> 
+			<NeverCapture>false</NeverCapture> 
+			<NukeImmune>true</NukeImmune> 
+			<AllowsWaterRoutes>false</AllowsWaterRoutes> 
+			<ExtraLuxuries>false</ExtraLuxuries> 
+			<DiplomaticVoting>false</DiplomaticVoting> 
+			<AffectSpiesNow>false</AffectSpiesNow> 
+			<NullifyInfluenceModifier>false</NullifyInfluenceModifier> 
+			<Cost>500</Cost> 
+			<FaithCost>0</FaithCost> 
+			<LeagueCost>0</LeagueCost> 
+			<UnlockedByBelief>false</UnlockedByBelief> 
+			<UnlockedByLeague>false</UnlockedByLeague> 
+			<HolyCity>false</HolyCity> 
+			<NumCityCostMod>0</NumCityCostMod> 
+			<HurryCostModifier>-1</HurryCostModifier> 
+			<MinAreaSize>-1</MinAreaSize> 
+			<ConquestProb>100</ConquestProb> 
+			<CitiesPrereq>0</CitiesPrereq> 
+			<LevelPrereq>0</LevelPrereq> 
+			<CultureRateModifier>0</CultureRateModifier> 
+			<GlobalCultureRateModifier>0</GlobalCultureRateModifier> 
+			<GreatPeopleRateModifier>0</GreatPeopleRateModifier> 
+			<GlobalGreatPeopleRateModifier>0</GlobalGreatPeopleRateModifier> 
+			<GreatGeneralRateModifier>0</GreatGeneralRateModifier> 
+			<GreatPersonExpendGold>0</GreatPersonExpendGold> 
+			<GoldenAgeModifier>0</GoldenAgeModifier> 
+			<UnitUpgradeCostMod>0</UnitUpgradeCostMod> 
+			<Experience>0</Experience> 
+			<GlobalExperience>0</GlobalExperience> 
+			<FoodKept>0</FoodKept> 
+			<Airlift>false</Airlift> 
+			<AirModifier>0</AirModifier> 
+			<NukeModifier>0</NukeModifier> 
+			<NukeExplosionRand>0</NukeExplosionRand> 
+			<HealRateChange>0</HealRateChange> 
+			<Happiness>0</Happiness> 
+			<UnmoddedHappiness>0</UnmoddedHappiness> 
+			<UnhappinessModifier>0</UnhappinessModifier> 
+			<HappinessPerCity>0</HappinessPerCity> 
+			<HappinessPerXPolicies>0</HappinessPerXPolicies> 
+			<CityCountUnhappinessMod>0</CityCountUnhappinessMod> 
+			<NoOccupiedUnhappiness>false</NoOccupiedUnhappiness> 
+			<WorkerSpeedModifier>0</WorkerSpeedModifier> 
+			<MilitaryProductionModifier>0</MilitaryProductionModifier> 
+			<SpaceProductionModifier>0</SpaceProductionModifier> 
+			<GlobalSpaceProductionModifier>0</GlobalSpaceProductionModifier> 
+			<BuildingProductionModifier>0</BuildingProductionModifier> 
+			<WonderProductionModifier>0</WonderProductionModifier> 
+			<CityConnectionTradeRouteModifier>0</CityConnectionTradeRouteModifier> 
+			<CapturePlunderModifier>0</CapturePlunderModifier> 
+			<PolicyCostModifier>0</PolicyCostModifier> 
+			<PlotCultureCostModifier>0</PlotCultureCostModifier> 
+			<GlobalPlotCultureCostModifier>0</GlobalPlotCultureCostModifier> 
+			<PlotBuyCostModifier>0</PlotBuyCostModifier> 
+			<GlobalPlotBuyCostModifier>0</GlobalPlotBuyCostModifier> 
+			<GlobalPopulationChange>0</GlobalPopulationChange> 
+			<TechShare>0</TechShare> 
+			<FreeTechs>0</FreeTechs> 
+			<FreePolicies>0</FreePolicies> 
+			<FreeGreatPeople>0</FreeGreatPeople> 
+			<MedianTechPercentChange>0</MedianTechPercentChange> 
+			<Gold>0</Gold> 
+			<AllowsRangeStrike>false</AllowsRangeStrike> 
+			<Espionage>false</Espionage> 
+			<AllowsFoodTradeRoutes>false</AllowsFoodTradeRoutes> 
+			<AllowsProductionTradeRoutes>false</AllowsProductionTradeRoutes> 
+			<Defense>0</Defense> 
+			<ExtraCityHitPoints>0</ExtraCityHitPoints> 
+			<GlobalDefenseMod>0</GlobalDefenseMod> 
+			<MinorFriendshipChange>0</MinorFriendshipChange> 
+			<VictoryPoints>0</VictoryPoints> 
+			<ExtraMissionarySpreads>0</ExtraMissionarySpreads> 
+			<ReligiousPressureModifier>0</ReligiousPressureModifier> 
+			<EspionageModifier>0</EspionageModifier> 
+			<GlobalEspionageModifier>0</GlobalEspionageModifier> 
+			<ExtraSpies>0</ExtraSpies> 
+			<SpyRankChange>0</SpyRankChange> 
+			<InstantSpyRankChange>0</InstantSpyRankChange> 
+			<TradeRouteRecipientBonus>0</TradeRouteRecipientBonus> 
+			<TradeRouteTargetBonus>0</TradeRouteTargetBonus> 
+			<TradeRouteGoldModifier>0</TradeRouteGoldModifier>
+			<NumTradeRouteBonus>0</NumTradeRouteBonus> 
+			<LandmarksTourismPercent>0</LandmarksTourismPercent> 
+			<InstantMilitaryIncrease>0</InstantMilitaryIncrease> 
+			<GreatWorksTourismModifier>0</GreatWorksTourismModifier> 
+			<XBuiltTriggersIdeologyChoice>0</XBuiltTriggersIdeologyChoice> 
+			<TradeRouteSeaDistanceModifier>0</TradeRouteSeaDistanceModifier> 
+			<TradeRouteSeaGoldBonus>0</TradeRouteSeaGoldBonus> 
+			<TradeRouteLandDistanceModifier>0</TradeRouteLandDistanceModifier> 
+			<TradeRouteLandGoldBonus>0</TradeRouteLandGoldBonus> 
+			<CityStateTradeRouteProductionModifier>0</CityStateTradeRouteProductionModifier> 
+			<GreatScientistBeakerModifier>0</GreatScientistBeakerModifier> 
+			<BuildingClass>BUILDINGCLASS_HUEY</BuildingClass> 
+			<MaxStartEra>ERA_INDUSTRIAL</MaxStartEra> 
+			<TechEnhancedTourism>0</TechEnhancedTourism> 
+			<PrereqTech>TECH_ASTRONOMY</PrereqTech> 
+			<SpecialistType>SPECIALIST_FARMER</SpecialistType> 
+			<SpecialistCount>0</SpecialistCount> 
+			<GreatWorkCount>0</GreatWorkCount> 
+			<SpecialistExtraCulture>0</SpecialistExtraCulture> 
+			<GreatPeopleRateChange>1</GreatPeopleRateChange> 
+			<ExtraLeagueVotes>0</ExtraLeagueVotes> 
+			<CityWall>false</CityWall>
+			<PortraitIndex>0</PortraitIndex> 
+			<WonderSplashImage>TEMPLO_splash.dds</WonderSplashImage> 
+			<WonderSplashAnchor>R,B</WonderSplashAnchor> 
+			<IconAtlas>HUEY_ATLAS</IconAtlas> 
+			<ArtInfoCulturalVariation>false</ArtInfoCulturalVariation> 
+			<ArtInfoEraVariation>false</ArtInfoEraVariation> 
+			<ArtInfoRandomVariation>false</ArtInfoRandomVariation> 
+			<MountainScienceYield>0</MountainScienceYield> 
+			<CityStateTradeRouteGoldModifier>0</CityStateTradeRouteGoldModifier> 
+			<FreeFlatFaith>0</FreeFlatFaith> 
+		</Row>
 	</Buildings> 
 
 	<Table name="Builds">
@@ -90307,6 +90495,11 @@ lithuania changes -->
 			<CivilizationType>CIVILIZATION_MINOR</CivilizationType> 
 			<BuildingClassType>BUILDINGCLASS_PRAIRIES</BuildingClassType> 
 		</Row>
+		<Row>
+			<CivilizationType>CIVILIZATION_MINOR</CivilizationType>
+			<BuildingClassType>BUILDINGCLASS_HUEY</BuildingClassType>
+			<BuildingType/>
+		</Row>
 		<Row> 
 			<CivilizationType>CIVILIZATION_MINOR</CivilizationType> 
 			<BuildingClassType>BUILDINGCLASS_PANAMA</BuildingClassType> 
@@ -90754,7 +90947,7 @@ lithuania changes -->
 		<Delete />
 		<Row>
 			<CivilizationType>CIVILIZATION_GEORGIA</CivilizationType>
-			<CityName>Tblisi</CityName>
+			<CityName>Tbilisi</CityName>
 		</Row>
 		<Row>
 			<CivilizationType>CIVILIZATION_GEORGIA</CivilizationType>
@@ -112315,7 +112508,7 @@ lithuania changes -->
 		</Row>
 		<Row> 
 			<CivilizationType>CIVILIZATION_SPAIN</CivilizationType> 
-			<UnitClassType>UNITCLASS_MUSKETMAN</UnitClassType> 
+			<UnitClassType>UNITCLASS_HALBERDMAN</UnitClassType> 
 			<UnitType>UNIT_TERCIO</UnitType> 
 		</Row>
 		<Row> 
@@ -115149,7 +115342,7 @@ lithuania changes -->
 			<AlphaIconAtlas>GEORGIA_ALPHA_ATLAS</AlphaIconAtlas> 
 			<MapImage>GeorgiaMap.dds</MapImage> 
 			<DawnOfManQuote>TXT_KEY_CIV5_DAWN_GEORGIA_TEXT</DawnOfManQuote> 
-			<DawnOfManImage>DOM_Mansa_Musa.dds</DawnOfManImage> 
+			<DawnOfManImage>DOM_Georgia.dds</DawnOfManImage> 
 			<DawnOfManAudio>AS2D_DOM_SPEECH_POLAND</DawnOfManAudio> 
 			<SoundtrackTag>Poland</SoundtrackTag> 
 		</Row>
@@ -142931,7 +143124,7 @@ lithuania changes -->
 		<Row> 
 			<FeatureType>FEATURE_GEYSER</FeatureType> 
 			<YieldType>YIELD_FAITH</YieldType> 
-			<Yield>1</Yield> 
+			<Yield>2</Yield> 
 		</Row>
 		<Row> 
 			<FeatureType>FEATURE_GEYSER</FeatureType> 
@@ -151138,49 +151331,49 @@ lithuania changes -->
 			<Atlas>GEORGIA_ALPHA_ATLAS</Atlas>
 			<IconSize>256</IconSize>
 			<Filename>GeorgiaCroatiaAlphaAtlas_256.dds</Filename>
-			<IconsPerRow>4</IconsPerRow>
+			<IconsPerRow>5</IconsPerRow>
 			<IconsPerColumn>1</IconsPerColumn>
 		</Row>
 		<Row>
 			<Atlas>GEORGIA_ALPHA_ATLAS</Atlas>
 			<IconSize>128</IconSize>
 			<Filename>GeorgiaCroatiaAlphaAtlas_128.dds</Filename>
-			<IconsPerRow>4</IconsPerRow>
+			<IconsPerRow>5</IconsPerRow>
 			<IconsPerColumn>1</IconsPerColumn>
 		</Row>
 		<Row>
 			<Atlas>GEORGIA_ALPHA_ATLAS</Atlas>
 			<IconSize>64</IconSize>
 			<Filename>GeorgiaCroatiaAlphaAtlas_64.dds</Filename>
-			<IconsPerRow>4</IconsPerRow>
+			<IconsPerRow>5</IconsPerRow>
 			<IconsPerColumn>1</IconsPerColumn>
 		</Row>
 		<Row>
 			<Atlas>GEORGIA_ALPHA_ATLAS</Atlas>
 			<IconSize>48</IconSize>
 			<Filename>GeorgiaCroatiaAlphaAtlas_48.dds</Filename>
-			<IconsPerRow>4</IconsPerRow>
+			<IconsPerRow>5</IconsPerRow>
 			<IconsPerColumn>1</IconsPerColumn>
 		</Row>
 		<Row>
 			<Atlas>GEORGIA_ALPHA_ATLAS</Atlas>
 			<IconSize>32</IconSize>
 			<Filename>GeorgiaCroatiaAlphaAtlas_32.dds</Filename>
-			<IconsPerRow>4</IconsPerRow>
+			<IconsPerRow>5</IconsPerRow>
 			<IconsPerColumn>1</IconsPerColumn>
 		</Row>
 		<Row>
 			<Atlas>GEORGIA_ALPHA_ATLAS</Atlas>
 			<IconSize>24</IconSize>
 			<Filename>GeorgiaCroatiaAlphaAtlas_24.dds</Filename>
-			<IconsPerRow>4</IconsPerRow>
+			<IconsPerRow>5</IconsPerRow>
 			<IconsPerColumn>1</IconsPerColumn>
 		</Row>
 		<Row>
 			<Atlas>GEORGIA_ALPHA_ATLAS</Atlas>
 			<IconSize>16</IconSize>
 			<Filename>GeorgiaCroatiaAlphaAtlas_16.dds</Filename>
-			<IconsPerRow>4</IconsPerRow>
+			<IconsPerRow>5</IconsPerRow>
 			<IconsPerColumn>1</IconsPerColumn>
 		</Row>
 
@@ -151227,7 +151420,41 @@ lithuania changes -->
 			<IconsPerRow>1</IconsPerRow>
 			<IconsPerColumn>1</IconsPerColumn>
 		</Row>
-				
+		<Row>
+			<Atlas>HUEY_ATLAS</Atlas>
+			<IconSize>45</IconSize>
+			<Filename>Templo_icon45.dds</Filename>
+			<IconsPerRow>1</IconsPerRow>
+			<IconsPerColumn>1</IconsPerColumn>
+		</Row>
+		<Row>
+			<Atlas>HUEY_ATLAS</Atlas>
+			<IconSize>64</IconSize>
+			<Filename>Templo_icon64.dds</Filename>
+			<IconsPerRow>1</IconsPerRow>
+			<IconsPerColumn>1</IconsPerColumn>
+		</Row>
+		<Row>
+			<Atlas>HUEY_ATLAS</Atlas>
+			<IconSize>80</IconSize>
+			<Filename>Templo_icon80.dds</Filename>
+			<IconsPerRow>1</IconsPerRow>
+			<IconsPerColumn>1</IconsPerColumn>
+		</Row>
+		<Row>
+			<Atlas>HUEY_ATLAS</Atlas>
+			<IconSize>128</IconSize>
+			<Filename>Templo_icon128.dds</Filename>
+			<IconsPerRow>1</IconsPerRow>
+			<IconsPerColumn>1</IconsPerColumn>
+		</Row>
+		<Row>
+			<Atlas>HUEY_ATLAS</Atlas>
+			<IconSize>256</IconSize>
+			<Filename>Templo_icon256.dds</Filename>
+			<IconsPerRow>1</IconsPerRow>
+			<IconsPerColumn>1</IconsPerColumn>
+		</Row>		
 		<!-- UNIT FLAG FOR SKIRMISHER -->
 		<Row>
 			<Atlas>NQ_UNIT_FLAG_ATLAS</Atlas>
@@ -200099,7 +200326,7 @@ lithuania changes -->
 			<Description>TXT_KEY_LEADER_TAMARA</Description>
 			<!-- ADD <Civilopedia>TXT_KEY_LEADER_MANSA_MUSA_PEDIA</Civilopedia>-->
 			<CivilopediaTag>TXT_KEY_CIVILOPEDIA_LEADERS_TAMARA</CivilopediaTag>
-			<ArtDefineTag>Mali_Mansa_Musa_Scene.xml</ArtDefineTag>
+			<ArtDefineTag>Georgia_Tamara_Scene.xml</ArtDefineTag>
 			<VictoryCompetitiveness>5</VictoryCompetitiveness>
 			<WonderCompetitiveness>8</WonderCompetitiveness>
 			<MinorCivCompetitiveness>5</MinorCivCompetitiveness>
@@ -200113,8 +200340,8 @@ lithuania changes -->
 			<Forgiveness>5</Forgiveness>
 			<Chattiness>5</Chattiness>
 			<Meanness>5</Meanness>
-			<PortraitIndex>1</PortraitIndex>
-			<IconAtlas>NQ_ATLAS</IconAtlas>
+			<PortraitIndex>4</PortraitIndex>
+			<IconAtlas>GEORGIA_ALPHA_ATLAS</IconAtlas>
 		</Row>
 	</Leaders> 
 
@@ -249687,6 +249914,11 @@ lithuania changes -->
 		</Row>
 		<Row> 
 			<TraitType>TRAIT_PRAIRIE</TraitType> 
+			<UnitCombatType>UNITCOMBAT_MOUNTED_RANGED</UnitCombatType> 
+			<PromotionType>PROMOTION_PRAIRIE</PromotionType> 
+		</Row>
+		<Row> 
+			<TraitType>TRAIT_PRAIRIE</TraitType> 
 			<UnitCombatType>UNITCOMBAT_SIEGE</UnitCombatType> 
 			<PromotionType>PROMOTION_PRAIRIE</PromotionType> 
 		</Row>
@@ -253056,9 +253288,9 @@ lithuania changes -->
 			<GoldenAgeGreatMusicianRateModifier>0</GoldenAgeGreatMusicianRateModifier> 
 			<GoldenAgeGreatWriterRateModifier>0</GoldenAgeGreatWriterRateModifier> 
 			<ExtraEmbarkMoves>0</ExtraEmbarkMoves> 
-			<NaturalWonderFirstFinderGold>100</NaturalWonderFirstFinderGold> 
-			<NaturalWonderSubsequentFinderGold>100</NaturalWonderSubsequentFinderGold> 
-			<NaturalWonderYieldModifier>100</NaturalWonderYieldModifier> 
+			<NaturalWonderFirstFinderGold>125</NaturalWonderFirstFinderGold> 
+			<NaturalWonderSubsequentFinderGold>125</NaturalWonderSubsequentFinderGold> 
+			<NaturalWonderYieldModifier>0</NaturalWonderYieldModifier> 
 			<NaturalWonderHappinessModifier>100</NaturalWonderHappinessModifier> 
 			<NearbyImprovementCombatBonus>0</NearbyImprovementCombatBonus> 
 			<NearbyImprovementBonusRange>0</NearbyImprovementBonusRange> 
@@ -303820,28 +304052,12 @@ lithuania changes -->
 			<UnitCombatType>UNITCOMBAT_GUN</UnitCombatType> 
 		</Row>
 		<Row> 
-			<PromotionType>PROMOTION_COVER_1</PromotionType> 
-			<UnitCombatType>UNITCOMBAT_ARCHER</UnitCombatType> 
-		</Row>
-		<Row> 
-			<PromotionType>PROMOTION_COVER_1</PromotionType> 
-			<UnitCombatType>UNITCOMBAT_SIEGE</UnitCombatType> 
-		</Row>
-		<Row> 
 			<PromotionType>PROMOTION_COVER_2</PromotionType> 
 			<UnitCombatType>UNITCOMBAT_MELEE</UnitCombatType> 
 		</Row>
 		<Row> 
 			<PromotionType>PROMOTION_COVER_2</PromotionType> 
 			<UnitCombatType>UNITCOMBAT_GUN</UnitCombatType> 
-		</Row>
-		<Row> 
-			<PromotionType>PROMOTION_COVER_2</PromotionType> 
-			<UnitCombatType>UNITCOMBAT_ARCHER</UnitCombatType> 
-		</Row>
-		<Row> 
-			<PromotionType>PROMOTION_COVER_2</PromotionType> 
-			<UnitCombatType>UNITCOMBAT_SIEGE</UnitCombatType> 
 		</Row>
 		<Row> 
 			<PromotionType>PROMOTION_COVER_1</PromotionType> 
@@ -304883,14 +305099,6 @@ lithuania changes -->
 		</Row>
 		<Row> 
 			<PromotionType>PROMOTION_BARRAGE_3</PromotionType> 
-			<UnitCombatType>UNITCOMBAT_MOUNTED_RANGED</UnitCombatType> 
-		</Row>
-		<Row> 
-			<PromotionType>PROMOTION_COVER_1</PromotionType> 
-			<UnitCombatType>UNITCOMBAT_MOUNTED_RANGED</UnitCombatType> 
-		</Row>
-		<Row> 
-			<PromotionType>PROMOTION_COVER_2</PromotionType> 
 			<UnitCombatType>UNITCOMBAT_MOUNTED_RANGED</UnitCombatType> 
 		</Row>
 		<Row> 
@@ -308189,7 +308397,7 @@ lithuania changes -->
 		</Row>
 		<Row> 
 			<UnitType>UNIT_TERCIO</UnitType> 
-			<UnitClassType>UNITCLASS_RIFLEMAN</UnitClassType> 
+			<UnitClassType>UNITCLASS_ANTI_TANK_RIFLE</UnitClassType> 
 		</Row>
 		<Row> 
 			<UnitType>UNIT_COMPOSITE_BOWMAN</UnitType> 
@@ -311795,10 +312003,7 @@ lithuania changes -->
 			<UnitType>UNIT_STEALTH_BOMBER</UnitType> 
 			<PromotionType>PROMOTION_AIR_RECON</PromotionType> 
 		</Row>
-		<Row> 
-			<UnitType>UNIT_NUCLEAR_MISSILE</UnitType> 
-			<PromotionType>PROMOTION_EVASION_I</PromotionType> 
-		</Row>
+
 		<Row> 
 			<UnitType>UNIT_NUCLEAR_MISSILE</UnitType> 
 			<PromotionType>PROMOTION_NUKE_IMMUNE</PromotionType> 
@@ -313291,6 +313496,11 @@ lithuania changes -->
 		</Row>
         <Row> 
 			<UnitType>UNIT_ARTILLERY</UnitType> 
+			<ResourceType>RESOURCE_IRON</ResourceType> 
+			<Cost>1</Cost> 
+		</Row>
+		<Row> 
+			<UnitType>UNIT_ROCKET_CORPS</UnitType> 
 			<ResourceType>RESOURCE_IRON</ResourceType> 
 			<Cost>1</Cost> 
 		</Row>
@@ -324395,10 +324605,10 @@ lithuania changes -->
 			<Civilopedia>TXT_KEY_UNIT_TERCIO_TEXT</Civilopedia> 
 			<Strategy>TXT_KEY_UNIT_TERCIO_STRATEGY</Strategy> 
 			<Help>TXT_KEY_UNIT_TERCIO_HELP</Help> 
-			<Combat>26</Combat> 
+			<Combat>22</Combat> 
 			<RangedCombat>0</RangedCombat> 
-			<Cost>160</Cost> 
-			<FaithCost>320</FaithCost> 
+			<Cost>150</Cost> 
+			<FaithCost>300</FaithCost> 
 			<RequiresFaithPurchaseEnabled>true</RequiresFaithPurchaseEnabled> 
 			<PurchaseOnly>false</PurchaseOnly> 
 			<MoveAfterPurchase>false</MoveAfterPurchase> 
@@ -324406,7 +324616,7 @@ lithuania changes -->
 			<Immobile>false</Immobile> 
 			<Range>0</Range> 
 			<BaseSightRange>2</BaseSightRange> 
-			<Class>UNITCLASS_MUSKETMAN</Class> 
+			<Class>UNITCLASS_HALBERDMAN</Class> 
 			<CombatClass>UNITCOMBAT_MELEE</CombatClass> 
 			<Domain>DOMAIN_LAND</Domain> 
 			<DefaultUnitAI>UNITAI_ATTACK</DefaultUnitAI> 
@@ -324428,9 +324638,9 @@ lithuania changes -->
 			<Mechanized>false</Mechanized> 
 			<Suicide>false</Suicide> 
 			<CaptureWhileEmbarked>false</CaptureWhileEmbarked> 
-			<PrereqTech>TECH_GUNPOWDER</PrereqTech> 
-			<ObsoleteTech>TECH_RIFLING</ObsoleteTech> 
-			<GoodyHutUpgradeUnitClass>UNITCLASS_RIFLEMAN</GoodyHutUpgradeUnitClass> 
+			<PrereqTech>TECH_ACOUSTICS</PrereqTech> 
+			<ObsoleteTech>TECH_ARMOR</ObsoleteTech> 
+			<GoodyHutUpgradeUnitClass>UNITCLASS_ANTI_TANK_RIFLE</GoodyHutUpgradeUnitClass> 
 			<HurryCostModifier>0</HurryCostModifier> 
 			<AdvancedStartCost>20</AdvancedStartCost> 
 			<MinAreaSize>-1</MinAreaSize> 
