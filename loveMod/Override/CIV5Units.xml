@@ -167789,6 +167789,7 @@ lithuania changes -->
 		<Column name="GoldMaintenance" type="integer"  default="0"/>
 		<Column name="CultureBombRadius" type="integer"  default="0"/>
 		<Column name="RequiresXAdjacentLand" type="integer"  default="-1"/>
+		<Column name="FoodAdjacentSameType" type="integer"  default="0"/>
 		<Column name="PortraitIndex" type="integer"  default="-1"/>
 		<Column name="IconAtlas" type="text"  default="NULL"/>
 	</Table> 
@@ -168984,7 +168985,8 @@ lithuania changes -->
 			<LuxuryCopiesSiphonedFromMinor>0</LuxuryCopiesSiphonedFromMinor> 
 			<GoldMaintenance>0</GoldMaintenance> 
 			<CultureBombRadius>0</CultureBombRadius> 
-			<RequiresXAdjacentLand>-1</RequiresXAdjacentLand> 
+			<RequiresXAdjacentLand>-1</RequiresXAdjacentLand>
+			<FoodAdjacentSameType>1</FoodAdjacentSameType>			
 			<PortraitIndex>0</PortraitIndex> 
 			<IconAtlas>DLC02_TERRAIN_ATLAS</IconAtlas> 
 		</Row>
