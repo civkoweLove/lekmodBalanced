@@ -46136,6 +46136,11 @@ lithuania changes -->
 			<Yield>2</Yield> 
 		</Row>
 		<Row> 
+			<BuildingType>BUILDING_CASTLE_ON_A_ROCK</BuildingType> 
+			<YieldType>YIELD_GOLD</YieldType> 
+			<Yield>4</Yield> 
+		</Row>
+		<Row> 
 			<BuildingType>BUILDING_HIPPODROME</BuildingType> 
 			<YieldType>YIELD_CULTURE</YieldType> 
 			<Yield>2</Yield> 
@@ -85714,7 +85719,7 @@ lithuania changes -->
 			<FreePolicies>0</FreePolicies> 
 			<FreeGreatPeople>0</FreeGreatPeople> 
 			<MedianTechPercentChange>0</MedianTechPercentChange> 
-			<Gold>4</Gold> 
+			<Gold>0</Gold> 
 			<AllowsRangeStrike>true</AllowsRangeStrike> 
 			<Espionage>false</Espionage> 
 			<AllowsFoodTradeRoutes>false</AllowsFoodTradeRoutes> 
@@ -85741,7 +85746,7 @@ lithuania changes -->
 			<TradeRouteSeaDistanceModifier>0</TradeRouteSeaDistanceModifier> 
 			<TradeRouteSeaGoldBonus>0</TradeRouteSeaGoldBonus> 
 			<TradeRouteLandDistanceModifier>50</TradeRouteLandDistanceModifier> 
-			<TradeRouteLandGoldBonus>2</TradeRouteLandGoldBonus> 
+			<TradeRouteLandGoldBonus>200</TradeRouteLandGoldBonus> 
 			<CityStateTradeRouteProductionModifier>0</CityStateTradeRouteProductionModifier> 
 			<GreatScientistBeakerModifier>0</GreatScientistBeakerModifier> 
 			<BuildingClass>BUILDINGCLASS_CASTLE</BuildingClass> 
