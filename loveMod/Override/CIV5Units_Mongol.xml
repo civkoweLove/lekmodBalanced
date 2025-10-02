@@ -42961,7 +42961,7 @@ strongest around the Gulf of Bothnia, where land steadily rises about 1 cm a yea
 		</Replace>
 		<Replace Tag="TXT_KEY_CIV5_IMPROVEMENTS_TERRACE_FARM_HELP"> 
 			<Text>
-				The Terrace Farm can only be built on hills and does not need a source of fresh water to do so.  If built next to a mountain it will provide additional food.
+				The Terrace Farm can only be built on hills and does not need a source of fresh water to do so.  If built next to a mountain it will provide additional food. Terrace Farm get +1 Food if adjacented to another Terrace Farm (this bonus doesn't stack).
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_CIV5_IMPROVEMENTS_TERRACE_FARM_TEXT"> 
@@ -117123,6 +117123,14 @@ The ship has weather'd every rack; the prize we sought is won."
 				+10% [ICON_STRENGTH] [COLOR_POSITIVE_TEXT]Combat Strength[ENDCOLOR] bonus in Melee Combat vs. [COLOR_POSITIVE_TEXT]Siege[ENDCOLOR] and [COLOR_POSITIVE_TEXT]Melee Siege Units[ENDCOLOR].
 			</Text>
 		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_IGNORE_TERRAIN_COST_IN_HILLS"> 
+			<Text>Great Andean Road</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_IGNORE_TERRAIN_COST_IN_HILLS_HELP"> 
+			<Text>
+				Ignores terrain cost in Hills.
+			</Text>
+		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_ANTI_BACKLINE"> 
 			<Text>Bonus vs. Ranged (10)</Text>
 		</Row>
@@ -135988,7 +135996,7 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_TRAIT_GREAT_ANDEAN_ROAD"> 
 			<Text>
-				Units ignore terrain costs when moving into any tile with Hills. No maintenance costs for improvements in Hills; half cost elsewhere.
+				Workers ignore terrain costs when moving into Hills. No maintenance costs for improvements in Hills; half cost elsewhere.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_TRAIT_GREAT_ANDEAN_ROAD_SHORT"> 
