@@ -16015,7 +16015,7 @@ strongest around the Gulf of Bothnia, where land steadily rises about 1 cm a yea
 		</Replace>
 		<Replace Tag="TXT_KEY_BUILDING_OBSERVATORY_HELP"> 
 			<Text>
-				+4 [ICON_RESEARCH] Science.[NEWLINE][NEWLINE]+1 [ICON_RESEARCH] Science from Tundra tiles worked by this City.[NEWLINE][NEWLINE]+4 [ICON_RESEARCH] Science from Mountain tiles and mountainious Natural Wonders worked by this City.
+				+4 [ICON_RESEARCH] Science.[NEWLINE][NEWLINE]+1 [ICON_RESEARCH] Science from Tundra tiles worked by this City.[NEWLINE][NEWLINE]+4 [ICON_RESEARCH] Science from Mountain tiles and mountainious Natural Wonders worked by this City. [NEWLINE][NEWLINE]Contains 1 [ICON_GREAT_SCIENTIST] Scientist specialist slot.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_BUILDING_OBSERVATORY_STRATEGY"> 
@@ -16283,12 +16283,12 @@ strongest around the Gulf of Bothnia, where land steadily rises about 1 cm a yea
 		</Replace>
 		<Replace Tag="TXT_KEY_BUILDING_UNIVERSITY_HELP"> 
 			<Text>
-				+33% [ICON_RESEARCH] Science in the City.[NEWLINE][NEWLINE]+2 [ICON_RESEARCH] Science from Jungle tiles worked by this City.[NEWLINE][NEWLINE]Contains 2 [ICON_GREAT_SCIENTIST] Scientist specialist slots.[NEWLINE][NEWLINE]Allows Archaeologists to be built in this city.[NEWLINE][NEWLINE]-----[NEWLINE]City must have a Library.[NEWLINE][NEWLINE]Costs 2 [ICON_GOLD] Maintenance.
+				+33% [ICON_RESEARCH] Science in the City.[NEWLINE][NEWLINE]+2 [ICON_RESEARCH] Science from Jungle tiles worked by this City.[NEWLINE][NEWLINE]Contains 1 [ICON_GREAT_SCIENTIST] Scientist specialist slot.[NEWLINE][NEWLINE]Allows Archaeologists to be built in this city.[NEWLINE][NEWLINE]-----[NEWLINE]City must have a Library.[NEWLINE][NEWLINE]Costs 2 [ICON_GOLD] Maintenance.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_BUILDING_UNIVERSITY_STRATEGY"> 
 			<Text>
-				The University is a Medieval-era building. It increases the [ICON_RESEARCH] Science output of the city, and it's even more effective if the city is near to jungle tiles. The city must already have a Library  in order to construct a University.
+				The University is a Medieval-era building. It increases the [ICON_RESEARCH] Science output of the city, and it's even more effective if the city is near to jungle tiles. The city must already have a Library in order to construct a University.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_BUILDING_WALLS"> 
@@ -17068,7 +17068,7 @@ strongest around the Gulf of Bothnia, where land steadily rises about 1 cm a yea
 		</Replace>
 		<Replace Tag="TXT_KEY_BUILDING_DARBAS_HELP"> 
 			<Text>
-				The Darbas is an Armenian Unique Building that replaces the Observatory.[NEWLINE][NEWLINE]+1 [ICON_CULTURE] Culture.[NEWLINE][NEWLINE]+3 [ICON_CULTURE] Culture from Mountain tiles worked by the City.[NEWLINE][NEWLINE]-----[NEWLINE][NEWLINE]+4 [ICON_RESEARCH] Science.[NEWLINE][NEWLINE]+1 [ICON_RESEARCH] Science from Tundra tiles worked by this City.[NEWLINE][NEWLINE]+4 [ICON_RESEARCH] Science from Mountain tiles and mountainious Natural Wonders worked by this City.
+				The Darbas is an Armenian Unique Building that replaces the Observatory.[NEWLINE][NEWLINE]+1 [ICON_CULTURE] Culture.[NEWLINE][NEWLINE]+3 [ICON_CULTURE] Culture from Mountain tiles worked by the City.[NEWLINE][NEWLINE]-----[NEWLINE][NEWLINE]+4 [ICON_RESEARCH] Science.[NEWLINE][NEWLINE]+1 [ICON_RESEARCH] Science from Tundra tiles worked by this City.[NEWLINE][NEWLINE]+4 [ICON_RESEARCH] Science from Mountain tiles and mountainious Natural Wonders worked by this City. [NEWLINE][NEWLINE]Contains 1 [ICON_GREAT_SCIENTIST] Scientist specialist slot.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_BUILDING_DOJO"> 
@@ -17342,7 +17342,7 @@ strongest around the Gulf of Bothnia, where land steadily rises about 1 cm a yea
 		</Replace>
 		<Replace Tag="TXT_KEY_BUILDING_MADRASAH_HELP"> 
 			<Text>
-				The Madrasah is an Ayyubid Unique Building that replaces the University.[NEWLINE][NEWLINE]+2 [ICON_PEACE] Faith.[NEWLINE][NEWLINE]+1 [ICON_RESEARCH] Science from Flood Plain tiles.[NEWLINE]+2 [ICON_RESEARCH] Science from Oases worked by this City.[NEWLINE][NEWLINE]-----[NEWLINE][NEWLINE]+33% [ICON_RESEARCH] Science in the City.[NEWLINE][NEWLINE]+2 [ICON_RESEARCH] Science from Jungle tiles worked by this City.[NEWLINE][NEWLINE]Contains 2 [ICON_GREAT_SCIENTIST] Scientist specialist slots.[NEWLINE][NEWLINE]Allows Archaeologists to be built in this city.[NEWLINE][NEWLINE]-----[NEWLINE]City must have a Library.[NEWLINE][NEWLINE]Costs 2 [ICON_GOLD] Maintenance.
+				The Madrasah is an Ayyubid Unique Building that replaces the University.[NEWLINE][NEWLINE]+2 [ICON_PEACE] Faith.[NEWLINE][NEWLINE]+1 [ICON_RESEARCH] Science from Flood Plain tiles.[NEWLINE]+2 [ICON_RESEARCH] Science from Oases worked by this City.[NEWLINE][NEWLINE]-----[NEWLINE][NEWLINE]+33% [ICON_RESEARCH] Science in the City.[NEWLINE][NEWLINE]+2 [ICON_RESEARCH] Science from Jungle tiles worked by this City.[NEWLINE][NEWLINE]Contains 1 [ICON_GREAT_SCIENTIST] Scientist specialist slot.[NEWLINE][NEWLINE]Allows Archaeologists to be built in this city.[NEWLINE][NEWLINE]-----[NEWLINE]City must have a Library.[NEWLINE][NEWLINE]Costs 2 [ICON_GOLD] Maintenance.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_BUILDING_MADRASAH_STRATEGY"> 
@@ -17833,7 +17833,7 @@ strongest around the Gulf of Bothnia, where land steadily rises about 1 cm a yea
 		</Replace>
 		<Replace Tag="TXT_KEY_BUILDING_WAT_HELP"> 
 			<Text>
-				The Wat is a Siamese Unique Building that replaces the University.[NEWLINE][NEWLINE]+3 [ICON_CULTURE] Culture.[NEWLINE][NEWLINE]-----[NEWLINE][NEWLINE]+33% [ICON_RESEARCH] Science in the City.[NEWLINE][NEWLINE]+2 [ICON_RESEARCH] Science from Jungle tiles worked by this City.[NEWLINE][NEWLINE]Contains 2 [ICON_GREAT_SCIENTIST] Scientist specialist slots.[NEWLINE][NEWLINE]Allows Archaeologists to be built in this city.[NEWLINE][NEWLINE]-----[NEWLINE]City must have a Library.[NEWLINE][NEWLINE]Costs 2 [ICON_GOLD] Maintenance.
+				The Wat is a Siamese Unique Building that replaces the University.[NEWLINE][NEWLINE]+3 [ICON_CULTURE] Culture.[NEWLINE][NEWLINE]-----[NEWLINE][NEWLINE]+33% [ICON_RESEARCH] Science in the City.[NEWLINE][NEWLINE]+2 [ICON_RESEARCH] Science from Jungle tiles worked by this City.[NEWLINE][NEWLINE]Contains 1 [ICON_GREAT_SCIENTIST] Scientist specialist slot.[NEWLINE][NEWLINE]Allows Archaeologists to be built in this city.[NEWLINE][NEWLINE]-----[NEWLINE]City must have a Library.[NEWLINE][NEWLINE]Costs 2 [ICON_GOLD] Maintenance.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_BUILDING_WAT_PEDIA"> 
@@ -113325,7 +113325,7 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_POLICY_FREE_THOUGHT_HELP"> 
 			<Text>
-				[COLOR_POSITIVE_TEXT]Free Thought[ENDCOLOR][NEWLINE]+4 [ICON_RESEARCH] Science from every Customs House and Academy and +1 [ICON_RESEARCH] Science from every Trading Post, Brazilwood Camp, Caer and Chateau.
+				[COLOR_POSITIVE_TEXT]Free Thought[ENDCOLOR][NEWLINE]+4 [ICON_RESEARCH] Science from every Customs House and +5 [ICON_RESEARCH] Science from every Customs House Academy and +1 [ICON_RESEARCH] Science from every Trading Post, Brazilwood Camp, Caer and Chateau.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_POLICY_FUTURISM"> 
@@ -113735,7 +113735,7 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_POLICY_NEW_DEAL_HELP"> 
 			<Text>
-				[COLOR_POSITIVE_TEXT]New Deal[ENDCOLOR][NEWLINE]Landmarks and Great Person improvements produce +5 of the appropriate yield. Sacred Groves produce +2 of the appropriate yields.
+				[COLOR_POSITIVE_TEXT]New Deal[ENDCOLOR][NEWLINE]Landmarks and Great Person improvements produce +5 of the appropriate yield. Academy produces +6 [ICON_RESEARCH] Science. Sacred Groves produce +2 of the appropriate yields.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_POLICY_NEW_DEAL_TEXT"> 

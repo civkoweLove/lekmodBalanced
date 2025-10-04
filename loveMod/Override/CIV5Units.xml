@@ -47880,7 +47880,7 @@ lithuania changes -->
 			<TechEnhancedTourism>0</TechEnhancedTourism> 
 			<PrereqTech>TECH_EDUCATION</PrereqTech> 
 			<SpecialistType>SPECIALIST_SCIENTIST</SpecialistType> 
-			<SpecialistCount>2</SpecialistCount> 
+			<SpecialistCount>1</SpecialistCount> 
 			<GreatWorkCount>0</GreatWorkCount> 
 			<SpecialistExtraCulture>0</SpecialistExtraCulture> 
 			<GreatPeopleRateChange>0</GreatPeopleRateChange> 
@@ -49517,7 +49517,8 @@ lithuania changes -->
 			<ArtDefineTag>ART_DEF_BUILDING_OBSERVATORY</ArtDefineTag> 
 			<TechEnhancedTourism>0</TechEnhancedTourism> 
 			<PrereqTech>TECH_ASTRONOMY</PrereqTech> 
-			<SpecialistCount>0</SpecialistCount> 
+			<SpecialistType>SPECIALIST_SCIENTIST</SpecialistType>
+			<SpecialistCount>1</SpecialistCount> 
 			<GreatWorkCount>0</GreatWorkCount> 
 			<SpecialistExtraCulture>0</SpecialistExtraCulture> 
 			<GreatPeopleRateChange>0</GreatPeopleRateChange> 
@@ -53757,7 +53758,7 @@ lithuania changes -->
 			<TechEnhancedTourism>0</TechEnhancedTourism> 
 			<PrereqTech>TECH_EDUCATION</PrereqTech> 
 			<SpecialistType>SPECIALIST_SCIENTIST</SpecialistType> 
-			<SpecialistCount>2</SpecialistCount> 
+			<SpecialistCount>1</SpecialistCount> 
 			<GreatWorkCount>0</GreatWorkCount> 
 			<SpecialistExtraCulture>0</SpecialistExtraCulture> 
 			<GreatPeopleRateChange>0</GreatPeopleRateChange> 
@@ -66092,7 +66093,7 @@ lithuania changes -->
 			<TechEnhancedTourism>0</TechEnhancedTourism> 
 			<PrereqTech>TECH_EDUCATION</PrereqTech> 
 			<SpecialistType>SPECIALIST_SCIENTIST</SpecialistType> 
-			<SpecialistCount>2</SpecialistCount> 
+			<SpecialistCount>1</SpecialistCount> 
 			<GreatWorkCount>0</GreatWorkCount> 
 			<SpecialistExtraCulture>0</SpecialistExtraCulture> 
 			<GreatPeopleRateChange>0</GreatPeopleRateChange> 
@@ -67048,8 +67049,9 @@ lithuania changes -->
 			<BuildingClass>BUILDINGCLASS_OBSERVATORY</BuildingClass> 
 			<ArtDefineTag>ART_DEF_BUILDING_OBSERVATORY</ArtDefineTag> 
 			<TechEnhancedTourism>0</TechEnhancedTourism> 
-			<PrereqTech>TECH_ASTRONOMY</PrereqTech> 
-			<SpecialistCount>0</SpecialistCount> 
+			<PrereqTech>TECH_ASTRONOMY</PrereqTech>
+			<SpecialistType>SPECIALIST_SCIENTIST</SpecialistType>			
+			<SpecialistCount>1</SpecialistCount> 
 			<GreatWorkCount>0</GreatWorkCount> 
 			<SpecialistExtraCulture>0</SpecialistExtraCulture> 
 			<GreatPeopleRateChange>0</GreatPeopleRateChange> 
@@ -166560,6 +166562,12 @@ lithuania changes -->
 			<Yield>1</Yield> 
 		</Row>
 		<Row> 
+			<ImprovementType>IMPROVEMENT_ACADEMY</ImprovementType> 
+			<TechType>TECH_EDUCATION</TechType> 
+			<YieldType>YIELD_SCIENCE</YieldType> 
+			<Yield>2</Yield> 
+		</Row>
+		<Row> 
 			<ImprovementType>IMPROVEMENT_PASTURE</ImprovementType> 
 			<TechType>TECH_FERTILIZER</TechType> 
 			<YieldType>YIELD_FOOD</YieldType> 
@@ -232845,7 +232853,7 @@ lithuania changes -->
 			<Description>TXT_KEY_POLICY_BRANCH_RATIONALISM</Description> 
 			<Help>TXT_KEY_POLICY_BRANCH_RATIONALISM_HELP</Help> 
 			<Title>TXT_KEY_RATIONALISM_TITLE</Title> 
-			<EraPrereq>ERA_RENAISSANCE</EraPrereq> 
+			<EraPrereq>ERA_MEDIEVAL</EraPrereq> 
 			<FreePolicy>POLICY_RATIONALISM</FreePolicy> 
 			<FreeFinishingPolicy>POLICY_RATIONALISM_FINISHER</FreeFinishingPolicy> 
 			<FirstAdopterFreePolicies>0</FirstAdopterFreePolicies> 
@@ -235599,7 +235607,7 @@ lithuania changes -->
 			<PolicyType>POLICY_NEW_DEAL</PolicyType> 
 			<ImprovementType>IMPROVEMENT_ACADEMY</ImprovementType> 
 			<YieldType>YIELD_SCIENCE</YieldType> 
-			<Yield>5</Yield> 
+			<Yield>6</Yield> 
 		</Row>
 		<Row> 
 			<PolicyType>POLICY_NEW_DEAL</PolicyType> 
@@ -235659,7 +235667,7 @@ lithuania changes -->
 			<PolicyType>POLICY_FREE_THOUGHT</PolicyType> 
 			<ImprovementType>IMPROVEMENT_ACADEMY</ImprovementType> 
 			<YieldType>YIELD_SCIENCE</YieldType> 
-			<Yield>4</Yield> 
+			<Yield>5</Yield> 
 		</Row>
 		<Row> 
 			<PolicyType>POLICY_ARTISTIC_GENIUS</PolicyType> 
@@ -317126,7 +317134,7 @@ lithuania changes -->
 			<NukeDamageLevel>-1</NukeDamageLevel> 
 			<WorkRate>1</WorkRate> 
 			<NumFreeTechs>0</NumFreeTechs> 
-			<BaseBeakersTurnsToCount>9</BaseBeakersTurnsToCount> 
+			<BaseBeakersTurnsToCount>8</BaseBeakersTurnsToCount> 
 			<BaseCultureTurnsToCount>0</BaseCultureTurnsToCount> 
 			<RushBuilding>false</RushBuilding> 
 			<BaseHurry>0</BaseHurry> 
