@@ -138585,12 +138585,12 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_CIV5_INCA_SLINGER_HELP"> 
 			<Text>
-				The Slinger is an Incan Unique Unit that replaces the Archer.[NEWLINE][NEWLINE]Has a chance to withdraw to the rear before an enemy melee attack can occur. Probability depends on the available Movement of the attacking foe and the amount of available tiles behind the Slinger.[NEWLINE][NEWLINE]-----[NEWLINE][NEWLINE]Vulnerable to Mounted Units.
+				The Slinger is an Incan Unique Unit that replaces the Composite Bowman.[NEWLINE][NEWLINE]Has a chance to withdraw to the rear before an enemy melee attack can occur. Probability depends on the available Movement of the attacking foe and the amount of available tiles behind the Slinger.[NEWLINE]12 [ICON_RANGE_STRENGTH] Ranged Strength (up from 11).[NEWLINE][NEWLINE]-----[NEWLINE][NEWLINE]Vulnerable to Mounted Units.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_CIV5_INCA_SLINGER_STRATEGY"> 
 			<Text>
-				The Slinger is an Ancient Era ranged infantry Unit that can strike foes from afar. This Incan Unique Unit can withdraw before most melee attacks: use it to harass your foes. However the Slinger can be easily defeated if the enemy pins it against obstructions or chases it with fast Units.
+				The Slinger is a Classical Era ranged infantry Unit that can strike foes from afar. This Incan Unique Unit can withdraw before most melee attacks: use it to harass your foes. However the Slinger can be easily defeated if the enemy pins it against obstructions or chases it with fast Units.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_CIV5_INCA_SLINGER_TEXT"> 
