@@ -80686,7 +80686,7 @@ lithuania changes -->
 			<LevelPrereq>0</LevelPrereq> 
 			<CultureRateModifier>0</CultureRateModifier> 
 			<GlobalCultureRateModifier>0</GlobalCultureRateModifier> 
-			<GreatPeopleRateModifier>0</GreatPeopleRateModifier> 
+			<GreatPeopleRateModifier>25</GreatPeopleRateModifier> 
 			<GlobalGreatPeopleRateModifier>0</GlobalGreatPeopleRateModifier> 
 			<GreatGeneralRateModifier>0</GreatGeneralRateModifier> 
 			<GreatPersonExpendGold>0</GreatPersonExpendGold> 
@@ -233108,17 +233108,17 @@ lithuania changes -->
 		<Row> 
 			<PolicyType>POLICY_DUMMY_SCOTLAND</PolicyType> 
 			<BuildingClassType>BUILDINGCLASS_WRITERS_GUILD</BuildingClassType> 
-			<CultureChange>3</CultureChange> 
+			<CultureChange>2</CultureChange> 
 		</Row>
 		<Row> 
 			<PolicyType>POLICY_DUMMY_SCOTLAND</PolicyType> 
 			<BuildingClassType>BUILDINGCLASS_ARTISTS_GUILD</BuildingClassType> 
-			<CultureChange>3</CultureChange> 
+			<CultureChange>2</CultureChange> 
 		</Row>
 		<Row> 
 			<PolicyType>POLICY_DUMMY_SCOTLAND</PolicyType> 
 			<BuildingClassType>BUILDINGCLASS_MUSICIANS_GUILD</BuildingClassType> 
-			<CultureChange>3</CultureChange> 
+			<CultureChange>2</CultureChange> 
 		</Row>
 	</Policy_BuildingClassCultureChanges> 
 
@@ -234098,37 +234098,37 @@ lithuania changes -->
 			<PolicyType>POLICY_DUMMY_SCOTLAND</PolicyType> 
 			<BuildingClassType>BUILDINGCLASS_ARTISTS_GUILD</BuildingClassType> 
 			<YieldType>YIELD_PRODUCTION</YieldType> 
-			<YieldChange>3</YieldChange> 
+			<YieldChange>2</YieldChange> 
 		</Row>
 		<Row> 
 			<PolicyType>POLICY_DUMMY_SCOTLAND</PolicyType> 
 			<BuildingClassType>BUILDINGCLASS_MUSICIANS_GUILD</BuildingClassType> 
 			<YieldType>YIELD_PRODUCTION</YieldType> 
-			<YieldChange>3</YieldChange> 
+			<YieldChange>2</YieldChange> 
 		</Row>
 		<Row> 
 			<PolicyType>POLICY_DUMMY_SCOTLAND</PolicyType> 
 			<BuildingClassType>BUILDINGCLASS_WRITERS_GUILD</BuildingClassType> 
 			<YieldType>YIELD_PRODUCTION</YieldType> 
-			<YieldChange>3</YieldChange> 
+			<YieldChange>2</YieldChange> 
 		</Row>
 		<Row> 
 			<PolicyType>POLICY_DUMMY_SCOTLAND</PolicyType> 
 			<BuildingClassType>BUILDINGCLASS_ARTISTS_GUILD</BuildingClassType> 
 			<YieldType>YIELD_SCIENCE</YieldType> 
-			<YieldChange>3</YieldChange> 
+			<YieldChange>2</YieldChange> 
 		</Row>
 		<Row> 
 			<PolicyType>POLICY_DUMMY_SCOTLAND</PolicyType> 
 			<BuildingClassType>BUILDINGCLASS_MUSICIANS_GUILD</BuildingClassType> 
 			<YieldType>YIELD_SCIENCE</YieldType> 
-			<YieldChange>3</YieldChange> 
+			<YieldChange>2</YieldChange> 
 		</Row>
 		<Row> 
 			<PolicyType>POLICY_DUMMY_SCOTLAND</PolicyType> 
 			<BuildingClassType>BUILDINGCLASS_WRITERS_GUILD</BuildingClassType> 
 			<YieldType>YIELD_SCIENCE</YieldType> 
-			<YieldChange>3</YieldChange> 
+			<YieldChange>2</YieldChange> 
 		</Row>
 		<Row> 
 			<PolicyType>POLICY_DUMMY_TURKEY</PolicyType> 
@@ -314107,11 +314107,6 @@ lithuania changes -->
 			<ResourceType>RESOURCE_HORSE</ResourceType>
 			<Cost>1</Cost> 
 		</Row>
-		<Row>
-			<UnitType>UNIT_GALLOWGLASS</UnitType>
-			<ResourceType>RESOURCE_IRON</ResourceType>
-			<Cost>1</Cost>
-		</Row>
 	</Unit_ResourceQuantityRequirements> 
 
 	<Table name="Unit_TechTypes">
@@ -335147,8 +335142,8 @@ lithuania changes -->
 			<Help>TXT_KEY_UNIT_GALLOWGLASS_HELP</Help>
 			<Combat>29</Combat> 
 			<RangedCombat>0</RangedCombat> 
-			<Cost>180</Cost> 
-			<FaithCost>360</FaithCost> 
+			<Cost>190</Cost> 
+			<FaithCost>380</FaithCost> 
 			<RequiresFaithPurchaseEnabled>true</RequiresFaithPurchaseEnabled> 
 			<PurchaseOnly>false</PurchaseOnly> 
 			<MoveAfterPurchase>false</MoveAfterPurchase> 

@@ -5651,7 +5651,7 @@
 			<Text>Flower of Scotland</Text>
 		</Row>
 		<Row Tag="TXT_KEY_TRAIT_LAST_OF_THE_FREE">
-			<Text>+3 [ICON_PRODUCTION] Production, +3 [ICON_RESEARCH] Science and +3 [ICON_CULTURE] Culture from Writer's, Artist's and Musician's Guilds.</Text>
+			<Text>+2 [ICON_PRODUCTION] Production, +2 [ICON_RESEARCH] Science and +2 [ICON_CULTURE] Culture from Writer's, Artist's and Musician's Guilds. +25% [ICON_GREAT_PEOPLE] Great Person points in the Capital. </Text>
 		</Row>
 		<!-- Wales civ v24 -->
 		<!-- Improvement -->
@@ -138144,7 +138144,7 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_GALLOWGLASS_HELP">
 			<Text>
-				The Gallowglass is a Scottish Unique Unit that replaces the Riflemen.[NEWLINE][NEWLINE]Available at Metallurgy instead of Rifling.[NEWLINE][NEWLINE]Considered a Melee Unit (vs. Gunpowder).[NEWLINE][NEWLINE]Has only 29 [ICON_STRENGTH] Combat Strength (vs. 34).[NEWLINE][NEWLINE]Receives the Altitude Training promotion (Double movement in Hills and +10% [ICON_STRENGTH] Combat Strength when fighting in Hills). Retained upon upgrade.[NEWLINE][NEWLINE]Receives the Volley promotion (+50% [ICON_STRENGTH] Attack Strength bonus vs. Fortified Units and Cities). Retained upon upgrade.[NEWLINE][NEWLINE]Cheaper to train (180 vs. 225 [ICON_PRODUCTION] Production on Standard).[NEWLINE][NEWLINE]Requires 1 [ICON_RES_IRON] Iron.
+				The Gallowglass is a Scottish Unique Unit that replaces the Riflemen.[NEWLINE][NEWLINE]Available at Metallurgy instead of Rifling.[NEWLINE][NEWLINE]Considered a Melee Unit (vs. Gunpowder).[NEWLINE][NEWLINE]Has only 29 [ICON_STRENGTH] Combat Strength (vs. 34).[NEWLINE][NEWLINE]Receives the Altitude Training promotion (Double movement in Hills and +10% [ICON_STRENGTH] Combat Strength when fighting in Hills). Retained upon upgrade.[NEWLINE][NEWLINE]Receives the Volley promotion (+50% [ICON_STRENGTH] Attack Strength bonus vs. Fortified Units and Cities). Retained upon upgrade.[NEWLINE][NEWLINE]Cheaper to train (190 vs. 225 [ICON_PRODUCTION] Production on Standard).
 			</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_GALLOWGLASS_STRATEGY">
