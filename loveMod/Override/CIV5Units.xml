@@ -166911,6 +166911,12 @@ lithuania changes -->
 		</Row>
 		<Row> 
 			<ImprovementType>IMPROVEMENT_AYER</ImprovementType> 
+			<TechType>TECH_ASTRONOMY</TechType> 
+			<YieldType>YIELD_PRODUCTION</YieldType> 
+			<Yield>1</Yield> 
+		</Row>
+		<Row> 
+			<ImprovementType>IMPROVEMENT_AYER</ImprovementType> 
 			<TechType>TECH_FLIGHT</TechType> 
 			<YieldType>YIELD_CULTURE</YieldType> 
 			<Yield>1</Yield> 
