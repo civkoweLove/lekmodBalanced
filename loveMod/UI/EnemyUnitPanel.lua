@@ -967,7 +967,21 @@ function UpdateCombatOddsUnitVsUnit(pMyUnit, pTheirUnit)
 					controlTable.Value:SetText( GetFormattedText(strText, iModifier, true, true) );
 				end
 			end
-			
+
+			-- Reversed Flank
+			iModifier = pMyUnit:ReversedFlankModifier();
+			if (iModifier ~= 0) then
+			    if (not bRanged) then
+			        local iNumAdjacentEnemies = pMyUnit:GetNumEnemyUnitsAdjacent(pMyUnit);
+			        if (iNumAdjacentEnemies > 1) then
+			            iModifier = iModifier * (iNumAdjacentEnemies - 1);
+					    controlTable = g_MyCombatDataIM:GetInstance();
+            		    controlTable.Text:LocalizeAndSetText( "TXT_KEY_EUPANEL_REVERSED_FLANK" );
+            		    controlTable.Value:SetText( GetFormattedText(strText, iModifier, true, true) );
+            	    end
+                end
+            end
+
 			-- Extra Combat Percent
 			iModifier = pMyUnit:GetExtraCombatPercent();
 			if (iModifier ~= 0) then
@@ -1476,7 +1490,21 @@ function UpdateCombatOddsUnitVsUnit(pMyUnit, pTheirUnit)
 						controlTable.Value:SetText( GetFormattedText(strText, iModifier, false, true) );
 					end
 				end
-				
+
+				--Reversed Flank
+    			iModifier = pTheirUnit:ReversedFlankModifier();
+    			if (iModifier ~= 0) then
+    			    if (not bRanged) then
+    			        local iNumAdjacentEnemies = pTheirUnit:GetNumEnemyUnitsAdjacent(pTheirUnit);
+    			        if (iNumAdjacentEnemies > 1) then
+    			            iModifier = iModifier * (iNumAdjacentEnemies - 1);
+    						controlTable = g_TheirCombatDataIM:GetInstance();
+    						controlTable.Text:LocalizeAndSetText(  "TXT_KEY_EUPANEL_REVERSED_FLANK" );
+    						controlTable.Value:SetText( GetFormattedText(strText, iModifier, false, true) );
+                	    end
+                    end
+                end
+
 				-- ExtraCombatPercent
 				iModifier = pTheirUnit:GetExtraCombatPercent();
 				if (iModifier ~= 0) then

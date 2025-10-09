@@ -64280,6 +64280,11 @@ The second sack of Ulundi is considered by historians to be the definitive end o
 				Flanking Bonus
 			</Text>
 		</Replace>
+		<Replace Tag="TXT_KEY_EUPANEL_REVERSED_FLANK"> 
+			<Text>
+				Reversed Flank
+			</Text>
+		</Replace>
 		<Replace Tag="TXT_KEY_EUPANEL_FORTIFICATION_BONUS"> 
 			<Text>
 				Fortification Bonus
