@@ -89116,6 +89116,35 @@ lithuania changes -->
 			<ShowInPedia>false</ShowInPedia> 
 			<ShowInTechTree>false</ShowInTechTree> 
 		</Row>
+		<Row> 
+			<Type>BUILD_OFFSHORE_PLATFORM_WORKER</Type> 
+			<Description>TXT_KEY_BUILD_OFFSHORE_PLATFORM</Description> 
+			<HotKey>KB_O</HotKey> 
+			<HotKeyPriority>0</HotKeyPriority> 
+			<HotKeyPriorityAlt>0</HotKeyPriorityAlt> 
+			<OrderPriority>98</OrderPriority> 
+			<AltDown>false</AltDown> 
+			<AltDownAlt>false</AltDownAlt> 
+			<ShiftDown>false</ShiftDown> 
+			<ShiftDownAlt>false</ShiftDownAlt> 
+			<CtrlDown>false</CtrlDown> 
+			<CtrlDownAlt>false</CtrlDownAlt> 
+			<Time>900</Time>
+			<Cost>0</Cost> 
+			<CostIncreasePerImprovement>0</CostIncreasePerImprovement> 
+			<Kill>false</Kill> 
+			<Repair>false</Repair> 
+			<RemoveRoute>false</RemoveRoute> 
+			<Water>true</Water> 
+			<CanBeEmbarked>true</CanBeEmbarked> 
+			<PrereqTech>TECH_REFRIGERATION</PrereqTech> 
+			<ImprovementType>IMPROVEMENT_OFFSHORE_PLATFORM</ImprovementType> 
+			<EntityEvent>ENTITY_EVENT_BUILD</EntityEvent> 
+			<IconIndex>34</IconIndex> 
+			<IconAtlas>UNIT_ACTION_ATLAS</IconAtlas> 
+			<ShowInPedia>false</ShowInPedia> 
+			<ShowInTechTree>false</ShowInTechTree> 
+		</Row>
 	</Builds> 
 
 	<Table name="Calendars">
@@ -307790,6 +307819,10 @@ lithuania changes -->
 			<BuildType>BUILD_FISHING_BOATS_WORKER</BuildType> 
 		</Row>
 		<Row> 
+			<UnitType>UNIT_WORKER</UnitType> 
+			<BuildType>BUILD_OFFSHORE_PLATFORM_WORKER</BuildType> 
+		</Row>
+		<Row> 
 			<UnitType>UNIT_WORKBOAT</UnitType> 
 			<BuildType>BUILD_FISHING_BOATS</BuildType> 
 		</Row>
@@ -308031,6 +308064,14 @@ lithuania changes -->
 			<BuildType>BUILD_FOREST</BuildType> 
 		</Row>
 		<Row> 
+			<UnitType>UNIT_ARGENTINA_WORKER</UnitType> 
+			<BuildType>BUILD_FISHING_BOATS_WORKER</BuildType> 
+		</Row>
+		<Row> 
+			<UnitType>UNIT_ARGENTINA_WORKER</UnitType> 
+			<BuildType>BUILD_OFFSHORE_PLATFORM_WORKER</BuildType> 
+		</Row>
+		<Row> 
 			<UnitType>UNIT_INCA_WORKER</UnitType> 
 			<BuildType>BUILD_ROAD</BuildType> 
 		</Row>
@@ -308121,6 +308162,14 @@ lithuania changes -->
 		<Row> 
 			<UnitType>UNIT_INCA_WORKER</UnitType> 
 			<BuildType>BUILD_FOREST</BuildType> 
+		</Row>
+		<Row> 
+			<UnitType>UNIT_INCA_WORKER</UnitType> 
+			<BuildType>BUILD_FISHING_BOATS_WORKER</BuildType> 
+		</Row>
+		<Row> 
+			<UnitType>UNIT_INCA_WORKER</UnitType> 
+			<BuildType>BUILD_OFFSHORE_PLATFORM_WORKER</BuildType> 
 		</Row>
 		<Row> 
 			<UnitType>UNIT_PRUSSIAN_WORKER</UnitType> 
@@ -308293,6 +308342,14 @@ lithuania changes -->
 		<Row> 
 			<UnitType>UNIT_NGANGKARI</UnitType> 
 			<BuildType>BUILD_REMOVE_ROUTE</BuildType> 
+		</Row>
+		<Row> 
+			<UnitType>UNIT_NGANGKARI</UnitType> 
+			<BuildType>BUILD_FISHING_BOATS_WORKER</BuildType> 
+		</Row>
+		<Row> 
+			<UnitType>UNIT_NGANGKARI</UnitType> 
+			<BuildType>BUILD_OFFSHORE_PLATFORM_WORKER</BuildType> 
 		</Row>
 		<Row> 
 			<UnitType>UNIT_WORKER</UnitType> 
