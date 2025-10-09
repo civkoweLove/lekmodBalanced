@@ -118997,7 +118997,7 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_PROMOTION_REVERSED_FLANK_HELP"> 
 			<Text>
-				+10% [COLOR_POSITIVE_TEXT]Combat Strength[ENDCOLOR] for each adjacent enemy Unit.
+				+10% [COLOR_POSITIVE_TEXT]Combat Strength[ENDCOLOR] for each adjacent enemy Unit above one.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_PEDIA_PROMOTION_REVERSED_FLANK"> 
