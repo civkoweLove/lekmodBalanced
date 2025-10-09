@@ -118985,6 +118985,21 @@ The ship has weather'd every rack; the prize we sought is won."
 				Enhanced Flank Attack
 			</Text>
 		</Replace>
+		<Replace Tag="TXT_KEY_PROMOTION_REVERSED_FLANK"> 
+			<Text>
+				Reversed Flank
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_PROMOTION_REVERSED_FLANK_HELP"> 
+			<Text>
+				+10% [COLOR_POSITIVE_TEXT]Combat Strength[ENDCOLOR] for each adjacent enemy Unit.
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_PEDIA_PROMOTION_REVERSED_FLANK"> 
+			<Text>
+				Reversed Flank
+			</Text>
+		</Replace>
 		<Replace Tag="TXT_KEY_PROMOTION_FLAT_MOVEMENT_COST"> 
 			<Text>
 				All Tiles Cost 1 Move
