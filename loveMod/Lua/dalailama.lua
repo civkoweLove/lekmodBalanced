@@ -18,14 +18,8 @@ function TibetOverride(iPlayer, iUnit)
 			local pUnit = pPlayer:GetUnitByID(iUnit);
                if (pUnit:GetUnitType() == iProphetID)then
 					local newUnit = pPlayer:InitUnit(iDalailama, pUnit:GetX(), pUnit:GetY())
-					newUnit:Convert(pUnit)
-					
-					-- local faith  = math.max(45, (pPlayer:GetMinimumFaithNextGreatProphet()) * 0.15)
-					-- pPlayer:ChangeFaith(faith)
-					-- if pPlayer:IsHuman() and Game.GetActivePlayer() == ownerId then
-						-- local hex = ToHexFromGrid(Vector2(newUnit:GetX(), newUnit:GetY()))
-						-- Events.AddPopupTextEvent(HexToWorld(hex), Locale.ConvertTextKey("+{1_Num}[ENDCOLOR] [ICON_PEACE]", faith), true)
-					-- end
+					--newUnit:Convert(pUnit)
+					pUnit:Kill(true)
                 end
             end
         end
