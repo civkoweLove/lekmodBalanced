@@ -119005,6 +119005,16 @@ The ship has weather'd every rack; the prize we sought is won."
 				Reversed Flank
 			</Text>
 		</Replace>
+		<Replace Tag="TXT_KEY_PROMOTION_ENEMY_ROUTE"> 
+			<Text>
+				Enemy Route
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_PROMOTION_ENEMY_ROUTE_HELP"> 
+			<Text>
+				Moves along Roads in Enemy Territory as if in Friendly Territory.
+			</Text>
+		</Replace>
 		<Replace Tag="TXT_KEY_PROMOTION_FLAT_MOVEMENT_COST"> 
 			<Text>
 				All Tiles Cost 1 Move
