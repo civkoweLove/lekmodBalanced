@@ -118430,6 +118430,21 @@ The ship has weather'd every rack; the prize we sought is won."
 				+1 [ICON_MOVES] [COLOR_POSITIVE_TEXT]Extra Movement[ENDCOLOR] if starts turn [COLOR_POSITIVE_TEXT]on Plains[ENDCOLOR].
 			</Text>
 		</Replace>
+				<Replace Tag="TXT_KEY_PROMOTION_BONUS_MOVEMENT_RIVER"> 
+			<Text>
+				Bonus Movement near River
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_PEDIA_PROMOTION_BONUS_MOVEMENT_RIVER"> 
+			<Text>
+				Mandekalu Cavalry bonus Movement near River
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_PROMOTION_BONUS_MOVEMENT_RIVER_HELP"> 
+			<Text>
+				+1 [ICON_MOVES] [COLOR_POSITIVE_TEXT]Extra Movement[ENDCOLOR] if starts turn [COLOR_POSITIVE_TEXT]next to a River[ENDCOLOR].
+			</Text>
+		</Replace>
 		<Replace Tag="TXT_KEY_PROMOTION_BUFFALO_HORNS"> 
 			<Text>
 				Buffalo Horns

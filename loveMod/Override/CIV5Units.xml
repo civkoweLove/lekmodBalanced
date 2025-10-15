@@ -251125,7 +251125,8 @@ lithuania changes -->
 		<Column name="PolicyCostModifier" type="integer"  default="0"/>
 		<Column name="CityConnectionTradeRouteChange" type="integer"  default="0"/>
 		<Column name="WonderProductionModifier" type="integer"  default="0"/>
-		<Column name="PlunderModifier" type="integer"  default="0"/>
+		<Column name="CampPlunderModifier" type="integer"  default="0"/>
+		<Column name="CityPlunderModifier" type="integer"  default="0"/>
 		<Column name="ImprovementMaintenanceModifier" type="integer"  default="0"/>
 		<Column name="GoldenAgeDurationModifier" type="integer"  default="0"/>
 		<Column name="GoldenAgeMoveChange" type="integer"  default="0"/>
@@ -251234,7 +251235,6 @@ lithuania changes -->
 			<PolicyCostModifier>0</PolicyCostModifier> 
 			<CityConnectionTradeRouteChange>0</CityConnectionTradeRouteChange> 
 			<WonderProductionModifier>0</WonderProductionModifier> 
-			<PlunderModifier>0</PlunderModifier> 
 			<ImprovementMaintenanceModifier>0</ImprovementMaintenanceModifier> 
 			<GoldenAgeDurationModifier>0</GoldenAgeDurationModifier> 
 			<GoldenAgeMoveChange>0</GoldenAgeMoveChange> 
@@ -251325,7 +251325,6 @@ lithuania changes -->
 			<PolicyCostModifier>0</PolicyCostModifier> 
 			<CityConnectionTradeRouteChange>0</CityConnectionTradeRouteChange> 
 			<WonderProductionModifier>0</WonderProductionModifier> 
-			<PlunderModifier>0</PlunderModifier> 
 			<ImprovementMaintenanceModifier>0</ImprovementMaintenanceModifier> 
 			<GoldenAgeDurationModifier>0</GoldenAgeDurationModifier> 
 			<GoldenAgeMoveChange>0</GoldenAgeMoveChange> 
@@ -251416,7 +251415,6 @@ lithuania changes -->
 			<PolicyCostModifier>0</PolicyCostModifier> 
 			<CityConnectionTradeRouteChange>0</CityConnectionTradeRouteChange> 
 			<WonderProductionModifier>0</WonderProductionModifier> 
-			<PlunderModifier>0</PlunderModifier> 
 			<ImprovementMaintenanceModifier>0</ImprovementMaintenanceModifier> 
 			<GoldenAgeDurationModifier>0</GoldenAgeDurationModifier> 
 			<GoldenAgeMoveChange>0</GoldenAgeMoveChange> 
@@ -251507,7 +251505,6 @@ lithuania changes -->
 			<PolicyCostModifier>0</PolicyCostModifier> 
 			<CityConnectionTradeRouteChange>0</CityConnectionTradeRouteChange> 
 			<WonderProductionModifier>0</WonderProductionModifier> 
-			<PlunderModifier>0</PlunderModifier> 
 			<ImprovementMaintenanceModifier>0</ImprovementMaintenanceModifier> 
 			<GoldenAgeDurationModifier>0</GoldenAgeDurationModifier> 
 			<GoldenAgeMoveChange>0</GoldenAgeMoveChange> 
@@ -251598,7 +251595,6 @@ lithuania changes -->
 			<PolicyCostModifier>0</PolicyCostModifier> 
 			<CityConnectionTradeRouteChange>0</CityConnectionTradeRouteChange> 
 			<WonderProductionModifier>0</WonderProductionModifier> 
-			<PlunderModifier>0</PlunderModifier> 
 			<ImprovementMaintenanceModifier>0</ImprovementMaintenanceModifier> 
 			<GoldenAgeDurationModifier>0</GoldenAgeDurationModifier> 
 			<GoldenAgeMoveChange>0</GoldenAgeMoveChange> 
@@ -251691,7 +251687,6 @@ lithuania changes -->
 			<PolicyCostModifier>0</PolicyCostModifier> 
 			<CityConnectionTradeRouteChange>0</CityConnectionTradeRouteChange> 
 			<WonderProductionModifier>0</WonderProductionModifier> 
-			<PlunderModifier>0</PlunderModifier> 
 			<ImprovementMaintenanceModifier>0</ImprovementMaintenanceModifier> 
 			<GoldenAgeDurationModifier>0</GoldenAgeDurationModifier> 
 			<GoldenAgeMoveChange>0</GoldenAgeMoveChange> 
@@ -251784,7 +251779,6 @@ lithuania changes -->
 			<PolicyCostModifier>0</PolicyCostModifier> 
 			<CityConnectionTradeRouteChange>0</CityConnectionTradeRouteChange> 
 			<WonderProductionModifier>0</WonderProductionModifier> 
-			<PlunderModifier>0</PlunderModifier> 
 			<ImprovementMaintenanceModifier>0</ImprovementMaintenanceModifier> 
 			<GoldenAgeDurationModifier>0</GoldenAgeDurationModifier> 
 			<GoldenAgeMoveChange>0</GoldenAgeMoveChange> 
@@ -251877,7 +251871,6 @@ lithuania changes -->
 			<PolicyCostModifier>0</PolicyCostModifier> 
 			<CityConnectionTradeRouteChange>0</CityConnectionTradeRouteChange> 
 			<WonderProductionModifier>0</WonderProductionModifier> 
-			<PlunderModifier>0</PlunderModifier> 
 			<ImprovementMaintenanceModifier>0</ImprovementMaintenanceModifier> 
 			<GoldenAgeDurationModifier>0</GoldenAgeDurationModifier> 
 			<GoldenAgeMoveChange>0</GoldenAgeMoveChange> 
@@ -251970,7 +251963,6 @@ lithuania changes -->
 			<PolicyCostModifier>0</PolicyCostModifier> 
 			<CityConnectionTradeRouteChange>0</CityConnectionTradeRouteChange> 
 			<WonderProductionModifier>0</WonderProductionModifier> 
-			<PlunderModifier>0</PlunderModifier> 
 			<ImprovementMaintenanceModifier>0</ImprovementMaintenanceModifier> 
 			<GoldenAgeDurationModifier>0</GoldenAgeDurationModifier> 
 			<GoldenAgeMoveChange>0</GoldenAgeMoveChange> 
@@ -252063,7 +252055,6 @@ lithuania changes -->
 			<PolicyCostModifier>0</PolicyCostModifier> 
 			<CityConnectionTradeRouteChange>0</CityConnectionTradeRouteChange> 
 			<WonderProductionModifier>0</WonderProductionModifier> 
-			<PlunderModifier>0</PlunderModifier> 
 			<ImprovementMaintenanceModifier>0</ImprovementMaintenanceModifier> 
 			<GoldenAgeDurationModifier>0</GoldenAgeDurationModifier> 
 			<GoldenAgeMoveChange>0</GoldenAgeMoveChange> 
@@ -252156,7 +252147,6 @@ lithuania changes -->
 			<PolicyCostModifier>0</PolicyCostModifier> 
 			<CityConnectionTradeRouteChange>0</CityConnectionTradeRouteChange> 
 			<WonderProductionModifier>0</WonderProductionModifier> 
-			<PlunderModifier>0</PlunderModifier> 
 			<ImprovementMaintenanceModifier>0</ImprovementMaintenanceModifier> 
 			<GoldenAgeDurationModifier>0</GoldenAgeDurationModifier> 
 			<GoldenAgeMoveChange>0</GoldenAgeMoveChange> 
@@ -252249,7 +252239,6 @@ lithuania changes -->
 			<PolicyCostModifier>0</PolicyCostModifier> 
 			<CityConnectionTradeRouteChange>0</CityConnectionTradeRouteChange> 
 			<WonderProductionModifier>0</WonderProductionModifier> 
-			<PlunderModifier>0</PlunderModifier> 
 			<ImprovementMaintenanceModifier>0</ImprovementMaintenanceModifier> 
 			<GoldenAgeDurationModifier>0</GoldenAgeDurationModifier> 
 			<GoldenAgeMoveChange>0</GoldenAgeMoveChange> 
@@ -252342,7 +252331,6 @@ lithuania changes -->
 			<PolicyCostModifier>0</PolicyCostModifier> 
 			<CityConnectionTradeRouteChange>0</CityConnectionTradeRouteChange> 
 			<WonderProductionModifier>0</WonderProductionModifier> 
-			<PlunderModifier>0</PlunderModifier> 
 			<ImprovementMaintenanceModifier>0</ImprovementMaintenanceModifier> 
 			<GoldenAgeDurationModifier>0</GoldenAgeDurationModifier> 
 			<GoldenAgeMoveChange>0</GoldenAgeMoveChange> 
@@ -252435,7 +252423,6 @@ lithuania changes -->
 			<PolicyCostModifier>0</PolicyCostModifier> 
 			<CityConnectionTradeRouteChange>0</CityConnectionTradeRouteChange> 
 			<WonderProductionModifier>0</WonderProductionModifier> 
-			<PlunderModifier>0</PlunderModifier> 
 			<ImprovementMaintenanceModifier>0</ImprovementMaintenanceModifier> 
 			<GoldenAgeDurationModifier>0</GoldenAgeDurationModifier> 
 			<GoldenAgeMoveChange>0</GoldenAgeMoveChange> 
@@ -252528,7 +252515,6 @@ lithuania changes -->
 			<PolicyCostModifier>0</PolicyCostModifier> 
 			<CityConnectionTradeRouteChange>0</CityConnectionTradeRouteChange> 
 			<WonderProductionModifier>0</WonderProductionModifier> 
-			<PlunderModifier>0</PlunderModifier> 
 			<ImprovementMaintenanceModifier>0</ImprovementMaintenanceModifier> 
 			<GoldenAgeDurationModifier>0</GoldenAgeDurationModifier> 
 			<GoldenAgeMoveChange>0</GoldenAgeMoveChange> 
@@ -252625,7 +252611,6 @@ lithuania changes -->
 			<PolicyCostModifier>0</PolicyCostModifier> 
 			<CityConnectionTradeRouteChange>0</CityConnectionTradeRouteChange> 
 			<WonderProductionModifier>0</WonderProductionModifier> 
-			<PlunderModifier>0</PlunderModifier> 
 			<ImprovementMaintenanceModifier>-25</ImprovementMaintenanceModifier> 
 			<GoldenAgeDurationModifier>0</GoldenAgeDurationModifier> 
 			<GoldenAgeMoveChange>0</GoldenAgeMoveChange> 
@@ -252718,7 +252703,6 @@ lithuania changes -->
 			<PolicyCostModifier>0</PolicyCostModifier> 
 			<CityConnectionTradeRouteChange>0</CityConnectionTradeRouteChange> 
 			<WonderProductionModifier>0</WonderProductionModifier> 
-			<PlunderModifier>0</PlunderModifier> 
 			<ImprovementMaintenanceModifier>0</ImprovementMaintenanceModifier> 
 			<GoldenAgeDurationModifier>0</GoldenAgeDurationModifier> 
 			<GoldenAgeMoveChange>0</GoldenAgeMoveChange> 
@@ -252811,7 +252795,6 @@ lithuania changes -->
 			<PolicyCostModifier>0</PolicyCostModifier> 
 			<CityConnectionTradeRouteChange>0</CityConnectionTradeRouteChange> 
 			<WonderProductionModifier>0</WonderProductionModifier> 
-			<PlunderModifier>0</PlunderModifier> 
 			<ImprovementMaintenanceModifier>0</ImprovementMaintenanceModifier> 
 			<GoldenAgeDurationModifier>0</GoldenAgeDurationModifier> 
 			<GoldenAgeMoveChange>0</GoldenAgeMoveChange> 
@@ -252904,7 +252887,6 @@ lithuania changes -->
 			<PolicyCostModifier>0</PolicyCostModifier> 
 			<CityConnectionTradeRouteChange>0</CityConnectionTradeRouteChange> 
 			<WonderProductionModifier>0</WonderProductionModifier> 
-			<PlunderModifier>0</PlunderModifier> 
 			<ImprovementMaintenanceModifier>0</ImprovementMaintenanceModifier> 
 			<GoldenAgeDurationModifier>0</GoldenAgeDurationModifier> 
 			<GoldenAgeMoveChange>0</GoldenAgeMoveChange> 
@@ -252997,7 +252979,6 @@ lithuania changes -->
 			<PolicyCostModifier>0</PolicyCostModifier> 
 			<CityConnectionTradeRouteChange>0</CityConnectionTradeRouteChange> 
 			<WonderProductionModifier>0</WonderProductionModifier> 
-			<PlunderModifier>0</PlunderModifier> 
 			<ImprovementMaintenanceModifier>0</ImprovementMaintenanceModifier> 
 			<GoldenAgeDurationModifier>0</GoldenAgeDurationModifier> 
 			<GoldenAgeMoveChange>0</GoldenAgeMoveChange> 
@@ -253090,7 +253071,6 @@ lithuania changes -->
 			<PolicyCostModifier>0</PolicyCostModifier> 
 			<CityConnectionTradeRouteChange>0</CityConnectionTradeRouteChange> 
 			<WonderProductionModifier>20</WonderProductionModifier> 
-			<PlunderModifier>0</PlunderModifier> 
 			<ImprovementMaintenanceModifier>0</ImprovementMaintenanceModifier> 
 			<GoldenAgeDurationModifier>0</GoldenAgeDurationModifier> 
 			<GoldenAgeMoveChange>0</GoldenAgeMoveChange> 
@@ -253183,7 +253163,8 @@ lithuania changes -->
 			<PolicyCostModifier>0</PolicyCostModifier> 
 			<CityConnectionTradeRouteChange>0</CityConnectionTradeRouteChange> 
 			<WonderProductionModifier>0</WonderProductionModifier> 
-			<PlunderModifier>200</PlunderModifier> 
+			<CampPlunderModifier>100</CampPlunderModifier>
+			<CityPlunderModifier>200</CityPlunderModifier>
 			<ImprovementMaintenanceModifier>0</ImprovementMaintenanceModifier> 
 			<GoldenAgeDurationModifier>0</GoldenAgeDurationModifier> 
 			<GoldenAgeMoveChange>0</GoldenAgeMoveChange> 
@@ -253220,7 +253201,7 @@ lithuania changes -->
 			<TradeBuildingModifier>0</TradeBuildingModifier> 
 			<FightWellDamaged>false</FightWellDamaged> 
 			<MoveFriendlyWoodsAsRoad>false</MoveFriendlyWoodsAsRoad> 
-			<FasterAlongRiver>true</FasterAlongRiver> 
+			<FasterAlongRiver>false</FasterAlongRiver> 
 			<FasterInHills>false</FasterInHills> 
 			<EmbarkedAllWater>false</EmbarkedAllWater> 
 			<EmbarkedToLandFlatCost>false</EmbarkedToLandFlatCost> 
@@ -253276,7 +253257,6 @@ lithuania changes -->
 			<PolicyCostModifier>0</PolicyCostModifier> 
 			<CityConnectionTradeRouteChange>0</CityConnectionTradeRouteChange> 
 			<WonderProductionModifier>0</WonderProductionModifier> 
-			<PlunderModifier>0</PlunderModifier> 
 			<ImprovementMaintenanceModifier>0</ImprovementMaintenanceModifier> 
 			<GoldenAgeDurationModifier>50</GoldenAgeDurationModifier> 
 			<GoldenAgeMoveChange>1</GoldenAgeMoveChange> 
@@ -253369,7 +253349,6 @@ lithuania changes -->
 			<PolicyCostModifier>0</PolicyCostModifier> 
 			<CityConnectionTradeRouteChange>0</CityConnectionTradeRouteChange> 
 			<WonderProductionModifier>0</WonderProductionModifier> 
-			<PlunderModifier>0</PlunderModifier> 
 			<ImprovementMaintenanceModifier>0</ImprovementMaintenanceModifier> 
 			<GoldenAgeDurationModifier>0</GoldenAgeDurationModifier> 
 			<GoldenAgeMoveChange>0</GoldenAgeMoveChange> 
@@ -253462,7 +253441,6 @@ lithuania changes -->
 			<PolicyCostModifier>0</PolicyCostModifier> 
 			<CityConnectionTradeRouteChange>0</CityConnectionTradeRouteChange> 
 			<WonderProductionModifier>0</WonderProductionModifier> 
-			<PlunderModifier>0</PlunderModifier> 
 			<ImprovementMaintenanceModifier>0</ImprovementMaintenanceModifier> 
 			<GoldenAgeDurationModifier>0</GoldenAgeDurationModifier> 
 			<GoldenAgeMoveChange>0</GoldenAgeMoveChange> 
@@ -253555,7 +253533,6 @@ lithuania changes -->
 			<PolicyCostModifier>0</PolicyCostModifier> 
 			<CityConnectionTradeRouteChange>0</CityConnectionTradeRouteChange> 
 			<WonderProductionModifier>0</WonderProductionModifier> 
-			<PlunderModifier>0</PlunderModifier> 
 			<ImprovementMaintenanceModifier>-50</ImprovementMaintenanceModifier> 
 			<GoldenAgeDurationModifier>0</GoldenAgeDurationModifier> 
 			<GoldenAgeMoveChange>0</GoldenAgeMoveChange> 
@@ -253648,7 +253625,6 @@ lithuania changes -->
 			<PolicyCostModifier>0</PolicyCostModifier> 
 			<CityConnectionTradeRouteChange>0</CityConnectionTradeRouteChange> 
 			<WonderProductionModifier>0</WonderProductionModifier> 
-			<PlunderModifier>0</PlunderModifier> 
 			<ImprovementMaintenanceModifier>0</ImprovementMaintenanceModifier> 
 			<GoldenAgeDurationModifier>0</GoldenAgeDurationModifier> 
 			<GoldenAgeMoveChange>0</GoldenAgeMoveChange> 
@@ -253742,7 +253718,6 @@ lithuania changes -->
 			<PolicyCostModifier>0</PolicyCostModifier> 
 			<CityConnectionTradeRouteChange>0</CityConnectionTradeRouteChange> 
 			<WonderProductionModifier>0</WonderProductionModifier> 
-			<PlunderModifier>0</PlunderModifier> 
 			<ImprovementMaintenanceModifier>0</ImprovementMaintenanceModifier> 
 			<GoldenAgeDurationModifier>0</GoldenAgeDurationModifier> 
 			<GoldenAgeMoveChange>0</GoldenAgeMoveChange> 
@@ -253837,7 +253812,6 @@ lithuania changes -->
 			<PolicyCostModifier>0</PolicyCostModifier> 
 			<CityConnectionTradeRouteChange>0</CityConnectionTradeRouteChange> 
 			<WonderProductionModifier>0</WonderProductionModifier> 
-			<PlunderModifier>0</PlunderModifier> 
 			<ImprovementMaintenanceModifier>0</ImprovementMaintenanceModifier> 
 			<GoldenAgeDurationModifier>0</GoldenAgeDurationModifier> 
 			<GoldenAgeMoveChange>0</GoldenAgeMoveChange> 
@@ -253930,7 +253904,6 @@ lithuania changes -->
 			<PolicyCostModifier>0</PolicyCostModifier> 
 			<CityConnectionTradeRouteChange>0</CityConnectionTradeRouteChange> 
 			<WonderProductionModifier>0</WonderProductionModifier> 
-			<PlunderModifier>0</PlunderModifier> 
 			<ImprovementMaintenanceModifier>0</ImprovementMaintenanceModifier> 
 			<GoldenAgeDurationModifier>0</GoldenAgeDurationModifier> 
 			<GoldenAgeMoveChange>0</GoldenAgeMoveChange> 
@@ -254025,7 +253998,6 @@ lithuania changes -->
 			<PolicyCostModifier>0</PolicyCostModifier> 
 			<CityConnectionTradeRouteChange>0</CityConnectionTradeRouteChange> 
 			<WonderProductionModifier>0</WonderProductionModifier> 
-			<PlunderModifier>0</PlunderModifier> 
 			<ImprovementMaintenanceModifier>0</ImprovementMaintenanceModifier> 
 			<GoldenAgeDurationModifier>0</GoldenAgeDurationModifier> 
 			<GoldenAgeMoveChange>0</GoldenAgeMoveChange> 
@@ -254118,7 +254090,6 @@ lithuania changes -->
 			<PolicyCostModifier>0</PolicyCostModifier> 
 			<CityConnectionTradeRouteChange>0</CityConnectionTradeRouteChange> 
 			<WonderProductionModifier>0</WonderProductionModifier> 
-			<PlunderModifier>0</PlunderModifier> 
 			<ImprovementMaintenanceModifier>0</ImprovementMaintenanceModifier> 
 			<GoldenAgeDurationModifier>0</GoldenAgeDurationModifier> 
 			<GoldenAgeMoveChange>0</GoldenAgeMoveChange> 
@@ -254211,7 +254182,6 @@ lithuania changes -->
 			<PolicyCostModifier>0</PolicyCostModifier> 
 			<CityConnectionTradeRouteChange>0</CityConnectionTradeRouteChange> 
 			<WonderProductionModifier>0</WonderProductionModifier> 
-			<PlunderModifier>0</PlunderModifier> 
 			<ImprovementMaintenanceModifier>0</ImprovementMaintenanceModifier> 
 			<GoldenAgeDurationModifier>0</GoldenAgeDurationModifier> 
 			<GoldenAgeMoveChange>0</GoldenAgeMoveChange> 
@@ -254304,7 +254274,6 @@ lithuania changes -->
 			<PolicyCostModifier>0</PolicyCostModifier> 
 			<CityConnectionTradeRouteChange>0</CityConnectionTradeRouteChange> 
 			<WonderProductionModifier>0</WonderProductionModifier> 
-			<PlunderModifier>0</PlunderModifier> 
 			<ImprovementMaintenanceModifier>0</ImprovementMaintenanceModifier> 
 			<GoldenAgeDurationModifier>0</GoldenAgeDurationModifier> 
 			<GoldenAgeMoveChange>0</GoldenAgeMoveChange> 
@@ -254397,7 +254366,6 @@ lithuania changes -->
 			<PolicyCostModifier>0</PolicyCostModifier> 
 			<CityConnectionTradeRouteChange>0</CityConnectionTradeRouteChange> 
 			<WonderProductionModifier>0</WonderProductionModifier> 
-			<PlunderModifier>0</PlunderModifier> 
 			<ImprovementMaintenanceModifier>0</ImprovementMaintenanceModifier> 
 			<GoldenAgeDurationModifier>0</GoldenAgeDurationModifier> 
 			<GoldenAgeMoveChange>0</GoldenAgeMoveChange> 
@@ -254490,7 +254458,6 @@ lithuania changes -->
 			<PolicyCostModifier>0</PolicyCostModifier> 
 			<CityConnectionTradeRouteChange>0</CityConnectionTradeRouteChange> 
 			<WonderProductionModifier>0</WonderProductionModifier> 
-			<PlunderModifier>0</PlunderModifier> 
 			<ImprovementMaintenanceModifier>0</ImprovementMaintenanceModifier> 
 			<GoldenAgeDurationModifier>0</GoldenAgeDurationModifier> 
 			<GoldenAgeMoveChange>0</GoldenAgeMoveChange> 
@@ -254584,7 +254551,6 @@ lithuania changes -->
 			<PolicyCostModifier>0</PolicyCostModifier> 
 			<CityConnectionTradeRouteChange>0</CityConnectionTradeRouteChange> 
 			<WonderProductionModifier>0</WonderProductionModifier> 
-			<PlunderModifier>0</PlunderModifier> 
 			<ImprovementMaintenanceModifier>0</ImprovementMaintenanceModifier> 
 			<GoldenAgeDurationModifier>0</GoldenAgeDurationModifier> 
 			<GoldenAgeMoveChange>0</GoldenAgeMoveChange> 
@@ -254677,7 +254643,6 @@ lithuania changes -->
 			<PolicyCostModifier>0</PolicyCostModifier> 
 			<CityConnectionTradeRouteChange>0</CityConnectionTradeRouteChange> 
 			<WonderProductionModifier>0</WonderProductionModifier> 
-			<PlunderModifier>0</PlunderModifier> 
 			<ImprovementMaintenanceModifier>0</ImprovementMaintenanceModifier> 
 			<GoldenAgeDurationModifier>0</GoldenAgeDurationModifier> 
 			<GoldenAgeMoveChange>0</GoldenAgeMoveChange> 
@@ -254771,7 +254736,6 @@ lithuania changes -->
 			<PolicyCostModifier>0</PolicyCostModifier> 
 			<CityConnectionTradeRouteChange>0</CityConnectionTradeRouteChange> 
 			<WonderProductionModifier>0</WonderProductionModifier> 
-			<PlunderModifier>0</PlunderModifier> 
 			<ImprovementMaintenanceModifier>0</ImprovementMaintenanceModifier> 
 			<GoldenAgeDurationModifier>0</GoldenAgeDurationModifier> 
 			<GoldenAgeMoveChange>0</GoldenAgeMoveChange> 
@@ -254864,7 +254828,6 @@ lithuania changes -->
 			<PolicyCostModifier>0</PolicyCostModifier> 
 			<CityConnectionTradeRouteChange>0</CityConnectionTradeRouteChange> 
 			<WonderProductionModifier>0</WonderProductionModifier> 
-			<PlunderModifier>0</PlunderModifier> 
 			<ImprovementMaintenanceModifier>0</ImprovementMaintenanceModifier> 
 			<GoldenAgeDurationModifier>0</GoldenAgeDurationModifier> 
 			<GoldenAgeMoveChange>0</GoldenAgeMoveChange> 
@@ -254959,7 +254922,6 @@ lithuania changes -->
 			<PolicyCostModifier>0</PolicyCostModifier> 
 			<CityConnectionTradeRouteChange>0</CityConnectionTradeRouteChange> 
 			<WonderProductionModifier>0</WonderProductionModifier> 
-			<PlunderModifier>0</PlunderModifier> 
 			<ImprovementMaintenanceModifier>0</ImprovementMaintenanceModifier> 
 			<GoldenAgeDurationModifier>0</GoldenAgeDurationModifier> 
 			<GoldenAgeMoveChange>0</GoldenAgeMoveChange> 
@@ -255054,7 +255016,6 @@ lithuania changes -->
 			<PolicyCostModifier>-10</PolicyCostModifier> 
 			<CityConnectionTradeRouteChange>0</CityConnectionTradeRouteChange> 
 			<WonderProductionModifier>0</WonderProductionModifier> 
-			<PlunderModifier>0</PlunderModifier> 
 			<ImprovementMaintenanceModifier>0</ImprovementMaintenanceModifier> 
 			<GoldenAgeDurationModifier>0</GoldenAgeDurationModifier> 
 			<GoldenAgeMoveChange>0</GoldenAgeMoveChange> 
@@ -255147,7 +255108,6 @@ lithuania changes -->
 			<PolicyCostModifier>0</PolicyCostModifier> 
 			<CityConnectionTradeRouteChange>0</CityConnectionTradeRouteChange> 
 			<WonderProductionModifier>0</WonderProductionModifier> 
-			<PlunderModifier>0</PlunderModifier> 
 			<ImprovementMaintenanceModifier>0</ImprovementMaintenanceModifier> 
 			<GoldenAgeDurationModifier>0</GoldenAgeDurationModifier> 
 			<GoldenAgeMoveChange>0</GoldenAgeMoveChange> 
@@ -255240,7 +255200,6 @@ lithuania changes -->
 			<PolicyCostModifier>0</PolicyCostModifier> 
 			<CityConnectionTradeRouteChange>0</CityConnectionTradeRouteChange> 
 			<WonderProductionModifier>0</WonderProductionModifier> 
-			<PlunderModifier>0</PlunderModifier> 
 			<ImprovementMaintenanceModifier>0</ImprovementMaintenanceModifier> 
 			<GoldenAgeDurationModifier>0</GoldenAgeDurationModifier> 
 			<GoldenAgeMoveChange>0</GoldenAgeMoveChange> 
@@ -255333,7 +255292,6 @@ lithuania changes -->
 			<PolicyCostModifier>0</PolicyCostModifier> 
 			<CityConnectionTradeRouteChange>0</CityConnectionTradeRouteChange> 
 			<WonderProductionModifier>0</WonderProductionModifier> 
-			<PlunderModifier>0</PlunderModifier> 
 			<ImprovementMaintenanceModifier>0</ImprovementMaintenanceModifier> 
 			<GoldenAgeDurationModifier>0</GoldenAgeDurationModifier> 
 			<GoldenAgeMoveChange>0</GoldenAgeMoveChange> 
@@ -255426,7 +255384,6 @@ lithuania changes -->
 			<PolicyCostModifier>0</PolicyCostModifier> 
 			<CityConnectionTradeRouteChange>0</CityConnectionTradeRouteChange> 
 			<WonderProductionModifier>0</WonderProductionModifier> 
-			<PlunderModifier>0</PlunderModifier> 
 			<ImprovementMaintenanceModifier>0</ImprovementMaintenanceModifier> 
 			<GoldenAgeDurationModifier>0</GoldenAgeDurationModifier> 
 			<GoldenAgeMoveChange>0</GoldenAgeMoveChange> 
@@ -255519,7 +255476,6 @@ lithuania changes -->
 			<PolicyCostModifier>0</PolicyCostModifier> 
 			<CityConnectionTradeRouteChange>0</CityConnectionTradeRouteChange> 
 			<WonderProductionModifier>0</WonderProductionModifier> 
-			<PlunderModifier>0</PlunderModifier> 
 			<ImprovementMaintenanceModifier>0</ImprovementMaintenanceModifier> 
 			<GoldenAgeDurationModifier>0</GoldenAgeDurationModifier> 
 			<GoldenAgeMoveChange>0</GoldenAgeMoveChange> 
@@ -255612,7 +255568,6 @@ lithuania changes -->
 			<PolicyCostModifier>0</PolicyCostModifier> 
 			<CityConnectionTradeRouteChange>0</CityConnectionTradeRouteChange> 
 			<WonderProductionModifier>0</WonderProductionModifier> 
-			<PlunderModifier>0</PlunderModifier> 
 			<ImprovementMaintenanceModifier>0</ImprovementMaintenanceModifier> 
 			<GoldenAgeDurationModifier>0</GoldenAgeDurationModifier> 
 			<GoldenAgeMoveChange>0</GoldenAgeMoveChange> 
@@ -255706,7 +255661,6 @@ lithuania changes -->
 			<PolicyCostModifier>0</PolicyCostModifier> 
 			<CityConnectionTradeRouteChange>0</CityConnectionTradeRouteChange> 
 			<WonderProductionModifier>0</WonderProductionModifier> 
-			<PlunderModifier>0</PlunderModifier> 
 			<ImprovementMaintenanceModifier>0</ImprovementMaintenanceModifier> 
 			<GoldenAgeDurationModifier>0</GoldenAgeDurationModifier> 
 			<GoldenAgeMoveChange>0</GoldenAgeMoveChange> 
@@ -255799,7 +255753,6 @@ lithuania changes -->
 			<PolicyCostModifier>0</PolicyCostModifier> 
 			<CityConnectionTradeRouteChange>0</CityConnectionTradeRouteChange> 
 			<WonderProductionModifier>0</WonderProductionModifier> 
-			<PlunderModifier>0</PlunderModifier> 
 			<ImprovementMaintenanceModifier>0</ImprovementMaintenanceModifier> 
 			<GoldenAgeDurationModifier>0</GoldenAgeDurationModifier> 
 			<GoldenAgeMoveChange>0</GoldenAgeMoveChange> 
@@ -255893,7 +255846,6 @@ lithuania changes -->
 			<PolicyCostModifier>0</PolicyCostModifier> 
 			<CityConnectionTradeRouteChange>0</CityConnectionTradeRouteChange> 
 			<WonderProductionModifier>0</WonderProductionModifier> 
-			<PlunderModifier>0</PlunderModifier> 
 			<ImprovementMaintenanceModifier>0</ImprovementMaintenanceModifier> 
 			<GoldenAgeDurationModifier>0</GoldenAgeDurationModifier> 
 			<GoldenAgeMoveChange>0</GoldenAgeMoveChange> 
@@ -255986,7 +255938,6 @@ lithuania changes -->
 			<PolicyCostModifier>0</PolicyCostModifier> 
 			<CityConnectionTradeRouteChange>0</CityConnectionTradeRouteChange> 
 			<WonderProductionModifier>0</WonderProductionModifier> 
-			<PlunderModifier>0</PlunderModifier> 
 			<ImprovementMaintenanceModifier>0</ImprovementMaintenanceModifier> 
 			<GoldenAgeDurationModifier>0</GoldenAgeDurationModifier> 
 			<GoldenAgeMoveChange>0</GoldenAgeMoveChange> 
@@ -256079,7 +256030,6 @@ lithuania changes -->
 			<PolicyCostModifier>0</PolicyCostModifier> 
 			<CityConnectionTradeRouteChange>0</CityConnectionTradeRouteChange> 
 			<WonderProductionModifier>0</WonderProductionModifier> 
-			<PlunderModifier>0</PlunderModifier> 
 			<ImprovementMaintenanceModifier>0</ImprovementMaintenanceModifier> 
 			<GoldenAgeDurationModifier>0</GoldenAgeDurationModifier> 
 			<GoldenAgeMoveChange>0</GoldenAgeMoveChange> 
@@ -256174,7 +256124,6 @@ lithuania changes -->
 			<PolicyCostModifier>0</PolicyCostModifier> 
 			<CityConnectionTradeRouteChange>0</CityConnectionTradeRouteChange> 
 			<WonderProductionModifier>0</WonderProductionModifier> 
-			<PlunderModifier>0</PlunderModifier> 
 			<ImprovementMaintenanceModifier>0</ImprovementMaintenanceModifier> 
 			<GoldenAgeDurationModifier>0</GoldenAgeDurationModifier> 
 			<GoldenAgeMoveChange>0</GoldenAgeMoveChange> 
@@ -256267,7 +256216,6 @@ lithuania changes -->
 			<PolicyCostModifier>0</PolicyCostModifier> 
 			<CityConnectionTradeRouteChange>0</CityConnectionTradeRouteChange> 
 			<WonderProductionModifier>0</WonderProductionModifier> 
-			<PlunderModifier>0</PlunderModifier> 
 			<ImprovementMaintenanceModifier>0</ImprovementMaintenanceModifier> 
 			<GoldenAgeDurationModifier>0</GoldenAgeDurationModifier> 
 			<GoldenAgeMoveChange>0</GoldenAgeMoveChange> 
@@ -256361,7 +256309,6 @@ lithuania changes -->
 			<PolicyCostModifier>0</PolicyCostModifier> 
 			<CityConnectionTradeRouteChange>0</CityConnectionTradeRouteChange> 
 			<WonderProductionModifier>0</WonderProductionModifier> 
-			<PlunderModifier>0</PlunderModifier> 
 			<ImprovementMaintenanceModifier>0</ImprovementMaintenanceModifier> 
 			<GoldenAgeDurationModifier>0</GoldenAgeDurationModifier> 
 			<GoldenAgeMoveChange>0</GoldenAgeMoveChange> 
@@ -256454,7 +256401,6 @@ lithuania changes -->
 			<PolicyCostModifier>0</PolicyCostModifier> 
 			<CityConnectionTradeRouteChange>0</CityConnectionTradeRouteChange> 
 			<WonderProductionModifier>0</WonderProductionModifier> 
-			<PlunderModifier>0</PlunderModifier> 
 			<ImprovementMaintenanceModifier>0</ImprovementMaintenanceModifier> 
 			<GoldenAgeDurationModifier>0</GoldenAgeDurationModifier> 
 			<GoldenAgeMoveChange>0</GoldenAgeMoveChange> 
@@ -256548,7 +256494,6 @@ lithuania changes -->
 			<PolicyCostModifier>0</PolicyCostModifier> 
 			<CityConnectionTradeRouteChange>0</CityConnectionTradeRouteChange> 
 			<WonderProductionModifier>0</WonderProductionModifier> 
-			<PlunderModifier>0</PlunderModifier> 
 			<ImprovementMaintenanceModifier>0</ImprovementMaintenanceModifier> 
 			<GoldenAgeDurationModifier>0</GoldenAgeDurationModifier> 
 			<GoldenAgeMoveChange>0</GoldenAgeMoveChange> 
@@ -256643,7 +256588,6 @@ lithuania changes -->
 			<PolicyCostModifier>0</PolicyCostModifier> 
 			<CityConnectionTradeRouteChange>0</CityConnectionTradeRouteChange> 
 			<WonderProductionModifier>0</WonderProductionModifier> 
-			<PlunderModifier>0</PlunderModifier> 
 			<ImprovementMaintenanceModifier>0</ImprovementMaintenanceModifier> 
 			<GoldenAgeDurationModifier>0</GoldenAgeDurationModifier> 
 			<GoldenAgeMoveChange>0</GoldenAgeMoveChange> 
@@ -256736,7 +256680,6 @@ lithuania changes -->
 			<PolicyCostModifier>0</PolicyCostModifier> 
 			<CityConnectionTradeRouteChange>0</CityConnectionTradeRouteChange> 
 			<WonderProductionModifier>0</WonderProductionModifier> 
-			<PlunderModifier>0</PlunderModifier> 
 			<ImprovementMaintenanceModifier>0</ImprovementMaintenanceModifier> 
 			<GoldenAgeDurationModifier>0</GoldenAgeDurationModifier> 
 			<GoldenAgeMoveChange>0</GoldenAgeMoveChange> 
@@ -256829,7 +256772,6 @@ lithuania changes -->
 			<PolicyCostModifier>0</PolicyCostModifier> 
 			<CityConnectionTradeRouteChange>0</CityConnectionTradeRouteChange> 
 			<WonderProductionModifier>0</WonderProductionModifier> 
-			<PlunderModifier>0</PlunderModifier> 
 			<ImprovementMaintenanceModifier>0</ImprovementMaintenanceModifier> 
 			<GoldenAgeDurationModifier>0</GoldenAgeDurationModifier> 
 			<GoldenAgeMoveChange>0</GoldenAgeMoveChange> 
@@ -256922,7 +256864,6 @@ lithuania changes -->
 			<PolicyCostModifier>0</PolicyCostModifier> 
 			<CityConnectionTradeRouteChange>0</CityConnectionTradeRouteChange> 
 			<WonderProductionModifier>0</WonderProductionModifier> 
-			<PlunderModifier>0</PlunderModifier> 
 			<ImprovementMaintenanceModifier>0</ImprovementMaintenanceModifier> 
 			<GoldenAgeDurationModifier>0</GoldenAgeDurationModifier> 
 			<GoldenAgeMoveChange>0</GoldenAgeMoveChange> 
@@ -257018,7 +256959,6 @@ lithuania changes -->
 			<PolicyCostModifier>0</PolicyCostModifier> 
 			<CityConnectionTradeRouteChange>0</CityConnectionTradeRouteChange> 
 			<WonderProductionModifier>0</WonderProductionModifier> 
-			<PlunderModifier>0</PlunderModifier> 
 			<ImprovementMaintenanceModifier>0</ImprovementMaintenanceModifier> 
 			<GoldenAgeDurationModifier>0</GoldenAgeDurationModifier> 
 			<GoldenAgeMoveChange>0</GoldenAgeMoveChange> 
@@ -257112,7 +257052,6 @@ lithuania changes -->
 			<PolicyCostModifier>0</PolicyCostModifier> 
 			<CityConnectionTradeRouteChange>0</CityConnectionTradeRouteChange> 
 			<WonderProductionModifier>0</WonderProductionModifier> 
-			<PlunderModifier>0</PlunderModifier> 
 			<ImprovementMaintenanceModifier>0</ImprovementMaintenanceModifier> 
 			<GoldenAgeDurationModifier>0</GoldenAgeDurationModifier> 
 			<GoldenAgeMoveChange>0</GoldenAgeMoveChange> 
@@ -257205,7 +257144,6 @@ lithuania changes -->
 			<PolicyCostModifier>0</PolicyCostModifier> 
 			<CityConnectionTradeRouteChange>0</CityConnectionTradeRouteChange> 
 			<WonderProductionModifier>0</WonderProductionModifier> 
-			<PlunderModifier>0</PlunderModifier> 
 			<ImprovementMaintenanceModifier>0</ImprovementMaintenanceModifier> 
 			<GoldenAgeDurationModifier>0</GoldenAgeDurationModifier> 
 			<GoldenAgeMoveChange>0</GoldenAgeMoveChange> 
@@ -257298,7 +257236,6 @@ lithuania changes -->
 			<PolicyCostModifier>0</PolicyCostModifier> 
 			<CityConnectionTradeRouteChange>0</CityConnectionTradeRouteChange> 
 			<WonderProductionModifier>0</WonderProductionModifier> 
-			<PlunderModifier>0</PlunderModifier> 
 			<ImprovementMaintenanceModifier>0</ImprovementMaintenanceModifier> 
 			<GoldenAgeDurationModifier>0</GoldenAgeDurationModifier> 
 			<GoldenAgeMoveChange>0</GoldenAgeMoveChange> 
@@ -257391,7 +257328,6 @@ lithuania changes -->
 			<PolicyCostModifier>0</PolicyCostModifier> 
 			<CityConnectionTradeRouteChange>0</CityConnectionTradeRouteChange> 
 			<WonderProductionModifier>0</WonderProductionModifier> 
-			<PlunderModifier>0</PlunderModifier> 
 			<ImprovementMaintenanceModifier>0</ImprovementMaintenanceModifier> 
 			<GoldenAgeDurationModifier>0</GoldenAgeDurationModifier> 
 			<GoldenAgeMoveChange>0</GoldenAgeMoveChange> 
@@ -257487,7 +257423,6 @@ lithuania changes -->
 			<PolicyCostModifier>0</PolicyCostModifier> 
 			<CityConnectionTradeRouteChange>0</CityConnectionTradeRouteChange> 
 			<WonderProductionModifier>0</WonderProductionModifier> 
-			<PlunderModifier>0</PlunderModifier> 
 			<ImprovementMaintenanceModifier>0</ImprovementMaintenanceModifier> 
 			<GoldenAgeDurationModifier>0</GoldenAgeDurationModifier> 
 			<GoldenAgeMoveChange>0</GoldenAgeMoveChange> 
@@ -257580,7 +257515,6 @@ lithuania changes -->
 			<PolicyCostModifier>0</PolicyCostModifier> 
 			<CityConnectionTradeRouteChange>0</CityConnectionTradeRouteChange> 
 			<WonderProductionModifier>0</WonderProductionModifier> 
-			<PlunderModifier>0</PlunderModifier> 
 			<ImprovementMaintenanceModifier>0</ImprovementMaintenanceModifier> 
 			<GoldenAgeDurationModifier>0</GoldenAgeDurationModifier> 
 			<GoldenAgeMoveChange>0</GoldenAgeMoveChange> 
@@ -257677,7 +257611,6 @@ lithuania changes -->
 			<PolicyCostModifier>0</PolicyCostModifier> 
 			<CityConnectionTradeRouteChange>0</CityConnectionTradeRouteChange> 
 			<WonderProductionModifier>0</WonderProductionModifier> 
-			<PlunderModifier>0</PlunderModifier> 
 			<ImprovementMaintenanceModifier>0</ImprovementMaintenanceModifier> 
 			<GoldenAgeDurationModifier>0</GoldenAgeDurationModifier> 
 			<GoldenAgeMoveChange>0</GoldenAgeMoveChange> 
@@ -257772,7 +257705,6 @@ lithuania changes -->
 			<PolicyCostModifier>0</PolicyCostModifier> 
 			<CityConnectionTradeRouteChange>0</CityConnectionTradeRouteChange> 
 			<WonderProductionModifier>0</WonderProductionModifier> 
-			<PlunderModifier>0</PlunderModifier> 
 			<ImprovementMaintenanceModifier>0</ImprovementMaintenanceModifier> 
 			<GoldenAgeDurationModifier>0</GoldenAgeDurationModifier> 
 			<GoldenAgeMoveChange>0</GoldenAgeMoveChange> 
@@ -257866,7 +257798,6 @@ lithuania changes -->
 			<PolicyCostModifier>0</PolicyCostModifier> 
 			<CityConnectionTradeRouteChange>0</CityConnectionTradeRouteChange> 
 			<WonderProductionModifier>0</WonderProductionModifier> 
-			<PlunderModifier>0</PlunderModifier> 
 			<ImprovementMaintenanceModifier>0</ImprovementMaintenanceModifier> 
 			<GoldenAgeDurationModifier>0</GoldenAgeDurationModifier> 
 			<GoldenAgeMoveChange>0</GoldenAgeMoveChange> 
@@ -257961,7 +257892,6 @@ lithuania changes -->
 			<PolicyCostModifier>0</PolicyCostModifier> 
 			<CityConnectionTradeRouteChange>0</CityConnectionTradeRouteChange> 
 			<WonderProductionModifier>0</WonderProductionModifier> 
-			<PlunderModifier>0</PlunderModifier> 
 			<ImprovementMaintenanceModifier>0</ImprovementMaintenanceModifier> 
 			<GoldenAgeDurationModifier>0</GoldenAgeDurationModifier> 
 			<GoldenAgeMoveChange>0</GoldenAgeMoveChange> 
@@ -258054,7 +257984,6 @@ lithuania changes -->
 			<PolicyCostModifier>0</PolicyCostModifier> 
 			<CityConnectionTradeRouteChange>0</CityConnectionTradeRouteChange> 
 			<WonderProductionModifier>0</WonderProductionModifier> 
-			<PlunderModifier>0</PlunderModifier> 
 			<ImprovementMaintenanceModifier>0</ImprovementMaintenanceModifier> 
 			<GoldenAgeDurationModifier>0</GoldenAgeDurationModifier> 
 			<GoldenAgeMoveChange>0</GoldenAgeMoveChange> 
@@ -258148,7 +258077,6 @@ lithuania changes -->
 			<PolicyCostModifier>0</PolicyCostModifier> 
 			<CityConnectionTradeRouteChange>0</CityConnectionTradeRouteChange> 
 			<WonderProductionModifier>0</WonderProductionModifier> 
-			<PlunderModifier>0</PlunderModifier> 
 			<ImprovementMaintenanceModifier>0</ImprovementMaintenanceModifier> 
 			<GoldenAgeDurationModifier>0</GoldenAgeDurationModifier> 
 			<GoldenAgeMoveChange>0</GoldenAgeMoveChange> 
@@ -258243,7 +258171,6 @@ lithuania changes -->
 			<PolicyCostModifier>0</PolicyCostModifier> 
 			<CityConnectionTradeRouteChange>0</CityConnectionTradeRouteChange> 
 			<WonderProductionModifier>0</WonderProductionModifier> 
-			<PlunderModifier>0</PlunderModifier> 
 			<ImprovementMaintenanceModifier>0</ImprovementMaintenanceModifier> 
 			<GoldenAgeDurationModifier>0</GoldenAgeDurationModifier> 
 			<GoldenAgeMoveChange>0</GoldenAgeMoveChange> 
@@ -258338,7 +258265,6 @@ lithuania changes -->
 			<PolicyCostModifier>0</PolicyCostModifier> 
 			<CityConnectionTradeRouteChange>0</CityConnectionTradeRouteChange> 
 			<WonderProductionModifier>0</WonderProductionModifier> 
-			<PlunderModifier>0</PlunderModifier> 
 			<ImprovementMaintenanceModifier>0</ImprovementMaintenanceModifier> 
 			<GoldenAgeDurationModifier>0</GoldenAgeDurationModifier> 
 			<GoldenAgeMoveChange>0</GoldenAgeMoveChange> 
@@ -258431,7 +258357,6 @@ lithuania changes -->
 			<PolicyCostModifier>0</PolicyCostModifier> 
 			<CityConnectionTradeRouteChange>0</CityConnectionTradeRouteChange> 
 			<WonderProductionModifier>0</WonderProductionModifier> 
-			<PlunderModifier>0</PlunderModifier> 
 			<ImprovementMaintenanceModifier>0</ImprovementMaintenanceModifier> 
 			<GoldenAgeDurationModifier>0</GoldenAgeDurationModifier> 
 			<GoldenAgeMoveChange>0</GoldenAgeMoveChange> 
@@ -258527,7 +258452,6 @@ lithuania changes -->
 			<PolicyCostModifier>0</PolicyCostModifier> 
 			<CityConnectionTradeRouteChange>0</CityConnectionTradeRouteChange> 
 			<WonderProductionModifier>0</WonderProductionModifier> 
-			<PlunderModifier>0</PlunderModifier> 
 			<ImprovementMaintenanceModifier>0</ImprovementMaintenanceModifier> 
 			<GoldenAgeDurationModifier>0</GoldenAgeDurationModifier> 
 			<GoldenAgeMoveChange>0</GoldenAgeMoveChange> 
@@ -258622,7 +258546,6 @@ lithuania changes -->
 			<PolicyCostModifier>0</PolicyCostModifier> 
 			<CityConnectionTradeRouteChange>0</CityConnectionTradeRouteChange> 
 			<WonderProductionModifier>0</WonderProductionModifier> 
-			<PlunderModifier>0</PlunderModifier> 
 			<ImprovementMaintenanceModifier>0</ImprovementMaintenanceModifier> 
 			<GoldenAgeDurationModifier>0</GoldenAgeDurationModifier> 
 			<GoldenAgeMoveChange>0</GoldenAgeMoveChange> 
@@ -258715,7 +258638,6 @@ lithuania changes -->
 			<PolicyCostModifier>0</PolicyCostModifier> 
 			<CityConnectionTradeRouteChange>0</CityConnectionTradeRouteChange> 
 			<WonderProductionModifier>0</WonderProductionModifier> 
-			<PlunderModifier>0</PlunderModifier> 
 			<ImprovementMaintenanceModifier>0</ImprovementMaintenanceModifier> 
 			<GoldenAgeDurationModifier>0</GoldenAgeDurationModifier> 
 			<GoldenAgeMoveChange>0</GoldenAgeMoveChange> 
@@ -258808,7 +258730,6 @@ lithuania changes -->
 			<PolicyCostModifier>0</PolicyCostModifier> 
 			<CityConnectionTradeRouteChange>0</CityConnectionTradeRouteChange> 
 			<WonderProductionModifier>0</WonderProductionModifier> 
-			<PlunderModifier>0</PlunderModifier> 
 			<ImprovementMaintenanceModifier>0</ImprovementMaintenanceModifier> 
 			<GoldenAgeDurationModifier>0</GoldenAgeDurationModifier> 
 			<GoldenAgeMoveChange>0</GoldenAgeMoveChange> 
@@ -258903,7 +258824,6 @@ lithuania changes -->
 			<PolicyCostModifier>0</PolicyCostModifier> 
 			<CityConnectionTradeRouteChange>0</CityConnectionTradeRouteChange> 
 			<WonderProductionModifier>0</WonderProductionModifier> 
-			<PlunderModifier>0</PlunderModifier> 
 			<ImprovementMaintenanceModifier>0</ImprovementMaintenanceModifier> 
 			<GoldenAgeDurationModifier>0</GoldenAgeDurationModifier> 
 			<GoldenAgeMoveChange>0</GoldenAgeMoveChange> 
@@ -258998,7 +258918,6 @@ lithuania changes -->
 			<PolicyCostModifier>0</PolicyCostModifier> 
 			<CityConnectionTradeRouteChange>0</CityConnectionTradeRouteChange> 
 			<WonderProductionModifier>0</WonderProductionModifier> 
-			<PlunderModifier>0</PlunderModifier> 
 			<ImprovementMaintenanceModifier>0</ImprovementMaintenanceModifier> 
 			<GoldenAgeDurationModifier>0</GoldenAgeDurationModifier> 
 			<GoldenAgeMoveChange>0</GoldenAgeMoveChange> 
@@ -259093,7 +259012,6 @@ lithuania changes -->
 			<PolicyCostModifier>0</PolicyCostModifier> 
 			<CityConnectionTradeRouteChange>0</CityConnectionTradeRouteChange> 
 			<WonderProductionModifier>0</WonderProductionModifier> 
-			<PlunderModifier>0</PlunderModifier> 
 			<ImprovementMaintenanceModifier>0</ImprovementMaintenanceModifier> 
 			<GoldenAgeDurationModifier>0</GoldenAgeDurationModifier> 
 			<GoldenAgeMoveChange>0</GoldenAgeMoveChange> 
@@ -259191,7 +259109,6 @@ lithuania changes -->
 			<PolicyCostModifier>0</PolicyCostModifier> 
 			<CityConnectionTradeRouteChange>0</CityConnectionTradeRouteChange> 
 			<WonderProductionModifier>0</WonderProductionModifier> 
-			<PlunderModifier>0</PlunderModifier> 
 			<ImprovementMaintenanceModifier>0</ImprovementMaintenanceModifier> 
 			<GoldenAgeDurationModifier>0</GoldenAgeDurationModifier> 
 			<GoldenAgeMoveChange>0</GoldenAgeMoveChange> 
@@ -259285,7 +259202,6 @@ lithuania changes -->
 			<PolicyCostModifier>0</PolicyCostModifier> 
 			<CityConnectionTradeRouteChange>0</CityConnectionTradeRouteChange> 
 			<WonderProductionModifier>0</WonderProductionModifier> 
-			<PlunderModifier>0</PlunderModifier> 
 			<ImprovementMaintenanceModifier>0</ImprovementMaintenanceModifier> 
 			<GoldenAgeDurationModifier>0</GoldenAgeDurationModifier> 
 			<GoldenAgeMoveChange>0</GoldenAgeMoveChange> 
@@ -259378,7 +259294,6 @@ lithuania changes -->
 			<PolicyCostModifier>0</PolicyCostModifier> 
 			<CityConnectionTradeRouteChange>0</CityConnectionTradeRouteChange> 
 			<WonderProductionModifier>0</WonderProductionModifier> 
-			<PlunderModifier>0</PlunderModifier> 
 			<ImprovementMaintenanceModifier>0</ImprovementMaintenanceModifier> 
 			<GoldenAgeDurationModifier>0</GoldenAgeDurationModifier> 
 			<GoldenAgeMoveChange>0</GoldenAgeMoveChange> 
@@ -259471,7 +259386,6 @@ lithuania changes -->
 			<PolicyCostModifier>0</PolicyCostModifier> 
 			<CityConnectionTradeRouteChange>0</CityConnectionTradeRouteChange> 
 			<WonderProductionModifier>0</WonderProductionModifier> 
-			<PlunderModifier>0</PlunderModifier> 
 			<ImprovementMaintenanceModifier>0</ImprovementMaintenanceModifier> 
 			<GoldenAgeDurationModifier>0</GoldenAgeDurationModifier> 
 			<GoldenAgeMoveChange>0</GoldenAgeMoveChange> 
@@ -259564,7 +259478,6 @@ lithuania changes -->
 			<PolicyCostModifier>0</PolicyCostModifier> 
 			<CityConnectionTradeRouteChange>0</CityConnectionTradeRouteChange> 
 			<WonderProductionModifier>0</WonderProductionModifier> 
-			<PlunderModifier>0</PlunderModifier> 
 			<ImprovementMaintenanceModifier>0</ImprovementMaintenanceModifier> 
 			<GoldenAgeDurationModifier>0</GoldenAgeDurationModifier> 
 			<GoldenAgeMoveChange>0</GoldenAgeMoveChange> 
@@ -259659,7 +259572,6 @@ lithuania changes -->
 			<PolicyCostModifier>0</PolicyCostModifier> 
 			<CityConnectionTradeRouteChange>0</CityConnectionTradeRouteChange> 
 			<WonderProductionModifier>0</WonderProductionModifier> 
-			<PlunderModifier>0</PlunderModifier> 
 			<ImprovementMaintenanceModifier>0</ImprovementMaintenanceModifier> 
 			<GoldenAgeDurationModifier>0</GoldenAgeDurationModifier> 
 			<GoldenAgeMoveChange>0</GoldenAgeMoveChange> 
@@ -259754,7 +259666,6 @@ lithuania changes -->
 			<PolicyCostModifier>0</PolicyCostModifier> 
 			<CityConnectionTradeRouteChange>0</CityConnectionTradeRouteChange> 
 			<WonderProductionModifier>0</WonderProductionModifier> 
-			<PlunderModifier>0</PlunderModifier> 
 			<ImprovementMaintenanceModifier>0</ImprovementMaintenanceModifier> 
 			<GoldenAgeDurationModifier>0</GoldenAgeDurationModifier> 
 			<GoldenAgeMoveChange>0</GoldenAgeMoveChange> 
@@ -259847,7 +259758,6 @@ lithuania changes -->
 			<PolicyCostModifier>0</PolicyCostModifier> 
 			<CityConnectionTradeRouteChange>0</CityConnectionTradeRouteChange> 
 			<WonderProductionModifier>0</WonderProductionModifier> 
-			<PlunderModifier>0</PlunderModifier> 
 			<ImprovementMaintenanceModifier>0</ImprovementMaintenanceModifier> 
 			<GoldenAgeDurationModifier>0</GoldenAgeDurationModifier> 
 			<GoldenAgeMoveChange>0</GoldenAgeMoveChange> 
@@ -259940,7 +259850,6 @@ lithuania changes -->
 			<PolicyCostModifier>0</PolicyCostModifier> 
 			<CityConnectionTradeRouteChange>0</CityConnectionTradeRouteChange> 
 			<WonderProductionModifier>0</WonderProductionModifier> 
-			<PlunderModifier>0</PlunderModifier> 
 			<ImprovementMaintenanceModifier>0</ImprovementMaintenanceModifier> 
 			<GoldenAgeDurationModifier>0</GoldenAgeDurationModifier> 
 			<GoldenAgeMoveChange>0</GoldenAgeMoveChange> 
@@ -260033,7 +259942,6 @@ lithuania changes -->
 			<PolicyCostModifier>0</PolicyCostModifier> 
 			<CityConnectionTradeRouteChange>0</CityConnectionTradeRouteChange> 
 			<WonderProductionModifier>0</WonderProductionModifier> 
-			<PlunderModifier>0</PlunderModifier> 
 			<ImprovementMaintenanceModifier>0</ImprovementMaintenanceModifier> 
 			<GoldenAgeDurationModifier>0</GoldenAgeDurationModifier> 
 			<GoldenAgeMoveChange>0</GoldenAgeMoveChange> 
@@ -260126,7 +260034,6 @@ lithuania changes -->
 			<PolicyCostModifier>0</PolicyCostModifier> 
 			<CityConnectionTradeRouteChange>0</CityConnectionTradeRouteChange> 
 			<WonderProductionModifier>0</WonderProductionModifier> 
-			<PlunderModifier>0</PlunderModifier> 
 			<ImprovementMaintenanceModifier>0</ImprovementMaintenanceModifier> 
 			<GoldenAgeDurationModifier>0</GoldenAgeDurationModifier> 
 			<GoldenAgeMoveChange>0</GoldenAgeMoveChange> 
@@ -260219,7 +260126,6 @@ lithuania changes -->
 			<PolicyCostModifier>0</PolicyCostModifier> 
 			<CityConnectionTradeRouteChange>0</CityConnectionTradeRouteChange> 
 			<WonderProductionModifier>0</WonderProductionModifier> 
-			<PlunderModifier>0</PlunderModifier> 
 			<ImprovementMaintenanceModifier>0</ImprovementMaintenanceModifier> 
 			<GoldenAgeDurationModifier>0</GoldenAgeDurationModifier> 
 			<GoldenAgeMoveChange>0</GoldenAgeMoveChange> 
@@ -260312,7 +260218,6 @@ lithuania changes -->
 			<PolicyCostModifier>0</PolicyCostModifier> 
 			<CityConnectionTradeRouteChange>0</CityConnectionTradeRouteChange> 
 			<WonderProductionModifier>0</WonderProductionModifier> 
-			<PlunderModifier>0</PlunderModifier> 
 			<ImprovementMaintenanceModifier>0</ImprovementMaintenanceModifier> 
 			<GoldenAgeDurationModifier>0</GoldenAgeDurationModifier> 
 			<GoldenAgeMoveChange>0</GoldenAgeMoveChange> 
@@ -260405,7 +260310,6 @@ lithuania changes -->
 			<PolicyCostModifier>0</PolicyCostModifier> 
 			<CityConnectionTradeRouteChange>0</CityConnectionTradeRouteChange> 
 			<WonderProductionModifier>0</WonderProductionModifier> 
-			<PlunderModifier>0</PlunderModifier> 
 			<ImprovementMaintenanceModifier>0</ImprovementMaintenanceModifier> 
 			<GoldenAgeDurationModifier>0</GoldenAgeDurationModifier> 
 			<GoldenAgeMoveChange>0</GoldenAgeMoveChange> 
@@ -260498,7 +260402,6 @@ lithuania changes -->
 			<PolicyCostModifier>0</PolicyCostModifier> 
 			<CityConnectionTradeRouteChange>0</CityConnectionTradeRouteChange> 
 			<WonderProductionModifier>0</WonderProductionModifier> 
-			<PlunderModifier>0</PlunderModifier> 
 			<ImprovementMaintenanceModifier>0</ImprovementMaintenanceModifier> 
 			<GoldenAgeDurationModifier>0</GoldenAgeDurationModifier> 
 			<GoldenAgeMoveChange>0</GoldenAgeMoveChange> 
@@ -263072,6 +262975,7 @@ lithuania changes -->
 		<Column name="HeavyChargeDownhill" type="INTEGER"  default="0"/>
 		<Column name="ExtraMovesInFriendly" type="INTEGER"  default="0"/>
 		<Column name="PlainsMovementBonus" type="INTEGER"  default="0"/>
+		<Column name="RiverMovementBonus" type="INTEGER"  default="0"/>
 		<Column name="UpgradeChangeIntoRanged" type="text"  default="NULL"/>
 		<Column name="UpgradeChangeIntoMelee" type="text"  default="NULL"/>
 		<Column name="IgnoreTerrainCostInHills" type="boolean"  default="0"/>
@@ -303143,6 +303047,139 @@ lithuania changes -->
 			<HeavyChargeDownhill>0</HeavyChargeDownhill> 
 			<ReversedFlankModifier>10</ReversedFlankModifier> 
 		</Row>
+		<Row>
+			<Type>BONUS_MOVEMENT_RIVER</Type> 
+			<Description>TXT_KEY_PROMOTION_BONUS_MOVEMENT_RIVER</Description> 
+			<Help>TXT_KEY_PROMOTION_BONUS_MOVEMENT_RIVER_HELP</Help> 
+			<PortraitIndex>33</PortraitIndex> 
+			<IconAtlas>ABILITY_ATLAS</IconAtlas> 
+			<HotKeyPriority>0</HotKeyPriority> 
+			<HotKeyPriorityAlt>0</HotKeyPriorityAlt> 
+			<OrderPriority>0</OrderPriority> 
+			<AltDown>false</AltDown> 
+			<AltDownAlt>false</AltDownAlt> 
+			<ShiftDown>false</ShiftDown> 
+			<ShiftDownAlt>false</ShiftDownAlt> 
+			<CtrlDown>false</CtrlDown> 
+			<CtrlDownAlt>false</CtrlDownAlt> 
+			<Sound>AS2D_IF_LEVELUP</Sound> 
+			<CannotBeChosen>true</CannotBeChosen> 
+			<LostWithUpgrade>true</LostWithUpgrade> 
+			<NotWithUpgrade>false</NotWithUpgrade> 
+			<InstaHeal>false</InstaHeal> 
+			<Leader>false</Leader> 
+			<Blitz>false</Blitz> 
+			<Amphib>false</Amphib> 
+			<River>false</River> 
+			<EnemyRoute>false</EnemyRoute> 
+			<RivalTerritory>false</RivalTerritory> 
+			<MustSetUpToRangedAttack>false</MustSetUpToRangedAttack> 
+			<RangedSupportFire>false</RangedSupportFire> 
+			<CanMoveAfterAttacking>false</CanMoveAfterAttacking> 
+			<AlwaysHeal>false</AlwaysHeal> 
+			<HealOutsideFriendly>false</HealOutsideFriendly> 
+			<HillsDoubleMove>false</HillsDoubleMove> 
+			<RoughTerrainEndsTurn>false</RoughTerrainEndsTurn> 
+			<IgnoreTerrainCost>false</IgnoreTerrainCost> 
+			<HoveringUnit>false</HoveringUnit> 
+			<FlatMovementCost>false</FlatMovementCost> 
+			<CanMoveImpassable>false</CanMoveImpassable> 
+			<NoCapture>false</NoCapture> 
+			<OnlyDefensive>false</OnlyDefensive> 
+			<NoDefensiveBonus>false</NoDefensiveBonus> 
+			<NukeImmune>false</NukeImmune> 
+			<HiddenNationality>false</HiddenNationality> 
+			<AlwaysHostile>false</AlwaysHostile> 
+			<NoRevealMap>false</NoRevealMap> 
+			<Recon>false</Recon> 
+			<CanMoveAllTerrain>false</CanMoveAllTerrain> 
+			<FreePillageMoves>false</FreePillageMoves> 
+			<AirSweepCapable>false</AirSweepCapable> 
+			<AllowsEmbarkation>false</AllowsEmbarkation> 
+			<EmbarkedAllWater>false</EmbarkedAllWater> 
+			<HealIfDestroyExcludesBarbarians>false</HealIfDestroyExcludesBarbarians> 
+			<RangeAttackIgnoreLOS>false</RangeAttackIgnoreLOS> 
+			<CityAttackOnly>false</CityAttackOnly> 
+			<CaptureDefeatedEnemy>false</CaptureDefeatedEnemy> 
+			<HealOnPillage>false</HealOnPillage> 
+			<IgnoreGreatGeneralBenefit>false</IgnoreGreatGeneralBenefit> 
+			<IgnoreZOC>false</IgnoreZOC> 
+			<HasPostCombatPromotions>false</HasPostCombatPromotions> 
+			<PostCombatPromotionsExclusive>false</PostCombatPromotionsExclusive> 
+			<RangedAttackModifier>0</RangedAttackModifier> 
+			<InterceptionCombatModifier>0</InterceptionCombatModifier> 
+			<InterceptionDefenseDamageModifier>0</InterceptionDefenseDamageModifier> 
+			<AirSweepCombatModifier>0</AirSweepCombatModifier> 
+			<ExtraAttacks>0</ExtraAttacks> 
+			<ExtraNavalMovement>0</ExtraNavalMovement> 
+			<VisibilityChange>0</VisibilityChange> 
+			<MovesChange>0</MovesChange> 
+			<MoveDiscountChange>0</MoveDiscountChange> 
+			<RangeChange>0</RangeChange> 
+			<InterceptChanceChange>0</InterceptChanceChange> 
+			<NumInterceptionChange>0</NumInterceptionChange> 
+			<EvasionChange>0</EvasionChange> 
+			<CargoChange>0</CargoChange> 
+			<EnemyHealChange>0</EnemyHealChange> 
+			<NeutralHealChange>0</NeutralHealChange> 
+			<FriendlyHealChange>0</FriendlyHealChange> 
+			<SameTileHealChange>0</SameTileHealChange> 
+			<AdjacentTileHealChange>0</AdjacentTileHealChange> 
+			<EnemyDamageChance>0</EnemyDamageChance> 
+			<NeutralDamageChance>0</NeutralDamageChance> 
+			<EnemyDamage>0</EnemyDamage> 
+			<NeutralDamage>0</NeutralDamage> 
+			<CombatPercent>0</CombatPercent> 
+			<CityAttack>0</CityAttack> 
+			<CityDefense>0</CityDefense> 
+			<RangedDefenseMod>0</RangedDefenseMod> 
+			<HillsAttack>0</HillsAttack> 
+			<HillsDefense>0</HillsDefense> 
+			<OpenAttack>0</OpenAttack> 
+			<OpenRangedAttackMod>0</OpenRangedAttackMod> 
+			<OpenDefense>0</OpenDefense> 
+			<RoughAttack>0</RoughAttack> 
+			<RoughRangedAttackMod>0</RoughRangedAttackMod> 
+			<RoughDefense>0</RoughDefense> 
+			<AttackFortifiedMod>0</AttackFortifiedMod> 
+			<AttackWoundedMod>0</AttackWoundedMod> 
+			<FlankAttackModifier>0</FlankAttackModifier> 
+			<NearbyEnemyCombatMod>0</NearbyEnemyCombatMod> 
+			<NearbyEnemyCombatRange>0</NearbyEnemyCombatRange> 
+			<UpgradeDiscount>0</UpgradeDiscount> 
+			<ExperiencePercent>0</ExperiencePercent> 
+			<AdjacentMod>0</AdjacentMod> 
+			<AttackMod>0</AttackMod> 
+			<DefenseMod>0</DefenseMod> 
+			<DropRange>0</DropRange> 
+			<GreatGeneral>false</GreatGeneral> 
+			<GreatAdmiral>false</GreatAdmiral> 
+			<GreatGeneralModifier>0</GreatGeneralModifier> 
+			<GreatGeneralReceivesMovement>false</GreatGeneralReceivesMovement> 
+			<GreatGeneralCombatModifier>0</GreatGeneralCombatModifier> 
+			<FriendlyLandsModifier>0</FriendlyLandsModifier> 
+			<FriendlyLandsAttackModifier>0</FriendlyLandsAttackModifier> 
+			<OutsideFriendlyLandsModifier>0</OutsideFriendlyLandsModifier> 
+			<HPHealedIfDestroyEnemy>0</HPHealedIfDestroyEnemy> 
+			<ExtraWithdrawal>0</ExtraWithdrawal> 
+			<EmbarkExtraVisibility>0</EmbarkExtraVisibility> 
+			<EmbarkDefenseModifier>0</EmbarkDefenseModifier> 
+			<CapitalDefenseModifier>0</CapitalDefenseModifier> 
+			<CapitalDefenseFalloff>0</CapitalDefenseFalloff> 
+			<CityAttackPlunderModifier>0</CityAttackPlunderModifier> 
+			<ReligiousStrengthLossRivalTerritory>0</ReligiousStrengthLossRivalTerritory> 
+			<TradeMissionInfluenceModifier>0</TradeMissionInfluenceModifier> 
+			<TradeMissionGoldModifier>0</TradeMissionGoldModifier> 
+			<GoldenAgeValueFromKills>0</GoldenAgeValueFromKills> 
+			<Sapper>false</Sapper> 
+			<HeavyCharge>false</HeavyCharge> 
+			<PediaType>PEDIA_ATTRIBUTES</PediaType> 
+			<PediaEntry>TXT_KEY_PEDIA_PROMOTION_BONUS_MOVEMENT_RIVER</PediaEntry> 
+			<GreatGeneralOnOrAdjacentConfersMovement>0</GreatGeneralOnOrAdjacentConfersMovement> 
+			<EmbarkedUnitReceivesMovement>false</EmbarkedUnitReceivesMovement> 
+			<HeavyChargeDownhill>0</HeavyChargeDownhill>
+			<RiverMovementBonus>1</RiverMovementBonus>
+		</Row>
 	</UnitPromotions> 
 
 	<Table name="UnitPromotions_CivilianUnitType">
@@ -311713,6 +311750,14 @@ lithuania changes -->
 		<Row> 
 			<UnitType>UNIT_SONGHAI_MUSLIMCAVALRY</UnitType> 
 			<PromotionType>PROMOTION_ANTI_SIEGE</PromotionType> 
+		</Row>
+		<Row> 
+			<UnitType>UNIT_SONGHAI_MUSLIMCAVALRY</UnitType> 
+			<PromotionType>PROMOTION_CITY_PENALTY</PromotionType> 
+		</Row>
+		<Row> 
+			<UnitType>UNIT_SONGHAI_MUSLIMCAVALRY</UnitType> 
+			<PromotionType>BONUS_MOVEMENT_RIVER</PromotionType> 
 		</Row>
 		<Row> 
 			<UnitType>UNIT_AUSTRIAN_HUSSAR</UnitType> 
@@ -322505,10 +322550,10 @@ lithuania changes -->
 			<Civilopedia>TXT_KEY_CIVILOPEDIA_UNITS_MEDIEVAL_MUSLIMCAVALRY_TEXT</Civilopedia> 
 			<Strategy>TXT_KEY_UNIT_SONGHAI_MUSLIMCAVALRY_STRATEGY</Strategy> 
 			<Help>TXT_KEY_UNIT_HELP_MUSLIM_CAVALRY</Help> 
-			<Combat>20</Combat> 
+			<Combat>22</Combat> 
 			<RangedCombat>0</RangedCombat> 
-			<Cost>121</Cost> 
-			<FaithCost>242</FaithCost> 
+			<Cost>132</Cost> 
+			<FaithCost>264</FaithCost> 
 			<RequiresFaithPurchaseEnabled>true</RequiresFaithPurchaseEnabled> 
 			<PurchaseOnly>false</PurchaseOnly> 
 			<MoveAfterPurchase>false</MoveAfterPurchase> 
