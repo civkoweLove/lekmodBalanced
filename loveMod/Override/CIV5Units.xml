@@ -37357,6 +37357,11 @@
 			<NoLimit>false</NoLimit> 
 			<Monument>false</Monument> 
 		</Row>
+		<Row>
+			<Type>BUILDINGCLASS_OBELISK_OF_FREEDOM</Type>
+			<DefaultBuilding>BUILDING_OBELISK_OF_FREEDOM</DefaultBuilding>
+			<Description>TXT_KEY_BUILDING_STATUE_OF_FREEDOM_DESC</Description>
+		</Row>
 	</BuildingClasses> 
 
 	<Table name="Building_AreaYieldModifiers">
@@ -84313,6 +84318,20 @@ lithuania changes -->
 			<MinAreaSize>-1</MinAreaSize>
 			<IconAtlas>BW_ATLAS_2</IconAtlas>
 			<PortraitIndex>23</PortraitIndex>
+		</Row>
+		<Row>
+			<Type>BUILDING_OBELISK_OF_FREEDOM</Type>
+			<BuildingClass>BUILDINGCLASS_OBELISK_OF_FREEDOM</BuildingClass>
+			<Cost>-1</Cost>
+			<NukeImmune>true</NukeImmune>
+			<Help>TXT_KEY_BUILDING_STATUE_OF_OBELISK_STRATEGY</Help>
+			<Description>TXT_KEY_BUILDING_OBELISK_OF_FREEDOM_DESC</Description>
+			<Civilopedia>TXT_KEY_BUILDING_OBELISK_OF_FREEDOM_PEDIA</Civilopedia>
+			<Strategy>TXT_KEY_BUILDING_OBELISK_OF_FREEDOM_STRATEGY</Strategy>
+			<ArtDefineTag>STATUE OF LIBERTY</ArtDefineTag>
+			<MinAreaSize>-1</MinAreaSize>
+			<IconAtlas>BW_ATLAS_2</IconAtlas>
+			<PortraitIndex>22</PortraitIndex>
 			<Happiness>1</Happiness>
 		</Row>
 		<Row>
@@ -212791,7 +212810,7 @@ lithuania changes -->
 			<NumExtraBranches>0</NumExtraBranches> 
 			<CultureCost>10</CultureCost> 
 			<GridX>1</GridX> 
-			<GridY>1</GridY> 
+			<GridY>2</GridY> 
 			<Level>0</Level> 
 			<PolicyCostModifier>0</PolicyCostModifier> 
 			<CulturePerCity>0</CulturePerCity> 
@@ -212873,7 +212892,7 @@ lithuania changes -->
 			<CityGrowthMod>0</CityGrowthMod> 
 			<CapitalGrowthMod>0</CapitalGrowthMod> 
 			<SettlerProductionModifier>0</SettlerProductionModifier> 
-			<CapitalSettlerProductionModifier>25</CapitalSettlerProductionModifier> 
+			<CapitalSettlerProductionModifier>50</CapitalSettlerProductionModifier> 
 			<NewCityExtraPopulation>0</NewCityExtraPopulation> 
 			<FreeFoodBox>0</FreeFoodBox> 
 			<HappyPerMilitaryUnit>0</HappyPerMilitaryUnit> 
@@ -213113,7 +213132,7 @@ lithuania changes -->
 			<NumExtraBranches>0</NumExtraBranches> 
 			<CultureCost>10</CultureCost> 
 			<GridX>1</GridX> 
-			<GridY>2</GridY> 
+			<GridY>1</GridY> 
 			<Level>0</Level> 
 			<PolicyCostModifier>0</PolicyCostModifier> 
 			<CulturePerCity>0</CulturePerCity> 
@@ -213135,7 +213154,7 @@ lithuania changes -->
 			<MedianTechPercentChange>0</MedianTechPercentChange> 
 			<StrategicResourceMod>0</StrategicResourceMod> 
 			<WonderProductionModifier>0</WonderProductionModifier> 
-			<BuildingProductionModifier>5</BuildingProductionModifier> 
+			<BuildingProductionModifier>10</BuildingProductionModifier> 
 			<GreatPeopleRateModifier>0</GreatPeopleRateModifier> 
 			<GreatGeneralRateModifier>0</GreatGeneralRateModifier> 
 			<GreatAdmiralRateModifier>0</GreatAdmiralRateModifier> 
@@ -219562,7 +219581,7 @@ lithuania changes -->
 			<MedianTechPercentChange>0</MedianTechPercentChange> 
 			<StrategicResourceMod>0</StrategicResourceMod> 
 			<WonderProductionModifier>0</WonderProductionModifier> 
-			<BuildingProductionModifier>5</BuildingProductionModifier> 
+			<BuildingProductionModifier>0</BuildingProductionModifier> 
 			<GreatPeopleRateModifier>0</GreatPeopleRateModifier> 
 			<GreatGeneralRateModifier>0</GreatGeneralRateModifier> 
 			<GreatAdmiralRateModifier>0</GreatAdmiralRateModifier> 
@@ -233607,6 +233626,116 @@ lithuania changes -->
 			<BuildingClassType>BUILDINGCLASS_COURTHOUSE</BuildingClassType> 
 			<ProductionModifier>100</ProductionModifier> 
 		</Row>
+		<Row> 
+			<PolicyType>POLICY_LIBERTY_FINISHER</PolicyType> 
+			<BuildingClassType>BUILDINGCLASS_CIRCUS_MAXIMUS</BuildingClassType> 
+			<ProductionModifier>33</ProductionModifier> 
+		</Row>
+		<Row> 
+			<PolicyType>POLICY_LIBERTY_FINISHER</PolicyType> 
+			<BuildingClassType>BUILDINGCLASS_NATIONAL_TREASURY</BuildingClassType> 
+			<ProductionModifier>33</ProductionModifier> 
+		</Row>
+		<Row> 
+			<PolicyType>POLICY_LIBERTY_FINISHER</PolicyType> 
+			<BuildingClassType>BUILDINGCLASS_GRAND_TEMPLE</BuildingClassType> 
+			<ProductionModifier>33</ProductionModifier> 
+		</Row>
+		<Row> 
+			<PolicyType>POLICY_LIBERTY_FINISHER</PolicyType> 
+			<BuildingClassType>BUILDINGCLASS_HERMITAGE</BuildingClassType> 
+			<ProductionModifier>33</ProductionModifier> 
+		</Row>
+		<Row> 
+			<PolicyType>POLICY_LIBERTY_FINISHER</PolicyType> 
+			<BuildingClassType>BUILDINGCLASS_HEROIC_EPIC</BuildingClassType> 
+			<ProductionModifier>33</ProductionModifier> 
+		</Row>
+		<Row> 
+			<PolicyType>POLICY_LIBERTY_FINISHER</PolicyType> 
+			<BuildingClassType>BUILDINGCLASS_IRONWORKS</BuildingClassType> 
+			<ProductionModifier>33</ProductionModifier> 
+		</Row>
+		<Row> 
+			<PolicyType>POLICY_LIBERTY_FINISHER</PolicyType> 
+			<BuildingClassType>BUILDINGCLASS_NATIONAL_COLLEGE</BuildingClassType> 
+			<ProductionModifier>33</ProductionModifier> 
+		</Row>
+		<Row> 
+			<PolicyType>POLICY_LIBERTY_FINISHER</PolicyType> 
+			<BuildingClassType>BUILDINGCLASS_NATIONAL_EPIC</BuildingClassType> 
+			<ProductionModifier>33</ProductionModifier> 
+		</Row>
+		<Row> 
+			<PolicyType>POLICY_LIBERTY_FINISHER</PolicyType> 
+			<BuildingClassType>BUILDINGCLASS_INTELLIGENCE_AGENCY</BuildingClassType> 
+			<ProductionModifier>33</ProductionModifier> 
+		</Row>
+		<Row> 
+			<PolicyType>POLICY_LIBERTY_FINISHER</PolicyType> 
+			<BuildingClassType>BUILDINGCLASS_TOURIST_CENTER</BuildingClassType> 
+			<ProductionModifier>33</ProductionModifier> 
+		</Row>
+		<Row> 
+			<PolicyType>POLICY_LIBERTY_FINISHER</PolicyType> 
+			<BuildingClassType>BUILDINGCLASS_OXFORD_UNIVERSITY</BuildingClassType> 
+			<ProductionModifier>33</ProductionModifier> 
+		</Row>
+		<Row> 
+			<PolicyType>POLICY_LIBERTY_FINISHER</PolicyType> 
+			<BuildingClassType>BUILDINGCLASS_COLOSSEUM</BuildingClassType> 
+			<ProductionModifier>10</ProductionModifier> 
+		</Row>
+		<Row> 
+			<PolicyType>POLICY_LIBERTY_FINISHER</PolicyType> 
+			<BuildingClassType>BUILDINGCLASS_MARKET</BuildingClassType> 
+			<ProductionModifier>10</ProductionModifier> 
+		</Row>
+		<Row> 
+			<PolicyType>POLICY_LIBERTY_FINISHER</PolicyType> 
+			<BuildingClassType>BUILDINGCLASS_TEMPLE</BuildingClassType> 
+			<ProductionModifier>10</ProductionModifier> 
+		</Row>
+		<Row> 
+			<PolicyType>POLICY_LIBERTY_FINISHER</PolicyType> 
+			<BuildingClassType>BUILDINGCLASS_OPERA_HOUSE</BuildingClassType> 
+			<ProductionModifier>10</ProductionModifier> 
+		</Row>
+		<Row> 
+			<PolicyType>POLICY_LIBERTY_FINISHER</PolicyType> 
+			<BuildingClassType>BUILDINGCLASS_BARRACKS</BuildingClassType> 
+			<ProductionModifier>10</ProductionModifier> 
+		</Row>
+		<Row> 
+			<PolicyType>POLICY_LIBERTY_FINISHER</PolicyType> 
+			<BuildingClassType>BUILDINGCLASS_WORKSHOP</BuildingClassType> 
+			<ProductionModifier>10</ProductionModifier> 
+		</Row>
+		<Row> 
+			<PolicyType>POLICY_LIBERTY_FINISHER</PolicyType> 
+			<BuildingClassType>BUILDINGCLASS_LIBRARY</BuildingClassType> 
+			<ProductionModifier>10</ProductionModifier> 
+		</Row>
+		<Row> 
+			<PolicyType>POLICY_LIBERTY_FINISHER</PolicyType> 
+			<BuildingClassType>BUILDINGCLASS_MONUMENT</BuildingClassType> 
+			<ProductionModifier>10</ProductionModifier> 
+		</Row>
+		<Row> 
+			<PolicyType>POLICY_LIBERTY_FINISHER</PolicyType> 
+			<BuildingClassType>BUILDINGCLASS_CONSTABLE</BuildingClassType> 
+			<ProductionModifier>10</ProductionModifier> 
+		</Row>
+		<Row> 
+			<PolicyType>POLICY_LIBERTY_FINISHER</PolicyType> 
+			<BuildingClassType>BUILDINGCLASS_HOTEL</BuildingClassType> 
+			<ProductionModifier>10</ProductionModifier> 
+		</Row>
+		<Row> 
+			<PolicyType>POLICY_LIBERTY_FINISHER</PolicyType> 
+			<BuildingClassType>BUILDINGCLASS_UNIVERSITY</BuildingClassType> 
+			<ProductionModifier>10</ProductionModifier> 
+		</Row>
 		<!-- Ireland UA -->
 		<Row> 
 			<PolicyType>POLICY_DUMMY_IRELAND</PolicyType> 
@@ -233782,7 +233911,7 @@ lithuania changes -->
 			<PolicyType>POLICY_REPUBLIC</PolicyType> 
 			<BuildingClassType>BUILDINGCLASS_STATUE_OF_FREEDOM</BuildingClassType> 
 			<YieldType>YIELD_PRODUCTION</YieldType> 
-			<YieldChange>2</YieldChange> 
+			<YieldChange>1</YieldChange> 
 		</Row>	
 		<Row> 
 			<PolicyType>POLICY_CULTURAL_CENTERS</PolicyType> 
@@ -235778,8 +235907,8 @@ lithuania changes -->
 		<Delete />
 
 		<Row> 
-			<PolicyType>POLICY_REPUBLIC</PolicyType> 
-			<PrereqPolicy>POLICY_COLLECTIVE_RULE</PrereqPolicy> 
+			<PolicyType>POLICY_COLLECTIVE_RULE</PolicyType> 
+			<PrereqPolicy>POLICY_REPUBLIC</PrereqPolicy> 
 		</Row>
 		<Row> 
 			<PolicyType>POLICY_REPRESENTATION</PolicyType> 

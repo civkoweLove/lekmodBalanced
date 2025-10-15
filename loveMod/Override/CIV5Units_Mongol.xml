@@ -15139,6 +15139,21 @@ strongest around the Gulf of Bothnia, where land steadily rises about 1 cm a yea
 				Adopting Citizenship policy reduces cost of purchasing tiles by 20%
 			</Text>
 		</Replace>
+		<Replace Tag="TXT_KEY_BUILDING_OBELISK_OF_FREEDOM_DESC">
+			<Text>
+				Obelisk of Freedom
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_BUILDING_OBELISK_OF_FREEDOM_PEDIA">
+			<Text>
+				The Obelisk of Freedom appears in capital after adopting Collective Rule policy.
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_BUILDING_OBELISK_OF_FREEDOM_STRATEGY">
+			<Text>
+				Adopting Collective Rule policy gives +1 Happiness for every second established city.
+			</Text>
+		</Replace>
 		<Replace Tag="TXT_KEY_BUILDING_GRAND_BAZAAR"> 
 			<Text>
 				Grand Bazaar
@@ -112665,7 +112680,7 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_POLICY_BRANCH_LIBERTY_HELP"> 
 			<Text>
-				[COLOR_POSITIVE_TEXT]Liberty[ENDCOLOR] is best for civilizations which desire rapid expansion.[NEWLINE][NEWLINE]Adopting Liberty will provide 1 [ICON_CULTURE] Culture per city. Unlocks building the Pyramids.[NEWLINE][NEWLINE]Adopting all policies in the Liberty tree will grant a free [ICON_GREAT_PEOPLE] Great Person of your choice near the [ICON_CAPITAL] Capital. All cities gain +5% [ICON_PRODUCTION] Production when constructing Buildings.
+				[COLOR_POSITIVE_TEXT]Liberty[ENDCOLOR] is best for civilizations which desire rapid expansion.[NEWLINE][NEWLINE]Adopting Liberty will provide 1 [ICON_CULTURE] Culture per city. Unlocks building the Pyramids.[NEWLINE][NEWLINE]Adopting all policies in the Liberty tree will grant a free [ICON_GREAT_PEOPLE] Great Person of your choice near the [ICON_CAPITAL] Capital (except Great General and Great Admiral). All cities gain +33% [ICON_PRODUCTION] Production towards all National Wonders. +10% [ICON_PRODUCTION] Production towards Buildings needed for a National Wonder.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_POLICY_BRANCH_ORDER"> 
@@ -112835,12 +112850,12 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_POLICY_COLLECTIVE_RULE_HELP"> 
 			<Text>
-				[COLOR_POSITIVE_TEXT]Collective Rule[ENDCOLOR][NEWLINE]Speeds the training of [COLOR_POSITIVE_TEXT]Settlers[ENDCOLOR] by 25% in the [ICON_CAPITAL] Capital and a free Settler appears near the [ICON_CAPITAL] Capital. Every established city provides 1 [ICON_HAPPINESS_1] Happiness.
+				[COLOR_POSITIVE_TEXT]Collective Rule[ENDCOLOR][NEWLINE]Speeds the training of [COLOR_POSITIVE_TEXT]Settlers[ENDCOLOR] by 50% in the [ICON_CAPITAL] Capital and a free Settler appears near the [ICON_CAPITAL] Capital. Every second established city provides 1 [ICON_HAPPINESS_1] Happiness.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_POLICY_COLLECTIVE_RULE_NWS_HELP"> 
 			<Text>
-				[COLOR_POSITIVE_TEXT]Collective Rule[ENDCOLOR][NEWLINE]Speeds the training of [COLOR_POSITIVE_TEXT]Settlers[ENDCOLOR] by 25% in the [ICON_CAPITAL] Capital and a free Settler appears near the [ICON_CAPITAL] Capital. Every established city provides 1 [ICON_HAPPINESS_1] Happiness.
+				[COLOR_POSITIVE_TEXT]Collective Rule[ENDCOLOR][NEWLINE]Speeds the training of [COLOR_POSITIVE_TEXT]Settlers[ENDCOLOR] by 50% in the [ICON_CAPITAL] Capital and a free Settler appears near the [ICON_CAPITAL] Capital. Every second established city provides 1 [ICON_HAPPINESS_1] Happiness.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_POLICY_COMMERCE_FINISHER"> 
@@ -114095,7 +114110,7 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_POLICY_REPUBLIC_HELP"> 
 			<Text>
-				[COLOR_POSITIVE_TEXT]Republic[ENDCOLOR][NEWLINE]+2 [ICON_PRODUCTION] Production in every established City and +5% [ICON_PRODUCTION] Production in cities when constructing Buildings.
+				[COLOR_POSITIVE_TEXT]Republic[ENDCOLOR][NEWLINE]+1 [ICON_PRODUCTION] Production in every established City and +10% [ICON_PRODUCTION] Production in Cities when constructing Buildings.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_POLICY_RESETTLEMENT"> 
