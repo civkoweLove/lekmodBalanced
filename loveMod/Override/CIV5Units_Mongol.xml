@@ -135661,7 +135661,7 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_TRAIT_AMPHIB_WARLORD"> 
 			<Text>
-				Receive triple [ICON_GOLD] Gold from Barbarian Encampments (150 [ICON_GOLD] Gold on standard speed) and pillaging Cities. Land Units gain the Amphibious promotion and ignore terrain costs when traveling along or across rivers.
+				Receive double [ICON_GOLD] Gold from Barbarian Encampments (100 [ICON_GOLD] Gold on standard speed) and triple Gold from pillaging Cities. Land Units gain the Amphibious promotion.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_TRAIT_AMPHIB_WARLORD_SHORT"> 
@@ -139064,7 +139064,7 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_UNIT_HELP_MUSLIM_CAVALRY"> 
 			<Text>
-				The Mandekalu Cavalry is a Songhai Unique Unit that replaces the Knight.[NEWLINE][NEWLINE]Unlike the Knight, receives NO [ICON_STRENGTH] Attack Strength penalty vs. Cities.[NEWLINE][NEWLINE]Cheaper to train (121 vs. 132 [ICON_PRODUCTION] Production).[NEWLINE][NEWLINE]-----[NEWLINE][NEWLINE]Can move after attacking.[NEWLINE][NEWLINE]+10% [ICON_STRENGTH] Attack Strength bonus vs. Siege and Melee Siege Units.[NEWLINE][NEWLINE]+10% [ICON_STRENGTH] Attack Strength bonus vs. Archery Units.[NEWLINE][NEWLINE]Requires 1 [ICON_RES_HORSE] Horse.[NEWLINE][NEWLINE]Cannot Fotify and doesn't benefit from Defensive Terrain Bonuses.[NEWLINE][NEWLINE]Vulnerable to Spearman, Pikeman and Halberdman.
+				The Mandekalu Cavalry is a Songhai Unique Unit that replaces the Knight.[NEWLINE][NEWLINE]22 [ICON_STRENGTH] Combat Strength (vs. 20).[NEWLINE][NEWLINE]Receives +1 [ICON_MOVES] Extra Movement when it starts the turn next to a River. Lost upon upgrade.[NEWLINE][NEWLINE]-----[NEWLINE][NEWLINE]Can move after attacking.[NEWLINE][NEWLINE]+10% [ICON_STRENGTH] Attack Strength bonus vs. Siege and Melee Siege Units.[NEWLINE][NEWLINE]+10% [ICON_STRENGTH] Attack Strength bonus vs. Archery Units.[NEWLINE][NEWLINE]Requires 1 [ICON_RES_HORSE] Horse.[NEWLINE][NEWLINE]Cannot Fotify and doesn't benefit from Defensive Terrain Bonuses.[NEWLINE][NEWLINE]Vulnerable to Spearman, Pikeman and Halberdman.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_UNIT_SONGHAI_MUSLIMCAVALRY_STRATEGY"> 
