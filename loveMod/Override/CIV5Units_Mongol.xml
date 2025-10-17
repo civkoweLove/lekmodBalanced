@@ -120444,6 +120444,21 @@ The ship has weather'd every rack; the prize we sought is won."
 				Can Enter Rival Territory
 			</Text>
 		</Replace>
+		<Replace Tag="TXT_KEY_PROMOTION_RIVER_WARLORD"> 
+			<Text>
+				River Warlord
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_PROMOTION_RIVER_WARLORD_HELP"> 
+			<Text>
+				[COLOR_POSITIVE_TEXT]Eliminates [ICON_STRENGTH] Combat Strength penalty[ENDCOLOR] for attacking from the sea or over a river. +15% [COLOR_POSITIVE_TEXT]Combat Strength[ENDCOLOR] on a tile next to a River.
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_PEDIA_PROMOTION_RIVER_WARLORD"> 
+			<Text>
+				Songhai Unique Ability River Warlord
+			</Text>
+		</Replace>
 		<Replace Tag="TXT_KEY_PROMOTION_ROUGH_TERRAIN_ENDS"> 
 			<Text>
 				Rough Terrain Ends Movement
@@ -135676,7 +135691,7 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_TRAIT_AMPHIB_WARLORD"> 
 			<Text>
-				Receive double [ICON_GOLD] Gold from Barbarian Encampments (100 [ICON_GOLD] Gold on standard speed) and triple Gold from pillaging Cities. Land Units gain the Amphibious promotion.
+				Receive double [ICON_GOLD] Gold from Barbarian Encampments (100 [ICON_GOLD] Gold on standard speed) and triple Gold from pillaging Cities. Land Units gain no penalty for attacking from the sea or over a river. +15% Combat Strength for Units next to a River.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_TRAIT_AMPHIB_WARLORD_SHORT"> 
