@@ -11318,7 +11318,7 @@ strongest around the Gulf of Bothnia, where land steadily rises about 1 cm a yea
 		</Replace>
 		<Replace Tag="TXT_KEY_AD_SETUP_ADVANCED_OPTIONS"> 
 			<Text>
-				[COLOR_XP_BLUE]MultiMod v10.4[ENDCOLOR]
+				[COLOR_CITY_BROWN]MultiMod v11.0p[ENDCOLOR]
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_AD_SETUP_CITY_STATES"> 
@@ -67208,7 +67208,7 @@ The second sack of Ulundi is considered by historians to be the definitive end o
 		</Replace>
 		<Replace Tag="TXT_KEY_GAME_SELECTION_SCREEN"> 
 			<Text>
-				[COLOR_XP_BLUE]MultiMod v10.4[ENDCOLOR]
+				[COLOR_CITY_BROWN]MultiMod v11.0p[ENDCOLOR]
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_GAME_SETUP_RANDOMIZE"> 
@@ -101897,7 +101897,7 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_MULTIPLAYER_STAGING_ROOM"> 
 			<Text>
-				[COLOR_XP_BLUE]MultiMod v10.4[ENDCOLOR]
+				[COLOR_CITY_BROWN]MultiMod v11.0p[ENDCOLOR]
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_MULTIPLAYER_STAGING_ROOM_GAME_OPTIONS_TT"> 
