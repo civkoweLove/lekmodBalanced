@@ -472,6 +472,14 @@ function UpdateCombatOddsUnitVsCity(pMyUnit, pCity)
 				controlTable.Value:SetText( GetFormattedText(strText, iModifier, true, true) );
 			end
 
+			-- River Modifier
+			iModifier = pMyUnit:GetRiverModifier();
+			if (iModifier ~= 0 and pToPlot:IsRiver()) then
+				controlTable = g_MyCombatDataIM:GetInstance();
+				controlTable.Text:LocalizeAndSetText( "TXT_KEY_EUPANEL_RIVER_BONUS" );
+				controlTable.Value:SetText( GetFormattedText(strText, iModifier, true, true) );
+			end
+
 			iModifier = pMyPlayer:GetPerExcessHappinessCombatBonus();
 			if (iModifier ~= 0) then
 				controlTable = g_MyCombatDataIM:GetInstance();
@@ -1323,6 +1331,14 @@ function UpdateCombatOddsUnitVsUnit(pMyUnit, pTheirUnit)
 				controlTable.Text:LocalizeAndSetText(  "TXT_KEY_EUPANEL_BONUS_GOLDEN_AGE" );
 				controlTable.Value:SetText( GetFormattedText(strText, iModifier, true, true) );
 			end
+
+			-- River Modifier
+			iModifier = pMyUnit:GetRiverModifier();
+			if (iModifier ~= 0 and pToPlot:IsRiver()) then
+				controlTable = g_MyCombatDataIM:GetInstance();
+				controlTable.Text:LocalizeAndSetText( "TXT_KEY_EUPANEL_RIVER_BONUS" );
+				controlTable.Value:SetText( GetFormattedText(strText, iModifier, true, true) );
+			end
 			
 			-- Enemy Religion Bonus
 			iModifier = pMyUnit:GetEnemyReligionCombatModifier(pTheirUnit)
@@ -1771,6 +1787,14 @@ function UpdateCombatOddsUnitVsUnit(pMyUnit, pTheirUnit)
 					controlTable.Text:LocalizeAndSetText(  "TXT_KEY_EUPANEL_BONUS_GOLDEN_AGE" );
 					controlTable.Value:SetText( GetFormattedText(strText, iModifier, false, true) );
 				end
+				
+				-- River Modifier
+				iModifier = pTheirUnit:GetRiverModifier();
+				if (iModifier ~= 0 and pToPlot:IsRiver()) then
+					controlTable = g_TheirCombatDataIM:GetInstance();
+					controlTable.Text:LocalizeAndSetText( "TXT_KEY_EUPANEL_RIVER_BONUS" );
+					controlTable.Value:SetText( GetFormattedText(strText, iModifier, false, true) );
+				end
 			
 				-- Enemy Religion Bonus
 				iModifier = pTheirUnit:GetEnemyReligionCombatModifier(pMyUnit)
@@ -2179,6 +2203,14 @@ function UpdateCombatOddsCityVsUnit(myCity, theirUnit)
 		if (iModifier ~= 0 and theirPlayer:IsGoldenAge()) then
 			controlTable = g_TheirCombatDataIM:GetInstance();
 			controlTable.Text:LocalizeAndSetText(  "TXT_KEY_EUPANEL_BONUS_GOLDEN_AGE" );
+			controlTable.Value:SetText( GetFormattedText(strText, iModifier, false, true) );
+		end
+		
+		-- River Modifier
+		iModifier = pTheirUnit:GetRiverModifier();
+		if (iModifier ~= 0 and pToPlot:IsRiver()) then
+			controlTable = g_TheirCombatDataIM:GetInstance();
+			controlTable.Text:LocalizeAndSetText( "TXT_KEY_EUPANEL_RIVER_BONUS" );
 			controlTable.Value:SetText( GetFormattedText(strText, iModifier, false, true) );
 		end
 		

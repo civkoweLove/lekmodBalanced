@@ -64140,6 +64140,11 @@ The second sack of Ulundi is considered by historians to be the definitive end o
 				Adjacent Friendly Unit
 			</Text>
 		</Replace>
+		<Replace Tag="TXT_KEY_EUPANEL_RIVER_BONUS"> 
+			<Text>
+				Next to a River
+			</Text>
+		</Replace>
 		<Replace Tag="TXT_KEY_EUPANEL_AIR_INTERCEPT_WARNING1"> 
 			<Text>
 				[COLOR_YELLOW]Interception by fighter or[ENDCOLOR]
@@ -118432,7 +118437,7 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 				<Replace Tag="TXT_KEY_PROMOTION_BONUS_MOVEMENT_RIVER"> 
 			<Text>
-				Bonus Movement near River
+				Bonus Movement and Combat Strength near River
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_PEDIA_PROMOTION_BONUS_MOVEMENT_RIVER"> 
@@ -118442,7 +118447,7 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_PROMOTION_BONUS_MOVEMENT_RIVER_HELP"> 
 			<Text>
-				+1 [ICON_MOVES] [COLOR_POSITIVE_TEXT]Extra Movement[ENDCOLOR] if starts turn [COLOR_POSITIVE_TEXT]next to a River[ENDCOLOR].
+				+1 [ICON_MOVES] [COLOR_POSITIVE_TEXT]Extra Movement[ENDCOLOR] if starts turn [COLOR_POSITIVE_TEXT]next to a River[ENDCOLOR]. +15% [ICON_STRENGTH] [COLOR_POSITIVE_TEXT]Combat Strength[ENDCOLOR] next to Rivers.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_PROMOTION_BUFFALO_HORNS"> 
@@ -119033,6 +119038,16 @@ The ship has weather'd every rack; the prize we sought is won."
 		<Replace Tag="TXT_KEY_PEDIA_PROMOTION_REVERSED_FLANK"> 
 			<Text>
 				Reversed Flank
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_PROMOTION_ENEMY_ROUTE"> 
+			<Text>
+				Enemy Route
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_PROMOTION_ENEMY_ROUTE_HELP"> 
+			<Text>
+				Moves along Roads in Enemy Territory as if in Friendly Territory.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_PROMOTION_FLAT_MOVEMENT_COST"> 
