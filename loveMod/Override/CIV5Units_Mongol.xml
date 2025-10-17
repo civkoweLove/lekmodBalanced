@@ -64140,6 +64140,11 @@ The second sack of Ulundi is considered by historians to be the definitive end o
 				Adjacent Friendly Unit
 			</Text>
 		</Replace>
+		<Replace Tag="TXT_KEY_EUPANEL_RIVER_BONUS"> 
+			<Text>
+				Next to a River
+			</Text>
+		</Replace>
 		<Replace Tag="TXT_KEY_EUPANEL_AIR_INTERCEPT_WARNING1"> 
 			<Text>
 				[COLOR_YELLOW]Interception by fighter or[ENDCOLOR]
