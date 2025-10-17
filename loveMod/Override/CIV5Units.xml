@@ -321414,7 +321414,7 @@ lithuania changes -->
 			<Suicide>false</Suicide> 
 			<CaptureWhileEmbarked>false</CaptureWhileEmbarked> 
 			<PrereqTech>TECH_METALLURGY</PrereqTech> 
-			<ObsoleteTech>TECH_ARMOR</ObsoleteTech> 
+			<ObsoleteTech>TECH_COMBUSTION</ObsoleteTech> 
 			<GoodyHutUpgradeUnitClass>UNITCLASS_ANTI_TANK_RIFLE</GoodyHutUpgradeUnitClass> 
 			<HurryCostModifier>0</HurryCostModifier> 
 			<AdvancedStartCost>30</AdvancedStartCost> 
@@ -321504,7 +321504,7 @@ lithuania changes -->
 			<Suicide>false</Suicide> 
 			<CaptureWhileEmbarked>false</CaptureWhileEmbarked> 
 			<PrereqTech>TECH_PRINTING_PRESS</PrereqTech> 
-			<ObsoleteTech>TECH_ARMOR</ObsoleteTech> 
+			<ObsoleteTech>TECH_COMBUSTION</ObsoleteTech> 
 			<GoodyHutUpgradeUnitClass>UNITCLASS_ANTI_TANK_RIFLE</GoodyHutUpgradeUnitClass> 
 			<HurryCostModifier>0</HurryCostModifier> 
 			<AdvancedStartCost>30</AdvancedStartCost> 
@@ -325264,7 +325264,7 @@ lithuania changes -->
 			<Suicide>false</Suicide> 
 			<CaptureWhileEmbarked>false</CaptureWhileEmbarked> 
 			<PrereqTech>TECH_ACOUSTICS</PrereqTech> 
-			<ObsoleteTech>TECH_ARMOR</ObsoleteTech> 
+			<ObsoleteTech>TECH_COMBUSTION</ObsoleteTech> 
 			<GoodyHutUpgradeUnitClass>UNITCLASS_ANTI_TANK_RIFLE</GoodyHutUpgradeUnitClass> 
 			<HurryCostModifier>0</HurryCostModifier> 
 			<AdvancedStartCost>20</AdvancedStartCost> 
@@ -328306,7 +328306,7 @@ lithuania changes -->
 			<Suicide>false</Suicide> 
 			<CaptureWhileEmbarked>false</CaptureWhileEmbarked> 
 			<PrereqTech>TECH_METALLURGY</PrereqTech> 
-			<ObsoleteTech>TECH_ARMOR</ObsoleteTech> 
+			<ObsoleteTech>TECH_COMBUSTION</ObsoleteTech> 
 			<GoodyHutUpgradeUnitClass>UNITCLASS_ANTI_TANK_RIFLE</GoodyHutUpgradeUnitClass> 
 			<HurryCostModifier>0</HurryCostModifier> 
 			<AdvancedStartCost>30</AdvancedStartCost> 
@@ -332060,7 +332060,7 @@ lithuania changes -->
 			<Suicide>false</Suicide> 
 			<CaptureWhileEmbarked>false</CaptureWhileEmbarked> 
 			<PrereqTech>TECH_METALLURGY</PrereqTech> 
-			<ObsoleteTech>TECH_ARMOR</ObsoleteTech> 
+			<ObsoleteTech>TECH_COMBUSTION</ObsoleteTech> 
 			<GoodyHutUpgradeUnitClass>UNITCLASS_ANTI_TANK_RIFLE</GoodyHutUpgradeUnitClass> 
 			<HurryCostModifier>0</HurryCostModifier> 
 			<AdvancedStartCost>30</AdvancedStartCost> 
@@ -334202,7 +334202,7 @@ lithuania changes -->
 			<Mechanized>false</Mechanized> 
 			<Suicide>false</Suicide> 
 			<CaptureWhileEmbarked>false</CaptureWhileEmbarked> 
-			<PrereqTech>TECH_ARMOR</PrereqTech> 
+			<PrereqTech>TECH_COMBUSTION</PrereqTech> 
 			<ObsoleteTech>TECH_COMBINED_ARMS</ObsoleteTech> 
 			<GoodyHutUpgradeUnitClass>UNITCLASS_ANTI_TANK_GUN</GoodyHutUpgradeUnitClass> 
 			<HurryCostModifier>0</HurryCostModifier> 
@@ -337233,7 +337233,7 @@ lithuania changes -->
 			<Suicide>false</Suicide> 
 			<CaptureWhileEmbarked>false</CaptureWhileEmbarked> 
 			<PrereqTech>TECH_METALLURGY</PrereqTech> 
-			<ObsoleteTech>TECH_ARMOR</ObsoleteTech> 
+			<ObsoleteTech>TECH_COMBUSTION</ObsoleteTech> 
 			<GoodyHutUpgradeUnitClass>UNITCLASS_ANTI_TANK_RIFLE</GoodyHutUpgradeUnitClass> 
 			<HurryCostModifier>0</HurryCostModifier> 
 			<AdvancedStartCost>30</AdvancedStartCost> 
@@ -338003,7 +338003,7 @@ lithuania changes -->
 			<Suicide>false</Suicide> 
 			<CaptureWhileEmbarked>false</CaptureWhileEmbarked> 
 			<PrereqTech>TECH_ACOUSTICS</PrereqTech> 
-			<ObsoleteTech>TECH_ARMOR</ObsoleteTech> 
+			<ObsoleteTech>TECH_COMBUSTION</ObsoleteTech> 
 			<GoodyHutUpgradeUnitClass>UNITCLASS_ANTI_TANK_RIFLE</GoodyHutUpgradeUnitClass> 
 			<HurryCostModifier>0</HurryCostModifier> 
 			<AdvancedStartCost>20</AdvancedStartCost> 
