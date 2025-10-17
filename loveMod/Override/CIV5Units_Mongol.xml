@@ -15139,6 +15139,21 @@ strongest around the Gulf of Bothnia, where land steadily rises about 1 cm a yea
 				Adopting Citizenship policy reduces cost of purchasing tiles by 20%
 			</Text>
 		</Replace>
+		<Replace Tag="TXT_KEY_BUILDING_OBELISK_OF_FREEDOM_DESC">
+			<Text>
+				Obelisk of Freedom
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_BUILDING_OBELISK_OF_FREEDOM_PEDIA">
+			<Text>
+				The Obelisk of Freedom appears in capital after adopting Collective Rule policy.
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_BUILDING_OBELISK_OF_FREEDOM_STRATEGY">
+			<Text>
+				Adopting Collective Rule policy gives +1 Happiness for every second established city.
+			</Text>
+		</Replace>
 		<Replace Tag="TXT_KEY_BUILDING_GRAND_BAZAAR"> 
 			<Text>
 				Grand Bazaar
@@ -112665,7 +112680,7 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_POLICY_BRANCH_LIBERTY_HELP"> 
 			<Text>
-				[COLOR_POSITIVE_TEXT]Liberty[ENDCOLOR] is best for civilizations which desire rapid expansion.[NEWLINE][NEWLINE]Adopting Liberty will provide 1 [ICON_CULTURE] Culture per city. Unlocks building the Pyramids.[NEWLINE][NEWLINE]Adopting all policies in the Liberty tree will grant a free [ICON_GREAT_PEOPLE] Great Person of your choice near the [ICON_CAPITAL] Capital. All cities gain +5% [ICON_PRODUCTION] Production when constructing Buildings.
+				[COLOR_POSITIVE_TEXT]Liberty[ENDCOLOR] is best for civilizations which desire rapid expansion.[NEWLINE][NEWLINE]Adopting Liberty will provide 1 [ICON_CULTURE] Culture per city. Unlocks building the Pyramids.[NEWLINE][NEWLINE]Adopting all policies in the Liberty tree will grant a free [ICON_GREAT_PEOPLE] Great Person of your choice near the [ICON_CAPITAL] Capital (except Great General and Great Admiral). All cities gain +33% [ICON_PRODUCTION] Production towards all National Wonders. +10% [ICON_PRODUCTION] Production towards Buildings needed for a National Wonder.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_POLICY_BRANCH_ORDER"> 
@@ -112835,12 +112850,12 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_POLICY_COLLECTIVE_RULE_HELP"> 
 			<Text>
-				[COLOR_POSITIVE_TEXT]Collective Rule[ENDCOLOR][NEWLINE]Speeds the training of [COLOR_POSITIVE_TEXT]Settlers[ENDCOLOR] by 25% in the [ICON_CAPITAL] Capital and a free Settler appears near the [ICON_CAPITAL] Capital. Every established city provides 1 [ICON_HAPPINESS_1] Happiness.
+				[COLOR_POSITIVE_TEXT]Collective Rule[ENDCOLOR][NEWLINE]Speeds the training of [COLOR_POSITIVE_TEXT]Settlers[ENDCOLOR] by 50% in the [ICON_CAPITAL] Capital and a free Settler appears near the [ICON_CAPITAL] Capital. Every second established city provides 1 [ICON_HAPPINESS_1] Happiness.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_POLICY_COLLECTIVE_RULE_NWS_HELP"> 
 			<Text>
-				[COLOR_POSITIVE_TEXT]Collective Rule[ENDCOLOR][NEWLINE]Speeds the training of [COLOR_POSITIVE_TEXT]Settlers[ENDCOLOR] by 25% in the [ICON_CAPITAL] Capital and a free Settler appears near the [ICON_CAPITAL] Capital. Every established city provides 1 [ICON_HAPPINESS_1] Happiness.
+				[COLOR_POSITIVE_TEXT]Collective Rule[ENDCOLOR][NEWLINE]Speeds the training of [COLOR_POSITIVE_TEXT]Settlers[ENDCOLOR] by 50% in the [ICON_CAPITAL] Capital and a free Settler appears near the [ICON_CAPITAL] Capital. Every second established city provides 1 [ICON_HAPPINESS_1] Happiness.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_POLICY_COMMERCE_FINISHER"> 
@@ -114095,7 +114110,7 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_POLICY_REPUBLIC_HELP"> 
 			<Text>
-				[COLOR_POSITIVE_TEXT]Republic[ENDCOLOR][NEWLINE]+2 [ICON_PRODUCTION] Production in every established City and +5% [ICON_PRODUCTION] Production in cities when constructing Buildings.
+				[COLOR_POSITIVE_TEXT]Republic[ENDCOLOR][NEWLINE]+1 [ICON_PRODUCTION] Production in every established City and +10% [ICON_PRODUCTION] Production in Cities when constructing Buildings.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_POLICY_RESETTLEMENT"> 
@@ -118413,6 +118428,21 @@ The ship has weather'd every rack; the prize we sought is won."
 		<Replace Tag="TXT_KEY_PROMOTION_BONUS_MOVEMENT_PLAINS_HELP"> 
 			<Text>
 				+1 [ICON_MOVES] [COLOR_POSITIVE_TEXT]Extra Movement[ENDCOLOR] if starts turn [COLOR_POSITIVE_TEXT]on Plains[ENDCOLOR].
+			</Text>
+		</Replace>
+				<Replace Tag="TXT_KEY_PROMOTION_BONUS_MOVEMENT_RIVER"> 
+			<Text>
+				Bonus Movement and Combat Strength near River
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_PEDIA_PROMOTION_BONUS_MOVEMENT_RIVER"> 
+			<Text>
+				Mandekalu Cavalry bonus Movement near River
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_PROMOTION_BONUS_MOVEMENT_RIVER_HELP"> 
+			<Text>
+				+1 [ICON_MOVES] [COLOR_POSITIVE_TEXT]Extra Movement[ENDCOLOR] if starts turn [COLOR_POSITIVE_TEXT]next to a River[ENDCOLOR]. +15% [ICON_STRENGTH] [COLOR_POSITIVE_TEXT]Combat Strength[ENDCOLOR] next to Rivers.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_PROMOTION_BUFFALO_HORNS"> 
@@ -135641,7 +135671,7 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_TRAIT_AMPHIB_WARLORD"> 
 			<Text>
-				Receive triple [ICON_GOLD] Gold from Barbarian Encampments (150 [ICON_GOLD] Gold on standard speed) and pillaging Cities. Land Units gain the Amphibious promotion and ignore terrain costs when traveling along or across rivers.
+				Receive double [ICON_GOLD] Gold from Barbarian Encampments (100 [ICON_GOLD] Gold on standard speed) and triple Gold from pillaging Cities. Land Units gain the Amphibious promotion.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_TRAIT_AMPHIB_WARLORD_SHORT"> 
@@ -139044,7 +139074,7 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_UNIT_HELP_MUSLIM_CAVALRY"> 
 			<Text>
-				The Mandekalu Cavalry is a Songhai Unique Unit that replaces the Knight.[NEWLINE][NEWLINE]Unlike the Knight, receives NO [ICON_STRENGTH] Attack Strength penalty vs. Cities.[NEWLINE][NEWLINE]Cheaper to train (121 vs. 132 [ICON_PRODUCTION] Production).[NEWLINE][NEWLINE]-----[NEWLINE][NEWLINE]Can move after attacking.[NEWLINE][NEWLINE]+10% [ICON_STRENGTH] Attack Strength bonus vs. Siege and Melee Siege Units.[NEWLINE][NEWLINE]+10% [ICON_STRENGTH] Attack Strength bonus vs. Archery Units.[NEWLINE][NEWLINE]Requires 1 [ICON_RES_HORSE] Horse.[NEWLINE][NEWLINE]Cannot Fotify and doesn't benefit from Defensive Terrain Bonuses.[NEWLINE][NEWLINE]Vulnerable to Spearman, Pikeman and Halberdman.
+				The Mandekalu Cavalry is a Songhai Unique Unit that replaces the Knight.[NEWLINE][NEWLINE]22 [ICON_STRENGTH] Combat Strength (vs. 20).[NEWLINE][NEWLINE]Receives +1 [ICON_MOVES] Extra Movement when it starts the turn next to a River. Lost upon upgrade.[NEWLINE][NEWLINE]-----[NEWLINE][NEWLINE]Can move after attacking.[NEWLINE][NEWLINE]+10% [ICON_STRENGTH] Attack Strength bonus vs. Siege and Melee Siege Units.[NEWLINE][NEWLINE]+10% [ICON_STRENGTH] Attack Strength bonus vs. Archery Units.[NEWLINE][NEWLINE]Requires 1 [ICON_RES_HORSE] Horse.[NEWLINE][NEWLINE]Cannot Fotify and doesn't benefit from Defensive Terrain Bonuses.[NEWLINE][NEWLINE]Vulnerable to Spearman, Pikeman and Halberdman.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_UNIT_SONGHAI_MUSLIMCAVALRY_STRATEGY"> 
