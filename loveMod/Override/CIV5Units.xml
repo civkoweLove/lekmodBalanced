@@ -34925,6 +34925,7 @@
 			<NoLimit>false</NoLimit> 
 			<Monument>false</Monument> 
 		</Row>
+		<!--
 		<Row> 
 			<ID>11</ID> 
 			<Type>BUILDINGCLASS_MONASTERY</Type> 
@@ -34937,6 +34938,7 @@
 			<NoLimit>false</NoLimit> 
 			<Monument>false</Monument> 
 		</Row>
+		-->
 		<Row> 
 			<ID>12</ID> 
 			<Type>BUILDINGCLASS_GARDEN</Type> 
@@ -40392,6 +40394,7 @@
 			<FlavorType>FLAVOR_HAPPINESS</FlavorType> 
 			<Flavor>10</Flavor> 
 		</Row>
+		<!--
 		<Row> 
 			<BuildingType>BUILDING_MONASTERY</BuildingType> 
 			<FlavorType>FLAVOR_RELIGION</FlavorType> 
@@ -40402,6 +40405,7 @@
 			<FlavorType>FLAVOR_CULTURE</FlavorType> 
 			<Flavor>20</Flavor> 
 		</Row>
+		-->
 		<Row> 
 			<BuildingType>BUILDING_TEMPLE_ARTEMIS</BuildingType> 
 			<FlavorType>FLAVOR_GROWTH</FlavorType> 
@@ -42119,6 +42123,7 @@ lithuania changes -->
 			<YieldType>YIELD_GOLD</YieldType> 
 			<Yield>2</Yield> 
 		</Row>
+		<!--
 		<Row> 
 			<BuildingType>BUILDING_MONASTERY</BuildingType> 
 			<ResourceType>RESOURCE_INCENSE</ResourceType> 
@@ -42143,6 +42148,7 @@ lithuania changes -->
 			<YieldType>YIELD_CULTURE</YieldType> 
 			<Yield>1</Yield> 
 		</Row>
+		-->
 		<Row> 
 			<BuildingType>BUILDING_MAUSOLEUM_HALICARNASSUS</BuildingType> 
 			<ResourceType>RESOURCE_MARBLE</ResourceType> 
@@ -45414,6 +45420,7 @@ lithuania changes -->
 			<YieldType>YIELD_CULTURE</YieldType> 
 			<Yield>1</Yield> 
 		</Row>
+		<!--
 		<Row> 
 			<BuildingType>BUILDING_MONASTERY</BuildingType> 
 			<YieldType>YIELD_CULTURE</YieldType> 
@@ -45424,6 +45431,7 @@ lithuania changes -->
 			<YieldType>YIELD_FAITH</YieldType> 
 			<Yield>2</Yield> 
 		</Row>
+		-->
 		<Row> 
 			<BuildingType>BUILDING_MUD_PYRAMID_MOSQUE</BuildingType> 
 			<YieldType>YIELD_FAITH</YieldType> 
@@ -88558,9 +88566,9 @@ lithuania changes -->
 		<Row> 
 			<ID>41</ID> 
 			<Type>BUILD_TIBET</Type> 
-			<Description>TXT_KEY_BUILD_MONASTERY</Description> 
-			<Recommendation>TXT_KEY_BUILD_MONASTERY_REC</Recommendation> 
-			<Help>TXT_KEY_BUILD_MONASTERY_HELP</Help>
+			<Description>TXT_KEY_BUILD_GOMPA</Description> 
+			<Recommendation>TXT_KEY_BUILD_GOMPA_REC</Recommendation> 
+			<Help>TXT_KEY_BUILD_GOMPA_HELP</Help>
 			<HotKey>KB_Z</HotKey> 
 			<HotKeyPriority>0</HotKeyPriority> 
 			<HotKeyPriorityAlt>0</HotKeyPriorityAlt> 
@@ -169509,9 +169517,9 @@ lithuania changes -->
 		<Row> 
 			<ID>30</ID> 
 			<Type>IMPROVEMENT_TEPE</Type> 
-			<Description>TXT_KEY_IMPROVEMENT_TEPE</Description> 
+			<Description>TXT_KEY_IMPROVEMENT_TIPI</Description> 
 			<Civilopedia>TXT_KEY_CIV5_IMPROVEMENTS_TIPI_TEXT</Civilopedia> 
-			<Help>TXT_KEY_CIV5_IMPROVEMENTS_TEPE_HELP</Help> 
+			<Help>TXT_KEY_CIV5_IMPROVEMENTS_TIPI_HELP</Help> 
 			<ArtDefineTag>ART_DEF_IMPROVEMENT_TIPIS</ArtDefineTag> 
 			<SpecificCivRequired>true</SpecificCivRequired> 
 			<CivilizationType>CIVILIZATION_SIOUX</CivilizationType> 
@@ -169678,7 +169686,7 @@ lithuania changes -->
 			<ID>33</ID> 
 			<Type>IMPROVEMENT_GOTH</Type> 
 			<Description>TXT_KEY_IMPROVEMENT_GOTH</Description> 
-			<Civilopedia>TXT_KEY_CIV5_IMPROVEMENTS_PLANTATION_TEXT</Civilopedia> 
+			<Civilopedia>TXT_KEY_IMPROVEMENT_GOTH_TEXT</Civilopedia> 
 			<ArtDefineTag>ART_DEF_IMPROVEMENT_BARBARIAN_CAMP</ArtDefineTag> 
 			<SpecificCivRequired>true</SpecificCivRequired> 
 			<CivilizationType>CIVILIZATION_GOTH</CivilizationType> 
@@ -170215,7 +170223,7 @@ lithuania changes -->
 			<CoastalLandUpgradeMod>0</CoastalLandUpgradeMod> 
 			<HillsUpgradeMod>0</HillsUpgradeMod> 
 			<FreshWaterUpgradeMod>0</FreshWaterUpgradeMod> 
-			<DefenseModifier>40</DefenseModifier> 
+			<DefenseModifier>50</DefenseModifier> 
 			<NearbyEnemyDamage>0</NearbyEnemyDamage> 
 			<PillageGold>20</PillageGold> 
 			<ResourceExtractionMod>0</ResourceExtractionMod> 

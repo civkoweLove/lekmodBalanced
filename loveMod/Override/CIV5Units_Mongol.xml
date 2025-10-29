@@ -3064,26 +3064,7 @@
 		<Row Tag="TXT_KEY_BUILD_AIRBASE_REC">
 			<Text>Allow stationing of aircrafts on this tile.</Text>
 		</Row>
-		<!-- Improvements -->
-		<Row Tag="TXT_KEY_MC_MAORI_PA">
-			<Text>Pa</Text>
-		</Row>
-		<Row Tag="TXT_KEY_IMPROVEMENT_MC_MAORI_PA_HELP">
-			<Text>Provides a 40% [ICON_STRENGTH] Defensive bonus to Units which are stationed on the tile. May only be built on a hill, and may not be built next to another Pa. Only the Maori can build it.</Text>
-		</Row>
-		<Row Tag="TXT_KEY_MC_MAORI_PA_PEDIA">
-			<Text>While almost any Maori village could be called a pa, today the word has come to refer to fortified hilltop villages almost exclusively. Ringed with palisades and terraces, these monumental structures announced the military power of a rangatira and his iwi to the world. Pa were built in strategic places throughout an iwi’s territory, in order to best guard its fertile lands. A simple pa might consist only of a single palisade, while a more complex pa would consist of multiple rings of palisades, earthen ramparts, ditches from which to defenders can mount ambushes, kumara patches, food storage areas, wells, underground passages, and decorative entryways. During the Musket Wars, a new type of pa was developed - the gunfighter pa. These forts were usually simpler than the older varieties, but could be constructed in a matter of days. The Gunfighter pa provided greater defense against attackers wielding firearms, as well as allowing defenders to the full advantage of their own muskets.</Text>
-		</Row>
-		<Row Tag="TXT_KEY_BUILD_MC_MAORI_PA">
-			<Text> Construct a [LINK=IMPROVEMENT_MC_MAORI_PA]Pa[\LINK]</Text>
-		</Row>
-		<Row Tag="TXT_KEY_BUILD_MC_MAORI_PA_HELP">
-			<Text>A Pa boosts the [ICON_STRENGTH] Defensive Strength of a Unit stationed on the tile. Must be built on a hill, and may not be built next to an existing Pa</Text>
-		</Row>
-		<Row Tag="TXT_KEY_BUILD_MC_MAORI_PA_REC">
-			<Text>It will boost the [ICON_PRODUCTION] Military Unit Production of a city when worked, as well as increasing the [ICON_FOOD] Food yield of the tile and the [ICON_STRENGTH] Defensive Strength of Units on it.</Text>
-		</Row>
-		
+		<!-- Improvements -->	
 		<Row Tag="TXT_KEY_BUILD_FOREST">
 			<Text> Plant a [LINK=FEATURE_FOREST]Forest[\LINK]</Text>
 		</Row>
@@ -4468,18 +4449,6 @@
 		</Row>
 	<!-- Aksum new civ v25 -->
 		
-		<Row Tag="TXT_KEY_BUILD_ROCK_HEWN">
-			<Text>Construct a [LINK=IMPROVEMENT_ROCK_HEWN]Rock-Hewn[\LINK]</Text>
-		</Row>
-		<Row Tag="TXT_KEY_IMPROVEMENT_ROCK_HEWN_HELP">
-			<Text>Can only be built on Hills or on Quarry resources. Provides extra [ICON_PRODUCTION] Production and [ICON_PEACE] Faith.</Text>
-		</Row>
-		<Row Tag="TXT_KEY_IMPROVEMENT_ROCK_HEWN">
-			<Text>Rock-Hewn</Text>
-		</Row>
-		<Row Tag="TXT_KEY_IMPROVEMENT_ROCK_HEWN_PEDIA">
-			<Text>An Improvement Unique to Aksum. It is available at Mining and yields +1 [ICON_PRODUCTION] Production and +2 [ICON_PEACE] Faith. It can only be built on Quarry Resources ( [ICON_RES_MARBLE] Marble, [ICON_RES_OBSIDIAN] Obsidian, [ICON_RES_STONE] Stone). +1 [ICON_PEACE] Faith at the Theology technology.</Text>
-		</Row>
 		<Row Tag="TXT_KEY_TRAIT_BLESSING">
 			<Text>Any of your cities emanate 33% additional religious pressure if the City is sending a [ICON_INTERNATIONAL_TRADE] Trade Route</Text>
 		</Row>
@@ -5651,28 +5620,10 @@
 			<Text>Flower of Scotland</Text>
 		</Row>
 		<Row Tag="TXT_KEY_TRAIT_LAST_OF_THE_FREE">
-			<Text>+2 [ICON_PRODUCTION] Production, +2 [ICON_RESEARCH] Science and +2 [ICON_CULTURE] Culture from Writer's, Artist's and Musician's Guilds. +25% [ICON_GREAT_PEOPLE] Great Person points in the Capital. </Text>
+			<Text>+2 [ICON_PRODUCTION] Production, +2 [ICON_RESEARCH] Science and +2 [ICON_CULTURE] Culture from Writer's, Artist's and Musician's Guilds. +25% [ICON_GREAT_PEOPLE] Great People generation in the Capital. </Text>
 		</Row>
 		<!-- Wales civ v24 -->
 		<!-- Improvement -->
-		<Row Tag="TXT_KEY_MC_SCOTTISH_CLAN_CASTLE">
-			<Text>Caer</Text>
-		</Row>
-		<Row Tag="TXT_KEY_IMPROVEMENT_MC_SCOTTISH_CLAN_CASTLE_HELP">
-			<Text>Boosts defensive strength of Units on the tile, as well as the [ICON_GOLD] gold yield. +1 [ICON_CULTURE] Culture with Architecture and +1 [ICON_PRODUCTION] Production with Gunpowder. Can not be built nex to each other.</Text>
-		</Row>
-		<Row Tag="TXT_KEY_CIVILOPEDIA_MC_SCOTTISH_CLAN_CASTLE_PEDIA">
-			<Text>Caer</Text>
-		</Row>
-		<Row Tag="TXT_KEY_BUILD_MC_SCOTTISH_CLAN_CASTLE">
-			<Text>Construct a [LINK=IMPROVEMENT_MC_SCOTTISH_CLAN_CASTLE]Caer[\LINK]</Text>
-		</Row>
-		<Row Tag="TXT_KEY_BUILD_MC_SCOTTISH_CLAN_CASTLE_HELP">
-			<Text>A Caer increases the [ICON_GOLD] Gold yield of the tile (and [ICON_CULTURE] Culture + [ICON_PRODUCTION] Production yield, after Architecture and Gunpowder are researched). The Caer also boosts the defensive strength of Units stationed on the tiles.</Text>
-		</Row>
-		<Row Tag="TXT_KEY_BUILD_MC_SCOTTISH_CLAN_CASTLE_REC">
-			<Text>It will help with the defense of the tile!</Text>
-		</Row>
 		<!-- DIPLOMACY: VANILLA Vanilla -->
 		<!--First Greeting messages from AI leaders-->
 		<Replace Tag="TXT_KEY_LEADER_US_OWAIN_FIRSTGREETING_1">
@@ -14920,6 +14871,11 @@ strongest around the Gulf of Bothnia, where land steadily rises about 1 cm a yea
 				City must have Walls.
 			</Text>
 		</Replace>
+		<Replace Tag="TXT_KEY_CIV5_BUILDINGS_CHATEAU_TEXT"> 
+			<Text>
+				A chateau is a manor house or country home of gentry, usually without fortifications. In the Middle Ages, a chateau was largely self-sufficient, being supported by the lord's demesne (hereditary lands). The often sprawling building included gate-house, kitchens, stables, breweries, bakeries, storerooms, servants' quarters, art galleries, ballrooms, libraries, as well as the family's living quarters. These evolved from the open villas Roman nobles in Gaul favored, such as those of Pliny the Elder, Maecenas and the emperor Tiberius. The urban equivalent in France was the palais, a grand house in a city. In the city of Paris, for instance, the Louvre and the Luxembourg were originally chateaux but lost this status, becoming palaces as the city grew around them.
+			</Text>
+		</Replace>
 		<Replace Tag="TXT_KEY_BUILDING_CHATEAU_STRATEGY"> 
 			<Text>
 				The Chateau is a Medieval-era building which increases the city's Defensive Strength. The city must possess Walls before the Chateau can be constructed. A Chateau is more expensive than the Castle, which it replaces, however it also provides [ICON_CULTURE] Culture to the city.
@@ -17447,7 +17403,7 @@ strongest around the Gulf of Bothnia, where land steadily rises about 1 cm a yea
 		</Replace>
 		<Replace Tag="TXT_KEY_BUILDING_MUD_PYRAMID_MOSQUE_HELP"> 
 			<Text>
-				The Mud Pyramid Mosque is a Songhai Unique Building that replaces the Temple.[NEWLINE][NEWLINE]+2 [ICON_CULTURE] Culture.[NEWLINE][NEWLINE]Requires NO [ICON_GOLD] Gold maintenance.[NEWLINE][NEWLINE]-----[NEWLINE][NEWLINE]City must have a Shrine.
+				The Mud Pyramid Mosque is a Songhai Unique Building that replaces the Temple.[NEWLINE][NEWLINE]+2 [ICON_CULTURE] Culture.[NEWLINE][NEWLINE]Requires NO [ICON_GOLD] Gold maintenance (vs. 2).[NEWLINE][NEWLINE]-----[NEWLINE][NEWLINE]City must have a Shrine.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_BUILDING_MUD_PYRAMID_MOSQUE_STRATEGY"> 
@@ -18754,7 +18710,7 @@ strongest around the Gulf of Bothnia, where land steadily rises about 1 cm a yea
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_HUEY_HELP">
 			<Text>
-				+4 [ICON_PEACE] Faith.[NEWLINE][NEWLINE] +2 [ICON_FOOD] Food and +2 [ICON_CULTURE] Culture from all Lakes and Lake Victoria worked by this City.[NEWLINE][NEWLINE]+1 [ICON_GREAT_PEOPLE] Great Farmer point.[NEWLINE][NEWLINE]---[NEWLINE]City must be built next to a Lake or Lake Victoria. 
+				+4 [ICON_PEACE] Faith.[NEWLINE][NEWLINE] +2 [ICON_FOOD] Food and +2 [ICON_CULTURE] Culture from all Lake tiles (including Lake Victoria) worked by this City.[NEWLINE][NEWLINE]+1 [ICON_GREAT_PEOPLE] Great Farmer point.[NEWLINE][NEWLINE]---[NEWLINE]City must be built next to a Lake or Lake Victoria. 
 			</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_HUEY_QUOTE">
@@ -19428,7 +19384,7 @@ strongest around the Gulf of Bothnia, where land steadily rises about 1 cm a yea
 		</Replace>
 		<Replace Tag="TXT_KEY_BUILDING_TEMPLE_ARTEMIS_HELP"> 
 			<Text>
-				+3 [ICON_PRODUCTION] Production.[NEWLINE]+3 [ICON_GOLD] Gold.[NEWLINE]+3 [ICON_CULTURE] Culture,[NEWLINE][NEWLINE]+15% [ICON_PRODUCTION] Production towards Archery and Mounted Ranged Units in this City.[NEWLINE][NEWLINE]+15 XP for all Archery and Mounted Ranged Units trained in this City.[NEWLINE][NEWLINE]+1 [ICON_GREAT_ENGINEER] Great Engineer point.[NEWLINE][NEWLINE]---[NEWLINE]Requires Honor.
+				+3 [ICON_PRODUCTION] Production.[NEWLINE]+3 [ICON_CULTURE] Culture.[NEWLINE]+3 [ICON_GOLD] Gold.[NEWLINE][NEWLINE]+15% [ICON_PRODUCTION] Production towards Archery and Mounted Ranged Units in this City.[NEWLINE][NEWLINE]+15 XP for all Archery and Mounted Ranged Units trained in this City.[NEWLINE][NEWLINE]+1 [ICON_GREAT_ENGINEER] Great Engineer point.[NEWLINE][NEWLINE]---[NEWLINE]Requires Honor.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_BUILDING_TEMPLE_ARTEMIS_DESC"> 
@@ -19522,7 +19478,443 @@ strongest around the Gulf of Bothnia, where land steadily rises about 1 cm a yea
 		</Replace>
 		-->
 <!--World Wonders end-->
-		
+<!--Terrain, Builds and Improvements-->
+		<Row Tag="TXT_KEY_BUILD_ROCK_HEWN">
+			<Text>
+				Construct a [LINK=IMPROVEMENT_ROCK_HEWN]Rock-Hewn Church[\LINK]
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_IMPROVEMENT_ROCK_HEWN_HELP">
+			<Text>
+				Can only be built on Quarry resources. Provides [ICON_PRODUCTION] Production and [ICON_PEACE] Faith.
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_IMPROVEMENT_ROCK_HEWN">
+			<Text>
+				Rock-Hewn Church
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_IMPROVEMENT_ROCK_HEWN_PEDIA">
+			<Text>
+				The Rock-Hewn Church is a Unique Aksumite Improvement.[NEWLINE][NEWLINE]Available at Mining.[NEWLINE][NEWLINE]+1 [ICON_PRODUCTION] Production and +2 [ICON_PEACE] Faith.[NEWLINE][NEWLINE]+1 additional [ICON_PEACE] Faith at Theology.[NEWLINE][NEWLINE]+1 additional [ICON_PRODUCTION] Production at Chemistry.[NEWLINE][NEWLINE]-----[NEWLINE]Can only be built on Quarry Resources: [ICON_RES_MARBLE] Marble, [ICON_RES_OBSIDIAN] Obsidian and [ICON_RES_STONE] Stone.[NEWLINE][NEWLINE]Connects Marble and Obsidian to the Empire, granting [ICON_HAPPINESS_1] Happiness.[NEWLINE][NEWLINE]Requires the Forest, Jungle or Marsh to be cleared.
+			</Text>
+		</Row>
+		<Replace Tag="TXT_KEY_BUILD_BRAZILWOOD_CAMP"> 
+			<Text>
+				Construct a [LINK=IMPROVEMENT_BRAZILWOOD_CAMP]Brazilwood Camp[\LINK]
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_BUILD_BRAZILWOOD_CAMP_HELP"> 
+			<Text>
+				Constructs a Brazilwood Camp, while keeping the Forest or Jungle intact. [NEWLINE][NEWLINE]Cannot be built adjacent to another Brazilwood Camp.[NEWLINE][NEWLINE]
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_BUILD_BRAZILWOOD_CAMP_REC"> 
+			<Text>
+				It will increase the amount of [ICON_PRODUCTION] Production provided by this tile, while keeping the Forest or Jungle intact. Also provides [ICON_GOLD] Gold at Machinery and [ICON_CULTURE] Culture at Acoustics.
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_IMPROVEMENT_BRAZILWOOD_CAMP"> 
+			<Text>
+				Brazilwood Camp
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_CIV5_IMPROVEMENTS_BRAZILWOOD_CAMP_TEXT"> 
+			<Text>
+				The Brazilwood Camp is a Unique Brazilian Improvement.[NEWLINE][NEWLINE]Available at Bronze Working.[NEWLINE][NEWLINE]+1 [ICON_PRODUCTION] Production.[NEWLINE][NEWLINE]+2 [ICON_GOLD] Gold at Machinery.[NEWLINE][NEWLINE]+2 [ICON_CULTURE] Culture at Acoustics.[NEWLINE][NEWLINE]-----[NEWLINE]Can only be built on a Forest or Jungle tile.[NEWLINE][NEWLINE]Can be built over Resources, but will not connect any Strategic or Luxury Resources to the Empire.[NEWLINE][NEWLINE]Cannot be placed adjacent to another Brazilwood Camp.
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_CIV5_IMPROVEMENTS_BRAZILWOOD_CAMP_HELP"> 
+			<Text>
+				Can only be built on a Forest or Jungle tile.[NEWLINE][NEWLINE]Can be built over Resources, but will not connect any Strategic or Luxury Resources to the Empire.[NEWLINE][NEWLINE]Cannot be placed adjacent to each other.[NEWLINE][NEWLINE]+1 [ICON_PRODUCTION] Production.[NEWLINE][NEWLINE]+2 [ICON_GOLD] at Machinery.[NEWLINE][NEWLINE]+2 [ICON_CULTURE] Culture at Acoustics.
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_BUILD_AYER"> 
+			<Text>
+				[COLOR_POSITIVE_TEXT]Build a Kampong Ayer
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_IMPROVEMENT_AYER"> 
+			<Text>
+				Kampong Ayer
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_CIV5_IMPROVEMENTS_AYER_HELP"> 
+			<Text>
+				+1 [ICON_FOOD] Food, [ICON_CULTURE] Culture and [ICON_GOLD] Gold.[NEWLINE][NEWLINE]+1 [ICON_PRODUCTION] Production at Astronomy.[NEWLINE][NEWLINE]+1 additional [ICON_CULTURE] Culture and [ICON_GOLD] Gold at Flight.[NEWLINE][NEWLINE]-----[NEWLINE]Can only be built on a resourceless Coastal tile next to at least one land tile.[NEWLINE][NEWLINE]Cannot be built by a Worker, only by the Nelayan.
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_CIV5_IMPROVEMENTS_AYER_TEXT"> 
+			<Text>
+				The Kampong Ayer is a Unique Bruneian Improvement.[NEWLINE][NEWLINE]Available at Optics.[NEWLINE][NEWLINE]+1 [ICON_FOOD] Food, [ICON_CULTURE] Culture and [ICON_GOLD] Gold.[NEWLINE][NEWLINE]+1 [ICON_PRODUCTION] Production at Astronomy.[NEWLINE][NEWLINE]+1 additional [ICON_CULTURE] Culture and [ICON_GOLD] Gold at Flight.[NEWLINE][NEWLINE]-----[NEWLINE]Can only be built on a resourceless Coastal tile next to at least one land tile.[NEWLINE][NEWLINE]Cannot be built by a Worker, only by the Nelayan.[NEWLINE][NEWLINE]It will not connect the Empire to any Strategic Resources revealed on the tile after its construction.
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_BUILD_CHATEAU"> 
+			<Text>
+				Construct a [LINK=IMPROVEMENT_CHATEAU]Chateau[\LINK]
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_BUILD_CHATEAU_HELP"> 
+			<Text>
+				Constructs a Chateau which increases the [ICON_RESEARCH], [ICON_CULTURE] and [ICON_GOLD] yield of the tile, and provides a +50% [ICON_STRENGTH] Defensive Terrain Bonus.[NEWLINE][NEWLINE]
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_BUILD_CHATEAU_REC"> 
+			<Text>
+				A Chateau must be built on a resourceless tile adjacent to a Luxury resource, but not adjacent to another Chateau.[NEWLINE][NEWLINE]It will increase the [ICON_RESEARCH], [ICON_CULTURE] and [ICON_GOLD] yield of the tile, and provides +50% a [ICON_STRENGTH] Defensive Terrain Bonus.
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_IMPROVEMENT_CHATEAU"> 
+			<Text>
+				Chateau
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_CIV5_IMPROVEMENTS_CHATEAU_HELP"> 
+			<Text>
+				+2 [ICON_CULTURE] Culture, +2 [ICON_RESEARCH] Science and +1 [ICON_GOLD] Gold.[NEWLINE][NEWLINE]Provides a +50% [ICON_STRENGTH] Defensive Terrain Bonus.[NEWLINE][NEWLINE]+1 additional [ICON_CULTURE] Culture and +2 additional [ICON_GOLD] Gold at Flight.[NEWLINE][NEWLINE]-----[NEWLINE]Can only be built on a resourceless tile adjacent to a Luxury resource.[NEWLINE][NEWLINE]Cannot be built adjacent to another Chateau.[NEWLINE][NEWLINE]It will not connect the Empire to any Strategic Resources revealed on the tile after its construction.[NEWLINE][NEWLINE]Requires the Forest, Jungle or Marsh to be cleared.
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_CIV5_IMPROVEMENTS_CHATEAU_TEXT"> 
+			<Text>
+				The Chateau is a Unique French Improvement.[NEWLINE][NEWLINE]Available at Chivarly.[NEWLINE][NEWLINE]Provides a +50% [ICON_STRENGTH] Defensive Terrain Bonus.[NEWLINE][NEWLINE]+2 [ICON_CULTURE] Culture, +2 [ICON_RESEARCH] Science and +1 [ICON_GOLD].[NEWLINE][NEWLINE]+1 additional [ICON_CULTURE] Culture and +2 additional [ICON_GOLD] Gold at Flight.[NEWLINE][NEWLINE]-----[NEWLINE]Can only be built on a resourceless tile adjacent to a Luxury resource.[NEWLINE][NEWLINE]Cannot be built adjacent to another Chateau.[NEWLINE][NEWLINE]It will not connect the Empire to any Strategic Resources revealed on the tile after its construction.[NEWLINE][NEWLINE]Requires the Forest, Jungle or Marsh to be cleared.
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_BUILD_GOTH"> 
+			<Text>
+				Construct a Harjis
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_IMPROVEMENT_GOTH"> 
+			<Text>
+				Harjis
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_IMPROVEMENT_GOTH_TEXT"> 
+			<Text>
+				The Harjis is a Unique Goth Improvement.[NEWLINE][NEWLINE]Available at Mining.[NEWLINE][NEWLINE]+1 [ICON_PRODUCTION] Production.[NEWLINE][NEWLINE]+1 additional [ICON_PRODUCTION] Production at Iron Working, at Gunpowder and at Dynamite.[NEWLINE][NEWLINE]-----[NEWLINE]Can only be built on a resourceless tile adjacent to a Luxury resource.[NEWLINE][NEWLINE]Cannot be built adjacent to another Harjis.[NEWLINE][NEWLINE]It will not connect the Empire to any Strategic Resources revealed on the tile after its construction.[NEWLINE][NEWLINE]Can be built without removing Forest or Jungle.
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_BUILD_TERRACE_FARM"> 
+			<Text>
+				Construct a [LINK=IMPROVEMENT_TERRACE_FARM]Terrace Farm[\LINK]
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_IMPROVEMENT_TERRACE_FARM"> 
+			<Text>
+				Terrace Farm
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_CIV5_IMPROVEMENTS_TERRACE_FARM_HELP"> 
+			<Text>
+				+1 [ICON_FOOD] Food.[NEWLINE][NEWLINE]+1 additional [ICON_FOOD] Food if adjacant to another Terrace Farm.[NEWLINE][NEWLINE]+1 additional [ICON_FOOD] Food for every adjacent Mountain.[NEWLINE][NEWLINE]+1 [ICON_FOOD] Food at Civil Service (Fresh Water) or Fertilizer (no Fresh Water).[NEWLINE][NEWLINE]-----[NEWLINE]Can only be built on a resourceless Hill tile.[NEWLINE][NEWLINE]It will not connect the Empire to any Strategic Resources revealed on the tile after its construction.[NEWLINE][NEWLINE]Requires the Forest, Jungle or Marsh to be cleared.
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_CIV5_IMPROVEMENTS_TERRACE_FARM_TEXT"> 
+			<Text>
+				The Terrace Farm is a Unique Incan Improvement.[NEWLINE][NEWLINE]Available at Construction.[NEWLINE][NEWLINE]+1 [ICON_FOOD] Food.[NEWLINE][NEWLINE]+1 additional [ICON_FOOD] Food if adjacant to another Terrace Farm.[NEWLINE][NEWLINE]+1 additional [ICON_FOOD] Food for every adjacent Mountain.[NEWLINE][NEWLINE]+1 [ICON_FOOD] Food at Civil Service (Fresh Water) or Fertilizer (no Fresh Water).[NEWLINE][NEWLINE]-----[NEWLINE]Can only be built on a resourceless Hill tile.[NEWLINE][NEWLINE]It will not connect the Empire to any Strategic Resources revealed on the tile after its construction.[NEWLINE][NEWLINE]Requires the Forest, Jungle or Marsh to be cleared.
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_BUILD_SACRED_GROVE"> 
+			<Text>
+				[COLOR_POSITIVE_TEXT]Construct a Sacred Grove
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_IMPROVEMENT_SACRED_GROVE"> 
+			<Text>
+				Sacred Grove
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_CIV5_IMPROVEMENTS_SACRED_GROVE_HELP"> 
+			<Text>
+				Provides +1 [ICON_FOOD] Food, [ICON_PRODUCTION] Production, [ICON_CULTURE] Culture, [ICON_PEACE] Faith and [ICON_RESEARCH] Science.[NEWLINE][NEWLINE]These yields are increased by 1 upon discovering Philosophy, Theology, Acoustics, Archaeology, Plastics, Computers and the Internet, for a total of 8 of each yield.[NEWLINE][NEWLINE]-----[NEWLINE]Can connect Strategic Resources to the Empire, but not Luxuries.[NEWLINE][NEWLINE]Requires the Forest, Jungle or Marsh to be cleared.
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_CIV5_IMPROVEMENTS_SACRED_GROVE_TEXT"> 
+			<Text>
+				The Sacred Grove is a Unique Lithuanian Improvement built by the Krivis.[NEWLINE][NEWLINE]Provides +1 [ICON_FOOD] Food, [ICON_PRODUCTION] Production, [ICON_CULTURE] Culture, [ICON_PEACE] Faith and [ICON_RESEARCH] Science.[NEWLINE][NEWLINE]These yields are increased by 1 upon discovering Philosophy, Theology, Acoustics, Archaeology, Plastics, Computers and the Internet, for a total of 8 of each yield.[NEWLINE][NEWLINE]-----[NEWLINE]Can connect Strategic Resources to the Empire, but not Luxuries.[NEWLINE][NEWLINE]Requires the Forest, Jungle or Marsh to be cleared.
+			</Text>
+		</Replace>
+		<Row Tag="TXT_KEY_BUILD_MC_MAORI_PA">
+			<Text>
+				Construct a [LINK=IMPROVEMENT_MC_MAORI_PA]Pa[\LINK]
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILD_MC_MAORI_PA_HELP">
+			<Text>
+				A Pa boosts the [ICON_FOOD] Food yield and [ICON_STRENGTH] Defensive Strength of a Unit stationed on the tile. Must be built on a resourceless Hill tile and may not be built next to another Pa.[NEWLINE][NEWLINE]
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILD_MC_MAORI_PA_REC">
+			<Text>
+				It will boost the [ICON_FOOD] Food yield of the tile and the [ICON_STRENGTH] Defensive Strength of Units on it.
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MC_MAORI_PA">
+			<Text>
+				Pa
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_IMPROVEMENT_MC_MAORI_PA_HELP">
+			<Text>
+				Provides a +50% [ICON_STRENGTH] Defensive Terrain Bonus.[NEWLINE][NEWLINE]+2 [ICON_FOOD] Food.[NEWLINE][NEWLINE]+1 additional [ICON_FOOD] Food at Civil Service and at Fertilizer (regardless of Fresh Water access).[NEWLINE][NEWLINE]-----[NEWLINE]Can only be built on a resourceless Hill tile.[NEWLINE][NEWLINE]Cannot be built adjacent to another Pa.[NEWLINE][NEWLINE]It will not connect the Empire to any Strategic Resources revealed on the tile after its construction.[NEWLINE][NEWLINE]Requires the Forest or Jungle to be cleared.
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MC_MAORI_PA_PEDIA">
+			<Text>
+				The Pa is a Unique Maori Improvement.[NEWLINE][NEWLINE]Available at Engineering.[NEWLINE][NEWLINE]Provides a +50% [ICON_STRENGTH] Defensive Terrain Bonus.[NEWLINE][NEWLINE]+2 [ICON_FOOD] Food.[NEWLINE][NEWLINE]+1 additional [ICON_FOOD] Food at Civil Service and at Fertilizer (regardless of Fresh Water access).[NEWLINE][NEWLINE]-----[NEWLINE]Can only be built on a resourceless Hill tile.[NEWLINE][NEWLINE]Cannot be built adjacent to another Pa.[NEWLINE][NEWLINE]It will not connect the Empire to any Strategic Resources revealed on the tile after its construction.[NEWLINE][NEWLINE]Requires the Forest or Jungle to be cleared.
+			</Text>
+		</Row>
+		<Replace Tag="TXT_KEY_BUILD_KASBAH"> 
+			<Text>
+				Construct a [LINK=IMPROVEMENT_KASBAH]Kasbah[\LINK]
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_BUILD_KASBAH_HELP"> 
+			<Text>
+				Constructs a Kasbah, which increases the amount of [ICON_FOOD] Food, [ICON_PRODUCTION] Production, and [ICON_GOLD] Gold provided by this tile. Also provides a +50% [ICON_STRENGTH] Defensive Terrain Bonus.[NEWLINE][NEWLINE]
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_BUILD_KASBAH_REC"> 
+			<Text>
+				It will increase the amount of [ICON_FOOD] Food, [ICON_PRODUCTION] Production, and [ICON_GOLD] Gold provided by this tile. Also provides a +50% [ICON_STRENGTH] Defensive Terrain Bonus.
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_CIV5_IMPROVEMENTS_KASBAH_HELP"> 
+			<Text>
+				Provides a +50% [ICON_STRENGTH] Defensive Terrain Bonus.[NEWLINE][NEWLINE]+2 [ICON_FOOD] Food, +1 [ICON_PRODUCTION] Production and +1 [ICON_GOLD] Gold.[NEWLINE][NEWLINE]-----[NEWLINE]Can only be built on a resourceless Desert tile, except Flood Plains and Oases.
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_CIV5_IMPROVEMENTS_KASBAH_TEXT"> 
+			<Text>
+				The Kasbah is a Unique Moroccan Improvement.[NEWLINE][NEWLINE]Available at Chivarly.[NEWLINE][NEWLINE]Provides a +50% [ICON_STRENGTH] Defensive Terrain Bonus.[NEWLINE][NEWLINE]+2 [ICON_FOOD] Food, +1 [ICON_PRODUCTION] Production and +1 [ICON_GOLD] Gold.[NEWLINE][NEWLINE]-----[NEWLINE]Can only be built on a resourceless Desert tile, except Flood Plains and Oases.[NEWLINE][NEWLINE]It will not connect the Empire to any Strategic Resources revealed on the tile after its construction.
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_BUILD_POLDER"> 
+			<Text>
+				Construct a [LINK=IMPROVEMENT_POLDER]Polder[\LINK]
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_IMPROVEMENT_POLDER"> 
+			<Text>
+				Polder
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_CIV5_IMPROVEMENTS_POLDER_HELP"> 
+			<Text>
+				+3 [ICON_FOOD] Food.[NEWLINE][NEWLINE]+1 [ICON_PRODUCTION] Production and +2 [ICON_GOLD] Gold at Economics.[NEWLINE][NEWLINE]-----[NEWLINE]Can be built on a resourceless Marsh or Flood Plains tile.[NEWLINE][NEWLINE]It can also be built on a Lake or a resourceless Coastal tile, that has at least three adjacent land tiles, by a Workboat (the Workboat is not consumed, but it takes 8 turns to improve the tile on standard speed).[NEWLINE][NEWLINE]Building a Polder on a Lake or a Coastal tile allows land Units to enter it as if it was flat land. Naval Units can also use the tile without changes.[NEWLINE][NEWLINE]It will not connect the Empire to any Strategic Resources revealed on the tile after its construction.
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_CIV5_IMPROVEMENTS_POLDER_TEXT"> 
+			<Text>
+				The Polder is a Unique Dutch Improvement.[NEWLINE][NEWLINE]Available at Guilds.[NEWLINE][NEWLINE]+3 [ICON_FOOD] Food.[NEWLINE][NEWLINE]+1 [ICON_PRODUCTION] Production and +2 [ICON_GOLD] Gold at Economics.[NEWLINE][NEWLINE]-----[NEWLINE]Can be built on a resourceless Marsh or Flood Plains tile.[NEWLINE][NEWLINE]It can also be built on a Lake or a resourceless Coastal tile, that has at least three adjacent land tiles, by a Workboat (the Workboat is not consumed, but it takes 8 turns to improve the tile on standard speed).[NEWLINE][NEWLINE]Building a Polder on a Lake or a Coastal tile allows land Units to enter it as if it was flat land. Naval Units can also use the tile without changes.[NEWLINE][NEWLINE]It will not connect the Empire to any Strategic Resources revealed on the tile after its construction.
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_BUILD_MOTTE_BAILEY"> 
+			<Text>
+				Construct a Motte and Bailey
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_BUILD_MOTTE_BAILEY_HELP"> 
+			<Text>
+				Build a Motte and Bailey, which boosts [ICON_FOOD] Food and [ICON_PRODUCTION] Production, and provides a +25% [ICON_STRENGTH] Defensive Terrain Bonus.
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_BUILD_MOTTE_BAILEY_REC"> 
+			<Text>
+				It will boost [ICON_FOOD] Food and [ICON_PRODUCTION] Production, and provide a +25% [ICON_STRENGTH] Defensive Terrain Bonus.
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_IMPROVEMENT_MOTTE_BAILEY"> 
+			<Text>
+				Motte and Bailey
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_CIV5_IMPROVEMENTS_MOTTE_BAILEY_HELP"> 
+			<Text>
+				Provides a +25% [ICON_STRENGTH] Defensive Terrain Bonus.[NEWLINE][NEWLINE]+1 [ICON_FOOD] Food and [ICON_PRODUCTION] Production.[NEWLINE][NEWLINE]+2 [ICON_CULTURE] Culture at Flight.[NEWLINE][NEWLINE]-----[NEWLINE]Cannot be built adjacent to another Motte and Bailey.[NEWLINE][NEWLINE]Can be built over Resources, but will not connect any Strategic or Luxury Resources to the Empire.[NEWLINE][NEWLINE]Requires the Forest, Jungle or Marsh to be cleared.
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_CIV5_IMPROVEMENTS_MOTTE_BAILEY_TEXT"> 
+			<Text>
+				The Motte and Bailey is a Unique Norman Improvement.[NEWLINE][NEWLINE]Available at Engineering.[NEWLINE][NEWLINE]Provides a +25% [ICON_STRENGTH] Defensive Terrain Bonus.[NEWLINE][NEWLINE]+1 [ICON_FOOD] Food and [ICON_PRODUCTION] Production.[NEWLINE][NEWLINE]+2 [ICON_CULTURE] Culture at Flight.[NEWLINE][NEWLINE]-----[NEWLINE]Cannot be built adjacent to another Motte and Bailey.[NEWLINE][NEWLINE]Can be built over Resources, but will not connect any Strategic or Luxury Resources to the Empire.[NEWLINE][NEWLINE]Requires the Forest, Jungle or Marsh to be cleared.
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_BUILD_MOAI"> 
+			<Text>
+				Construct a [LINK=IMPROVEMENT_MOAI]Moai[\LINK]
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_BUILD_MOAI_HELP"> 
+			<Text>
+				Constructs a Moai, which boosts [ICON_CULTURE] Culture - the more Moai next to each other, the better - and grants a [ICON_STRENGTH] Combat Strength bonus to nearby Polynesian Units.
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_BUILD_MOAI_REC"> 
+			<Text>
+				Boosts [ICON_CULTURE] Culture - the more Moai next to each other, the better - and grants a [ICON_STRENGTH] Combat Strength bonus to nearby Polynesian Units.
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_IMPROVEMENT_MOAI"> 
+			<Text>
+				Moai
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_CIV5_IMPROVEMENTS_MOAI_HELP"> 
+			<Text>
+				+1 [ICON_CULTURE] Culture.[NEWLINE][NEWLINE]+1 additional [ICON_CULTURE] Culture for every adjacent Moai.[NEWLINE][NEWLINE]+1 [ICON_GOLD] Gold at Flight.[NEWLINE][NEWLINE]-----[NEWLINE]Can only be built on a land tile next to the coast.[NEWLINE][NEWLINE]Can be built over Resources, but will not connect any Strategic or Luxury Resources to the Empire.[NEWLINE][NEWLINE]Requires the Forest and Jungle to be cleared, but not Marsh.
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_CIV5_IMPROVEMENTS_MOAI_TEXT"> 
+			<Text>
+				The Moai is a Unique Polynesian Improvement.[NEWLINE][NEWLINE]Available at Construction.[NEWLINE][NEWLINE]+1 [ICON_CULTURE] Culture.[NEWLINE][NEWLINE]+1 additional [ICON_CULTURE] Culture for every adjacent Moai.[NEWLINE][NEWLINE]+1 [ICON_GOLD] Gold at Flight.[NEWLINE][NEWLINE]-----[NEWLINE]Can only be built on a land tile next to the coast.[NEWLINE][NEWLINE]Can be built over Resources, but will not connect any Strategic or Luxury Resources to the Empire.[NEWLINE][NEWLINE]Requires the Forest and Jungle to be cleared, but not Marsh.
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_BUILD_TIPI"> 
+			<Text>
+				Construct a [LINK=IMPROVEMENT_TIPI]Tipi[\LINK]
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_BUILD_TIPI_HELP"> 
+			<Text>
+				Constructs a Tipi, which increases the amount of [ICON_FOOD] Food and [ICON_PEACE] Faith provided by this tile. Building it next to a City or a River brings additional yields.[NEWLINE][NEWLINE]
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_BUILD_TIPI_REC"> 
+			<Text>
+				It will increase the amount of [ICON_FOOD] Food and [ICON_PEACE] Faith provided by this tile. Building it next to a City or a River brings additional yields.
+			</Text>
+		</Replace>
+		<!--
+		<Replace Tag="TXT_KEY_IMPROVEMENT_TEPE"> 
+			<Text>
+				Tipi
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_CIV5_IMPROVEMENTS_TEPE_HELP"> 
+			<Text>
+				+2 [ICON_FOOD] Food, +2 [ICON_PEACE] Faith. Can only be built on flat plains or flat resources adjacent to luxuries. +1 [ICON_CULTURE] Culture when adjacent to a city, +1 [ICON_GOLD] Gold when adjacent to a river.
+			</Text>
+		</Replace>
+		-->
+		<Replace Tag="TXT_KEY_IMPROVEMENT_TIPI"> 
+			<Text>
+				Tipi
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_CIV5_IMPROVEMENTS_TIPI_HELP"> 
+			<Text>
+				+1 [ICON_FOOD] Food and +1 [ICON_PEACE] Faith.[NEWLINE][NEWLINE]+2 [ICON_CULTURE] Culture if adjacent to a City.[NEWLINE][NEWLINE]+2 [ICON_GOLD] Gold if adjacent to a River.[NEWLINE][NEWLINE]+1 [ICON_FOOD] Food at Civil Service.[NEWLINE][NEWLINE]+1 [ICON_PEACE] Faith at Theology.[NEWLINE][NEWLINE]+1 [ICON_PRODUCTION] Production at Industrialization.[NEWLINE][NEWLINE]-----[NEWLINE]Can only be built on a resourceless flat Plains tile or on a flatland Deer or Bison tile.[NEWLINE][NEWLINE]Must be adjacent to a Luxury resource.[NEWLINE][NEWLINE]It will not connect the Empire to any Strategic Resources revealed on the tile after its construction.[NEWLINE][NEWLINE]Requires the Forest and Jungle to be cleared.
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_CIV5_IMPROVEMENTS_TIPI_TEXT"> 
+			<Text>
+				The Tipi is a Unique Sioux Improvement.[NEWLINE][NEWLINE]Available at Trapping.[NEWLINE][NEWLINE]+1 [ICON_FOOD] Food and +1 [ICON_PEACE] Faith.[NEWLINE][NEWLINE]+2 [ICON_CULTURE] Culture if adjacent to a City.[NEWLINE][NEWLINE]+2 [ICON_GOLD] Gold if adjacent to a River.[NEWLINE][NEWLINE]+1 [ICON_FOOD] Food at Civil Service.[NEWLINE][NEWLINE]+1 [ICON_PEACE] Faith at Theology.[NEWLINE][NEWLINE]+1 [ICON_PRODUCTION] Production at Industrialization.[NEWLINE][NEWLINE]-----[NEWLINE]Can only be built on a resourceless flat Plains tile or on a flatland Deer or Bison tile.[NEWLINE][NEWLINE]Must be adjacent to a Luxury resource.[NEWLINE][NEWLINE]It will not connect the Empire to any Strategic Resources revealed on the tile after its construction.[NEWLINE][NEWLINE]Requires the Forest and Jungle to be cleared.
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_BUILD_GOMPA"> 
+			<Text>
+				Build a [LINK=IMPROVEMENT_TIBET]Gompa[\LINK]
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_BUILD_GOMPA_HELP"> 
+			<Text>
+				Builds a Gompa, which greatly boosts [ICON_CULTURE] Culture and [ICON_PEACE] Faith, especially with adjacent mountains.
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_BUILD_GOMPA_REC"> 
+			<Text>
+				Greatly boosts [ICON_CULTURE] Culture and [ICON_PEACE] Faith, especially with adjacent mountains.
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_IMPROVEMENT_TIBET"> 
+			<Text>
+				Gompa
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_IMPROVEMENT_TIBET_PEDIA"> 
+			<Text>
+				The Gompa is a Unique Tibetan Improvement.[NEWLINE][NEWLINE]Available at Calendar.[NEWLINE][NEWLINE]+2 [ICON_PEACE] Faith and +1 [ICON_CULTURE] Culture.[NEWLINE][NEWLINE]+1 [ICON_CULTURE] Culture for each adjacent Mountain.[NEWLINE][NEWLINE]+1 [ICON_PEACE] Faith and [ICON_CULTURE] Culture for each adjacent Monastery.[NEWLINE][NEWLINE]+1 additional [ICON_PEACE] Faith at Theology.[NEWLINE][NEWLINE]+2 additional [ICON_CULTURE] Culture at Flight.[NEWLINE][NEWLINE]-----[NEWLINE]Can only be built on a resourceless Hill tile.[NEWLINE][NEWLINE]It will not connect the Empire to any Strategic Resources revealed on the tile after its construction.[NEWLINE][NEWLINE]Can be built in Forests and Jungles without removing them.
+			</Text>
+		</Replace>
+		<Row Tag="TXT_KEY_BUILD_MC_SCOTTISH_CLAN_CASTLE">
+			<Text>
+				Construct a [LINK=IMPROVEMENT_MC_SCOTTISH_CLAN_CASTLE]Caer[\LINK]
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILD_MC_SCOTTISH_CLAN_CASTLE_HELP">
+			<Text>
+				Constructs a Caer, which boosts [ICON_PRODUCTION] Production, [ICON_CULTURE] Culture and [ICON_GOLD] Gold, and provides a +25% [ICON_STRENGTH] Defensive Terrain Bonus. Cannot be built adjacent to each other.
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILD_MC_SCOTTISH_CLAN_CASTLE_REC">
+			<Text>
+				It will help with the defense of the tile!
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MC_SCOTTISH_CLAN_CASTLE">
+			<Text>
+				Caer
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_IMPROVEMENT_MC_SCOTTISH_CLAN_CASTLE_HELP">
+			<Text>
+				Boosts [ICON_PRODUCTION] Production, [ICON_CULTURE] Culture and [ICON_GOLD] Gold, and provides a +25% [ICON_STRENGTH] Defensive Terrain Bonus. Cannot be built adjacent to each other.
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIVILOPEDIA_MC_SCOTTISH_CLAN_CASTLE_PEDIA">
+			<Text>
+				The Caer is a Unique Welsh Improvement.[NEWLINE][NEWLINE]Available at Metal Casting.[NEWLINE][NEWLINE]Provides a +25% [ICON_STRENGTH] Defensive Terrain Bonus.[NEWLINE][NEWLINE]+1 [ICON_PRODUCTION] Production, +1 [ICON_CULTURE] Culture and +3 [ICON_GOLD] Gold.[NEWLINE][NEWLINE]+1 additional [ICON_CULTURE] Culture at Architecture.[NEWLINE][NEWLINE]-----[NEWLINE]Can only be built on a resourceless Hill tile.[NEWLINE][NEWLINE]Cannot be built adjacent to another Caer.[NEWLINE][NEWLINE]It will not connect the Empire to any Strategic Resources revealed on the tile after its construction.[NEWLINE][NEWLINE]Requires the Forest and Jungle to be cleared.
+			</Text>
+		</Row>
+<!--Copied unused text in order not to lose the trivia-->
+		<!--
+		<Replace Tag="TXT_KEY_CIV5_IMPROVEMENTS_TIPI_TEXT"> 
+			<Text>
+				The tipi (or teepee) is a portable, conical tent constructed of tanned hides and wooden poles traditionally associated with the migratory North American Plains Indians. The word itself comes from the Lakota for "they dwell." Often elaborately painted, tipis not only sheltered the Shoshone but served to identify the separate tribes.[NEWLINE][NEWLINE]A Tipi can only be built on Flat Plains tile (even if it has a feature) not adjacent to another Tipi.
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_CIV5_IMPROVEMENTS_MOAI_TEXT"> 
+			<Text>
+				Perhaps better known as the "Easter Island Statues", the Moai are large, humanoid figures carved mostly from volcanic rocks like tuff. 887 of these statues dot Easter Island, and are believed to have been created sometime between 1250 and 1500 AD.  Almost half still remain at the original quarry site, but the rest were transported and erected around the island's coastline.  Easily recognizable by their large heads and elongated features, it is believed that they were individual depictions of deceased ancestors and powerful chiefs.[NEWLINE][NEWLINE]While most scholars agree on why and how the statues were created, the method of their transportation still remains a mystery.  Weighing from 9 to 86 tons a piece, they would have required an amazing feat of engineering to move from quarry to final resting place.[NEWLINE][NEWLINE]In 1994, the Moai statues were given official protection on the UNESCO World Heritage site list.
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_CIV5_IMPROVEMENTS_MOTTE_BAILEY_TEXT"> 
+			<Text>
+				A design first attributed to the Normans in the 10th century, the motte-and-bailey was a type of elevated castle built on top of a raised earthwork mound. The Motte was formed by digging a trench around the prospective castle site. The leftover fill-dirt was then used to construct an artificial hill or mound, upon which the castle itself was built. The "Bailey" refers to the lower courtyard, typically enclosed by a large wall, containing a barracks, servants' quarters, and storage buildings. Any Unit stationed within a Motte and Bailey receives a 100% defensive strength bonus. Additionally, any enemy Unit which ends its turn next to a Motte and Bailey takes 3 damage.
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_CIV5_IMPROVEMENTS_POLDER_TEXT"> 
+			<Text>
+				A polder is a low-lying tract enclosed by dikes with the water drained. In general, polder is land reclaimed from a lake or seabed, from flood plains, or from marshes. In time, the drained land subsides so that all polder is eventually below the surrounding water level. Because of this, water seeps into the drained area and must be pumped out or otherwise drained. The dikes are usually made of readily available materials, earth or sand; in modern times these barriers might be covered or completely composed of concrete. The drained land is extremely fertile and makes excellent pasturage or cropland.[NEWLINE][NEWLINE]The first polders of reclaimed land were constructed in the 11th Century AD, although building embankments as barriers to water date back to the Romans. The Dutch have a long history of reclaiming marshes and fenland, and even the seabed, and possess half of the polder acreage in Europe. Although there are polders in other countries of Europe, and examples can be found in Asia and North America, Holland has some 3000 polders accounting for about 27 percent of the country's land. Amsterdam itself is built largely upon polder. As the Dutch homily states, "God made the world, but the Dutch made Holland."
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_CIV5_IMPROVEMENTS_KASBAH_TEXT"> 
+			<Text>
+				A Kasbah is a type of medina (a walled quarter in a city) found in the countryside, usually a small settlement on a hilltop or hillside. Originally the home for a tribal chieftain or important Islamic imam, the Kasbah is characterized by high-walled, windowless houses and narrow, winding streets. It is usually dominated by a single fortified tower. Kasbahs were common along the North African coast and Middle East until the early 1900s. Building a Kasbah was a mark of wealth, influence, and power for Moroccan and Algerian families of Arab descent.[NEWLINE][NEWLINE]A Kasbah can only be built on a Desert tile.
+			</Text>
+		</Replace>
+		<Row Tag="TXT_KEY_MC_MAORI_PA_PEDIA">
+			<Text>
+				While almost any Maori village could be called a pa, today the word has come to refer to fortified hilltop villages almost exclusively. Ringed with palisades and terraces, these monumental structures announced the military power of a rangatira and his iwi to the world. Pa were built in strategic places throughout an iwi’s territory, in order to best guard its fertile lands. A simple pa might consist only of a single palisade, while a more complex pa would consist of multiple rings of palisades, earthen ramparts, ditches from which to defenders can mount ambushes, kumara patches, food storage areas, wells, underground passages, and decorative entryways. During the Musket Wars, a new type of pa was developed - the gunfighter pa. These forts were usually simpler than the older varieties, but could be constructed in a matter of days. The Gunfighter pa provided greater defense against attackers wielding firearms, as well as allowing defenders to the full advantage of their own muskets.
+			</Text>
+		</Row>	
+		<Replace Tag="TXT_KEY_CIV5_IMPROVEMENTS_TERRACE_FARM_TEXT"> 
+			<Text>
+				Terrace Farming developed in mountainous areas simultaneously around the world, including Bali, the Philippines, China and Peru.  These skinny, stepped fields are cut into hill and mountain sides, preventing the run off of irrigation water and providing space for arable land, usually where none previously was possible. The Incas in particular were masters of terrace farming, and erected large, drystone walls to hold their terraces in place.  After building the terrace's shape, the Incas then constructed systems of canals and aqueducts to provide the terraces with constant water, increasing the land's fertility.  The ancient Incan's terracing techniques were so successful that modern Peruvian farmers still employ them in their farms today.
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_CIV5_IMPROVEMENTS_CHATEAU_TEXT"> 
+			<Text>
+				A chateau is a manor house or country home of gentry, usually without fortifications. In the Middle Ages, a chateau was largely self-sufficient, being supported by the lord's demesne (hereditary lands). In the 1600s, the wealthy and aristocratic French lords dotted the countryside with elegant, luxuriant, architecturally refined mansions such as the Chateau de Maisons. Today, the term chateau is loosely used; for instance, it is common for any winery or inn, no matter how humble, to prefix its name with "Chateau."[NEWLINE][NEWLINE]A Chateau must be built adjacent to a Luxury resource.  It may not be adjacent to another Chateau. It provides one additional [ICON_GOLD] Gold and 2 [ICON_CULTURE] Culture. It also provides the same +50% defense bonus as a Fort. When Flight is researched its [ICON_CULTURE] Culture yield increases by 1 and its [ICON_GOLD] Gold output rises by 2. Must be built in French territory.
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_CIV5_IMPROVEMENTS_BRAZILWOOD_CAMP_TEXT"> 
+			<Text>
+				Brazilwood is a tropical hardwood whose bark produces a bright crimson and deep purple extract used in dyes. Its wood is dense, and is prized for crafting stringed instruments (especially the bows) and cabinetry. The harvesting of brazilwood did not cease until 1875, by which time synthetic dyes dominated the textile industry and other hardwoods had been found to be better for musical instruments.[NEWLINE][NEWLINE]A Brazilwood Camp can only be built on a Jungle tile, and will also generate +2 [ICON_GOLD] once Machinery is researched and +2 [ICON_CULTURE] Gold Culture once Acoustics is researched.
+			</Text>
+		</Replace>
+		-->
+<!--Terrain and Improvements end-->		
 <!--Builds-->
 		<Replace Tag="TXT_KEY_BUILD_ACADEMY"> 
 			<Text>
@@ -19552,11 +19944,6 @@ strongest around the Gulf of Bothnia, where land steadily rises about 1 cm a yea
 		<Replace Tag="TXT_KEY_BUILD_ARCHAEOLOGY_DIG_REC_AFRICA"> 
 			<Text>
 				It can send it back to Europe for victory points.
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_BUILD_AYER"> 
-			<Text>
-				[COLOR_POSITIVE_TEXT]Build a Kampong Ayer
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_BUILD_A_CITY_MCFLY_ECONOMIC"> 
@@ -19614,21 +20001,6 @@ strongest around the Gulf of Bothnia, where land steadily rises about 1 cm a yea
 				{1_TechName:textkey} (Technology) is required to construct a {2_ImprovementName:textkey}.
 			</Text>
 		</Replace>
-		<Replace Tag="TXT_KEY_BUILD_BRAZILWOOD_CAMP"> 
-			<Text>
-				Construct a [LINK=IMPROVEMENT_BRAZILWOOD_CAMP]Brazilwood Camp[\LINK]
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_BUILD_BRAZILWOOD_CAMP_HELP"> 
-			<Text>
-				Constructs a Brazilwood Camp, which increases the amount of [ICON_PRODUCTION] Production provided by this tile, while keeping the Jungle intact. Also provides [ICON_GOLD] Gold once Machinery has been researched and [ICON_CULTURE] Culture once Acoustics has been researched.
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_BUILD_BRAZILWOOD_CAMP_REC"> 
-			<Text>
-				It will increase the amount of [ICON_PRODUCTION] Production provided by this tile, while keeping the Jungle intact. Also provides [ICON_GOLD] Gold once Machinery has been researched and [ICON_CULTURE] Culture once Acoustics has been researched.
-			</Text>
-		</Replace>
 		<Replace Tag="TXT_KEY_BUILD_CAMP"> 
 			<Text>
 				Construct a [LINK=IMPROVEMENT_CAMP]Camp[\LINK]
@@ -19637,21 +20009,6 @@ strongest around the Gulf of Bothnia, where land steadily rises about 1 cm a yea
 		<Replace Tag="TXT_KEY_BUILD_IROQUOIS_CAMP"> 
 			<Text>
 				Construct a [LINK=IMPROVEMENT_IROQUOIS_CAMP]Iroquois Camp[\LINK]
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_BUILD_CHATEAU"> 
-			<Text>
-				Construct a [LINK=IMPROVEMENT_CHATEAU]Chateau[\LINK]
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_BUILD_CHATEAU_HELP"> 
-			<Text>
-				Constructs a Chateau which increases the [ICON_RESEARCH], [ICON_CULTURE] and [ICON_GOLD] yield of the tile. Also provides a defensive bonus.
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_BUILD_CHATEAU_REC"> 
-			<Text>
-				A Chateau must be built adjacent to a Luxury resource.  It may not be adjacent to another Chateau.[NEWLINE][NEWLINE]It will increase the [ICON_RESEARCH], [ICON_CULTURE] and [ICON_GOLD] yield of the tile. Also provides a defensive bonus.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_BUILD_CITADEL"> 
@@ -19774,11 +20131,6 @@ strongest around the Gulf of Bothnia, where land steadily rises about 1 cm a yea
 				{1_Num}[ENDCOLOR] [ICON_GOLD] Gold
 			</Text>
 		</Replace>
-		<Replace Tag="TXT_KEY_BUILD_GOTH"> 
-			<Text>
-				Construct a Harjis
-			</Text>
-		</Replace>
 		<Replace Tag="TXT_KEY_BUILD_HOLY_SITE"> 
 			<Text>
 				Construct a Holy Site
@@ -19787,21 +20139,6 @@ strongest around the Gulf of Bothnia, where land steadily rises about 1 cm a yea
 		<Replace Tag="TXT_KEY_BUILD_HOLY_SITE_HELP"> 
 			<Text>
 				Unit will be consumed.[NEWLINE][NEWLINE]Great Tile Improvements will connect Strategic Resources on this tile to the trade network.
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_BUILD_KASBAH"> 
-			<Text>
-				Construct a [LINK=IMPROVEMENT_KASBAH]Kasbah[\LINK]
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_BUILD_KASBAH_HELP"> 
-			<Text>
-				Constructs a Kasbah, which increases the amount of [ICON_FOOD] Food, [ICON_PRODUCTION] Production, and [ICON_GOLD] Gold provided by this tile. Also provides a defensive bonus.
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_BUILD_KASBAH_REC"> 
-			<Text>
-				It will increase the amount of [ICON_FOOD] Food, [ICON_PRODUCTION] Production, and [ICON_GOLD] Gold provided by this tile. Also provides a defensive bonus.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_BUILD_LANDMARK"> 
@@ -19834,51 +20171,6 @@ strongest around the Gulf of Bothnia, where land steadily rises about 1 cm a yea
 				Construct a [LINK=IMPROVEMENT_MINE]Mine[\LINK]
 			</Text>
 		</Replace>
-		<Replace Tag="TXT_KEY_BUILD_MOAI"> 
-			<Text>
-				Construct a [LINK=IMPROVEMENT_MOAI]Moai[\LINK]
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_BUILD_MOAI_HELP"> 
-			<Text>
-				Adds a Moai (+1 [ICON_CULTURE] Culture) to the tile. Create a line of Moai along the coast for additional culture. Also provides +1 [ICON_GOLD] Gold after Flight is researched.
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_BUILD_MOAI_REC"> 
-			<Text>
-				It will permit the tile to generate [ICON_CULTURE] Culture (and [ICON_GOLD] after Flight is researched).
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_BUILD_MONASTERY"> 
-			<Text>
-				Build a [LINK=IMPROVEMENT_TIBET]Monastery[\LINK]
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_BUILD_MONASTERY_HELP"> 
-			<Text>
-				Bonus Culture for each adjacent mountain. Bonus Culture and Faith for each Adjacent Monastery.
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_BUILD_MONASTERY_REC"> 
-			<Text>
-				Greatly increase [ICON_CULTURE] Culture and [ICON_PEACE] Faith.
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_BUILD_MOTTE_BAILEY"> 
-			<Text>
-				Construct a Motte and Bailey
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_BUILD_MOTTE_BAILEY_HELP"> 
-			<Text>
-				+100% [ICON_STRENGTH] Defensive Strength for any Unit stationed in this Tile. Any enemy Unit which ends its turn next to the Motte and Bailey takes 3 damage. Does NOT consume the Unit.
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_BUILD_MOTTE_BAILEY_REC"> 
-			<Text>
-				It will improve the [ICON_STRENGTH] Defense of any military Unit stationed in this tile and cause damage to enemy Units that end their turn adjacent.
-			</Text>
-		</Replace>
 		<Replace Tag="TXT_KEY_BUILD_NUM_TURNS"> 
 			<Text>
 				{1_Num} Turns
@@ -19902,11 +20194,6 @@ strongest around the Gulf of Bothnia, where land steadily rises about 1 cm a yea
 		<Replace Tag="TXT_KEY_BUILD_PLANTATION"> 
 			<Text>
 				Construct a [LINK=IMPROVEMENT_PLANTATION]Plantation[\LINK]
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_BUILD_POLDER"> 
-			<Text>
-				Construct a [LINK=IMPROVEMENT_POLDER]Polder[\LINK]
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_BUILD_PONTOON_BRIDGE"> 
@@ -19994,11 +20281,6 @@ strongest around the Gulf of Bothnia, where land steadily rises about 1 cm a yea
 				It will allow Units to move more quickly across the terrain, and connecting other cities to your [ICON_CAPITAL] Capital will produce additional [ICON_GOLD] Gold!
 			</Text>
 		</Replace>
-		<Replace Tag="TXT_KEY_BUILD_SACRED_GROVE"> 
-			<Text>
-				[COLOR_POSITIVE_TEXT]Construct a Sacred Grove
-			</Text>
-		</Replace>
 		<Replace Tag="TXT_KEY_BUILD_SCIENCE_STRING"> 
 			<Text>
 				{1_Num}[ENDCOLOR] [ICON_RESEARCH] Science
@@ -20012,26 +20294,6 @@ strongest around the Gulf of Bothnia, where land steadily rises about 1 cm a yea
 		<Replace Tag="TXT_KEY_BUILD_SCRUB_FALLOUT_HELP"> 
 			<Text>
 				Removes the nuclear waste present in this Tile.
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_BUILD_TERRACE_FARM"> 
-			<Text>
-				Construct a [LINK=IMPROVEMENT_TERRACE_FARM]Terrace Farm[\LINK]
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_BUILD_TIPI"> 
-			<Text>
-				Construct a [LINK=IMPROVEMENT_TIPI]Tipi[\LINK]
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_BUILD_TIPI_HELP"> 
-			<Text>
-				Constructs a Tipi, which increases the amount of [ICON_FOOD] Food, and [ICON_PEACE] Faith provided by this tile.
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_BUILD_TIPI_REC"> 
-			<Text>
-				It will increase the amount of [ICON_FOOD] Food, and [ICON_PEACE] Faith provided by this tile.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_BUILD_TRADING_POST"> 
@@ -20049,6 +20311,27 @@ strongest around the Gulf of Bothnia, where land steadily rises about 1 cm a yea
 				It will connect the [ICON_RES_OIL] Oil on this tile to our trade network, allowing us to build advanced Units!
 			</Text>
 		</Replace>
+	<!--Builds end-->	
+		<Replace Tag="TXT_KEY_NEWWORLD_SCENARIO_BUILD_TERRACE_FARM"> 
+			<Text>
+				Construct a [LINK=IMPROVEMENT_TERRACE_FARM]Terrace Farm[\LINK]
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_NEWWORLD_SCENARIO_IMPROVEMENT_TERRACE_FARM"> 
+			<Text>
+				Terrace Farm
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_NEWWORLD_SCENARIO_CIV5_IMPROVEMENTS_TERRACE_FARM_HELP"> 
+			<Text>
+				The Terrace Farm can only be built on hills and does not need a source of fresh water to do so.  If built next to a mountain it will provide additional food.
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_NEWWORLD_SCENARIO_CIV5_IMPROVEMENTS_TERRACE_FARM_TEXT"> 
+			<Text>
+				Terrace Farming developed in mountainous areas simultaneously around the world, including Bali, the Philippines, China and Peru.  These skinny, stepped fields are cut into hill and mountain sides, preventing the run off of irrigation water and providing space for arable land, usually where none previously was possible. The Incas in particular were masters of terrace farming, and erected large, drystone walls to hold their terraces in place.  After building the terrace's shape, the Incas then constructed systems of canals and aqueducts to provide the terraces with constant water, increasing the land's fertility.  The ancient Incan's terracing techniques were so successful that modern Peruvian farmers still employ them in their farms today.
+			</Text>
+		</Replace>	
 		<Replace Tag="TXT_KEY_BULLIED_PROTECTED_CITY_STATE_1"> 
 			<Text>
 				Your bullying of {@1_MinorCivName} is intolerable. I demand that you refrain from squeezing tribute out of city-states under my protection.
@@ -38884,11 +39167,6 @@ strongest around the Gulf of Bothnia, where land steadily rises about 1 cm a yea
 				Traditionally, a "Ceilidh" was a social gathering first associated with the early people of Ireland and Scotland. Held frequently throughout the year, ceilidhs were often accompanied by music and dance, and provided an important social diversion from the labors of everyday life. Ceilidhs were held in halls when available, but were also known to have taken place in private homes, schools, and local businesses.
 			</Text>
 		</Replace>
-		<Replace Tag="TXT_KEY_CIV5_BUILDINGS_CHATEAU_TEXT"> 
-			<Text>
-				A chateau is a manor house or country home of gentry, usually without fortifications. In the Middle Ages, a chateau was largely self-sufficient, being supported by the lord's demesne (hereditary lands). The often sprawling building included gate-house, kitchens, stables, breweries, bakeries, storerooms, servants' quarters, art galleries, ballrooms, libraries, as well as the family's living quarters. These evolved from the open villas Roman nobles in Gaul favored, such as those of Pliny the Elder, Maecenas and the emperor Tiberius. The urban equivalent in France was the palais, a grand house in a city. In the city of Paris, for instance, the Louvre and the Luxembourg were originally chateaux but lost this status, becoming palaces as the city grew around them.
-			</Text>
-		</Replace>
 		<Replace Tag="TXT_KEY_CIV5_BUILDINGS_CHOCOLATE_HOUSE_TEXT"> 
 			<Text>
 				In 1643 AD, the French court embraced chocolate - first imported from the New World in 1585 into Spain - and a chocolate fad swept across Europe in the following decade. The first chocolate house opened in London in 1657 offering beverages and confections made of the stuff, and soon such become trendy meeting places for the elite across the continent.
@@ -42364,21 +42642,6 @@ strongest around the Gulf of Bothnia, where land steadily rises about 1 cm a yea
 				An Archaeological Dig can only be constructed by an Archaeologist at an Antiquity Site resource. The excavations at the ancient city of Troy are an example of a preeminent archaeological dig site. Upon constructing the Dig, your Archaeologist will discover what type of Artifact is buried at this location. You can then choose to either have the Archaeologist create a permanent Landmark improvement here, or extract the Artifact for placement in a Great Work of Art slot in a building in your empire.
 			</Text>
 		</Replace>
-		<Replace Tag="TXT_KEY_CIV5_IMPROVEMENTS_AYER_HELP"> 
-			<Text>
-				Kampong Ayer
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_CIV5_IMPROVEMENTS_BRAZILWOOD_CAMP_HELP"> 
-			<Text>
-				A Brazilwood Camp can only be built on a Forset or Jungle tile and can not be placed adjacent to each other. It provides additional [ICON_PRODUCTION] Production. After the Machinery technology is researched it also provides extra [ICON_GOLD] Gold, and after the Acoustics technology is researched it also provides extra [ICON_CULTURE] Culture.
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_CIV5_IMPROVEMENTS_BRAZILWOOD_CAMP_TEXT"> 
-			<Text>
-				Brazilwood is a tropical hardwood whose bark produces a bright crimson and deep purple extract used in dyes. Its wood is dense, and is prized for crafting stringed instruments (especially the bows) and cabinetry. The harvesting of brazilwood did not cease until 1875, by which time synthetic dyes dominated the textile industry and other hardwoods had been found to be better for musical instruments.[NEWLINE][NEWLINE]A Brazilwood Camp can only be built on a Jungle tile, and will also generate +2 [ICON_GOLD] once Machinery is researched and +2 [ICON_CULTURE] Gold Culture once Acoustics is researched.
-			</Text>
-		</Replace>
 		<Replace Tag="TXT_KEY_CIV5_IMPROVEMENTS_CAMP"> 
 			<Text>
 				Camp
@@ -42432,16 +42695,6 @@ strongest around the Gulf of Bothnia, where land steadily rises about 1 cm a yea
 		<Replace Tag="TXT_KEY_CIV5_IMPROVEMENTS_IROQUOIS_CAMP_TITLE4"> 
 			<Text>
 				Resource Accessed
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_CIV5_IMPROVEMENTS_CHATEAU_HELP"> 
-			<Text>
-				A Chateau must be built adjacent to a Luxury resource.  It may not be adjacent to another Chateau. It provides the same +50% defense bonus as a Fort. Must be built in French territory. When Flight is researched its [ICON_CULTURE] Culture yield increases by 1 and its [ICON_GOLD] Gold output rises by 2.
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_CIV5_IMPROVEMENTS_CHATEAU_TEXT"> 
-			<Text>
-				A chateau is a manor house or country home of gentry, usually without fortifications. In the Middle Ages, a chateau was largely self-sufficient, being supported by the lord's demesne (hereditary lands). In the 1600s, the wealthy and aristocratic French lords dotted the countryside with elegant, luxuriant, architecturally refined mansions such as the Chateau de Maisons. Today, the term chateau is loosely used; for instance, it is common for any winery or inn, no matter how humble, to prefix its name with "Chateau."[NEWLINE][NEWLINE]A Chateau must be built adjacent to a Luxury resource.  It may not be adjacent to another Chateau. It provides one additional [ICON_GOLD] Gold and 2 [ICON_CULTURE] Culture. It also provides the same +50% defense bonus as a Fort. When Flight is researched its [ICON_CULTURE] Culture yield increases by 1 and its [ICON_GOLD] Gold output rises by 2. Must be built in French territory.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_CIV5_IMPROVEMENTS_CITADEL_TEXT"> 
@@ -42649,16 +42902,6 @@ strongest around the Gulf of Bothnia, where land steadily rises about 1 cm a yea
 				A place of religious significance, holy sites are locations held sacred as a testament to the gods, prophets, and traditions of a given religion. Often the destination for religious pilgrims, these sites are often visited by the faithful in the hopes of strengthening their connection to God, while also paying their respects.
 			</Text>
 		</Replace>
-		<Replace Tag="TXT_KEY_CIV5_IMPROVEMENTS_KASBAH_HELP"> 
-			<Text>
-				A Kasbah can only be built on a Desert tile.  It provides one additional [ICON_FOOD] Food, [ICON_PRODUCTION] Production, and [ICON_GOLD] Gold. It also provides the same +50% defense bonus as a Fort. Must be built in Moroccan territory.
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_CIV5_IMPROVEMENTS_KASBAH_TEXT"> 
-			<Text>
-				A Kasbah is a type of medina (a walled quarter in a city) found in the countryside, usually a small settlement on a hilltop or hillside. Originally the home for a tribal chieftain or important Islamic imam, the Kasbah is characterized by high-walled, windowless houses and narrow, winding streets. It is usually dominated by a single fortified tower. Kasbahs were common along the North African coast and Middle East until the early 1900s. Building a Kasbah was a mark of wealth, influence, and power for Moroccan and Algerian families of Arab descent.[NEWLINE][NEWLINE]A Kasbah can only be built on a Desert tile.
-			</Text>
-		</Replace>
 		<Replace Tag="TXT_KEY_CIV5_IMPROVEMENTS_LANDMARK_TEXT"> 
 			<Text>
 				A Landmark is any magnificent artifact, structure, work of art, or wonder of nature that draws visitors to a location. Nelson's Column in London is a landmark, as is Mount Rushmore in the United States. Not every significantly sized object, however, is a landmark: the World's Largest Ball of Twine may never rise to that stature (though it might well be worth a visit). Landmarks provide +1 [ICON_CULTURE] Culture for each additional Era that has passed in comparison to the original Era of the Artifact.
@@ -42727,26 +42970,6 @@ strongest around the Gulf of Bothnia, where land steadily rises about 1 cm a yea
 		<Replace Tag="TXT_KEY_CIV5_IMPROVEMENTS_MINE_TITLE4"> 
 			<Text>
 				Resource Accessed
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_CIV5_IMPROVEMENTS_MOAI_HELP"> 
-			<Text>
-				Moai can only be built on the coast.  If built next to another Moai, it provides additional [ICON_CULTURE] Culture. After the Flight technology is researched it also provides extra [ICON_GOLD] Gold.
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_CIV5_IMPROVEMENTS_MOAI_TEXT"> 
-			<Text>
-				Perhaps better known as the "Easter Island Statues", the Moai are large, humanoid figures carved mostly from volcanic rocks like tuff. 887 of these statues dot Easter Island, and are believed to have been created sometime between 1250 and 1500 AD.  Almost half still remain at the original quarry site, but the rest were transported and erected around the island's coastline.  Easily recognizable by their large heads and elongated features, it is believed that they were individual depictions of deceased ancestors and powerful chiefs.[NEWLINE][NEWLINE]While most scholars agree on why and how the statues were created, the method of their transportation still remains a mystery.  Weighing from 9 to 86 tons a piece, they would have required an amazing feat of engineering to move from quarry to final resting place.[NEWLINE][NEWLINE]In 1994, the Moai statues were given official protection on the UNESCO World Heritage site list.
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_CIV5_IMPROVEMENTS_MOTTE_BAILEY_HELP"> 
-			<Text>
-				Built by Norman Swordsmen, the Motte and Bailey provides +100% [ICON_STRENGTH] Defensive Strength for any Unit stationed in this Tile. Any enemy Unit which ends its turn next to the Motte and Bailey takes 3 damage.
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_CIV5_IMPROVEMENTS_MOTTE_BAILEY_TEXT"> 
-			<Text>
-				A design first attributed to the Normans in the 10th century, the motte-and-bailey was a type of elevated castle built on top of a raised earthwork mound. The Motte was formed by digging a trench around the prospective castle site. The leftover fill-dirt was then used to construct an artificial hill or mound, upon which the castle itself was built. The "Bailey" refers to the lower courtyard, typically enclosed by a large wall, containing a barracks, servants' quarters, and storage buildings. Any Unit stationed within a Motte and Bailey receives a 100% defensive strength bonus. Additionally, any enemy Unit which ends its turn next to a Motte and Bailey takes 3 damage.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_CIV5_IMPROVEMENTS_OFFSHOREPLATFORM"> 
@@ -42839,16 +43062,6 @@ strongest around the Gulf of Bothnia, where land steadily rises about 1 cm a yea
 				Resource Accessed
 			</Text>
 		</Replace>
-		<Replace Tag="TXT_KEY_CIV5_IMPROVEMENTS_POLDER_HELP"> 
-			<Text>
-				A Polder can only be built on Flood Plains and Marsh. It boosts food output immediately. It also provides +1 [ICON_PRODUCTION] Production and +2 [ICON_GOLD] Gold once Economics is researched.
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_CIV5_IMPROVEMENTS_POLDER_TEXT"> 
-			<Text>
-				A polder is a low-lying tract enclosed by dikes with the water drained. In general, polder is land reclaimed from a lake or seabed, from flood plains, or from marshes. In time, the drained land subsides so that all polder is eventually below the surrounding water level. Because of this, water seeps into the drained area and must be pumped out or otherwise drained. The dikes are usually made of readily available materials, earth or sand; in modern times these barriers might be covered or completely composed of concrete. The drained land is extremely fertile and makes excellent pasturage or cropland.[NEWLINE][NEWLINE]The first polders of reclaimed land were constructed in the 11th Century AD, although building embankments as barriers to water date back to the Romans. The Dutch have a long history of reclaiming marshes and fenland, and even the seabed, and possess half of the polder acreage in Europe. Although there are polders in other countries of Europe, and examples can be found in Asia and North America, Holland has some 3000 polders accounting for about 27 percent of the country's land. Amsterdam itself is built largely upon polder. As the Dutch homily states, "God made the world, but the Dutch made Holland."
-			</Text>
-		</Replace>
 		<Replace Tag="TXT_KEY_CIV5_IMPROVEMENTS_QUARRY"> 
 			<Text>
 				Quarry
@@ -42929,16 +43142,6 @@ strongest around the Gulf of Bothnia, where land steadily rises about 1 cm a yea
 				Yield Effect
 			</Text>
 		</Replace>
-		<Replace Tag="TXT_KEY_CIV5_IMPROVEMENTS_SACRED_GROVE_HELP"> 
-			<Text>
-				The Sacred Grove provides +1 [ICON_FOOD] Food, [ICON_PRODUCTION] Production, [ICON_CULTURE] Culture, [ICON_PEACE] Faith and [ICON_RESEARCH] Science. Those yields are increased by 1 upon discovering Philosophy, Theology, Acoustics, Archaeology, Plastics, Computers and the Internet, for a total of 8 of each yield.
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_CIV5_IMPROVEMENTS_SACRED_GROVE_TEXT"> 
-			<Text>
-				The Sacred Grove provides +1 [ICON_FOOD] Food, [ICON_PRODUCTION] Production, [ICON_CULTURE] Culture, [ICON_PEACE] Faith and [ICON_RESEARCH] Science. Those yields are increased by 1 upon discovering Philosophy, Theology, Acoustics, Archaeology, Plastics, Computers and the Internet, for a total of 8 of each yield.
-			</Text>
-		</Replace>
 		<Replace Tag="TXT_KEY_CIV5_IMPROVEMENTS_SCHOOL"> 
 			<Text>
 				School
@@ -42967,31 +43170,6 @@ strongest around the Gulf of Bothnia, where land steadily rises about 1 cm a yea
 		<Replace Tag="TXT_KEY_CIV5_IMPROVEMENTS_SCHOOL_TITLE4"> 
 			<Text>
 				Resource Accessed
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_CIV5_IMPROVEMENTS_TEPE_HELP"> 
-			<Text>
-				+2 [ICON_FOOD] Food, +2 [ICON_PEACE] Faith. Can only be built on flat plains or flat resources adjacent to luxuries. +1 [ICON_CULTURE] Culture when adjacent to a city, +1 [ICON_GOLD] Gold when adjacent to a river.
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_CIV5_IMPROVEMENTS_TERRACE_FARM_HELP"> 
-			<Text>
-				The Terrace Farm can only be built on hills and does not need a source of fresh water to do so.  If built next to a mountain it will provide additional food. Terrace Farm get +1 Food if adjacented to another Terrace Farm (this bonus doesn't stack).
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_CIV5_IMPROVEMENTS_TERRACE_FARM_TEXT"> 
-			<Text>
-				Terrace Farming developed in mountainous areas simultaneously around the world, including Bali, the Philippines, China and Peru.  These skinny, stepped fields are cut into hill and mountain sides, preventing the run off of irrigation water and providing space for arable land, usually where none previously was possible. The Incas in particular were masters of terrace farming, and erected large, drystone walls to hold their terraces in place.  After building the terrace's shape, the Incas then constructed systems of canals and aqueducts to provide the terraces with constant water, increasing the land's fertility.  The ancient Incan's terracing techniques were so successful that modern Peruvian farmers still employ them in their farms today.
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_CIV5_IMPROVEMENTS_TIPI_HELP"> 
-			<Text>
-				A Tipi can only be built on a Flat Plains tile (even if it has a feature). It may not be adjacent to another Tipi. Must be built in Shoshone territory.
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_CIV5_IMPROVEMENTS_TIPI_TEXT"> 
-			<Text>
-				The tipi (or teepee) is a portable, conical tent constructed of tanned hides and wooden poles traditionally associated with the migratory North American Plains Indians. The word itself comes from the Lakota for "they dwell." Often elaborately painted, tipis not only sheltered the Shoshone but served to identify the separate tribes.[NEWLINE][NEWLINE]A Tipi can only be built on Flat Plains tile (even if it has a feature) not adjacent to another Tipi.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_CIV5_IMPROVEMENTS_TITLE1_TEXT"> 
@@ -74530,24 +74708,9 @@ The ship has weather'd every rack; the prize we sought is won."
 				Archaeological Dig
 			</Text>
 		</Replace>
-		<Replace Tag="TXT_KEY_IMPROVEMENT_AYER"> 
-			<Text>
-				Kampong Ayer
-			</Text>
-		</Replace>
-			<Replace Tag="TXT_KEY_CIV5_IMPROVEMENTS_AYER_TEXT"> 
-			<Text>
-				Unique Improvement available to Brunei. Available at Optics. This improvement may only be built on a water tile and next to at least 1 land tile. This improvement yields + 1 [ICON_CULTURE] Culture, +1 [ICON_GOLD] Gold and +1 [ICON_FOOD] Food. +1 [ICON_PRODUCTION] Production at the Astronomy Technology. 
-			</Text>
-		</Replace>
 		<Replace Tag="TXT_KEY_IMPROVEMENT_BARBARIAN_CAMP_PEDIA"> 
 			<Text>
 				An Encampment is a temporary settlement by a group of rampaging barbarians intent upon overthrowing and destroying your civilization. These perpetual thorns in the sides of civilizations are capable of spitting out an unending stream of angry barbarians, all who seek to overrun your cities, pillage your lands and stare lewdly at your women. Encampments near to your cities should be destroyed without question. Encampments nearer to competing civilizations may be left to harass your foes, if you're that kind of sneaky leader...
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_IMPROVEMENT_BRAZILWOOD_CAMP"> 
-			<Text>
-				Brazilwood Camp
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_IMPROVEMENT_CAMP"> 
@@ -74558,11 +74721,6 @@ The ship has weather'd every rack; the prize we sought is won."
 		<Replace Tag="TXT_KEY_IMPROVEMENT_IROQUOIS_CAMP"> 
 			<Text>
 				Iroquois Camp
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_IMPROVEMENT_CHATEAU"> 
-			<Text>
-				Chateau
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_IMPROVEMENT_CITADEL"> 
@@ -74637,11 +74795,6 @@ The ship has weather'd every rack; the prize we sought is won."
 				Ancient Ruins are the remains of earlier long-dead civilizations. They are filled with valuable secrets - gold, maps, lost technologies and sometimes even survivors - awaiting discovery by the intrepid explorer. Rich rewards await those who first enter an Ancient Ruin!
 			</Text>
 		</Replace>
-		<Replace Tag="TXT_KEY_IMPROVEMENT_GOTH"> 
-			<Text>
-				Harjis
-			</Text>
-		</Replace>
 		<Replace Tag="TXT_KEY_IMPROVEMENT_HADRIANS_WALL"> 
 			<Text>
 				Hadrian's Wall
@@ -74677,16 +74830,6 @@ The ship has weather'd every rack; the prize we sought is won."
 				Mine
 			</Text>
 		</Replace>
-		<Replace Tag="TXT_KEY_IMPROVEMENT_MOAI"> 
-			<Text>
-				Moai
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_IMPROVEMENT_MOTTE_BAILEY"> 
-			<Text>
-				Motte and Bailey
-			</Text>
-		</Replace>
 		<Replace Tag="TXT_KEY_IMPROVEMENT_OFFSHORE_PLATFORM"> 
 			<Text>
 				Offshore Platform
@@ -74702,44 +74845,9 @@ The ship has weather'd every rack; the prize we sought is won."
 				Plantation
 			</Text>
 		</Replace>
-		<Replace Tag="TXT_KEY_IMPROVEMENT_POLDER"> 
-			<Text>
-				Polder
-			</Text>
-		</Replace>
 		<Replace Tag="TXT_KEY_IMPROVEMENT_QUARRY"> 
 			<Text>
 				Quarry
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_IMPROVEMENT_SACRED_GROVE"> 
-			<Text>
-				Sacred Grove
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_IMPROVEMENT_TEPE"> 
-			<Text>
-				Tipi
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_IMPROVEMENT_TERRACE_FARM"> 
-			<Text>
-				Terrace Farm
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_IMPROVEMENT_TIBET"> 
-			<Text>
-				Monastery
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_IMPROVEMENT_TIBET_PEDIA"> 
-			<Text>
-				Can only be built on Hills. Provides +2 [ICON_PEACE] Faith and +1 [ICON_CULTURE] Culture. +1 additional [ICON_PEACE] Faith at Theology. +1 [ICON_CULTURE] Culture for each adjacent Mountain. +1 [ICON_PEACE] Faith and [ICON_CULTURE] Culture for each adjacent Monastery. May be built in Forests and Jungles without removing them.
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_IMPROVEMENT_TIPI"> 
-			<Text>
-				Tipi
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_IMPROVEMENT_TRADING_POST"> 
@@ -102235,11 +102343,6 @@ The ship has weather'd every rack; the prize we sought is won."
 				Construct a Polder
 			</Text>
 		</Replace>
-		<Replace Tag="TXT_KEY_NEWWORLD_SCENARIO_BUILD_TERRACE_FARM"> 
-			<Text>
-				Construct a [LINK=IMPROVEMENT_TERRACE_FARM]Terrace Farm[\LINK]
-			</Text>
-		</Replace>
 		<Replace Tag="TXT_KEY_NEWWORLD_SCENARIO_CARAVEL_CARTIER"> 
 			<Text>
 				Cartier
@@ -103348,16 +103451,6 @@ The ship has weather'd every rack; the prize we sought is won."
 		<Replace Tag="TXT_KEY_NEWWORLD_SCENARIO_CIV5_IMPROVEMENTS_POLDER_TEXT"> 
 			<Text>
 				A polder is a low-lying tract enclosed by dikes with the water drained. In general, polder is land reclaimed from a lake or seabed, from flood plains, or from marshes. In time, the drained land subsides so that all polder is eventually below the surrounding water level. Because of this, water seeps into the drained area and must be pumped out or otherwise drained. The dikes are usually made of readily available materials, earth or sand; in modern times these barriers might be covered or completely composed of concrete. The drained land is extremely fertile and makes excellent pasturage or cropland.[NEWLINE][NEWLINE]The first polders of reclaimed land were constructed in the 11th Century AD, although building embankments as barriers to water date back to the Romans. The Dutch have a long history of reclaiming marshes and fenland, and even the seabed, and possess half of the polder acreage in Europe. Although there are polders in other countries of Europe, and examples can be found in Asia and North America, Holland has some 3000 polders accounting for about 27 percent of the country's land. Amsterdam itself is built largely upon polder. As the Dutch homily states, "God made the world, but the Dutch made Holland."
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_NEWWORLD_SCENARIO_CIV5_IMPROVEMENTS_TERRACE_FARM_HELP"> 
-			<Text>
-				The Terrace Farm can only be built on hills and does not need a source of fresh water to do so.  If built next to a mountain it will provide additional food.
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_NEWWORLD_SCENARIO_CIV5_IMPROVEMENTS_TERRACE_FARM_TEXT"> 
-			<Text>
-				Terrace Farming developed in mountainous areas simultaneously around the world, including Bali, the Philippines, China and Peru.  These skinny, stepped fields are cut into hill and mountain sides, preventing the run off of irrigation water and providing space for arable land, usually where none previously was possible. The Incas in particular were masters of terrace farming, and erected large, drystone walls to hold their terraces in place.  After building the terrace's shape, the Incas then constructed systems of canals and aqueducts to provide the terraces with constant water, increasing the land's fertility.  The ancient Incan's terracing techniques were so successful that modern Peruvian farmers still employ them in their farms today.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_NEWWORLD_SCENARIO_CIV5_INCA_FACTOID_HEADING"> 
@@ -104522,11 +104615,6 @@ The ship has weather'd every rack; the prize we sought is won."
 		<Replace Tag="TXT_KEY_NEWWORLD_SCENARIO_IMPROVEMENT_POLDER"> 
 			<Text>
 				Polder
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_NEWWORLD_SCENARIO_IMPROVEMENT_TERRACE_FARM"> 
-			<Text>
-				Terrace Farm
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_NEWWORLD_SCENARIO_LEADER_ISABELLA"> 
@@ -112685,7 +112773,7 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_POLICY_BRANCH_LIBERTY_HELP"> 
 			<Text>
-				[COLOR_POSITIVE_TEXT]Liberty[ENDCOLOR] is best for civilizations which desire rapid expansion.[NEWLINE][NEWLINE]Adopting Liberty will provide 1 [ICON_CULTURE] Culture per city. Unlocks building the Pyramids.[NEWLINE][NEWLINE]Adopting all policies in the Liberty tree will grant a free [ICON_GREAT_PEOPLE] Great Person of your choice near the [ICON_CAPITAL] Capital (except Great General and Great Admiral). All cities gain +33% [ICON_PRODUCTION] Production towards all National Wonders. +10% [ICON_PRODUCTION] Production towards Buildings needed for a National Wonder.
+				[COLOR_POSITIVE_TEXT]Liberty[ENDCOLOR] is best for civilizations which desire rapid expansion.[NEWLINE][NEWLINE]Adopting Liberty will provide 1 [ICON_CULTURE] Culture per city. Unlocks building the Pyramids.[NEWLINE][NEWLINE]Adopting all policies in the Liberty tree will grant a free [ICON_GREAT_PEOPLE] Great Person of your choice near the [ICON_CAPITAL] Capital (except Great General and Great Admiral). All cities will also gain +33% [ICON_PRODUCTION] Production towards National Wonders and +10% [ICON_PRODUCTION] Production towards Buildings required for a National Wonder.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_POLICY_BRANCH_ORDER"> 
@@ -133533,7 +133621,7 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_TECH_RATIONALISM_HEADING4_BODY"> 
 			<Text>
-				The Rationalism branch of social policies is full of policies which can increase your research. This branch becomes available in the Renaissance era. See the rules on Social Policies for details.
+				The Rationalism branch of social policies is full of policies which can increase your research. This branch becomes available in the Medieval era. See the rules on Social Policies for details.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_TECH_RATIONALISM_HEADING4_TITLE"> 
@@ -135676,7 +135764,7 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_TRAIT_AMPHIB_WARLORD"> 
 			<Text>
-				Receive double [ICON_GOLD] Gold from Barbarian Encampments (100 [ICON_GOLD] Gold on standard speed) and triple Gold from pillaging Cities. Land Units gain the Amphibious promotion.
+				Receive double [ICON_GOLD] Gold and 15 [ICON_PEACE] Faith from clearing Barbarian Encampments (100 [ICON_GOLD] Gold on standard speed), and triple [ICON_GOLD] Gold from pillaging Cities. Land Units receive the Amphibious promotion (no [ICON_STRENGTH] Combat Strength penalty while attacking over a River of from the sea) and gain +15% [ICON_STRENGTH] Combat Strength while next to a River.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_TRAIT_AMPHIB_WARLORD_SHORT"> 
@@ -136491,7 +136579,7 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_TRAIT_SEVEN_CITIES"> 
 			<Text>
-				Gain [ICON_GOLD] 125 Gold whenever you discover a Natural Wonder. +1 [ICON_HAPPINESS_1] Happiness for the empire upon the discovery of a Natural Wonder.
+				Gain [ICON_GOLD] 125 Gold and +1 additional [ICON_HAPPINESS_1] Happiness for the Empire whenever you discover a Natural Wonder.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_TRAIT_SEVEN_CITIES_SHORT"> 
@@ -138147,26 +138235,6 @@ The ship has weather'd every rack; the prize we sought is won."
 				Made famous by the swashbuckling tales of Alexandre Dumas, the Musketeers were elite French soldiers armed with sword and musket. Created in 1622 as a "junior Unit" in the Royal Guard, the Musketeers were open to the lower ranks of the French aristocracy, while the more prestigious guard Units were reserved for the higher classes. The Musketeers had a reputation for fighting spirit and swagger and were much admired in Paris and the country at large. They were disbanded at the end of the eighteenth century.
 			</Text>
 		</Replace>
-		<Replace Tag="TXT_KEY_UNIT_TERCIO"> 
-			<Text>
-				Tercio
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_UNIT_TERCIO_HELP"> 
-			<Text>
-				The Tercio is a Spanish Unique Unit that replaces the Halberdman.[NEWLINE][NEWLINE]22 [ICON_STRENGTH] Combat Strength (vs. 20).[NEWLINE][NEWLINE]Just like a Halberdman, it receives a +50% [ICON_STRENGTH] Combat Strength bonus in Melee Combat vs. Mounted Units and Mounted Ranged Units.
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_UNIT_TERCIO_STRATEGY"> 
-			<Text>
-				The Tercio is one of two Spanish Unique Units, replacing the Musketman. This Unit is stronger in combat than the Musketman and fights at double-strength against mounted Units. The Tercio is more expensive to build however.
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_UNIT_TERCIO_TEXT"> 
-			<Text>
-				The Tercio is a brilliant military innovation consisting of a mixed formation of pikemen and arquebusiers (soldiers armed with extremely primitive firearms), created in the early 16th century by the Spanish general Gonzalo Fernandez de Cordoba. The tercio (also known as the "Spanish square") was deployed in a checkerboard formation, with pikemen and arquebusiers set in alternating supporting blocks. The advantages of this arrangement are obvious: the arquebusiers can attack the enemy at distance, and the pikemen can take over in close combat. This formation would come to dominate Renaissance warfare for more than a century.
-			</Text>
-		</Replace>
 		<Replace Tag="TXT_KEY_UNIT_RIFLEMAN"> 
 			<Text>
 				Rifleman
@@ -138643,26 +138711,6 @@ The ship has weather'd every rack; the prize we sought is won."
 				The Matato'a were the chiefs and war leaders of the mata, the large kinship groups that divided the island among themselves. Beneath them served commoners recruited for battle, armed with clubs known as paoa, from which these lowly warriors took their name. The favored weapons of the matato'a, however, were the vero and the kakau, the spear and the javelin, both tipped with vicious mataa, an obsidian point said to have been developed during the war between the hanua 'e'epe and the hanua momoko. This legendary war may be connected to the 18th Century conflicts on the island, during which mataa became increasingly common and the matato'a assumed greater control over Rapa Nui. To further secure their rule and determine which matato'a took precedence over the others, they established the competitive mata veri ceremony to chose a Tangata Manu.
 			</Text>
 		</Row>
-		<Replace Tag="TXT_KEY_UNIT_INCAN_SLINGER"> 
-			<Text>
-				Slinger
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_CIV5_INCA_SLINGER_HELP"> 
-			<Text>
-				The Slinger is an Incan Unique Unit that replaces the Composite Bowman.[NEWLINE][NEWLINE]Has a chance to withdraw to the rear before an enemy melee attack can occur. Probability depends on the available Movement of the attacking foe and the amount of available tiles behind the Slinger.[NEWLINE]12 [ICON_RANGE_STRENGTH] Ranged Strength (up from 11).[NEWLINE][NEWLINE]-----[NEWLINE][NEWLINE]Vulnerable to Mounted Units.
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_CIV5_INCA_SLINGER_STRATEGY"> 
-			<Text>
-				The Slinger is a Classical Era ranged infantry Unit that can strike foes from afar. This Incan Unique Unit can withdraw before most melee attacks: use it to harass your foes. However the Slinger can be easily defeated if the enemy pins it against obstructions or chases it with fast Units.
-			</Text>
-		</Replace>
-		<Replace Tag="TXT_KEY_CIV5_INCA_SLINGER_TEXT"> 
-			<Text>
-				The Inca warriors were renowned slingers. Their projectile of choice was a rounded stone. While a sling does not have the range or stopping power of a bow and arrow, slings are remarkably small and light weapons, and infantry warriors could easily carry them without becoming encumbered. And as is written in the Old Testament, a trained slinger can kill even the largest opponent with but a single stone...
-			</Text>
-		</Replace>
 		<Replace Tag="TXT_KEY_UNIT_COMPOSITE_BOWMAN"> 
 			<Text>
 				Composite Bowman
@@ -138713,6 +138761,26 @@ The ship has weather'd every rack; the prize we sought is won."
 				At its height, the Mali Empire stretched halfway across Africa, and included many subordinate tribes. To keep order, the Mali employed a huge standing army. During war, the Mali often fought as "skirmishers" - soldiers who fan out in loose formation to protect the main force's flanks or front. The Mali skirmishers were lightly-armed archers in that force, famed for their courage and their marksmanship.
 			</Text>
 		</Row>
+		<Replace Tag="TXT_KEY_UNIT_INCAN_SLINGER"> 
+			<Text>
+				Slinger
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_CIV5_INCA_SLINGER_HELP"> 
+			<Text>
+				The Slinger is an Incan Unique Unit that replaces the Composite Bowman.[NEWLINE][NEWLINE]12 [ICON_RANGE_STRENGTH] Ranged Strength (vs. 11).[NEWLINE][NEWLINE]Has a chance to withdraw to the rear before an enemy melee attack can occur. Probability depends on the available Movement of the attacking foe and the amount of available tiles behind the Slinger.[NEWLINE][NEWLINE]-----[NEWLINE][NEWLINE]Vulnerable to Mounted Units.
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_CIV5_INCA_SLINGER_STRATEGY"> 
+			<Text>
+				The Slinger is a Classical Era ranged infantry Unit that can strike foes from afar. This Incan Unique Unit can withdraw before most melee attacks: use it to harass your foes. However the Slinger can be easily defeated if the enemy pins it against obstructions or chases it with fast Units.
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_CIV5_INCA_SLINGER_TEXT"> 
+			<Text>
+				The Inca warriors were renowned slingers. Their projectile of choice was a rounded stone. While a sling does not have the range or stopping power of a bow and arrow, slings are remarkably small and light weapons, and infantry warriors could easily carry them without becoming encumbered. And as is written in the Old Testament, a trained slinger can kill even the largest opponent with but a single stone...
+			</Text>
+		</Replace>
 		<Replace Tag="TXT_KEY_UNIT_CROSSBOWMAN"> 
 			<Text>
 				Crossbowman
@@ -139079,7 +139147,7 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_UNIT_HELP_MUSLIM_CAVALRY"> 
 			<Text>
-				The Mandekalu Cavalry is a Songhai Unique Unit that replaces the Knight.[NEWLINE][NEWLINE]22 [ICON_STRENGTH] Combat Strength (vs. 20).[NEWLINE][NEWLINE]Receives +1 [ICON_MOVES] Extra Movement when it starts the turn next to a River. Lost upon upgrade.[NEWLINE][NEWLINE]-----[NEWLINE][NEWLINE]Can move after attacking.[NEWLINE][NEWLINE]+10% [ICON_STRENGTH] Attack Strength bonus vs. Siege and Melee Siege Units.[NEWLINE][NEWLINE]+10% [ICON_STRENGTH] Attack Strength bonus vs. Archery Units.[NEWLINE][NEWLINE]Requires 1 [ICON_RES_HORSE] Horse.[NEWLINE][NEWLINE]Cannot Fotify and doesn't benefit from Defensive Terrain Bonuses.[NEWLINE][NEWLINE]Vulnerable to Spearman, Pikeman and Halberdman.
+				The Mandekalu Cavalry is a Songhai Unique Unit that replaces the Knight.[NEWLINE][NEWLINE]22 [ICON_STRENGTH] Combat Strength (vs. 20).[NEWLINE][NEWLINE]Receives +1 [ICON_MOVES] Extra Movement when it starts the turn next to a River. Lost upon upgrade.[NEWLINE][NEWLINE]-----[NEWLINE][NEWLINE]Can move after attacking.[NEWLINE][NEWLINE]+10% [ICON_STRENGTH] Attack Strength bonus vs. Siege and Melee Siege Units.[NEWLINE][NEWLINE]+10% [ICON_STRENGTH] Attack Strength bonus vs. Archery Units.[NEWLINE][NEWLINE]]-33% [ICON_STRENGTH] Attack Strength penalty vs. Cities.[NEWLINE][NEWLINE]Requires 1 [ICON_RES_HORSE] Horse.[NEWLINE][NEWLINE]Cannot Fotify and doesn't benefit from Defensive Terrain Bonuses.[NEWLINE][NEWLINE]Vulnerable to Spearman, Pikeman and Halberdman.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_UNIT_SONGHAI_MUSLIMCAVALRY_STRATEGY"> 
@@ -139374,6 +139442,26 @@ The ship has weather'd every rack; the prize we sought is won."
 		<Replace Tag="TXT_KEY_UNIT_HALBERDMAN_TEXT"> 
 			<Text>
 				The halberd combined the advantages of a spear with those of an axe. Its long shaft offered reach, while the axe blade provided additional striking power. There was also a hook at the tip, which made it possible to pull riders off their horses. This versatile weapon was popular with foot soldiers and was often used to defend castles and towns.
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_UNIT_TERCIO"> 
+			<Text>
+				Tercio
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_UNIT_TERCIO_HELP"> 
+			<Text>
+				The Tercio is a Spanish Unique Unit that replaces the Halberdman.[NEWLINE][NEWLINE]22 [ICON_STRENGTH] Combat Strength (vs. 20).[NEWLINE][NEWLINE]Receives the Reversed Flank promotion (+10% [ICON_STRENGTH] Combat Strength for every adjacent enemy Unit above one).[NEWLINE][NEWLINE]-----[NEWLINE][NEWLINE]+20% [ICON_STRENGTH] Defense bonus.[NEWLINE][NEWLINE]+50% [ICON_STRENGTH] Combat Strength bonus in Melee Combat vs. Mounted Units and Mounted Ranged Units.
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_UNIT_TERCIO_STRATEGY"> 
+			<Text>
+				The Tercio is one of two Spanish Unique Units, replacing the Musketman. This Unit is stronger in combat than the Musketman and fights at double-strength against mounted Units. The Tercio is more expensive to build however.
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_UNIT_TERCIO_TEXT"> 
+			<Text>
+				The Tercio is a brilliant military innovation consisting of a mixed formation of pikemen and arquebusiers (soldiers armed with extremely primitive firearms), created in the early 16th century by the Spanish general Gonzalo Fernandez de Cordoba. The tercio (also known as the "Spanish square") was deployed in a checkerboard formation, with pikemen and arquebusiers set in alternating supporting blocks. The advantages of this arrangement are obvious: the arquebusiers can attack the enemy at distance, and the pikemen can take over in close combat. This formation would come to dominate Renaissance warfare for more than a century.
 			</Text>
 		</Replace>
 	<!--Armored Units-->
@@ -139712,7 +139800,7 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_UNIT_HELP_ANTI_TANK_RIFLE"> 
 			<Text>
-				The Anti-Tank Rifle is the first anti-Armor Unit.[NEWLINE][NEWLINE]Available at Armor Piercing Ammunition.[NEWLINE][NEWLINE]Upgrades from the Halberdman and the Lancer.[NEWLINE][NEWLINE]Considered a Gunpowder Unit.[NEWLINE][NEWLINE]30 [ICON_STRENGTH] Combat Strength.[NEWLINE][NEWLINE]+200% [ICON_STRENGTH] Combat Strength bonus vs. Armored Units.
+				The Anti-Tank Rifle is the first anti-Armor Unit.[NEWLINE][NEWLINE]Available at Combustion.[NEWLINE][NEWLINE]Upgrades from the Halberdman and the Lancer.[NEWLINE][NEWLINE]Considered a Gunpowder Unit.[NEWLINE][NEWLINE]30 [ICON_STRENGTH] Combat Strength.[NEWLINE][NEWLINE]+200% [ICON_STRENGTH] Combat Strength bonus vs. Armored Units.
 			</Text>
 		</Replace>
 		<Row Tag="TXT_KEY_UNIT_COLORADO">
@@ -139722,7 +139810,7 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_COLORADO_HELP">
 			<Text>
-				The Colorado is a Bolivian Unique Unit that replaces the Anti-Tank Rifle.[NEWLINE][NEWLINE]Available earlier, at Dynamite (vs. Armor Piercing Ammunition).[NEWLINE][NEWLINE]40 [ICON_STRENGTH] Combat Strength (vs. 30).[NEWLINE][NEWLINE]Gains +2 [ICON_STRENGTH] Combat Strength for every 5 points of excess [ICON_HAPPINESS_1] Happiness. [COLOR_NEGATIVE_TEXT](report if works)[ENDCOLOR][NEWLINE][NEWLINE]Receives only a +150% [ICON_STRENGTH] Combat Strength bonus vs. Armored Units (vs. 200%).[NEWLINE][NEWLINE]Ignores terrain Cost.[NEWLINE][NEWLINE]More expensive to train (300 vs. 250 [ICON_PRODUCTION] Production on Standard).
+				The Colorado is a Bolivian Unique Unit that replaces the Anti-Tank Rifle.[NEWLINE][NEWLINE]Available earlier, at Dynamite (vs. Combustion).[NEWLINE][NEWLINE]40 [ICON_STRENGTH] Combat Strength (vs. 30).[NEWLINE][NEWLINE]Gains +2 [ICON_STRENGTH] Combat Strength for every 5 points of excess [ICON_HAPPINESS_1] Happiness. [COLOR_NEGATIVE_TEXT](report if works)[ENDCOLOR][NEWLINE][NEWLINE]Receives only a +150% [ICON_STRENGTH] Combat Strength bonus vs. Armored Units (vs. 200%).[NEWLINE][NEWLINE]Ignores terrain Cost.[NEWLINE][NEWLINE]More expensive to train (300 vs. 250 [ICON_PRODUCTION] Production on Standard).
 			</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_COLORADO_STRATEGY">
