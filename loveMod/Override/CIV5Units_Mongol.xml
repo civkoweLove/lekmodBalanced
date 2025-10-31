@@ -19496,7 +19496,7 @@ strongest around the Gulf of Bothnia, where land steadily rises about 1 cm a yea
 		</Row>
 		<Row Tag="TXT_KEY_IMPROVEMENT_ROCK_HEWN_PEDIA">
 			<Text>
-				The Rock-Hewn Church is a Unique Aksumite Improvement.[NEWLINE][NEWLINE]Available at Mining.[NEWLINE][NEWLINE]+1 [ICON_PRODUCTION] Production and +2 [ICON_PEACE] Faith.[NEWLINE][NEWLINE]+1 additional [ICON_PEACE] Faith at Theology.[NEWLINE][NEWLINE]+1 additional [ICON_PRODUCTION] Production at Chemistry.[NEWLINE][NEWLINE]-----[NEWLINE]Can only be built on Quarry Resources: [ICON_RES_MARBLE] Marble, [ICON_RES_OBSIDIAN] Obsidian and [ICON_RES_STONE] Stone.[NEWLINE][NEWLINE]Connects Marble and Obsidian to the Empire, granting [ICON_HAPPINESS_1] Happiness.[NEWLINE][NEWLINE]Requires the Forest, Jungle or Marsh to be cleared.
+				The Rock-Hewn Church is a Unique Aksumite Improvement.[NEWLINE][NEWLINE]Available at [COLOR_CYAN]Mining[ENDCOLOR].[NEWLINE][NEWLINE]+1 [ICON_PRODUCTION] Production and +2 [ICON_PEACE] Faith.[NEWLINE][NEWLINE]+1 additional [ICON_PEACE] Faith at [COLOR_CYAN]Theology[ENDCOLOR].[NEWLINE][NEWLINE]+1 additional [ICON_PRODUCTION] Production at [COLOR_CYAN]Chemistry[ENDCOLOR].[NEWLINE][NEWLINE]-----[NEWLINE]Can only be built on Quarry Resources: [ICON_RES_MARBLE] Marble, [ICON_RES_OBSIDIAN] Obsidian and [ICON_RES_STONE] Stone.[NEWLINE][NEWLINE]Connects Marble and Obsidian to the Empire, granting [ICON_HAPPINESS_1] Happiness.[NEWLINE][NEWLINE]Requires the Forest, Jungle or Marsh to be cleared.
 			</Text>
 		</Row>
 		<Replace Tag="TXT_KEY_BUILD_BRAZILWOOD_CAMP"> 
@@ -19521,12 +19521,12 @@ strongest around the Gulf of Bothnia, where land steadily rises about 1 cm a yea
 		</Replace>
 		<Replace Tag="TXT_KEY_CIV5_IMPROVEMENTS_BRAZILWOOD_CAMP_TEXT"> 
 			<Text>
-				The Brazilwood Camp is a Unique Brazilian Improvement.[NEWLINE][NEWLINE]Available at Bronze Working.[NEWLINE][NEWLINE]+1 [ICON_PRODUCTION] Production.[NEWLINE][NEWLINE]+2 [ICON_GOLD] Gold at Machinery.[NEWLINE][NEWLINE]+2 [ICON_CULTURE] Culture at Acoustics.[NEWLINE][NEWLINE]-----[NEWLINE]Can only be built on a Forest or Jungle tile.[NEWLINE][NEWLINE]Can be built over Resources, but will not connect any Strategic or Luxury Resources to the Empire.[NEWLINE][NEWLINE]Cannot be placed adjacent to another Brazilwood Camp.
+				The Brazilwood Camp is a Unique Brazilian Improvement.[NEWLINE][NEWLINE]Available at [COLOR_CYAN]Bronze Working[ENDCOLOR].[NEWLINE][NEWLINE]+1 [ICON_PRODUCTION] Production.[NEWLINE][NEWLINE]+2 [ICON_GOLD] Gold at [COLOR_CYAN]Machinery[ENDCOLOR].[NEWLINE][NEWLINE]+2 [ICON_CULTURE] Culture at [COLOR_CYAN]Acoustics[ENDCOLOR].[NEWLINE][NEWLINE]-----[NEWLINE]Can only be built on a Forest or Jungle tile.[NEWLINE][NEWLINE]Can be built over Resources, but will not connect any Strategic or Luxury Resources to the Empire.[NEWLINE][NEWLINE]Cannot be placed adjacent to another Brazilwood Camp.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_CIV5_IMPROVEMENTS_BRAZILWOOD_CAMP_HELP"> 
 			<Text>
-				Can only be built on a Forest or Jungle tile.[NEWLINE][NEWLINE]Can be built over Resources, but will not connect any Strategic or Luxury Resources to the Empire.[NEWLINE][NEWLINE]Cannot be placed adjacent to each other.[NEWLINE][NEWLINE]+1 [ICON_PRODUCTION] Production.[NEWLINE][NEWLINE]+2 [ICON_GOLD] at Machinery.[NEWLINE][NEWLINE]+2 [ICON_CULTURE] Culture at Acoustics.
+				+1 [ICON_PRODUCTION] Production.[NEWLINE][NEWLINE]+2 [ICON_GOLD] Gold at [COLOR_CYAN]Machinery[ENDCOLOR].[NEWLINE][NEWLINE]+2 [ICON_CULTURE] Culture at [COLOR_CYAN]Acoustics[ENDCOLOR].[NEWLINE][NEWLINE]-----[NEWLINE]Can only be built on a Forest or Jungle tile.[NEWLINE][NEWLINE]Can be built over Resources, but will not connect any Strategic or Luxury Resources to the Empire.[NEWLINE][NEWLINE]Cannot be placed adjacent to another Brazilwood Camp.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_BUILD_AYER"> 
@@ -19541,12 +19541,12 @@ strongest around the Gulf of Bothnia, where land steadily rises about 1 cm a yea
 		</Replace>
 		<Replace Tag="TXT_KEY_CIV5_IMPROVEMENTS_AYER_HELP"> 
 			<Text>
-				+1 [ICON_FOOD] Food, [ICON_CULTURE] Culture and [ICON_GOLD] Gold.[NEWLINE][NEWLINE]+1 [ICON_PRODUCTION] Production at Astronomy.[NEWLINE][NEWLINE]+1 additional [ICON_CULTURE] Culture and [ICON_GOLD] Gold at Flight.[NEWLINE][NEWLINE]-----[NEWLINE]Can only be built on a resourceless Coastal tile next to at least one land tile.[NEWLINE][NEWLINE]Cannot be built by a Worker, only by the Nelayan.
+				+1 [ICON_FOOD] Food, [ICON_CULTURE] Culture and [ICON_GOLD] Gold.[NEWLINE][NEWLINE]+1 [ICON_PRODUCTION] Production at [COLOR_CYAN]Astronomy[ENDCOLOR].[NEWLINE][NEWLINE]+1 additional [ICON_CULTURE] Culture and [ICON_GOLD] Gold at [COLOR_CYAN]Flight[ENDCOLOR].[NEWLINE][NEWLINE]-----[NEWLINE]Can only be built on a resourceless Coastal tile next to at least one land tile.[NEWLINE][NEWLINE]Cannot be built by a Worker, only by the Nelayan.[NEWLINE][NEWLINE]It will not connect the Empire to any Strategic Resources revealed on the tile after its construction.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_CIV5_IMPROVEMENTS_AYER_TEXT"> 
 			<Text>
-				The Kampong Ayer is a Unique Bruneian Improvement.[NEWLINE][NEWLINE]Available at Optics.[NEWLINE][NEWLINE]+1 [ICON_FOOD] Food, [ICON_CULTURE] Culture and [ICON_GOLD] Gold.[NEWLINE][NEWLINE]+1 [ICON_PRODUCTION] Production at Astronomy.[NEWLINE][NEWLINE]+1 additional [ICON_CULTURE] Culture and [ICON_GOLD] Gold at Flight.[NEWLINE][NEWLINE]-----[NEWLINE]Can only be built on a resourceless Coastal tile next to at least one land tile.[NEWLINE][NEWLINE]Cannot be built by a Worker, only by the Nelayan.[NEWLINE][NEWLINE]It will not connect the Empire to any Strategic Resources revealed on the tile after its construction.
+				The Kampong Ayer is a Unique Bruneian Improvement.[NEWLINE][NEWLINE]Available at [COLOR_CYAN]Optics[ENDCOLOR].[NEWLINE][NEWLINE]+1 [ICON_FOOD] Food, [ICON_CULTURE] Culture and [ICON_GOLD] Gold.[NEWLINE][NEWLINE]+1 [ICON_PRODUCTION] Production at [COLOR_CYAN]Astronomy[ENDCOLOR].[NEWLINE][NEWLINE]+1 additional [ICON_CULTURE] Culture and [ICON_GOLD] Gold at [COLOR_CYAN]Flight[ENDCOLOR].[NEWLINE][NEWLINE]-----[NEWLINE]Can only be built on a resourceless Coastal tile next to at least one land tile.[NEWLINE][NEWLINE]Cannot be built by a Worker, only by the Nelayan.[NEWLINE][NEWLINE]It will not connect the Empire to any Strategic Resources revealed on the tile after its construction.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_BUILD_CHATEAU"> 
@@ -19571,12 +19571,12 @@ strongest around the Gulf of Bothnia, where land steadily rises about 1 cm a yea
 		</Replace>
 		<Replace Tag="TXT_KEY_CIV5_IMPROVEMENTS_CHATEAU_HELP"> 
 			<Text>
-				+2 [ICON_CULTURE] Culture, +2 [ICON_RESEARCH] Science and +1 [ICON_GOLD] Gold.[NEWLINE][NEWLINE]Provides a +50% [ICON_STRENGTH] Defensive Terrain Bonus.[NEWLINE][NEWLINE]+1 additional [ICON_CULTURE] Culture and +2 additional [ICON_GOLD] Gold at Flight.[NEWLINE][NEWLINE]-----[NEWLINE]Can only be built on a resourceless tile adjacent to a Luxury resource.[NEWLINE][NEWLINE]Cannot be built adjacent to another Chateau.[NEWLINE][NEWLINE]It will not connect the Empire to any Strategic Resources revealed on the tile after its construction.[NEWLINE][NEWLINE]Requires the Forest, Jungle or Marsh to be cleared.
+				Provides a +50% [ICON_STRENGTH] Defensive Terrain Bonus.[NEWLINE][NEWLINE]+2 [ICON_CULTURE] Culture, +2 [ICON_RESEARCH] Science and +1 [ICON_GOLD] Gold.[NEWLINE][NEWLINE]+1 additional [ICON_CULTURE] Culture and +2 additional [ICON_GOLD] Gold at [COLOR_CYAN]Flight[ENDCOLOR].[NEWLINE][NEWLINE]-----[NEWLINE]Can only be built on a resourceless tile adjacent to a Luxury resource.[NEWLINE][NEWLINE]Cannot be built adjacent to another Chateau.[NEWLINE][NEWLINE]It will not connect the Empire to any Strategic Resources revealed on the tile after its construction.[NEWLINE][NEWLINE]Requires the Forest, Jungle or Marsh to be cleared.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_CIV5_IMPROVEMENTS_CHATEAU_TEXT"> 
 			<Text>
-				The Chateau is a Unique French Improvement.[NEWLINE][NEWLINE]Available at Chivarly.[NEWLINE][NEWLINE]Provides a +50% [ICON_STRENGTH] Defensive Terrain Bonus.[NEWLINE][NEWLINE]+2 [ICON_CULTURE] Culture, +2 [ICON_RESEARCH] Science and +1 [ICON_GOLD].[NEWLINE][NEWLINE]+1 additional [ICON_CULTURE] Culture and +2 additional [ICON_GOLD] Gold at Flight.[NEWLINE][NEWLINE]-----[NEWLINE]Can only be built on a resourceless tile adjacent to a Luxury resource.[NEWLINE][NEWLINE]Cannot be built adjacent to another Chateau.[NEWLINE][NEWLINE]It will not connect the Empire to any Strategic Resources revealed on the tile after its construction.[NEWLINE][NEWLINE]Requires the Forest, Jungle or Marsh to be cleared.
+				The Chateau is a Unique French Improvement.[NEWLINE][NEWLINE]Available at [COLOR_CYAN]Chivarly[ENDCOLOR].[NEWLINE][NEWLINE]Provides a +50% [ICON_STRENGTH] Defensive Terrain Bonus.[NEWLINE][NEWLINE]+2 [ICON_CULTURE] Culture, +2 [ICON_RESEARCH] Science and +1 [ICON_GOLD] Gold.[NEWLINE][NEWLINE]+1 additional [ICON_CULTURE] Culture and +2 additional [ICON_GOLD] Gold at [COLOR_CYAN]Flight[ENDCOLOR].[NEWLINE][NEWLINE]-----[NEWLINE]Can only be built on a resourceless tile adjacent to a Luxury resource.[NEWLINE][NEWLINE]Cannot be built adjacent to another Chateau.[NEWLINE][NEWLINE]It will not connect the Empire to any Strategic Resources revealed on the tile after its construction.[NEWLINE][NEWLINE]Requires the Forest, Jungle or Marsh to be cleared.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_BUILD_GOTH"> 
@@ -19591,7 +19591,7 @@ strongest around the Gulf of Bothnia, where land steadily rises about 1 cm a yea
 		</Replace>
 		<Replace Tag="TXT_KEY_IMPROVEMENT_GOTH_TEXT"> 
 			<Text>
-				The Harjis is a Unique Goth Improvement.[NEWLINE][NEWLINE]Available at Mining.[NEWLINE][NEWLINE]+1 [ICON_PRODUCTION] Production.[NEWLINE][NEWLINE]+1 additional [ICON_PRODUCTION] Production at Iron Working, at Gunpowder and at Dynamite.[NEWLINE][NEWLINE]-----[NEWLINE]Can only be built on a resourceless tile adjacent to a Luxury resource.[NEWLINE][NEWLINE]Cannot be built adjacent to another Harjis.[NEWLINE][NEWLINE]It will not connect the Empire to any Strategic Resources revealed on the tile after its construction.[NEWLINE][NEWLINE]Can be built without removing Forest or Jungle.
+				The Harjis is a Unique Goth Improvement.[NEWLINE][NEWLINE]Available at [COLOR_CYAN]Mining[ENDCOLOR].[NEWLINE][NEWLINE]+1 [ICON_PRODUCTION] Production.[NEWLINE][NEWLINE]+1 additional [ICON_PRODUCTION] Production at [COLOR_CYAN]Iron Working[ENDCOLOR], at [COLOR_CYAN]Gunpowder[ENDCOLOR] and at [COLOR_CYAN]Dynamite[ENDCOLOR].[NEWLINE][NEWLINE]-----[NEWLINE]Can only be built on a resourceless tile adjacent to a Luxury resource.[NEWLINE][NEWLINE]Cannot be built adjacent to another Harjis.[NEWLINE][NEWLINE]It will not connect the Empire to any Strategic Resources revealed on the tile after its construction.[NEWLINE][NEWLINE]Can be built without removing Forest or Jungle.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_BUILD_TERRACE_FARM"> 
@@ -19606,12 +19606,12 @@ strongest around the Gulf of Bothnia, where land steadily rises about 1 cm a yea
 		</Replace>
 		<Replace Tag="TXT_KEY_CIV5_IMPROVEMENTS_TERRACE_FARM_HELP"> 
 			<Text>
-				+1 [ICON_FOOD] Food.[NEWLINE][NEWLINE]+1 additional [ICON_FOOD] Food if adjacant to another Terrace Farm.[NEWLINE][NEWLINE]+1 additional [ICON_FOOD] Food for every adjacent Mountain.[NEWLINE][NEWLINE]+1 [ICON_FOOD] Food at Civil Service (Fresh Water) or Fertilizer (no Fresh Water).[NEWLINE][NEWLINE]-----[NEWLINE]Can only be built on a resourceless Hill tile.[NEWLINE][NEWLINE]It will not connect the Empire to any Strategic Resources revealed on the tile after its construction.[NEWLINE][NEWLINE]Requires the Forest, Jungle or Marsh to be cleared.
+				+1 [ICON_FOOD] Food.[NEWLINE][NEWLINE]+1 additional [ICON_FOOD] Food if adjacent to another Terrace Farm.[NEWLINE][NEWLINE]+1 additional [ICON_FOOD] Food for each adjacent Mountain.[NEWLINE][NEWLINE]+1 [ICON_FOOD] Food at [COLOR_CYAN]Civil Service[ENDCOLOR] (Fresh Water) or [COLOR_CYAN]Fertilizer[ENDCOLOR] (no Fresh Water).[NEWLINE][NEWLINE]-----[NEWLINE]Can only be built on a resourceless Hill tile.[NEWLINE][NEWLINE]It will not connect the Empire to any Strategic Resources revealed on the tile after its construction.[NEWLINE][NEWLINE]Requires the Forest, Jungle or Marsh to be cleared.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_CIV5_IMPROVEMENTS_TERRACE_FARM_TEXT"> 
 			<Text>
-				The Terrace Farm is a Unique Incan Improvement.[NEWLINE][NEWLINE]Available at Construction.[NEWLINE][NEWLINE]+1 [ICON_FOOD] Food.[NEWLINE][NEWLINE]+1 additional [ICON_FOOD] Food if adjacant to another Terrace Farm.[NEWLINE][NEWLINE]+1 additional [ICON_FOOD] Food for every adjacent Mountain.[NEWLINE][NEWLINE]+1 [ICON_FOOD] Food at Civil Service (Fresh Water) or Fertilizer (no Fresh Water).[NEWLINE][NEWLINE]-----[NEWLINE]Can only be built on a resourceless Hill tile.[NEWLINE][NEWLINE]It will not connect the Empire to any Strategic Resources revealed on the tile after its construction.[NEWLINE][NEWLINE]Requires the Forest, Jungle or Marsh to be cleared.
+				The Terrace Farm is a Unique Incan Improvement.[NEWLINE][NEWLINE]Available at [COLOR_CYAN]Construction[ENDCOLOR].[NEWLINE][NEWLINE]+1 [ICON_FOOD] Food.[NEWLINE][NEWLINE]+1 additional [ICON_FOOD] Food if adjacent to another Terrace Farm.[NEWLINE][NEWLINE]+1 additional [ICON_FOOD] Food for each adjacent Mountain.[NEWLINE][NEWLINE]+1 [ICON_FOOD] Food at [COLOR_CYAN]Civil Service[ENDCOLOR] (Fresh Water) or [COLOR_CYAN]Fertilizer[ENDCOLOR] (no Fresh Water).[NEWLINE][NEWLINE]-----[NEWLINE]Can only be built on a resourceless Hill tile.[NEWLINE][NEWLINE]It will not connect the Empire to any Strategic Resources revealed on the tile after its construction.[NEWLINE][NEWLINE]Requires the Forest, Jungle or Marsh to be cleared.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_BUILD_SACRED_GROVE"> 
@@ -19656,12 +19656,12 @@ strongest around the Gulf of Bothnia, where land steadily rises about 1 cm a yea
 		</Row>
 		<Row Tag="TXT_KEY_IMPROVEMENT_MC_MAORI_PA_HELP">
 			<Text>
-				Provides a +50% [ICON_STRENGTH] Defensive Terrain Bonus.[NEWLINE][NEWLINE]+2 [ICON_FOOD] Food.[NEWLINE][NEWLINE]+1 additional [ICON_FOOD] Food at Civil Service and at Fertilizer (regardless of Fresh Water access).[NEWLINE][NEWLINE]-----[NEWLINE]Can only be built on a resourceless Hill tile.[NEWLINE][NEWLINE]Cannot be built adjacent to another Pa.[NEWLINE][NEWLINE]It will not connect the Empire to any Strategic Resources revealed on the tile after its construction.[NEWLINE][NEWLINE]Requires the Forest or Jungle to be cleared.
+				Provides a +50% [ICON_STRENGTH] Defensive Terrain Bonus.[NEWLINE][NEWLINE]+2 [ICON_FOOD] Food.[NEWLINE][NEWLINE]+1 additional [ICON_FOOD] Food at [COLOR_CYAN]Civil Service[ENDCOLOR] and at [COLOR_CYAN]Fertilizer[ENDCOLOR] (regardless of Fresh Water access).[NEWLINE][NEWLINE]-----[NEWLINE]Can only be built on a resourceless Hill tile.[NEWLINE][NEWLINE]Cannot be built adjacent to another Pa.[NEWLINE][NEWLINE]It will not connect the Empire to any Strategic Resources revealed on the tile after its construction.[NEWLINE][NEWLINE]Requires the Forest or Jungle to be cleared.
 			</Text>
 		</Row>
 		<Row Tag="TXT_KEY_MC_MAORI_PA_PEDIA">
 			<Text>
-				The Pa is a Unique Maori Improvement.[NEWLINE][NEWLINE]Available at Engineering.[NEWLINE][NEWLINE]Provides a +50% [ICON_STRENGTH] Defensive Terrain Bonus.[NEWLINE][NEWLINE]+2 [ICON_FOOD] Food.[NEWLINE][NEWLINE]+1 additional [ICON_FOOD] Food at Civil Service and at Fertilizer (regardless of Fresh Water access).[NEWLINE][NEWLINE]-----[NEWLINE]Can only be built on a resourceless Hill tile.[NEWLINE][NEWLINE]Cannot be built adjacent to another Pa.[NEWLINE][NEWLINE]It will not connect the Empire to any Strategic Resources revealed on the tile after its construction.[NEWLINE][NEWLINE]Requires the Forest or Jungle to be cleared.
+				The Pa is a Unique Maori Improvement.[NEWLINE][NEWLINE]Available at [COLOR_CYAN]Engineering[ENDCOLOR].[NEWLINE][NEWLINE]Provides a +50% [ICON_STRENGTH] Defensive Terrain Bonus.[NEWLINE][NEWLINE]+2 [ICON_FOOD] Food.[NEWLINE][NEWLINE]+1 additional [ICON_FOOD] Food at [COLOR_CYAN]Civil Service[ENDCOLOR] and at [COLOR_CYAN]Fertilizer[ENDCOLOR] (regardless of Fresh Water access).[NEWLINE][NEWLINE]-----[NEWLINE]Can only be built on a resourceless Hill tile.[NEWLINE][NEWLINE]Cannot be built adjacent to another Pa.[NEWLINE][NEWLINE]It will not connect the Empire to any Strategic Resources revealed on the tile after its construction.[NEWLINE][NEWLINE]Requires the Forest or Jungle to be cleared.
 			</Text>
 		</Row>
 		<Replace Tag="TXT_KEY_BUILD_KASBAH"> 
@@ -19681,12 +19681,12 @@ strongest around the Gulf of Bothnia, where land steadily rises about 1 cm a yea
 		</Replace>
 		<Replace Tag="TXT_KEY_CIV5_IMPROVEMENTS_KASBAH_HELP"> 
 			<Text>
-				Provides a +50% [ICON_STRENGTH] Defensive Terrain Bonus.[NEWLINE][NEWLINE]+2 [ICON_FOOD] Food, +1 [ICON_PRODUCTION] Production and +1 [ICON_GOLD] Gold.[NEWLINE][NEWLINE]-----[NEWLINE]Can only be built on a resourceless Desert tile, except Flood Plains and Oases.
+				Provides a +50% [ICON_STRENGTH] Defensive Terrain Bonus.[NEWLINE][NEWLINE]+2 [ICON_FOOD] Food, +1 [ICON_PRODUCTION] Production and +1 [ICON_GOLD] Gold.[NEWLINE][NEWLINE]-----[NEWLINE]Can only be built on a resourceless Desert tile, except Flood Plains and Oases.[NEWLINE][NEWLINE]It will not connect the Empire to any Strategic Resources revealed on the tile after its construction.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_CIV5_IMPROVEMENTS_KASBAH_TEXT"> 
 			<Text>
-				The Kasbah is a Unique Moroccan Improvement.[NEWLINE][NEWLINE]Available at Chivarly.[NEWLINE][NEWLINE]Provides a +50% [ICON_STRENGTH] Defensive Terrain Bonus.[NEWLINE][NEWLINE]+2 [ICON_FOOD] Food, +1 [ICON_PRODUCTION] Production and +1 [ICON_GOLD] Gold.[NEWLINE][NEWLINE]-----[NEWLINE]Can only be built on a resourceless Desert tile, except Flood Plains and Oases.[NEWLINE][NEWLINE]It will not connect the Empire to any Strategic Resources revealed on the tile after its construction.
+				The Kasbah is a Unique Moroccan Improvement.[NEWLINE][NEWLINE]Available at [COLOR_CYAN]Chivarly[ENDCOLOR].[NEWLINE][NEWLINE]Provides a +50% [ICON_STRENGTH] Defensive Terrain Bonus.[NEWLINE][NEWLINE]+2 [ICON_FOOD] Food, +1 [ICON_PRODUCTION] Production and +1 [ICON_GOLD] Gold.[NEWLINE][NEWLINE]-----[NEWLINE]Can only be built on a resourceless Desert tile, except Flood Plains and Oases.[NEWLINE][NEWLINE]It will not connect the Empire to any Strategic Resources revealed on the tile after its construction.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_BUILD_POLDER"> 
@@ -19701,12 +19701,12 @@ strongest around the Gulf of Bothnia, where land steadily rises about 1 cm a yea
 		</Replace>
 		<Replace Tag="TXT_KEY_CIV5_IMPROVEMENTS_POLDER_HELP"> 
 			<Text>
-				+3 [ICON_FOOD] Food.[NEWLINE][NEWLINE]+1 [ICON_PRODUCTION] Production and +2 [ICON_GOLD] Gold at Economics.[NEWLINE][NEWLINE]-----[NEWLINE]Can be built on a resourceless Marsh or Flood Plains tile.[NEWLINE][NEWLINE]It can also be built on a Lake or a resourceless Coastal tile, that has at least three adjacent land tiles, by a Workboat (the Workboat is not consumed, but it takes 8 turns to improve the tile on standard speed).[NEWLINE][NEWLINE]Building a Polder on a Lake or a Coastal tile allows land Units to enter it as if it was flat land. Naval Units can also use the tile without changes.[NEWLINE][NEWLINE]It will not connect the Empire to any Strategic Resources revealed on the tile after its construction.
+				+3 [ICON_FOOD] Food.[NEWLINE][NEWLINE]+1 [ICON_PRODUCTION] Production and +2 [ICON_GOLD] Gold at [COLOR_CYAN]Economics[ENDCOLOR].[NEWLINE][NEWLINE]-----[NEWLINE]Can be built on a resourceless Marsh or Flood Plains tile.[NEWLINE][NEWLINE]It can also be built on a Lake or a resourceless Coastal tile, that has at least three adjacent land tiles, by a Workboat. The Workboat is not consumed, but it takes 8 turns to improve the tile on standard speed.[NEWLINE][NEWLINE]Building a Polder on a Lake or a Coastal tile allows land Units to enter it as if it was flat land, and for Roads and Railroad to be built there. Naval Units can use the tile without changes.[NEWLINE][NEWLINE]It will not connect the Empire to any Strategic Resources revealed on the tile after its construction.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_CIV5_IMPROVEMENTS_POLDER_TEXT"> 
 			<Text>
-				The Polder is a Unique Dutch Improvement.[NEWLINE][NEWLINE]Available at Guilds.[NEWLINE][NEWLINE]+3 [ICON_FOOD] Food.[NEWLINE][NEWLINE]+1 [ICON_PRODUCTION] Production and +2 [ICON_GOLD] Gold at Economics.[NEWLINE][NEWLINE]-----[NEWLINE]Can be built on a resourceless Marsh or Flood Plains tile.[NEWLINE][NEWLINE]It can also be built on a Lake or a resourceless Coastal tile, that has at least three adjacent land tiles, by a Workboat (the Workboat is not consumed, but it takes 8 turns to improve the tile on standard speed).[NEWLINE][NEWLINE]Building a Polder on a Lake or a Coastal tile allows land Units to enter it as if it was flat land. Naval Units can also use the tile without changes.[NEWLINE][NEWLINE]It will not connect the Empire to any Strategic Resources revealed on the tile after its construction.
+				The Polder is a Unique Dutch Improvement.[NEWLINE][NEWLINE]Available at [COLOR_CYAN]Guilds[ENDCOLOR].[NEWLINE][NEWLINE]+3 [ICON_FOOD] Food.[NEWLINE][NEWLINE]+1 [ICON_PRODUCTION] Production and +2 [ICON_GOLD] Gold at [COLOR_CYAN]Economics[ENDCOLOR].[NEWLINE][NEWLINE]-----[NEWLINE]Can be built on a resourceless Marsh or Flood Plains tile.[NEWLINE][NEWLINE]It can also be built on a Lake or a resourceless Coastal tile, that has at least three adjacent land tiles, by a Workboat. The Workboat is not consumed, but it takes 8 turns to improve the tile on standard speed.[NEWLINE][NEWLINE]Building a Polder on a Lake or a Coastal tile allows land Units to enter it as if it was flat land, and for Roads and Railroad to be built there. Naval Units can use the tile without changes.[NEWLINE][NEWLINE]It will not connect the Empire to any Strategic Resources revealed on the tile after its construction.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_BUILD_MOTTE_BAILEY"> 
@@ -19731,12 +19731,12 @@ strongest around the Gulf of Bothnia, where land steadily rises about 1 cm a yea
 		</Replace>
 		<Replace Tag="TXT_KEY_CIV5_IMPROVEMENTS_MOTTE_BAILEY_HELP"> 
 			<Text>
-				Provides a +25% [ICON_STRENGTH] Defensive Terrain Bonus.[NEWLINE][NEWLINE]+1 [ICON_FOOD] Food and [ICON_PRODUCTION] Production.[NEWLINE][NEWLINE]+2 [ICON_CULTURE] Culture at Flight.[NEWLINE][NEWLINE]-----[NEWLINE]Cannot be built adjacent to another Motte and Bailey.[NEWLINE][NEWLINE]Can be built over Resources, but will not connect any Strategic or Luxury Resources to the Empire.[NEWLINE][NEWLINE]Requires the Forest, Jungle or Marsh to be cleared.
+				Provides a +25% [ICON_STRENGTH] Defensive Terrain Bonus.[NEWLINE][NEWLINE]+1 [ICON_FOOD] Food and [ICON_PRODUCTION] Production.[NEWLINE][NEWLINE]+2 [ICON_CULTURE] Culture at [COLOR_CYAN]Flight[ENDCOLOR].[NEWLINE][NEWLINE]-----[NEWLINE]Cannot be built adjacent to another Motte and Bailey.[NEWLINE][NEWLINE]Can be built over Resources, but will not connect any Strategic or Luxury Resources to the Empire.[NEWLINE][NEWLINE]Requires the Forest, Jungle or Marsh to be cleared.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_CIV5_IMPROVEMENTS_MOTTE_BAILEY_TEXT"> 
 			<Text>
-				The Motte and Bailey is a Unique Norman Improvement.[NEWLINE][NEWLINE]Available at Engineering.[NEWLINE][NEWLINE]Provides a +25% [ICON_STRENGTH] Defensive Terrain Bonus.[NEWLINE][NEWLINE]+1 [ICON_FOOD] Food and [ICON_PRODUCTION] Production.[NEWLINE][NEWLINE]+2 [ICON_CULTURE] Culture at Flight.[NEWLINE][NEWLINE]-----[NEWLINE]Cannot be built adjacent to another Motte and Bailey.[NEWLINE][NEWLINE]Can be built over Resources, but will not connect any Strategic or Luxury Resources to the Empire.[NEWLINE][NEWLINE]Requires the Forest, Jungle or Marsh to be cleared.
+				The Motte and Bailey is a Unique Norman Improvement.[NEWLINE][NEWLINE]Available at [COLOR_CYAN]Engineering[ENDCOLOR].[NEWLINE][NEWLINE]Provides a +25% [ICON_STRENGTH] Defensive Terrain Bonus.[NEWLINE][NEWLINE]+1 [ICON_FOOD] Food and [ICON_PRODUCTION] Production.[NEWLINE][NEWLINE]+2 [ICON_CULTURE] Culture at [COLOR_CYAN]Flight[ENDCOLOR].[NEWLINE][NEWLINE]-----[NEWLINE]Cannot be built adjacent to another Motte and Bailey.[NEWLINE][NEWLINE]Can be built over Resources, but will not connect any Strategic or Luxury Resources to the Empire.[NEWLINE][NEWLINE]Requires the Forest, Jungle or Marsh to be cleared.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_BUILD_MOAI"> 
@@ -19761,12 +19761,12 @@ strongest around the Gulf of Bothnia, where land steadily rises about 1 cm a yea
 		</Replace>
 		<Replace Tag="TXT_KEY_CIV5_IMPROVEMENTS_MOAI_HELP"> 
 			<Text>
-				+1 [ICON_CULTURE] Culture.[NEWLINE][NEWLINE]+1 additional [ICON_CULTURE] Culture for every adjacent Moai.[NEWLINE][NEWLINE]+1 [ICON_GOLD] Gold at Flight.[NEWLINE][NEWLINE]-----[NEWLINE]Can only be built on a land tile next to the coast.[NEWLINE][NEWLINE]Can be built over Resources, but will not connect any Strategic or Luxury Resources to the Empire.[NEWLINE][NEWLINE]Requires the Forest and Jungle to be cleared, but not Marsh.
+				+1 [ICON_CULTURE] Culture.[NEWLINE][NEWLINE]+1 additional [ICON_CULTURE] Culture for each adjacent Moai.[NEWLINE][NEWLINE]+1 [ICON_GOLD] Gold at Flight.[NEWLINE][NEWLINE]-----[NEWLINE]Can only be built on a land tile next to the coast.[NEWLINE][NEWLINE]Can be built over Resources, but will not connect any Strategic or Luxury Resources to the Empire.[NEWLINE][NEWLINE]Requires the Forest and Jungle to be cleared, but not Marsh.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_CIV5_IMPROVEMENTS_MOAI_TEXT"> 
 			<Text>
-				The Moai is a Unique Polynesian Improvement.[NEWLINE][NEWLINE]Available at Construction.[NEWLINE][NEWLINE]+1 [ICON_CULTURE] Culture.[NEWLINE][NEWLINE]+1 additional [ICON_CULTURE] Culture for every adjacent Moai.[NEWLINE][NEWLINE]+1 [ICON_GOLD] Gold at Flight.[NEWLINE][NEWLINE]-----[NEWLINE]Can only be built on a land tile next to the coast.[NEWLINE][NEWLINE]Can be built over Resources, but will not connect any Strategic or Luxury Resources to the Empire.[NEWLINE][NEWLINE]Requires the Forest and Jungle to be cleared, but not Marsh.
+				The Moai is a Unique Polynesian Improvement.[NEWLINE][NEWLINE]Available at [COLOR_CYAN]Construction[ENDCOLOR].[NEWLINE][NEWLINE]+1 [ICON_CULTURE] Culture.[NEWLINE][NEWLINE]+1 additional [ICON_CULTURE] Culture for each adjacent Moai.[NEWLINE][NEWLINE]+1 [ICON_GOLD] Gold at [COLOR_CYAN]Flight[ENDCOLOR].[NEWLINE][NEWLINE]-----[NEWLINE]Can only be built on a land tile next to the coast.[NEWLINE][NEWLINE]Can be built over Resources, but will not connect any Strategic or Luxury Resources to the Empire.[NEWLINE][NEWLINE]Requires the Forest and Jungle to be cleared, but not Marsh.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_BUILD_TIPI"> 
@@ -19803,12 +19803,12 @@ strongest around the Gulf of Bothnia, where land steadily rises about 1 cm a yea
 		</Replace>
 		<Replace Tag="TXT_KEY_CIV5_IMPROVEMENTS_TIPI_HELP"> 
 			<Text>
-				+1 [ICON_FOOD] Food and +1 [ICON_PEACE] Faith.[NEWLINE][NEWLINE]+2 [ICON_CULTURE] Culture if adjacent to a City.[NEWLINE][NEWLINE]+2 [ICON_GOLD] Gold if adjacent to a River.[NEWLINE][NEWLINE]+1 [ICON_FOOD] Food at Civil Service.[NEWLINE][NEWLINE]+1 [ICON_PEACE] Faith at Theology.[NEWLINE][NEWLINE]+1 [ICON_PRODUCTION] Production at Industrialization.[NEWLINE][NEWLINE]-----[NEWLINE]Can only be built on a resourceless flat Plains tile or on a flatland Deer or Bison tile.[NEWLINE][NEWLINE]Must be adjacent to a Luxury resource.[NEWLINE][NEWLINE]It will not connect the Empire to any Strategic Resources revealed on the tile after its construction.[NEWLINE][NEWLINE]Requires the Forest and Jungle to be cleared.
+				+1 [ICON_FOOD] Food and +1 [ICON_PEACE] Faith.[NEWLINE][NEWLINE]+2 [ICON_CULTURE] Culture if adjacent to a City.[NEWLINE][NEWLINE]+2 [ICON_GOLD] Gold if adjacent to a River.[NEWLINE][NEWLINE]+1 [ICON_FOOD] Food at [COLOR_CYAN]Civil Service[ENDCOLOR].[NEWLINE][NEWLINE]+1 [ICON_PEACE] Faith at [COLOR_CYAN]Theology[ENDCOLOR].[NEWLINE][NEWLINE]+1 [ICON_PRODUCTION] Production at [COLOR_CYAN]Industrialization[ENDCOLOR].[NEWLINE][NEWLINE]-----[NEWLINE]Can only be built on a resourceless flat Plains tile or on a flatland Deer or Bison tile.[NEWLINE][NEWLINE]Must be adjacent to a Luxury resource.[NEWLINE][NEWLINE]It will not connect the Empire to any Strategic Resources revealed on the tile after its construction.[NEWLINE][NEWLINE]Requires the Forest and Jungle to be cleared.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_CIV5_IMPROVEMENTS_TIPI_TEXT"> 
 			<Text>
-				The Tipi is a Unique Sioux Improvement.[NEWLINE][NEWLINE]Available at Trapping.[NEWLINE][NEWLINE]+1 [ICON_FOOD] Food and +1 [ICON_PEACE] Faith.[NEWLINE][NEWLINE]+2 [ICON_CULTURE] Culture if adjacent to a City.[NEWLINE][NEWLINE]+2 [ICON_GOLD] Gold if adjacent to a River.[NEWLINE][NEWLINE]+1 [ICON_FOOD] Food at Civil Service.[NEWLINE][NEWLINE]+1 [ICON_PEACE] Faith at Theology.[NEWLINE][NEWLINE]+1 [ICON_PRODUCTION] Production at Industrialization.[NEWLINE][NEWLINE]-----[NEWLINE]Can only be built on a resourceless flat Plains tile or on a flatland Deer or Bison tile.[NEWLINE][NEWLINE]Must be adjacent to a Luxury resource.[NEWLINE][NEWLINE]It will not connect the Empire to any Strategic Resources revealed on the tile after its construction.[NEWLINE][NEWLINE]Requires the Forest and Jungle to be cleared.
+				The Tipi is a Unique Sioux Improvement.[NEWLINE][NEWLINE]Available at [COLOR_CYAN]Trapping[ENDCOLOR].[NEWLINE][NEWLINE]+1 [ICON_FOOD] Food and +1 [ICON_PEACE] Faith.[NEWLINE][NEWLINE]+2 [ICON_CULTURE] Culture if adjacent to a City.[NEWLINE][NEWLINE]+2 [ICON_GOLD] Gold if adjacent to a River.[NEWLINE][NEWLINE]+1 [ICON_FOOD] Food at [COLOR_CYAN]Civil Service[ENDCOLOR].[NEWLINE][NEWLINE]+1 [ICON_PEACE] Faith at [COLOR_CYAN]Theology[ENDCOLOR].[NEWLINE][NEWLINE]+1 [ICON_PRODUCTION] Production at [COLOR_CYAN]Industrialization[ENDCOLOR].[NEWLINE][NEWLINE]-----[NEWLINE]Can only be built on a resourceless flat Plains tile or on a flatland Deer or Bison tile.[NEWLINE][NEWLINE]Must be adjacent to a Luxury resource.[NEWLINE][NEWLINE]It will not connect the Empire to any Strategic Resources revealed on the tile after its construction.[NEWLINE][NEWLINE]Requires the Forest and Jungle to be cleared.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_BUILD_GOMPA"> 
@@ -19833,7 +19833,7 @@ strongest around the Gulf of Bothnia, where land steadily rises about 1 cm a yea
 		</Replace>
 		<Replace Tag="TXT_KEY_IMPROVEMENT_TIBET_PEDIA"> 
 			<Text>
-				The Gompa is a Unique Tibetan Improvement.[NEWLINE][NEWLINE]Available at Calendar.[NEWLINE][NEWLINE]+2 [ICON_PEACE] Faith and +1 [ICON_CULTURE] Culture.[NEWLINE][NEWLINE]+1 [ICON_CULTURE] Culture for each adjacent Mountain.[NEWLINE][NEWLINE]+1 [ICON_PEACE] Faith and [ICON_CULTURE] Culture for each adjacent Monastery.[NEWLINE][NEWLINE]+1 additional [ICON_PEACE] Faith at Theology.[NEWLINE][NEWLINE]+2 additional [ICON_CULTURE] Culture at Flight.[NEWLINE][NEWLINE]-----[NEWLINE]Can only be built on a resourceless Hill tile.[NEWLINE][NEWLINE]It will not connect the Empire to any Strategic Resources revealed on the tile after its construction.[NEWLINE][NEWLINE]Can be built in Forests and Jungles without removing them.
+				The Gompa is a Unique Tibetan Improvement.[NEWLINE][NEWLINE]Available at [COLOR_CYAN]Calendar[ENDCOLOR].[NEWLINE][NEWLINE]+2 [ICON_PEACE] Faith and +1 [ICON_CULTURE] Culture.[NEWLINE][NEWLINE]+1 [ICON_CULTURE] Culture for each adjacent Mountain.[NEWLINE][NEWLINE]+1 [ICON_PEACE] Faith and [ICON_CULTURE] Culture for each adjacent Monastery.[NEWLINE][NEWLINE]+1 additional [ICON_PEACE] Faith at [COLOR_CYAN]Theology[ENDCOLOR].[NEWLINE][NEWLINE]+2 additional [ICON_CULTURE] Culture at [COLOR_CYAN]Flight[ENDCOLOR].[NEWLINE][NEWLINE]-----[NEWLINE]Can only be built on a resourceless Hill tile.[NEWLINE][NEWLINE]It will not connect the Empire to any Strategic Resources revealed on the tile after its construction.[NEWLINE][NEWLINE]Can be built in Forests and Jungles without removing them.
 			</Text>
 		</Replace>
 		<Row Tag="TXT_KEY_BUILD_MC_SCOTTISH_CLAN_CASTLE">
@@ -19863,7 +19863,7 @@ strongest around the Gulf of Bothnia, where land steadily rises about 1 cm a yea
 		</Row>
 		<Row Tag="TXT_KEY_CIVILOPEDIA_MC_SCOTTISH_CLAN_CASTLE_PEDIA">
 			<Text>
-				The Caer is a Unique Welsh Improvement.[NEWLINE][NEWLINE]Available at Metal Casting.[NEWLINE][NEWLINE]Provides a +25% [ICON_STRENGTH] Defensive Terrain Bonus.[NEWLINE][NEWLINE]+1 [ICON_PRODUCTION] Production, +1 [ICON_CULTURE] Culture and +3 [ICON_GOLD] Gold.[NEWLINE][NEWLINE]+1 additional [ICON_CULTURE] Culture at Architecture.[NEWLINE][NEWLINE]-----[NEWLINE]Can only be built on a resourceless Hill tile.[NEWLINE][NEWLINE]Cannot be built adjacent to another Caer.[NEWLINE][NEWLINE]It will not connect the Empire to any Strategic Resources revealed on the tile after its construction.[NEWLINE][NEWLINE]Requires the Forest and Jungle to be cleared.
+				The Caer is a Unique Welsh Improvement.[NEWLINE][NEWLINE]Available at [COLOR_CYAN]Metal Casting[ENDCOLOR].[NEWLINE][NEWLINE]Provides a +25% [ICON_STRENGTH] Defensive Terrain Bonus.[NEWLINE][NEWLINE]+1 [ICON_PRODUCTION] Production, +1 [ICON_CULTURE] Culture and +3 [ICON_GOLD] Gold.[NEWLINE][NEWLINE]+1 additional [ICON_CULTURE] Culture at [COLOR_CYAN]Architecture[ENDCOLOR].[NEWLINE][NEWLINE]-----[NEWLINE]Can only be built on a resourceless Hill tile.[NEWLINE][NEWLINE]Cannot be built adjacent to another Caer.[NEWLINE][NEWLINE]It will not connect the Empire to any Strategic Resources revealed on the tile after its construction.[NEWLINE][NEWLINE]Requires the Forest and Jungle to be cleared.
 			</Text>
 		</Row>
 <!--Copied unused text in order not to lose the trivia-->
@@ -117738,7 +117738,7 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_PROMOTION_INVISIBLE_SUBMARINE_HELP"> 
 			<Text>
-				This Unit is [COLOR_POSITIVE_TEXT]Invisible[ENDCOLOR] to rival Units unless they enter an adjecant tile or possess a special promotion.
+				This Unit is [COLOR_POSITIVE_TEXT]Invisible[ENDCOLOR] to rival Units unless they enter an adjacent tile or possess a special promotion.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_PEDIA_PROMOTION_INVISIBLE_SUBMARINE"> 
@@ -139451,7 +139451,7 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_UNIT_TERCIO_HELP"> 
 			<Text>
-				The Tercio is a Spanish Unique Unit that replaces the Halberdman.[NEWLINE][NEWLINE]22 [ICON_STRENGTH] Combat Strength (vs. 20).[NEWLINE][NEWLINE]Receives the Reversed Flank promotion (+10% [ICON_STRENGTH] Combat Strength for every adjacent enemy Unit above one).[NEWLINE][NEWLINE]-----[NEWLINE][NEWLINE]+20% [ICON_STRENGTH] Defense bonus.[NEWLINE][NEWLINE]+50% [ICON_STRENGTH] Combat Strength bonus in Melee Combat vs. Mounted Units and Mounted Ranged Units.
+				The Tercio is a Spanish Unique Unit that replaces the Halberdman.[NEWLINE][NEWLINE]22 [ICON_STRENGTH] Combat Strength (vs. 20).[NEWLINE][NEWLINE]Receives the Reversed Flank promotion (+10% [ICON_STRENGTH] Combat Strength for each adjacent enemy Unit above one).[NEWLINE][NEWLINE]-----[NEWLINE][NEWLINE]+20% [ICON_STRENGTH] Defense bonus.[NEWLINE][NEWLINE]+50% [ICON_STRENGTH] Combat Strength bonus in Melee Combat vs. Mounted Units and Mounted Ranged Units.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_UNIT_TERCIO_STRATEGY"> 
@@ -141215,7 +141215,7 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_UNIT_GREAT_GENERAL_STRATEGY"> 
 			<Text>
-				The Great General provides a +15% [ICON_STRENGTH] Combat Strength bonus to Land Units within 2 tiles. They can be stacked with other Land Units on one tile.[NEWLINE][NEWLINE]The Great General can also instantly construct the special Citadel improvement which gives a +100% [ICON_STRENGTH] Defense Strength bonus (terrain modifier) to any Unit occupying it, damages enemy Units ending their turn in this and adjacent tiles (30 DMG), and claims all adjacent tiles into your territory. The tile has to be within or adjacant to your borders, although it can also be within rival or City-State territory. The Great General is consumed when it builds the Citadel. 
+				The Great General provides a +15% [ICON_STRENGTH] Combat Strength bonus to Land Units within 2 tiles. They can be stacked with other Land Units on one tile.[NEWLINE][NEWLINE]The Great General can also instantly construct the special Citadel improvement which gives a +100% [ICON_STRENGTH] Defense Strength bonus (terrain modifier) to any Unit occupying it, damages enemy Units ending their turn in this and adjacent tiles (30 DMG), and claims all adjacent tiles into your territory. The tile has to be within or adjacent to your borders, although it can also be within rival or City-State territory. The Great General is consumed when it builds the Citadel. 
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_UNIT_HETAIROI"> 
@@ -141225,7 +141225,7 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_UNIT_HELP_HETAIROI"> 
 			<Text>
-				The Hetairoi is a Macedonian Unique Unit that replaces the Great General.[NEWLINE][NEWLINE]Considered a Mounted Unit. They CANNOT be stacked with other Land Units on one tile.[NEWLINE][NEWLINE]15 [ICON_STRENGTH] Combat Strength.[NEWLINE][NEWLINE]Receives the Charge (+33% [ICON_STRENGTH] Attack Strength vs. Wounded Units), Heavy Charge (Knocks back enemies if deals more damage than receives in combat, entering their tile), March (Heals every turn) and Great Generals II (+100% more EXP counts towards [ICON_GREAT_GENERAL] Great Generals) promotions.[NEWLINE][NEWLINE]Can upgrade to the Knight, but loses the ability to build a Citadel.[NEWLINE][NEWLINE]-----[NEWLINE][NEWLINE]The Hetairoi provides a +15% [ICON_STRENGTH] Combat Strength bonus to all player-owned land Units within 2 tiles.[NEWLINE][NEWLINE]The Hetairoi can also instantly construct the special Citadel improvement which gives a +100% [ICON_STRENGTH] Defense Strength bonus (terrain modifier) to any Unit occupying it, damages enemy Units ending their turn in this and adjacent tiles (30 DMG), and claims all adjacent tiles into your territory. The tile has to be within or adjacant to your borders, although it can also be within rival or City-State territory. The Hetairoi is consumed when it builds the Citadel.[NEWLINE][NEWLINE]-----[NEWLINE][NEWLINE]Can move after attacking.[NEWLINE][NEWLINE]+10% [ICON_STRENGTH] Attack Strength bonus vs. Siege and Melee Siege Units.[NEWLINE][NEWLINE]+10% [ICON_STRENGTH] Attack Strength bonus vs. Archery Units.[NEWLINE][NEWLINE]-33% [ICON_STRENGTH] Attack Strength penalty vs. Cities.[NEWLINE][NEWLINE]Requires 1 [ICON_RES_HORSE] Horse.[NEWLINE][NEWLINE]Cannot Fotify and doesn't benefit from Defensive Terrain Bonuses.[NEWLINE][NEWLINE]Vulnerable to Spearman, Pikeman and Halberdman.
+				The Hetairoi is a Macedonian Unique Unit that replaces the Great General.[NEWLINE][NEWLINE]Considered a Mounted Unit. They CANNOT be stacked with other Land Units on one tile.[NEWLINE][NEWLINE]15 [ICON_STRENGTH] Combat Strength.[NEWLINE][NEWLINE]Receives the Charge (+33% [ICON_STRENGTH] Attack Strength vs. Wounded Units), Heavy Charge (Knocks back enemies if deals more damage than receives in combat, entering their tile), March (Heals every turn) and Great Generals II (+100% more EXP counts towards [ICON_GREAT_GENERAL] Great Generals) promotions.[NEWLINE][NEWLINE]Can upgrade to the Knight, but loses the ability to build a Citadel.[NEWLINE][NEWLINE]-----[NEWLINE][NEWLINE]The Hetairoi provides a +15% [ICON_STRENGTH] Combat Strength bonus to all player-owned land Units within 2 tiles.[NEWLINE][NEWLINE]The Hetairoi can also instantly construct the special Citadel improvement which gives a +100% [ICON_STRENGTH] Defense Strength bonus (terrain modifier) to any Unit occupying it, damages enemy Units ending their turn in this and adjacent tiles (30 DMG), and claims all adjacent tiles into your territory. The tile has to be within or adjacent to your borders, although it can also be within rival or City-State territory. The Hetairoi is consumed when it builds the Citadel.[NEWLINE][NEWLINE]-----[NEWLINE][NEWLINE]Can move after attacking.[NEWLINE][NEWLINE]+10% [ICON_STRENGTH] Attack Strength bonus vs. Siege and Melee Siege Units.[NEWLINE][NEWLINE]+10% [ICON_STRENGTH] Attack Strength bonus vs. Archery Units.[NEWLINE][NEWLINE]-33% [ICON_STRENGTH] Attack Strength penalty vs. Cities.[NEWLINE][NEWLINE]Requires 1 [ICON_RES_HORSE] Horse.[NEWLINE][NEWLINE]Cannot Fotify and doesn't benefit from Defensive Terrain Bonuses.[NEWLINE][NEWLINE]Vulnerable to Spearman, Pikeman and Halberdman.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_UNIT_GREEK_COMPANIONCAVALRY_STRATEGY"> 
@@ -141240,7 +141240,7 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_UNIT_MONGOLIAN_KHAN_HELP"> 
 			<Text>
-				The Khan is a Mongolian Unique Unit that replaces the Great General.[NEWLINE][NEWLINE]5 [ICON_MOVES] Movement (vs. 4).[NEWLINE][NEWLINE]Adjacant Units gain +15 Extra HP when healing.[NEWLINE][NEWLINE]-----[NEWLINE][NEWLINE]Provides a +15% [ICON_STRENGTH] Combat Strength bonus to Land Units within 2 tiles. They can be stacked with other Land Units on one tile.[NEWLINE][NEWLINE]Can also instantly construct the special Citadel improvement which gives a +100% [ICON_STRENGTH] Defense Strength bonus (terrain modifier) to any Unit occupying it, damages enemy Units ending their turn in this and adjacent tiles (30 DMG), and claims all adjacent tiles into your territory. The tile has to be within or adjacant to your borders, although it can also be within rival or City-State territory. Consumed when it builds the Citadel. 
+				The Khan is a Mongolian Unique Unit that replaces the Great General.[NEWLINE][NEWLINE]5 [ICON_MOVES] Movement (vs. 4).[NEWLINE][NEWLINE]adjacent Units gain +15 Extra HP when healing.[NEWLINE][NEWLINE]-----[NEWLINE][NEWLINE]Provides a +15% [ICON_STRENGTH] Combat Strength bonus to Land Units within 2 tiles. They can be stacked with other Land Units on one tile.[NEWLINE][NEWLINE]Can also instantly construct the special Citadel improvement which gives a +100% [ICON_STRENGTH] Defense Strength bonus (terrain modifier) to any Unit occupying it, damages enemy Units ending their turn in this and adjacent tiles (30 DMG), and claims all adjacent tiles into your territory. The tile has to be within or adjacent to your borders, although it can also be within rival or City-State territory. Consumed when it builds the Citadel. 
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_UNIT_MONGOLIAN_KHAN_INFO"> 
