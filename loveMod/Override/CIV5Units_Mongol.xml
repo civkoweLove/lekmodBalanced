@@ -19521,12 +19521,12 @@ strongest around the Gulf of Bothnia, where land steadily rises about 1 cm a yea
 		</Replace>
 		<Replace Tag="TXT_KEY_CIV5_IMPROVEMENTS_BRAZILWOOD_CAMP_TEXT"> 
 			<Text>
-				The Brazilwood Camp is a Unique Brazilian Improvement.[NEWLINE][NEWLINE]Available at [COLOR_CYAN]Bronze Working[ENDCOLOR].[NEWLINE][NEWLINE]+1 [ICON_PRODUCTION] Production.[NEWLINE][NEWLINE]+2 [ICON_GOLD] Gold at [COLOR_CYAN]Machinery[ENDCOLOR].[NEWLINE][NEWLINE]+2 [ICON_CULTURE] Culture at [COLOR_CYAN]Acoustics[ENDCOLOR].[NEWLINE][NEWLINE]-----[NEWLINE]Can only be built on a Forest or Jungle tile.[NEWLINE][NEWLINE]Can be built over Resources, but will not connect any Strategic or Luxury Resources to the Empire.[NEWLINE][NEWLINE]Cannot be placed adjacent to another Brazilwood Camp.
+				The Brazilwood Camp is a Unique Brazilian Improvement.[NEWLINE][NEWLINE]Available at [COLOR_CYAN]Bronze Working[ENDCOLOR].[NEWLINE][NEWLINE]+1 [ICON_PRODUCTION] Production.[NEWLINE][NEWLINE]+2 [ICON_GOLD] Gold at [COLOR_CYAN]Machinery[ENDCOLOR].[NEWLINE][NEWLINE]+2 [ICON_CULTURE] Culture at [COLOR_CYAN]Acoustics[ENDCOLOR].[NEWLINE][NEWLINE]-----[NEWLINE]Can only be built on a Forest or Jungle tile.[NEWLINE][NEWLINE]Cannot be placed adjacent to another Brazilwood Camp.[NEWLINE][NEWLINE]Can be built over Resources, but will not connect any Strategic or Luxury Resources to the Empire.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_CIV5_IMPROVEMENTS_BRAZILWOOD_CAMP_HELP"> 
 			<Text>
-				+1 [ICON_PRODUCTION] Production.[NEWLINE][NEWLINE]+2 [ICON_GOLD] Gold at [COLOR_CYAN]Machinery[ENDCOLOR].[NEWLINE][NEWLINE]+2 [ICON_CULTURE] Culture at [COLOR_CYAN]Acoustics[ENDCOLOR].[NEWLINE][NEWLINE]-----[NEWLINE]Can only be built on a Forest or Jungle tile.[NEWLINE][NEWLINE]Can be built over Resources, but will not connect any Strategic or Luxury Resources to the Empire.[NEWLINE][NEWLINE]Cannot be placed adjacent to another Brazilwood Camp.
+				+1 [ICON_PRODUCTION] Production.[NEWLINE][NEWLINE]+2 [ICON_GOLD] Gold at [COLOR_CYAN]Machinery[ENDCOLOR].[NEWLINE][NEWLINE]+2 [ICON_CULTURE] Culture at [COLOR_CYAN]Acoustics[ENDCOLOR].[NEWLINE][NEWLINE]-----[NEWLINE]Can only be built on a Forest or Jungle tile.[NEWLINE][NEWLINE]Cannot be placed adjacent to another Brazilwood Camp.[NEWLINE][NEWLINE]Can be built over Resources, but will not connect any Strategic or Luxury Resources to the Empire.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_BUILD_AYER"> 
