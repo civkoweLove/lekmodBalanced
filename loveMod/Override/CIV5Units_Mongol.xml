@@ -113438,7 +113438,7 @@ The ship has weather'd every rack; the prize we sought is won."
 		</Replace>
 		<Replace Tag="TXT_KEY_POLICY_FREE_THOUGHT_HELP"> 
 			<Text>
-				[COLOR_POSITIVE_TEXT]Free Thought[ENDCOLOR][NEWLINE]+4 [ICON_RESEARCH] Science from every Customs House and +5 [ICON_RESEARCH] Science from every Customs House Academy and +1 [ICON_RESEARCH] Science from every Trading Post, Brazilwood Camp, Caer and Chateau.
+				[COLOR_POSITIVE_TEXT]Free Thought[ENDCOLOR][NEWLINE]+4 [ICON_RESEARCH] Science from every Customs House and +5 [ICON_RESEARCH] Science from every Academy and +1 [ICON_RESEARCH] Science from every Trading Post, Brazilwood Camp, Caer and Chateau.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_POLICY_FUTURISM"> 
