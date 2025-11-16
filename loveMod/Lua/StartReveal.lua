@@ -1,6 +1,10 @@
 local iMoveDenominator = GameDefines["MOVE_DENOMINATOR"]
 
 function StartReveal(player)
+	if Game.GetElapsedGameTurns() >= 1 then 
+		return
+	end
+
     for playerID, player in pairs(Players) do
         local player = Players[playerID];
         for unit in player:Units() do
