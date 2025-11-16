@@ -303324,7 +303324,7 @@ lithuania changes -->
 			<GreatGeneralOnOrAdjacentConfersMovement>0</GreatGeneralOnOrAdjacentConfersMovement> 
 			<EmbarkedUnitReceivesMovement>false</EmbarkedUnitReceivesMovement> 
 			<HeavyChargeDownhill>0</HeavyChargeDownhill>
-			<RiverMovementBonus>0</RiverMovementBonus>
+			<RiverMovementBonus>1</RiverMovementBonus>
 		</Row>
 		<Row> 
 			<Type>PROMOTION_RIVER_WARLORD</Type> 
