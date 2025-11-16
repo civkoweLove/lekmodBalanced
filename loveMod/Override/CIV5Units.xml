@@ -249956,6 +249956,11 @@ lithuania changes -->
 		</Row>
 		<Row> 
 			<TraitType>TRAIT_AMPHIB_WARLORD</TraitType> 
+			<UnitCombatType>UNITCOMBAT_MOUNTED_RANGED</UnitCombatType> 
+			<PromotionType>PROMOTION_RIVER_WARLORD</PromotionType> 
+		</Row>
+		<Row> 
+			<TraitType>TRAIT_AMPHIB_WARLORD</TraitType> 
 			<UnitCombatType>UNITCOMBAT_ARCHER</UnitCombatType> 
 			<PromotionType>PROMOTION_RIVER_WARLORD</PromotionType> 
 		</Row>
